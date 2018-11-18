@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扫雷</title>
+	<script src="jquery.js"></script>
+
+	<script>
+		$(function(){
+			for(var i=0;i<10;i++){
+				for(var j=0;j<10;j++){
+					var lei=Math.random()>0.9;
+					$("<div></div>")
+					.attr("id",i+"-"+j)
+					.addClass(function(){
+						return "block "+(lei?"lei":"")
+					})
+					.on("click",{x:i,y:j,islei:lei},clickHandler)
+					.appendTo(".scene")
+				}
+			}
+			function clickHandler(e){
+				e.preventDefault()
+				if(e.which==1){
+					zuojiHandler.call(this,e)
+				}else if(e.which==3){
+					youjikHandler.call(this,e)
+				}
+			}
+			// function concat(x,y){
+			// 	return x+"-"+y
+			// }
+			function zuojiHandler(e){
+				if($(this).is(".flag")){
+					return;
+				}
+				if(e.data.islei){
+					alert("游戏失败")
+					$(".lei").addClass("show");
+				}else
+				{
+					var pos=e.data;
+					var num=0;
+					for(var i=pos.x-1;i<=pos.x+1;i++){
+						for(var j=pos.y-1;j<=pos.y+1;j++){
+							if($("#"+i+"-"+j).is(".lei")){
+								num++;
+							}
+						}
+					}
+					$(this).text(num).addClass("num")
+				}
+			}
+			function youjiHandler(e){
+				if($(this).is(".num")){
+					return 
+				}
+				$(this).toggleClass("flag");
+				if($(".flag").length==$(".lei").length){
+					if($(".flag").length==$(".lei.flag").length){
+						alert("success")
+					}else{
+						alert("wrong")
+					}
+				}
+			}
+					$(document).on("contextmenu",false)
+
+		})
+
+	</script>
+	
+</head>
+<style>
+	body{
+		background:url("bg.png") repeat 0 0;
+		background-size:cover;
+		cursor:pointer;
+	}
+		.scene{
+			width:500px;height:500px;
+			position:absolute;
+			left:0;top:0;right:0;bottom:0;
+			margin:auto;
+			border-left:1px solid gold;
+			border-top: 1px solid gold;
+		}
+		.block{
+			width:49px;height:49px;
+			background: #427353;
+			box-shadow:0px 0px 3px black inset;
+			float: left;
+			border-bottom: 1px solid red;
+			border-right: 1px solid red; 
+			text-align: center;
+			line-height:49px;
+			font-weight: bold;
+			font-size:30px;	
+		}
+		.num{
+			color:#000;
+		}
+		.show{
+			background:url(1.png);
+		}
+		.flag{
+			background:green;
+		}
+	</style>
+<body>
+	<div class="scene"></div>
+</body>
+</html>

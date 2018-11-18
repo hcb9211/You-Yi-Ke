@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>跑马灯特效</title>
+<link rel="stylesheet" href="css/index.css" />
+<style>
+  /*跑马灯效果开始*/
+  .uek_outbox{width:1170px;height:160px;margin:0 auto;position:relative;}
+  .uek_window{width:1170px;height:160px; margin:0 auto;overflow:hidden;position:relative;}
+  .uek_innerbox{width:1950px;height:100%;position:absolute;}
+  .uek_lists{width:390px; height:160px;float:left;}
+  .uek_leftbtn{position:absolute;width:30px;height:160px;left:-30px;top:0;font:40px "黑体";cursor:pointer; text-align:center;line-height:160px;transition:all 0.5s ease;}
+  .uek_leftbtn:hover{background:#ccc;color:#fff;}
+  .uek_rightbtn{position:absolute;width:30px;height:160px;right:-30px;top:0;font:40px "黑体";cursor:pointer; text-align:center;line-height:160px;transition:all 0.5s ease;}
+  .uek_rightbtn:hover{background:#ccc;color:#fff;}
+  /*跑马灯效果结束*/
+</style>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/marquee.js"></script>
+<script>
+ $(function(){
+	$(".uek_outbox").marquee($(".uek_innerbox"),$(".uek_lists"),$(".uek_leftbtn"),$(".uek_rightbtn"),1,3000)
+ }) 
+</script>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">跑马灯特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+<!--跑马灯效果开始--> 
+<div class="uek_outbox">
+  <div class="uek_leftbtn">
+    &lt;
+  </div>
+  <div class="uek_rightbtn">
+    &gt;
+  </div>
+  <div class="uek_window">
+		<ul class="uek_innerbox">
+		    <li class="uek_lists"><img src="images/gg-1.jpg" /></li> 
+			<li class="uek_lists"><img src="images/gg-2.jpg" /></li>
+            <li class="uek_lists"><img src="images/gg-3.jpg" /></li> 
+            <li class="uek_lists"><img src="images/gg-4.jpg" /></li> 
+            <li class="uek_lists"><img src="images/gg-5.jpg" /></li> 
+		</ul>
+  </div>
+</div>
+<!--跑马灯效果结束-->
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>marquee.js</b>特效函数。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>marquee.js</b>前在head标签对中引入。</dd>
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/marquee.js"&gt;&lt;/script&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	布局：需有一个父容器，父容器中分为2部分，第一部分容器中放入2个左右按钮，第二部分分为外部容器、内部容器，列表内容存放在内部容器中。
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+        <!--跑马灯效果--> 
+        &lt;div class="uek_outbox"&gt;
+          &lt;div class="uek_leftbtn"&gt;
+            &amp;lt;
+          &lt;/div&gt;
+          &lt;div class="uek_rightbtn"&gt;
+            &amp;gt;
+          &lt;/div&gt;
+          &lt;div class="uek_window"&gt;
+                &lt;ul class="uek_innerbox"&gt;
+                    &lt;li class="uek_lists"&gt;&lt;img src="images/gg-1.jpg" /&gt;&lt;/li&gt; 
+                    &lt;li class="uek_lists"&gt;&lt;img src="images/gg-2.jpg" /&gt;&lt;/li&gt;
+                    &lt;li class="uek_lists"&gt;&lt;img src="images/gg-3.jpg" /&gt;&lt;/li&gt; 
+                    &lt;li class="uek_lists"&gt;&lt;img src="images/gg-4.jpg" /&gt;&lt;/li&gt; 
+                    &lt;li class="uek_lists"&gt;&lt;img src="images/gg-5.jpg" /&gt;&lt;/li&gt; 
+                &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        <!--跑马灯效果结束-->
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：marquee</dd>
+	<dd>obj.marquee(box,list,left,right,num,movetime);</dd>
+	<dd>obj：父容器 设置相对定位(position:relative)</dd>
+	<dd>第一个参数box：内部的盒子 设置绝对定位的盒子</dd>
+	<dd>第二个参数list： 每一个小块（类名不可替换）</dd>
+	<dd>第三个参数left： 左边的按钮 设置绝对定位</dd>
+	<dd>第四个参数right： 右边的按钮 设置绝对定位</dd>
+	<dd>第五个参数num： 每次切换图片数量 </dd>
+	<dd>第六个参数movetime： 动画的间隔时间 </dd>
+	<dd>示例：<br />
+	<pre>
+	&lt;script&gt;
+		$(function(){
+	 	$(".uek_outbox").marquee($(".uek_innerbox"),$(".uek_lists"),$(".uek_leftbtn"),$(".uek_rightbtn"),1,3000)
+	 	//$(".uek_outbox") 父容器    $(".uek_innerbox") 内部容器    $(".uek_lists") 所有图片   $(".uek_leftbtn")左按钮    
+		//$(".uek_rightbtn") 右按钮  1 切换图片数量     3000动画的间隔时间  
+		}) 
+	&lt;/script&gt;
+	</pre>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    margin:0;padding:0;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    background:url("../6.jpg") center center;
+}
+.left{
+    height:700px;
+    width:25%;
+    float:left;
+    border-right:1px solid #000;
+}
+.right{
+    width:75%;height:700px;
+    float:right;
+    /*background:url("bg4.png") center;*/
+}
+.search{
+    width:79%;height:30px;
+    border-radius:5px/5px;
+    margin:20px auto;
+    border-right:0;
+}
+.search div{
+    width:30px;height:100%;
+    float:left;
+    margin-left:6px;
+    line-height:30px;
+}
+.search input{
+    width:83%;height:100%;
+    float:left;
+    box-shadow:0 0 15px #000;
+    font-family: "楷体";
+}
+.dobox{
+    width:80%;height:auto;
+    margin:20px auto;
+}
+.dobox div{
+    width:100%;height:30px;
+    cursor:pointer;
+    font-family: "楷体";
+    font-size:18px;
+    line-height:30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.newslist{
+    width:90%;
+    height:100%;
+    background:rgba(0,0,0,0);
+    color:#000;
+    float:left;
+    border:0;
+}
+.newslist:focus{
+    outline: none;
+    border:1px solid #000;
+}
+
+.done{
+    padding:5px;
+    background:gold;
+    border-radius:50%;
+}
+.add{
+    position:absolute;
+    bottom:0;left:30px;
+    width:80%;height:50px;
+}
+.add span{
+    cursor:pointer;
+    font-family: "楷体";
+    color:black;
+    font-size:18px;
+    line-height:30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.title{
+    width:96%;height:70px;
+    border-bottom:2px dashed #000;
+    margin:0 auto;
+    color:#000;
+}
+.caption{
+    width:95%;height:70px;
+    line-height:70px;
+    font-size:20px;
+    font-family: "楷体";
+    float:left;
+}
+#addRight{
+    float:right;line-height:70px;
+    font-size:20px;cursor:pointer;
+}
+
+#del:hover{
+    color: #fff80f;
+}
+.con{
+    width:96%;height:auto;
+    margin:0 auto;
+}
+.con div {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+}
+#dones{
+   margin-right:20px;
+    float:left;
+    line-height:30px;
+}
+#doing{
+    width:78%;
+    font-family: "楷体";
+    float:left;
+}
+.time{
+    float:left;
+}
+.newlist{
+    width:79%;height:30px;
+    font-family: "楷体";
+    font-size:14px;
+    line-height:30px;
+    border:0;
+    outline:none;
+    padding-left:10px;
+    float:left;
+    background: none;
+    color:#000;
+}
+.newlist:focus{
+    border:0;
+}
+#del,#dels{
+float:right;
+font-size:12px;
+line-height:30px;
+opacity:0;
+    cursor:pointer;
+transition:opacity .5s ease;
+}
+.hover:hover #del{
+    opacity:1;
+}
+.sonCon:hover #dels{
+    opacity:1;
+}
+#dels:hover{
+    color:#fff80f;
+}
+
+

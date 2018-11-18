@@ -1,0 +1,421 @@
+body,li,ul,p,pre,ol,form,input,h1,h2,h3,h4,h5,h6,a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+a img{
+    border:none;
+}
+body,html{
+   overflow-x:hidden;
+}
+/*???*/
+.kt{
+    width: 100%;
+    height: 95px;
+    background: #f6f6f6;
+}
+.kt1{
+    width: 1200px;
+    height: 95px;
+    margin:0 auto;
+}
+.zuo{
+    width: 500px;
+    height: 95px;
+}
+.zuo img{
+    margin-left: 50px;
+}
+.you{
+    width: 700px;
+    height: 95px;
+    float: right;
+    text-align: center;
+    line-height: 95px;
+}
+.you a {
+    color: #4b4b4b;
+    font-size: 18px
+}
+.qh{
+  width: 600px;
+    height:20px;
+    display: block;
+}
+.qh img{
+    margin-top: 10px;
+    height: 18px;
+    margin-left: 10px;
+}
+.qh span{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+.smallmenu{
+    display: none;
+}
+/*???????*/
+/*banner???*/
+.wb{
+    width: 100%;
+    height: 575px;
+    background: #d4d5aa;
+    position: relative;
+}
+.dh{
+    width: 100%;
+    height: 80px;
+    background: #fbfefe;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 200;
+    opacity: 0.7;
+}
+.nav{
+    width: 1200px;
+    height: 80px;
+    margin:0 auto;
+}
+.nav a{
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    float: left;
+    color: #353535;
+    font-size: 20px;
+
+}
+.nav a:hover{
+    color: #00a885;
+}
+
+.window{
+    width:100%;
+    height:500px;
+    position:relative;
+    overflow:hidden;
+}
+
+.window a{
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+.hot{
+    background: #00a885;
+}
+li{
+    float:left;
+    width:40px;
+    height:6px;
+    margin:5px;
+    background:#ccc;
+    cursor:pointer;
+
+}
+ul{
+    width:240px;
+    height:6px;
+    position:absolute;
+    left:50%;
+    bottom:40px;
+    margin-left: -50px;
+    z-index:999;
+}
+.prve{
+    width:30px;
+    height:70px;
+    position:absolute;
+    left:0;
+    top:250px;
+    display:none;/*new.js时删除，opacity.js和 index.js使用*/
+    cursor:pointer;
+
+}
+.next{
+    width:30px;
+    height:70px;
+    position:absolute;
+    right:0;
+    top:250px;
+    display:none;/*new.js时删除，opacity.js和 index.js使用*/
+    cursor:pointer;
+}
+
+/*-------------底部--------------------------*/
+.db{
+    width: 100%;
+    height: 240px;
+    background:#00a885;
+}
+.g-p1{
+    width:1200px;
+    height:75px;
+    margin:0 auto;
+    color:#fff;
+    line-height:120px;
+    text-align: center;
+    font-family:微软雅黑;
+}
+.foot-a{
+    margin-right:3px;
+    color:#fff;
+    font-size: 16px;
+
+}
+.yi{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.yi1{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.yi2{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.db1{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+.db1 img{
+    margin-top: 10px;
+    height: 16px;
+    margin-left: 8px;
+}
+.db1 span{
+    color:#fff;
+}
+.db1 a{
+    color:#fff;
+}
+/*返回顶部*/
+.backtop {
+    display: block;
+    width: 30px;
+    height: 31px;
+    position: fixed;
+    right: 5%;
+    /*margin-right: 200px;*/
+    bottom:170px;
+    cursor: pointer;
+    z-index: 200;
+}
+/*------------------------------------*/
+@media screen and (max-width:750px){
+    .kt{
+        width: 100%;
+        height: 95px;
+        background: #f6f6f6;
+        position: relative;
+        cursor: pointer;
+    }
+    .zuo{
+        height: 95px;
+        float: left;
+    }
+    .zuo img{
+        margin-left: 50px;
+        width: 128px;
+        height: 78px;
+        margin-top: 20px;
+    }
+    .you{
+        height: 95px;
+        float: right;
+    }
+    .you a {
+        color: #4b4b4b;
+        font-size: 18px
+    }
+    .qh{
+       display: none;
+    }
+
+    .anniu{
+        width: 35px;
+        height: 30px;
+        background: url(../image/cd.png);
+       background-size: 100% 30px;
+        position: absolute;
+        top:35px;
+        right: 50px;
+        z-index: 100;
+    }
+    .smallmenu{
+       display: block;
+    }
+   .smallmenuxl{
+        width: 200px;
+        height:400px ;
+        position: absolute;
+        top:95px;
+        right: 0;
+       z-index: 1000;
+       background: #fff;
+        box-sizing:border-box;
+    }
+    .smallmenuxl a{
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        display: block;
+    }
+    .smallmenuxl a:hover{
+        color:#00a885 ;
+        background: #cacaca;
+    }
+    .you img{
+       display: none;
+    }
+    .you span{
+        display: none;
+    }
+    /*???????*/
+    /*banner???*/
+    .wb{
+        width: 100%;
+        height:650px;
+        background:#a9aa88;
+        position: relative;
+    }
+    .dh{
+       display: none;
+    }
+    .window{
+        width:100%;
+        height:575px;
+        position:relative;
+        overflow:hidden;
+    }
+    .window a{
+        position:absolute;
+        left:0;
+        top:0;
+
+    }
+    .window a img{
+        height: 575px;
+    }
+    .hot{
+        background: #00a885;
+    }
+    li{
+        float:left;
+        width:40px;
+        height:6px;
+        margin:5px;
+        background:#ccc;
+        cursor:pointer;
+
+    }
+    ul{
+        width:240px;
+        height:6px;
+        position:absolute;
+        left:50%;
+        bottom:40px;
+        margin-left: -50px;
+        z-index:999;
+    }
+    .prve{
+        width:30px;
+        height:70px;
+        position:absolute;
+        left:0;
+        top:250px;
+        display:none;/*new.js时删除，opacity.js和 index.js使用*/
+        cursor:pointer;
+
+    }
+    .next{
+        width:30px;
+        height:70px;
+        position:absolute;
+        right:0;
+        top:250px;
+        display:none;/*new.js时删除，opacity.js和 index.js使用*/
+        cursor:pointer;
+    }
+
+
+    /*底部响应*/
+
+
+    .db{
+        width: 100%;
+        height: 150px;
+        background:#00a885;
+    }
+    .g-p1{
+     display: none;
+    }
+    .foot-a{
+        margin-right:3px;
+        color:#fff;
+        font-size: 16px;
+
+    }
+    .yi{
+        display: none;
+    }
+    .yi1{
+        text-align:center;
+        line-height: 50px;
+        font-size: 15px;
+        color:#fff;
+    }
+    .yi2{
+        text-align:center;
+        line-height: 30px;
+        font-size: 15px;
+        color:#fff;
+    }
+    .db1{
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px;
+    }
+    .db1 img{
+        margin-top: 10px;
+        height: 16px;
+        margin-left: 8px;
+    }
+    .db1 span{
+        color:#fff;
+    }
+    .db1 a{
+        color:#fff;
+    }
+    /*返回顶部*/
+    .backtop {
+        display:none;
+    }
+
+
+}
+
+
+
+

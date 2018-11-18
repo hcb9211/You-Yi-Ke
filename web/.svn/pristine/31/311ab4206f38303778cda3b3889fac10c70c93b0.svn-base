@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src='angular.min.js'></script>
+	<link rel="stylesheet" href="ssc.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<form ng-app="myapp" ng-controller="myctrl" name="myForm">
+	<input type="number" class="form-control" id="prices"
+			   placeholder="现有资金(元)" ng-model="y" name="myPrices" >
+	<input type="number" class="form-control" id="price"
+			   placeholder="起步资金(元)" ng-model="x" name="myPrice">
+	<span ng-show="myForm.myPrices.$error.number" class="colors pull-left">请输入正确的资金</span>
+	<span ng-show="myForm.myPrice.$error.number" class="color pull-right">请输入正确的资金</span>
+	<table class="box">
+		<tr>
+			<td>倍投</td>
+			<td>倍数</td>
+			<td>使用/元</td>
+			<td>剩余/元</td>
+			<td>盈利/元</td>
+		</tr>
+		<tr x in qishus>
+			<td>一期</td>
+			<td>1倍</td>
+			<td >{{x * 1}}</td>
+			<td >{{y - x}}</td>
+			<td class="vals">{{( x * 1.7) - x}}</td>
+		</tr>
+		<tr>
+			<td>二期</td>
+			<td>3倍</td>
+			<td>{{x * 3}}</td>
+			<td >{{y - (x * 3) - x}}</td>
+			<td>{{(x * 3) * 1.7 - (x * 3) - x}}</td>
+		</tr>
+		<tr>
+			<td>三期</td>
+			<td>9倍</td>
+			<td>{{x * 9}}</td>
+			<td>{{y - (x * 9) - (x * 3) -x}}</td>
+			<td>{{(x * 9) * 1.7 - (x * 9) - (x * 3) - x}}</td>
+		</tr>
+		<tr>
+			<td>四期</td>
+			<td>27倍</td>
+			<td>{{x * 27}}</td>
+			<td>{{y - (x * 27) - (x * 9) -(x * 3) -x}}</td>
+			<td>{{(x * 27) * 1.7 - (x * 27) - (x * 9) -(x * 3) -x}}</td>
+		</tr>
+		<tr>
+			<td>五期</td>
+			<td>81倍</td>
+			<td>{{x * 81}}</td>
+			<td>{{y - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+			<td>{{(x * 81) * 1.7 - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+		</tr>
+		<tr>
+			<td>六期</td>
+			<td>243倍</td>
+			<td>{{x * 243}}</td>
+			<td>{{y - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+			<td>{{(x * 243) * 1.7 - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+		</tr>
+		<tr>
+			<td>七期</td>
+			<td>729倍</td>
+			<td>{{x * 729}}</td>
+			<td>{{y - (x * 729) - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+			<td>{{(x * 729) * 1.7 - (x * 729) - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+		</tr>
+		<tr>
+			<td>八期</td>
+			<td>2187 倍</td>
+			<td>{{x * 2187}}</td>
+			<td>{{y - (x * 2187) - (x * 729) - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+			<td>{{(x * 2187) * 1.7 - (x * 2187) - (x * 729) - (x * 243) - (x * 81) - (x * 27) - (x * 9) - (x * 3) -x}}</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
+<script>
+	var app = angular.module('myapp',[]);
+	app.controller('myctrl',function ($scope) {
+
+	})
+</script>
+

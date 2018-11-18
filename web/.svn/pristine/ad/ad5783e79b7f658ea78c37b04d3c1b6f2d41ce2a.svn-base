@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	@font-face {font-family: 'tianmao' ;
+    src: url('icon/iconfont.eot'); /* IE9*/
+    src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.one{
+	width:20px;height:22px;
+	font-family: "tianmao" !important;
+	margin:0 auto;
+	display: block;
+	position: relative;
+	top: 1px;
+	text-align:center;
+	line-height: 22px;
+	font-size: 20px;
+	font-weight:normal;
+	color: #dd2727;
+	cursor:pointer;
+
+}
+	.fangdabox{
+		width:150px;height:150px;
+		margin:20px auto;
+		text-align:center;
+		line-height:150px;
+		border:1px solid green;
+	}
+	.fangda{
+		vertical-align: middle;
+		width:80%;
+		transition:width 0.3s ease-out;
+	}
+	.fangda:hover{
+		width:9em;
+	}
+</style>
+<script src="js/jquery.js"></script>
+<script>
+	$(function () {
+		$(".one").click(function(){
+			$(this).addClass("fangdabox").css("color","red")
+		})
+	})
+</script>
+<body>
+	<i class="one">&#xf0208;</i>
+	<div class="fangdabox">
+		<img src="img/con8.jpg" alt="" class="fangda">
+	</div>
+</body>
+</html>

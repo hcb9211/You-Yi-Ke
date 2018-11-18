@@ -1,0 +1,373 @@
+body,li,ul,p,pre,ol,form,input,h1,h2,h3,h4,h5,h6,a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "΢���ź�";
+}
+a{
+    text-decoration: none;
+}
+a img{
+    border:none;
+}
+body,html{
+   overflow-x:hidden;
+}
+/*???*/
+.kt{
+    width: 100%;
+    height: 95px;
+    background: #f6f6f6;
+}
+.kt1{
+    width: 1200px;
+    height: 95px;
+    margin:0 auto;
+}
+.zuo{
+    width: 450px;
+    height: 95px;
+    float: left;
+}
+.zuo img{
+    margin-left: 50px;
+}
+.you{
+    width: 750px;
+    height: 95px;
+    float: right;
+    line-height: 95px;
+}
+.you a {
+    color: #4b4b4b;
+    font-size: 18px
+}
+.qh{
+    height:95px;
+    text-align: center;
+    line-height: 95px;
+}
+.qh img{
+    margin-top: 10px;
+    height: 19px;
+    margin-left: 10px;
+}
+.qh span{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+.smallmenu{
+    display: none;
+}
+/*???????*/
+/*banner???*/
+.wb{
+    width: 100%;
+    height:575px;
+    background: #eaeaea;
+    position: relative;
+}
+.dh{
+    width: 100%;
+    height: 80px;
+    background: #fbfefe;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 200;
+    opacity: 0.7;
+}
+.nav{
+    width: 1200px;
+    height: 80px;
+    margin:0 auto;
+}
+.nav a{
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    float: left;
+    color: #353535;
+    font-size: 20px;
+
+}
+.nav a:hover{
+    color: #00a885;
+}
+.swiper-slide img{
+    display:block;
+    width:100%;height:575px;
+}
+/*-------------�ײ�--------------------------*/
+.db{
+    width: 100%;
+    height: 240px;
+    background:#00a885;
+}
+.g-p1{
+    width:1200px;
+    height:75px;
+    margin:0 auto;
+    color:#fff;
+    line-height:120px;
+    text-align: center;
+    font-family:΢���ź�;
+}
+.foot-a{
+    margin-right:3px;
+    color:#fff;
+    font-size: 16px;
+
+}
+.yi{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.yi1{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.yi2{
+    text-align:center;
+    line-height: 30px;
+    font-size: 15px;
+    color:#fff;
+}
+.db1{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+.db1 img{
+    margin-top: 10px;
+    height: 16px;
+    margin-left: 8px;
+}
+.db1 span{
+    color:#fff;
+}
+.db1 a{
+    color:#fff;
+}
+/*���ض���*/
+.evm{
+    width: 30px;
+    height: 61px;
+    position: fixed;
+    right: 5%;
+    bottom:170px;
+    cursor: pointer;
+    display: block;
+}
+.backtop {
+    width: 30px;
+    height: 31px;
+}
+.er{
+    width: 30px;
+    height: 30px;
+    background: url(../image/40.jpg);
+    background-size:100% 100%;
+}
+.ewm{
+    width:160px;
+    height:190px ;
+    border:2px solid #00a885;
+    position: fixed;
+    right: 10%;
+    bottom:160px;
+    background:#fff;
+    box-shadow:0 0 5px #aaa;
+    display:none;
+}
+.ewm img{
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.ewm p{
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+/*------------------------------------*/
+@media screen and (max-width:750px){
+    .kt{
+        width: 100%;
+        height: 95px;
+        background: #f6f6f6;
+        position: relative;
+        cursor: pointer;
+    }
+    .zuo{
+        height: 95px;
+        float: left;
+    }
+    .zuo img{
+        margin-left: 50px;
+        width: 128px;
+        height: 58px;
+        margin-top: 30px;
+    }
+    .you{
+        height: 95px;
+        float: right;
+    }
+    .you a {
+        color: #4b4b4b;
+        font-size: 18px
+    }
+    .qh{
+       display: none;
+    }
+
+    .anniu{
+        width: 35px;
+        height: 30px;
+        background: url(../image/cd.png);
+       background-size: 100% 30px;
+        position: absolute;
+        top:35px;
+        right: 50px;
+        z-index: 100;
+    }
+    .smallmenu{
+       display: block;
+    }
+   .smallmenuxl{
+        width: 100%;
+        height:auto ;
+        position: absolute;
+        top:95px;
+        right: 0;
+       display: none;
+       z-index: 1000;
+       background: #fff;
+        box-sizing:border-box;
+    }
+    .leaner{
+        max-width: 85%;
+        height:auto;
+        margin: 0 auto;
+    }
+    .leaner-onename{
+        width:100%;
+        height:40px;
+        border-bottom: 1px solid #E3E3E3;
+        font-size: 14px;
+        color: #333333;
+        line-height: 40px;
+        float: left;
+        cursor:pointer;
+    }
+    .leaner-onename a{
+        height: 40px;
+    }
+    .leaner-twoname{
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em;
+        height:auto;
+        display: none;
+    }
+    .leaner-twoname li a{
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .add{
+        width: 40px;
+        height: 40px;
+        float: right;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        color: #333333;
+    }
+    .leaner-onename li,.leaner-twoname li{
+        border-bottom:1px solid #e3e3e3;
+    }
+
+    /*----------------------*/
+    .gang-11{
+        float: left;
+    }
+    .gang-22{
+        display: block;
+        width: 60px;height: 30px;
+        float: right;
+        margin-right: 25px;
+        transition: all 0.5s;
+    }
+    .you img{
+       display: none;
+    }
+    .you span{
+        display: none;
+    }
+    /*???????*/
+    /*banner???*/
+    .wb{
+        width: 100%;
+        height:240px;
+        background:#a9aa88;
+        position: relative;
+    }
+    .dh{
+       display: none;
+    }
+    .swiper-slide img{
+        display:block;
+        width:100%;height:240px;
+    }
+
+    .db{
+        width: 100%;
+        height: 150px;
+        background:#00a885;
+    }
+    .g-p1{
+     display: none;
+    }
+    .foot-a{
+        margin-right:3px;
+        color:#fff;
+        font-size: 16px;
+
+    }
+    .yi{
+        display: none;
+    }
+    .yi1{
+        text-align:center;
+        line-height: 50px;
+        font-size: 22px;
+        color:#fff;
+    }
+    .yi2{
+        text-align:center;
+        line-height: 30px;
+        font-size: 22px;
+        color:#fff;
+    }
+    .db1{
+       display: none;
+    }
+    /*���ض���*/
+    .evm{
+        display: none!important;
+    }
+}
+
+
+
+

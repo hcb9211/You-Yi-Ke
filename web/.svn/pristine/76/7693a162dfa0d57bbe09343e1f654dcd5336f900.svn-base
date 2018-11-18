@@ -1,0 +1,395 @@
+
+/*?????????????????????????????????????????*/
+.cent{
+    width: 100%;
+    height: auto;
+    background:#f2ecec;
+}
+.box{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+    overflow: hidden;
+}
+.cptx1{
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    line-height:90px;
+    background: #00a885;
+    color: #f7f3f3;
+    position: relative;
+    top:35px;
+    font-size: 20px;
+}
+.cptx1 img{
+    position: absolute;
+    top:25px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+}
+.box .top{
+    width:300px;
+    height:420px;
+    margin-top: 35px;
+}
+.top .btn{
+    width:300px;
+    height:70px;
+    background: #fcfeff;
+    text-align: center;
+    line-height:70px;
+}
+.btn a{
+    width:300px;
+    height:70px;
+    background: #fcfeff;
+    text-align: center;
+    line-height:70px;
+    display: block;
+}
+.box .bottom{
+    width:880px;
+    height:auto;
+    float: right;
+    margin-top:-510px;
+}
+.bottom .con{
+    width:880px;
+    height:auto;
+    background: #fff;
+    display: none;
+}
+.top .active{
+    border-left:5px solid #00a885 ;
+    background:#d0d0d0;
+    width: 295px;
+}
+.cf:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.lx{
+    width: 300px;
+    height:350px;
+    margin-top: 20px;
+    background: #fff;
+}
+.gg{
+    width: 300px;
+    height: 420px;
+    margin-top: 20px;
+    background: #fff;
+}
+.cptx{
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    line-height:90px;
+    background: #00a885;
+    color: #f7f3f3;
+    position: relative;
+    top:0;
+    font-size: 20px;
+}
+.cptx img{
+    position: absolute;
+    top:25px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+}
+.lx1{
+    width: 300px;
+    height: 220px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx1 p{
+    width: 300px;height: 30px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+.lx2{
+    width: 300px;
+    height: 290px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx2 p{
+    width: 300px;height: 30px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a{
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a:hover{
+    color: #00a885;
+}
+.yindao{
+    width: 870px;
+    height: 80px;
+    background:#fff;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.yindao p{
+    margin-left: 20px;
+    color: #828282;
+}
+.yindao p a{
+    color: #828282;
+}
+.con1{
+    width: 900px;
+    height:380px;
+    margin: 0 auto;
+}
+
+.xwlb{
+    width: 860px;
+    height:auto ;
+    margin: 0 auto 0;
+    background: #fff;
+}
+.xw{
+    width: 830px;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1px dashed #4c4c4c;
+}
+.left{
+    width: 220px;
+    height: 165px;
+    float: left;
+    background: #ffffff;
+}
+.left a img{
+    margin-top: 17px;
+}
+.left1{
+    width: 610px;
+    height: auto;
+    float: right;
+    background: #ffffff;
+}
+.left1 a span{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #3b3b3b;
+    margin-left: 15px;
+}
+.left1 a p{
+    width: 600px;
+    height: auto;
+    line-height: 30px;
+    color: #3b3b3b;
+    font-size: 14px;
+}
+.hy{
+    width: 860px;
+    height: 130px;
+    text-align: center;
+    line-height: 100px;
+    background: #fff;
+    margin: 0 auto;
+}
+.hy a{
+    margin-left: 10px;
+    color: #828282;
+}
+.hy a button{
+    width:45px;
+    height: 45px;
+    color: #828282;
+    background: #f7f7f7;
+    border-radius: 7px;
+    border:1px solid #aaaaaa;
+}
+.hy a button img{
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+}
+.clear{
+    clear:both;
+}
+/*----------------------
+-----------------------------------
+-------------*/
+
+@media screen and (max-width:750px){
+    .cent{
+        width: 100%;
+        height: auto;
+        background:#f2ecec;
+    }
+    .box{
+        width:100%;
+        height:auto;
+        margin:0 auto;
+    }
+    .cptx1{
+      display: none;
+    }
+    .box .top{
+        display: none;
+    }
+    .box .bottom{
+        width:100%;
+        height:auto;
+        margin-top:-55px;
+    }
+    .bottom .con{
+        width:100%;
+        height:auto;
+        margin: 0 auto;
+        background: #fff;
+        display: none;
+    }
+    .top .active{
+        border-left:5px solid #00a885 ;
+        background:#d0d0d0;
+        width: 295px;
+    }
+    .cf:after{
+        content:"";
+        display: block;
+        clear:both;
+    }
+    .lx{
+        display: none;
+    }
+    .gg{
+        display: none;
+    }
+    .cptx{
+        display: none;
+    }
+
+    .yindao{
+        width: 100%;
+        height: 80px;
+        background:#fff;
+        margin: 0 auto;
+        line-height: 80px;
+    }
+    .yindao p{
+        margin-left: 20px;
+        color: #828282;
+    }
+    .yindao p a{
+        color: #828282;
+    }
+    .xwlb{
+        width: 100%;
+        height:auto ;
+        margin: 0 auto 0;
+        background: #fff;
+    }
+    .xw{
+        width:92%;
+        height: auto;
+        margin: 0 auto;
+        border-bottom: 1px dashed #4c4c4c;
+    }
+    .left{
+        width: 40%;
+        height: 165px;
+        float: left;
+        background: #ffffff;
+    }
+    .left a img{
+        width: 90%;
+        height:120px;
+        margin-top: 17px;
+    }
+    .left1{
+        width: 60%;
+        height: auto;
+        float: right;
+        background: #ffffff;
+    }
+    .left1 a span{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+        color: #3b3b3b;
+        margin-left: 15px;
+    }
+    .left1 a p{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        line-height: 30px;
+        color: #3b3b3b;
+        font-size: 14px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .hy{
+        width: 100%;
+        height: 130px;
+        text-align: center;
+        line-height: 100px;
+        background: #fff;
+        margin: 0 auto;
+    }
+    .hy a{
+        margin-left: 5px;
+        color: #828282;
+    }
+    .hy a button{
+        width:30px;
+        height:30px;
+        color: #828282;
+        background: #f7f7f7;
+        border-radius: 7px;
+        border:1px solid #aaaaaa;
+    }
+    .hy a button img{
+        width: 8px;
+        height: 8px;
+        margin-top: 3px;
+    }
+    .clear{
+        clear:both;
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

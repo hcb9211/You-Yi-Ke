@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>有遮罩的放大镜</title>
+	<script src="function.js"></script>
+	<style>
+	.small,.big{
+		width:576px;
+		height:360px;
+		border:1px solid black;
+		float:left;
+		position: relative;
+	}
+	.big{
+		overflow:hidden;
+		display:none;
+		margin-left:30px;
+		position:relative;
+	}
+	.big img{
+		position:absolute;
+	}
+	.quyu{
+		width:346px;
+		height:216px;
+		position: absolute;
+		left:0;
+		top:0;
+		background:rgba(0,0,0,0.2);
+		display:none;
+
+	}
+	.show{
+		width:100%;
+		height:100%;
+		position:absolute;
+		left:0;
+		top:0;
+	
+	}
+	</style>
+</head>
+<body>
+	<div class="small">
+		<img src="002.jpg" alt="" style="width:576px">
+		<div class="quyu"></div>  
+		<div class="show"></div>  <!-- 避免事件流的影响 -->
+	</div>
+	<div class="big">
+		<img src="002.jpg" alt="" style="height:600px">
+		
+	</div>
+</body>
+<script>
+	var small=$(".small")[0]
+	var big=$(".big")[0]
+	var quyu=$(".quyu")[0]
+	var bigimg=$("img",big)[0]
+
+	hover(small,function(){   //鼠标滑到小图的盒子上时，让quyu出现，放大图的盒子也出现。
+		big.style.display="block"
+		quyu.style.display="block"
+	},function(){             //离开的时候，两个都消失
+		big.style.display="none"
+		quyu.style.display="none"
+	})
+	small.onmousemove=function(e){  //事件对象涉及到的属性总结一下
+		var ev=e||window.event
+		var ox=ev.offsetX  //鼠标到盒子边界的距离
+		var oy=ev.offsetY
+		//quyu相当于一个鼠标
+		var quyux=ox-quyu.offsetWidth/2  //让鼠标到quyu中间
+		var quyuy=oy-quyu.offsetHeight/2
+		if(quyux<0){   //限定quyu移动的范围
+			quyux=0
+		}
+		if(quyux>(small.offsetWidth-quyu.offsetWidth)){
+			quyux=small.offsetWidth-quyu.offsetWidth
+		}
+		if(quyuy<0){
+			quyuy=0
+		}
+		if(quyuy>(small.offsetHeight-quyu.offsetHeight)){
+			quyuy=small.offsetHeight-quyu.offsetHeight
+		}
+
+		quyu.style.left=quyux+"px"
+		quyu.style.top=quyuy+"px"
+
+		var imgx=quyux/(small.offsetWidth-quyu.offsetWidth)   //计算：比例=走了的距离/能走的距离
+		var imgy=quyuy/(small.offsetHeight-quyu.offsetHeight)
+
+		bigimg.style.left=-imgx*(bigimg.offsetWidth-big.offsetWidth)+"px"  //大图走的距离=大图能走的距离x比例
+		bigimg.style.top=-imgy*(bigimg.offsetHeight-big.offsetHeight)+"px"
+	}
+</script>
+</html>

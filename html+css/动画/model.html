@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src='function.js'></script>
+<!-- <script src="model.js"></script> -->
+<script src="animate.js"></script>
+<script>
+	window.onload=function(){
+		var btn=$("#btn");
+		var one=$(".one")[0];
+		btn.onclick=function(){
+		animate(one,{width:100,height:100})
+	}
+}
+</script>
+<style>
+	.one{
+		width: 200px;
+		height: 200px;
+		background: blue;
+		
+	}
+</style>
+<body>
+	<input type="button" value="开始动画" id="btn">
+	<div class="one"></div>
+</body>
+</html>

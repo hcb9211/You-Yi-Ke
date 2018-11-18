@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script  src="../兼容函数总结/functionall.js"></script>
+<script  src="../兼容函数总结/animate.js"></script>
+	<style>
+     .box{
+     	width: 200px;
+     	height: 200px;
+     	border: 1px solid red;
+     	background: red;
+     	position: fixed;
+     	border-radius: 100px;
+     }
+     .close{
+     	width: 50px;
+     	height: 50px;
+     	position: absolute;
+     	right:30px;
+     	top:30px;
+        color:white;
+        font-weight: bold;
+        cursor:pointer;
+
+     }
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="close">X</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		var box=$(".box")[0];
+        var close=$(".close")[0]
+		var sheedx=5;
+		var sheedy=5;
+		var cw=document.documentElement.clientWidth;
+		var ch=document.documentElement.clientHeight;
+
+		window.onresize=function(){//窗口改变事件
+        cw=document.documentElement.clientWidth;
+		ch=document.documentElement.clientHeight;
+		}
+		var ow=box.offsetWidth;
+		var oh=box.offsetHeight;
+		var t=setInterval(function(){
+			var x=box.offsetLeft+sheedx;
+			var y=box.offsetTop+sheedy;
+              
+              if(x>(cw-ow)){//右边
+			   x=cw-ow;
+			   sheedx*=-1;//改变方向
+		}
+			  if(x<=0){
+					x=0;
+					sheedx*=-1;
+		}
+			  if(y>=(ch-oh)){
+					y=ch-oh;
+					sheedy*=-1;//改变方向
+		}
+			  if(y<=0){
+					y=0;
+					sheedy*=-1;
+		}
+			box.style.left=x+"px";
+			box.style.top=y+"px";
+		},60)
+        
+        box.onmouseover=function(){
+        clearInterval(t)
+        }
+        box.onmouseout=function(){
+        	
+        }
+		close.onclick=function(){
+			box.style.display="none";
+		}
+	})
+
+</script>
+</html>

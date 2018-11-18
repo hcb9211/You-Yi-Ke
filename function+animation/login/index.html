@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery.validate.js'></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            $("form[name=myform]").validate({
+
+            })
+        })
+    </script>
+</head>
+<body>
+<main>
+    <section>
+        <div class="login">
+            <h3>账户登录</h3>
+            <form action="hcb.jpg" method="get" id="myform" name="myform">
+                <div class="cont">
+                    <div class="icon-user"></div>
+                    <input type="text" name="text" id="user" placeholder="手机号/会员名/邮箱"  required data-msg-required="请输入正确会员名" autocomplete="off" pattern="/^\w/{8}$">
+                </div>
+                <div class="pass">
+                    <div class="icon-password"></div>
+                    <input type="password" name="password" id="password" required required data-msg-required="请输入正确密码" pattern="^\d{8}$">
+                    <div class="icon-jianpan"></div>
+                </div>
+            <div class="forget">
+                <a href="forget.html" class="forget_left">忘记登录密码</a>
+                <a href="enroll.html" class="forget_right">免费注册</a>
+            </div>
+            <input type="submit"  name="submit" value="登 录" id="submit" >
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

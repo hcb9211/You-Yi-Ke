@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>悬浮窗</title>
+	<script src='js/float.js'></script>
+	<script src='js/function.js'></script>
+	<script src='js/animate.js'></script>
+<style>
+	.float{
+		width: 100px;
+		height: 200px;
+		background:#ccc;
+		position: absolute;
+		left:0;top:0;
+	}
+	.close{
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+		position: absolute;
+		top:0px;right:0px;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.close:hover{
+		background: red;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div class="float">
+		<div class="close">X</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<style>
+	body{
+		position: relative;
+	}
+    .box{
+    	width: 50px;
+    	height: 50px;
+    	background: blue;
+    	position: absolute;
+    	left:0;
+    	top:0;
+    }
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+
+<script>
+	$(function(){
+		var box=$(".box")[0];
+		
+		var cw=getCW();//浏览器的高度
+		var ch=getCH();//浏览器的高度
+		var ow=box.offsetWidth;
+		var oh=box.offsetHeight;
+		box.onmousedown=function(e){
+			 var ev=e||window.event;
+			 var ox=ev.offsetX;
+			 var oy=ev.offsetY;
+			 //阻止浏览器默认行为
+			if (ev.preventDefault ){
+			ev.preventDefault();
+			} //阻止默认浏览器动作(W3C) 
+			else{
+				ev.returnValue = false;
+			}
+			document.onmousemove=function(e){//把box移动时的事件转移到document上，事件委托思想,可以快速移动了
+			 var ev=e||window.event;
+			 var cx=ev.clientX;
+			 var cy=ev.clientY;
+			 var newx=cx-ox;
+			 var newy=cy-oy;
+			
+			 if(newx<=0){//限制移动的范围
+			 	newx=0;
+			 }
+			 if(newx>=(cw-ow)){
+             newx=cw-ow;
+			 }
+			 if(newy<=0){
+             newy=0;
+			 }
+			 if(newy>=(ch-oh)){
+			 	newy=ch-oh;
+			 }
+             box.style.left=(newx)+"px"
+             box.style.top=(newy)+"px"
+			}	
+		}
+		box.onmouseup=function(){
+         document.onmousemove=null;
+		}
+	})
+</script>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>构造函数实现数组的练习</title>
+	<script>
+    function myArray(){
+    	//长度
+      this.length=arguments.length;
+      //下标
+      for(var i=0;i<this.length;i++){
+      	this[i]=arguments[i];
+      }
+      //最大值
+      this.arrMax=function(){
+      	 var max=this[0];
+      	 for(var i=1;i<this.length;i++){
+      	 	if(max<this[i]){
+      	 		max=this[i]
+      	 	}
+      	 }
+      	 return max;
+      }
+      //最小值
+      this.arrMin=function(){
+      	 var min=this[0];
+      	 for(var i=1;i<this.length;i++){
+      	 	if(min>this[i]){
+      	 		min=this[i];
+      	 	}
+      	 }
+      	 return min;
+      }
+      //排序
+      this.sorts=function sorts(b){
+      	  var b= b ||">";
+      	  var newarr=[];
+      	  for(var i in this){
+      	  	  newarr[i]=this[i];
+      	  }
+      	   for(var i=0;i<newarr.length;i++){
+                 for(var j=i+1;j<newarr.length;j++){
+                 	if(b==">"){
+                 	  if(newarr[i]<newarr[j]){
+                         var temp;
+                         temp=newarr[i];
+                         newarr[i]=newarr[j];
+                         newarr[j]=temp;
+                 		}
+                 	}else if(b=="<"){
+                 	 if(newarr[i]>newarr[j]){
+                 		 var temp;
+                 		 temp=newarr[i];
+                 		 newarr[i]=newarr[j];
+                         newarr[j]=temp;
+                 		}
+                 	}
+                 }  
+      	      }
+      	      return newarr;
+           }
+    //删除空值
+ this.qukong=function(){
+ 	var newarr=[];
+ 	var num=0;
+ 	for(var i=0;i<this.length;i++){
+ 	  if(this[i]!=undefined){
+ 	  	newarr[num]=this[i];
+ 	  	num++;
+ 	  }
+ 	}
+ 	return newarr;
+ }
+ //删除重复值
+ this.checkR=function(){
+   var newarr=[];
+   var num=0;
+   for(var i=0;i<this.length;i++){
+   	  var flag=true;
+   	  for(var j=i+1;j<this.length;j++){
+   	  	if(this[i]==this[j]){
+   	  	  flag=false;
+   	  	   break;
+   	  	}
+   	  }
+   	  if(flag){
+   	  	newarr[num]=this[i];
+   	  	num++;
+   	  }
+   }
+   return newarr;
+ }
+    }
+
+ var arr=new myArray(12,undefined,undefined,34,undefined,56,67);
+ var arr2=new myArray(2,3,2,4,3,5,6);
+ alert(arr.length);   
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

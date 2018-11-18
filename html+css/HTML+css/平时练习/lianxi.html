@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数之前的联系</title>
+	<script>
+  // 计算器
+     /*window.onload=function(){
+     	var num1=document.getElementById('num1');
+     	var num2=document.getElementById('num2');
+     	var ysf=document.getElementById('ysf');
+     	var result=document.getElementById('result');
+        result.onfocus=function(){
+        	var num1v=parseFloat(num1.value);
+        	var num2v=parseFloat(num2.value);
+            var ysfv=ysf.value;
+            switch(ysfv){
+            	case '+':
+            	   alert(num1v+num2v);
+            	   break;
+            	case '-':
+            	   alert(num1v-num2v);
+            	   break;
+            	case '*':
+            	   alert(num1v*num2v);
+            	   break;
+            	 case '/':
+            	   alert(num1v/num2v);
+            	   break;
+                case '%':
+            	   alert(num1v%num2v);
+            	   break;
+            	 default:
+            	    alert('undefinde')
+
+            }
+        }
+     }*/
+
+// 三元运算符
+/*var a=prompt('请输入一个数字');
+a>=100?alert('大于100'):alert('小于100');*/
+
+// 十成十表格
+/*document.write('<table>');
+   for(var i=0;i<10;i++){
+     document.write('<tr>')
+        for(var j=0;j<10;j++){
+          if(j%2==0){
+            document.write('<td bgcolor=red>')
+          }else{
+            document.write('<td bgcolor=green>')
+          }
+          document.write('胖子')
+          document.write('</td>')
+        }
+     document.write('</tr>')
+   }
+document.write('</table>')*/
+
+// 九九乘法表
+/*for(var hang=1;hang<=9;hang++){
+  for(var lie=1;lie<=hang;lie++){
+    if(lie==2&&(hang==3||hang==4)){
+      document.write(hang+'*'+lie+'='+hang*lie+'&nbsp; ')
+    }else{
+      document.write(hang+'*'+lie+'='+hang*lie+'&nbsp;')
+    }
+  }
+  document.write("<br>")
+}*/
+
+// 3次密码超额
+/*for(var i=1;i<=3;i++){
+  var a=prompt('请输入密码');
+  var b="hcb";
+  if(a==b){
+    alert('登录成功');
+    break;
+  }else{
+    if(i==3){
+      alert('输入密码超额')
+    }else{
+      alert('密码错误，请重新输入')
+    }
+  }
+}*/
+
+// 最大值最小值
+/*var arr=[123,56,23,45,78];
+function arrVal(arr,type)
+{
+  var max=arr[0]
+  var type=type||'min'
+  for(var i=0;i<arr.length;i++)
+  {
+    if(type=='max')
+    {
+      if(arr[i]>max)
+      {
+        max=arr[i]
+      }
+    }
+    else if(type=='min')
+    {
+      if(arr[i]<max)
+      {
+        max=arr[i]
+      }
+    }
+  }
+  return max;
+}
+document.write(arrVal(arr,'max'))*/
+
+
+// 数组排序
+var arr=[2,3,45,12,36,43,76];
+ /*function arrSort(arr,type)
+ {
+  for(i=0;i<arr.length;i++)
+  {
+    for(j=i+1;j<arr.length;j++)
+    {
+      if(type=='max')
+      {
+        if(arr[i]<arr[j])
+        {
+          var temp=arr[i];
+          arr[i]=arr[j];
+          arr[j]=temp;
+        }
+      }
+      if(type=='min')
+      {
+        if(arr[i]>arr[j])
+        {
+         var temp=arr[i];
+         arr[i]=arr[j];
+         arr[j]=temp;
+        }
+      }
+    }
+  }
+  return arr;
+ }
+ document.write(arrSort(arr,'max'))*/
+
+ // 第二种方法
+/*function arrOrder(arr,callback)
+{
+  for(i=0;i<arr.length;i++)
+  {
+    for(j=i+1;j<arr.length;j++)
+    {
+      if(callback(arr[i],arr[j]))
+      {
+        var temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+      }
+    }
+  }
+  return arr;
+}
+document.write(arrOrder(arr,function(a,b){
+    return a<b
+}))*/
+
+// 删除重复值
+/*var arr=[1,2,4,6,4,3,2,3,2,3];
+function arrRepeat(arr)
+{
+  var newarr=[]
+  for(i=0;i<arr.length;i++)
+  {
+    var flag=true;
+    for(j=i+1;j<arr.length;j++)
+    {
+      if(arr[i]==arr[j])
+      {
+        var flag=false;
+        break;
+      }
+    }
+    if(flag)
+    {
+      newarr.push(arr[i])
+    }
+  }
+  return newarr
+}
+document.write(arrRepeat(arr))*/
+
+
+// 删除指定值
+/*var arr=[12,34,45,56,54];
+function arrDel(arr,val)
+{
+  var newarr=[]
+  for(i=0;i<arr.length;i++)
+  {
+    if(arr[i]!=val)
+    {
+      newarr.push(arr[i])
+    }
+  }
+  return newarr
+}
+document.write(arrDel(arr,12))*/
+
+// 九九乘法表
+/*for(hang=1;hang<=9;hang++)
+{
+  for(lie=1;lie<=hang;lie++)
+  {
+    if(lie==2&&(hang==3||hang==4))
+    {
+      document.write(lie+"*"+hang+"="+lie*hang+"&nbsp; ")
+    }
+    else{
+      document.write(lie+"*"+hang+"="+lie*hang+"&nbsp;")
+    }
+  } 
+  document.write("<br>") 
+}*/
+
+// 密码输入3次错误自动退出
+
+/*for(var i=1;i<=3;i++)
+{
+  var a=prompt('请输入用户名');
+  var b='hcb';
+  if(a==b)
+  {
+    alert("登录成功")
+    break;
+  }else
+  {
+    if(i==3)
+    {
+      alert('密码超额')
+    }else
+    {
+      alert('密码错误，请重新输入')
+    }
+  }
+}*/
+
+
+	</script>
+	<style>
+      .jsq{
+          width: 355px;
+          height:200px;
+          background-image: url(jsq.jpg);
+          background-position;
+          left: 50px;top:150px;
+          border:1px solid #ccc;
+      }
+      .jsq input{
+      	width: 150px;
+      	height: 30px;
+      	font-size: 18px;
+      	font-weight: bold;
+      }
+     #ysf{
+        width: 100px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .jsq b{
+      	margin-left: 50px;
+      	font-size: 20px;
+      }
+      #dj{
+        width: 300px;
+        height: 200px;
+        background:green;
+      }
+	</style>
+</head>
+<body>
+	<!-- <div class="jsq">
+    <b>计算器</b><br>
+    <input type="text" value='1' id='num1'><br>
+    <select name="" id="ysf">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select><br>
+    <input type="text" value='1' id='num2'><br>
+    <input type="text" value='' id='result'>
+  </div> -->
+  <!-- <div id='dj'></div> -->
+</body>
+</html>
+<script>
+  /*function unshift1(arrObj){
+    if(!arrObj instanceof Array||arguments.length<2){
+      return;
+    }
+    var newarr=[];
+    for(var i=0;i<arrObj.length;i++){
+      newarr.push(arrObj[i]);
+    }
+    arrObj.length=0;
+    for(var i=1;i<arguments.length;i++){
+      arrObj.push(arguments[i]);
+    }
+    for(var i=0;i<newarr.length;i++){
+      arrObj.push(newarr[i]);
+    }
+    return arrObj.length;
+  }
+  var arr=[1,2,3,4,5];
+  unshift1(arr,12,34,45);
+  document.write(arr);*/
+</script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>视觉滚动差</title>
+	<link rel="stylesheet" href="css/index.css" />
+
+
+<style>
+	.box{width:1170px;height:340px;margin:0 auto;overflow:hidden;font-size:60px;line-height:340px;text-align:center;}
+	a{color:#50A0DD;}
+	a:hover{color:#bbb;}
+
+</style>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">视觉滚动差特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+
+<div class="box">
+	<a href="scrollView.html">视觉滚动差特效</a>
+</div>
+
+
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>scrollView.js</b>特效函数库,必须引入<b>scrollView.css</b>。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>scrollView.js</b>前在head标签对中引入。</dd>
+	
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/scrollView.js"&gt;&lt;/script&gt;<br/>
+	&lt;link rel="stylesheet" href="css/scrollView.css"&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+	&lt;div id="main"&gt;
+		&lt;div class="zoom-rotate"&gt;
+		   山西优逸客科技有限公司  /*替换内容，必须是文字*/
+		&lt;/div&gt;
+		
+		&lt;div class="fly"&gt;
+		   天外来客-飞入           /*替换内容，可以是图片、文字等*/
+		&lt;/div&gt;
+
+		&lt;div class="fly1"&gt;
+		   天外来客-飞入           /*替换内容，可以是图片、文字等*/
+		&lt;/div&gt;
+
+		&lt;div class="fixed"&gt;
+		  岿然不动                /*替换内容，可以是图片、文字等*/
+		&lt;/div&gt;
+        
+		&lt;div class="origin"&gt;
+		   原点放大旋转          /*替换内容，可以是图片、文字等*/
+		&lt;/div&gt; 
+
+		&lt;div class="follow"&gt;
+		  如影随形                /*替换内容，可以是图片、文字等*/
+		&lt;/div&gt;
+	&lt;/div&gt;
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：zoomRotate(select);</dd>
+	<dd>参数select：旋转放大容器；（内容为文字）</dd>
+	<dd>函数名：fly(select，dir);</dd>
+	<dd>参数select：飞入容器；（默认左飞入）</dd>
+	<dd>参数dir:  方向 值：r 从右飞入  值：l 从左飞入</dd>
+	<dd>函数名：fixed (obj,num)</dd>
+	<dd>参数obj：固定容器</dd>
+	<dd>参数num：固定的距离(高度)</dd>
+	<dd>函数名：origin(obj);</dd>
+	<dd>参数obj：原点放大旋转</dd>
+	<dd>示例：<br />
+	<a href="scrollView.html">点击查看-视觉滚动差示例</a>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>	
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆旋转</title>
+	<style>
+      #out{
+      	width: 298px;
+      	height: 298px;
+      	border:1px solid red;
+      	border-radius:50%;
+      	margin:150px auto;
+      	background:#f4f4f4;
+      	position: relative;
+      }
+      #inner{
+      	width: 10px;
+      	height: 10px;
+      	background:green;
+      	border-radius: 50%;
+      	position: absolute;
+      }
+	</style>
+	
+	<script>
+      /*window.onload=function(){
+      	var inner=document.getElementById('inner');
+      	r=150;
+      	ang=30;
+      	setInterval(function(){
+		        var x=r*Math.cos(ang*Math.PI/180);
+		      	var y=r*Math.sin(ang*Math.PI/180);
+		      	inner.style.left=r-5+x+'px';
+		      	inner.style.top=r-5+y+'px';
+		      	ang+=10;
+      	},50)
+      	
+      }*/2
+	</script>
+</head>
+<body>
+	<!-- <div id="out">
+            <div id="inner"></div>
+      </div> -->
+</body>
+</html>
+<script>
+      function unshift1(arrObj){
+            if(!arrObj instanceof Array||arguments.length<2){
+                  return;
+            }
+            var newarr=[];
+            for(var i=0;i<arrObj.length;i++){
+                   newarr.push(arrObj[i]);
+            }
+            arrObj.length=null;
+            for(var i=1;i<arguments.length;i++){
+                  arrObj.push(arguments[i]);
+            }
+            for(var i=0;i<newarr.length;i++){
+                  arrObj.push(newarr[i])
+            }
+            return arrObj.length;
+      }
+      var arr=[1,2,3,4];
+      unshift1(arr,12,34,56);
+      document.write(arr)
+</script>

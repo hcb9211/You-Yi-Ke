@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按需加载</title>
+	<script src="function.js"></script>
+	<style>
+    .banner{
+    	width:800px;height: 400px;background: red;margin:0 auto;
+    	margin-bottom: 30px;
+    }
+    .floor{
+    	width:800px;height: 400px;border:1px solid blue;margin:0 auto;
+    	margin-bottom: 30px;
+    }
+    .floor img{
+    	width: 150px;height: 200px;border:1px solid black;
+    }
+	</style>
+	<script>
+    $(function(){
+    	var floor=$(".floor");
+    	
+    	var ch=document.documentElement.clientHeight;
+    	window.onscroll=function(){
+    		var scrollT=getScrollT();//
+    		//document.title=scrollT;
+    		//alert(floor[0].offsetTop)
+    		for(var i=0;i<floor.length;i++){
+    		if(floor[i].offsetTop<scrollT+ch){//当前楼层到顶部的高度如果小于页面内容超出浏览器的距离+浏览器的距离时
+                var imgs=$("img",floor[i]);//获取当前楼层的所有图片
+                for(var j=0;j<imgs.length;j++){//遍历图片
+                	imgs[j].src=imgs[j].getAttribute("aa");//把每一个图片的aa属性的值赋值给src属性即可
+                }
+                //alert(imgs.length)
+    		}
+    	}
+    	}
+    	
+    })
+	</script>
+</head>
+<body>
+	<div class="banner"></div>
+	<div class="banner"></div>
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>.offsetTop<ch+
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>
+	<div class="floor">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+		<img src="" alt="" aa="img/1.jpg">
+	</div>
+</body>
+<script>
+	
+	var floors=(".floor");
+	var ch=document.documentElement.clientHeight;
+	for(var i=0;i<floors.length;i++){
+		var scrollT=getScrollT();
+		if(floors[i].offsetTop<ch+scrollT){
+			var imgs=$("img",floors[i])
+			for(var j=0;j<imgs.length;j++){
+				imgs[j].src=imgs[j].getAttribute("aa")
+			}
+		}
+	}
+</script>
+</html>

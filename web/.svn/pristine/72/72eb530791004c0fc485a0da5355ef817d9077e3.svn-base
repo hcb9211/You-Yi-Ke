@@ -1,0 +1,118 @@
+/**
+ * Created by Administrator on 2016/8/12.
+ */
+window.onload=function(){
+    var win=$('.window')[0];
+    var as=$('a',win);
+    var liv=$('li');
+    var prve=$('.prve')[0];
+    var next=$('.next')[0];
+    var len=as.length;
+    var index=0;
+    var fllow=0;
+    var flag=true;
+    var t;
+    var iw=as.width();
+    $(as).not(as[0]).css('left',iw);
+    t=setInterval(moveR,2500);
+    function moveR(){
+        fllow++;
+        if(fllow==len){
+            fllow=0;
+        }
+        $(as[fllow]).css('left',iw);
+        $(as[index]).animate({left:-iw});
+        $(liv[index]).removeClass('hot');
+        $(as[fllow]).animate({left:0},function(){
+            flag=true;
+        });
+        $(liv[fllow]).addClass('hot');
+        index=fllow;
+    }
+
+    win.onmouseover=function(){
+        clearInterval(t);
+        prve.style.display='block';
+        next.style.display='block';
+    }
+
+
+    win.onmouseout=function(){
+        t=setInterval(moveR,2500);
+        prve.style.display='none';
+        next.style.display='none';
+
+    }
+
+    $(liv).click(function(){
+        var num=$(this).index();
+        fllow=num;
+        if(num==index) return;
+        if(num>index){
+            $(as[num]).css('left',iw);
+            $(as[index]).animate({left:-iw});
+            $(liv[index]).removeClass('hot');
+            $(as[num]).animate({left:0});
+            $(liv[num]).addClass('hot');
+            index=num;
+        }
+        else if(num<index){
+            $(as[num]).css('left',-iw);
+            $(as[index]).animate({left:iw});
+            $(liv[index]).removeClass('hot');
+            $(as[num]).animate({left:0});
+            $(liv[num]).addClass('hot');
+            index=num;
+        }
+
+    })
+    prve.onclick=function(){
+        if(flag){
+            flag=false;
+            fllow--;
+            if(fllow==-1){
+                fllow=len-1;
+            }
+            $(as[fllow]).css('left',-iw);
+            $(as[index]).animate({left:iw});
+            $(liv[index]).removeClass('hot');
+            $(as[fllow]).animate({left:0},function(){
+                flag=true;
+            });
+            $(liv[fllow]).addClass('hot');
+            index=fllow;
+
+        }
+    }
+    next.onclick=function(){
+        if(flag){
+            flag=false;
+            moveR();
+        }
+    }
+
+}
+
+
+$(function(){
+    $('.btn:first').addClass('active');
+    $('.con:first').css({zIndex:1});
+    $('.box').select($('.btn'),$('.con'),'active');
+})
+
+
+
+//·µ»Ø¶¥²¿
+$(function(){
+    $(".backtop").backTop();
+    //$(".backtop") ·µ»Ø°´Å¥¸¸ÈÝÆ÷
+})
+
+//ÒÆ¶¯¶Ë
+$(function(){
+    $(".anniu").click(function(){
+        $($(".smallmenuxl")[0]).slideToggle();
+    })
+
+
+})

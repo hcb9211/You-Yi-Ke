@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>返回顶部特效</title>
+<link rel="stylesheet" href="css/index.css" />
+<style>
+.uek_box{width:1170px;height:200px;margin:0 auto;font-size:36px;color:#0780D1; text-align:center;line-height:200px;}
+/*返回顶部样开始式*/
+.uek_backtop{width:50px;height:50px;line-height:50px; text-align:center;font:40px "微软雅黑";font-weight:bold;color:#0780D1;position:fixed;right:50px;bottom:100px;}
+.backtop:hover{background:#0780D1;color:#fff;}
+/*返回顶部样式结束*/
+</style>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/backTop.js"></script>
+<script>
+ $(function(){
+	$(".uek_backtop").backTop();
+ }) 
+</script>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">返回顶部特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+
+<ul class="uek_box" >
+	拖动滚动条，观察页面右侧底部
+   
+</ul>
+<!--返回顶部结构-->
+<div class="uek_backtop">∧</div>
+<!--返回顶部结构-->
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>backTop.js</b>特效函数库。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>backTop.js</b>前在head标签对中引入。</dd>
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/backTop.js"&gt;&lt;/script&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	布局：需有一个父容器，父容器设置为固定定位(position:fixed;right:50px;bottom:100px;),可把内容改为一张图片。
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+	&lt;div class="backtop"&gt;∧[可以改为(图片)]&lt;/div&gt;
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：backTop</dd>
+	<dd>obj.backTop();</dd>
+	<dd>参数obj：返回按钮父容器</dd>
+	<dd>示例：<br />
+	<pre>
+	&lt;script&gt;
+		$(function(){
+	 	$(".backtop").backTop();
+	 	//$(".backtop") 返回按钮父容器     
+		}) 
+	&lt;/script&gt;
+	</pre>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>
+</body>
+</html>

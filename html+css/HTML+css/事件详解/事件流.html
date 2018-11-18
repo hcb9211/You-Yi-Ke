@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件流</title>
+</head>
+<script src='function.js'></script>
+
+<script>
+	$(function(){
+		var div=$('div')[0];
+		var ul=$('ul')[0];
+		var li=$('li');
+// 捕获型事件
+		for(var i=0;i<li.length;i++){
+			li[i].addEventListener('click',function(e){
+				var ev=e||window.event;
+				ev.stopPropagation();
+				alert('我是li')
+			},true)
+		}
+			ul.addEventListener('click',function(e){
+				var ev=e||window.event;
+				ev.stopPropagation();	
+				alert('我是ul')
+			},true)
+			div.addEventListener('click',function(e){
+				var ev=e||window.event;
+				// ev.stopPropagation();     /*阻止事件流*/
+				alert('我是div')
+			},true)
+
+// 更改事件源属性
+		// div.onclick=function(e){
+			// var ev=e||window.event;
+			// alert(ev.target.innerHTML)
+			// var obj=ev.target;       /*获得事件源对象*/
+			// obj.style.color="red"
+		// }
+
+		
+
+	})
+	// 冒泡型事件
+	// function text(a){alert(a)}
+</script>
+<body>
+	<div>
+		<ul>
+			<li>第1个</li>
+			<li>第2个</li>
+			<li>第3个</li>
+		</ul>
+	</div>
+
+	<!-- <div onclick='text("我是div")'>
+		<ul onclick='text("我是ul")'>
+			<li onclick='text("我是li")'>1</li>
+			<li onclick='text("我是li")'>2</li>
+			<li onclick='text("我是li")'>3</li>
+			<li onclick='text("我是li")'>4</li>
+			<li onclick='text("我是li")'>5</li>
+		</ul>
+	</div> -->
+</body>
+</html>

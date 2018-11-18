@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单详解</title>
+</head>
+<script>
+	window.onload=function(){
+		var forms=document.forms[0];
+		/*
+		//表单点击消失
+		var user=forms.user;
+		user.onfocus=function(){
+			var val=user.value;
+			if(val=='zhangsan'){
+				user.value=''
+			}
+		}
+		user.onblur=function(){
+			var val=user.value;
+			user.value=val?val:"zhangsan"
+		}*/
+
+		var select=forms.school;
+		// console.log(select.size);
+		// select.multiple=true;
+		// console.log(select.options)
+		// console.log(select.options[0].text)
+		// console.log(select.options[1].)
+		select.options[2].selected=true;
+		console.log(select.selectedIndex);
+
+
+	}
+
+</script>
+<body>
+	<form action="" method="get" name='myform'id='form'>
+
+		姓名:<input type="text" name='user' value='zhangsan'><br>
+
+		密码:<input type="password" name='pass' value='hcbqqq'><br>	
+
+		性别:男<input type="radio" name='sex' value='man'>
+			 女<input type="radio" name='sex' value='woman'><br>
+
+		爱好:
+			 吃<input type="checkbox" name='like[]' value='eat' >
+			 学习<input type="checkbox" name='like[]' value='study' >
+			 玩<input type="checkbox" name='like[]' value='play' ><br>
+
+		院校:
+			 <select name="school" id="" size=1>
+
+			 	<option value="changzhi"  >长治学院</option>
+			 	<option value="lvliang" >吕梁学院</option>
+			 	<option value="xinzhou">忻州师范</option>
+
+			 </select>
+
+			 <input type="button" value='按钮'>
+			 <input type="submit" value='提交'>
+	</form> 
+
+
+
+</body>
+</html>

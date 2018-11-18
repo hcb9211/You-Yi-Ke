@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+</head>
+<script src='dom.js'></script>
+<script>
+	window.onload=function(){
+		// document.title="这是DOM标题";
+		// alert(document.URL);
+		// document.bgColor='#ff6700'
+		// document.fgColor='white'
+
+       /*var divs=document.getElementsByTagName('div');
+       for(var i=0;i<divs.length;i++){
+       	  divs[i].innerHTML="这是第"+i+"个div"
+       }*/
+       
+
+      var inputs=document.getElementsByName('user');
+      console.log(inputs.length)*/
+
+      /*var divs=document.getElementsByClassName('one');
+      alert(divs.length)*/
+
+     /*var all=document.getElementsByTagName("*")
+     alert(all.length)*/
+
+     /*var divs=getClass('one');
+     for(var i=0;i<divs.length;i++){
+       	  divs[i].innerHTML="这是第"+i+"个div"
+       }*/
+    var one=getClass('one');
+    alert(one.length)
+
+	}
+</script>
+<style>
+	.one{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+	}
+</style>
+<body>
+	<div class="one" name='user'></div>
+	<div class="one" name='user'></div>
+	<div class="one" name='user'></div>
+	<div class="one two" name='user'></div>
+	<input type="text" value='张三'name='user'><br>
+	<input type="text" value='张三'name='user'><br>
+	<input type="text" value='张三'name='user'><br>
+	<input type="text" value='张三'name='user'><br>
+	<input type="text" value='张三'name='user'>
+</body>
+</html>

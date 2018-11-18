@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://carsmart.cn/main.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>北京车网互联科技有限公司</title>
+
+<!-- Bootstrap -->
+<link rel="icon" href="http://carsmart.cn/img/icon1.png" type="image/png">
+<link href="http://carsmart.cn/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="http://carsmart.cn/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="http://carsmart.cn/css/helper.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="http://carsmart.cn/js/html5shiv.min.js"></script>
+      <script src="http://carsmart.cn/js/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css" adt="123"></style><script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            /*'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+<div class="box" style="min-height: 531px;"> 
+
+  <!--button type="button" id="clickMe" data-toggle="modal" data-target="#myModal" style="display: none;"></button>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">公告</h4>
+        </div>
+        <div class="modal-body tckys">尊敬的客户您好，为了向广大客户提供更优质稳定的服务，我们将在8月5日开始对服务器进行全面升级，升级时间预计从8月5日到8月15日，根据更新进度，升级有可能提前完成。在服务器升级期间，车网互联旗下全线产品将有可能出现间歇性的使用异常，这将影响广大客户的使用体验，为此我们致以万分的歉意，我们会努力在最短时间内完成升级，感谢阁下一直以来对我司的关注及支持，顺祝生活愉快，谢谢。<br>
+<div style="text-align:right">2015-08-02</div></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div-->
+
+  
+  <!--导航开始-->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class=" container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="http://carsmart.cn/index.html"><img src="./北京车网互联科技有限公司_files/logo.png"></a> </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://carsmart.cn/index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="dropdown" id="nav-cp"><a href="http://carsmart.cn/main.html#" class="dropdown-toggle">产&nbsp;&nbsp;品</a><ul class="dropdown-menu" role="menu"><li><b>个人产品：</b></li><li class="divider"></li><li><a href="http://autofun.carsmart.cn/" target="_blank">乐乘</a></li><li><a href="http://zc.carsmart.cn/" target="_blank">智乘（即将发布）</a></li><li><a href="http://tripfun.carsmart.cn/" target="_blank">纷乘</a></li><li><a href="http://ycb.carsmart.cn/" target="_blank">养车宝</a></li><li><b>行业应用：</b></li><li class="divider"></li><li><a href="http://4s.carsmart.cn/" target="_blank">车店通</a></li><li><b>硬件产品：</b></li><li class="divider"></li><li><a href="http://autofun.carsmart.cn/" target="_blank">乐乘盒子</a></li><li class="menu01"><a href="http://tripfun.carsmart.cn/" target="_blank">纷乘行车记录仪</a></li></ul></li><li class="dropdown"> <a href="http://carsmart.cn/main.html#" class="dropdown-toggle">解决方案</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://carsmart.cn/solutions.html">行业解决方案</a></li>
+            <li><a href="http://carsmart.cn/compass.html">北斗应用系统</a></li>
+            <li class="menu01"><a href="http://carsmart.cn/city.html">智慧城市建设</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="http://carsmart.cn/main.html#" class="dropdown-toggle">新闻中心</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://carsmart.cn/news.html">公司动态</a></li>
+            <li><a href="http://carsmart.cn/staff.html">员工天地</a></li>
+            <li class="menu01"><a href="http://carsmart.cn/topic.html">专题报道</a></li>
+          </ul>
+        </li>
+        <li> <a href="http://hr.carsmart.cn/" target="_blank">人才招聘</a>
+        </li><li class="dropdown"><a href="http://carsmart.cn/main.html#" class="dropdown-toggle">关于我们</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://carsmart.cn/about.html">公司简介</a></li>
+            <li><a href="http://carsmart.cn/culture.html">企业文化</a></li>
+            <li><a href="http://carsmart.cn/events.html">大事记</a></li>
+            <li><a href="http://carsmart.cn/honour.html">资质&amp;荣誉</a></li>
+            <li class="menu01"><a href="http://carsmart.cn/cooperation.html">合作伙伴</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="btn-group pull-right wzdh" id="nav-menu"><a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">网站导航 <span class="caret"></span></a> <ul class="dropdown-menu"><li><a href="http://carsmart.cn/" target="_blank">车网互联官网</a></li><li><a href="http://autofun.carsmart.cn/" target="_blank">乐乘</a></li><li><a href="http://zc.carsmart.cn/" target="_blank">智乘（即将发布）</a></li><li><a href="http://tripfun.carsmart.cn/" target="_blank">纷乘</a></li><li><a href="http://ycb.carsmart.cn/" target="_blank">养车宝</a></li><li class="menu01"><a href="http://4s.carsmart.cn/" target="_blank">车店通</a></li></ul></div>
+    </div>
+  </div></nav>
+  <!--导航结束--> 
+  <!--广告开始-->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      
+      <div class="item active"> <a href="http://autofun.carsmart.cn/" target="_blank"><img src="./北京车网互联科技有限公司_files/banner-02.jpg"></a> </div>
+      <div class="item"> <a href="http://4s.carsmart.cn/" target="_blank"><img src="./北京车网互联科技有限公司_files/chediantong.jpg"> </a> </div>
+      <div class="item"> <a href="http://ycb.carsmart.cn/" target="_blank"><img src="./北京车网互联科技有限公司_files/yangchibao.jpg"> </a> </div>
+      <div class="item"> <img src="./北京车网互联科技有限公司_files/banner-01.jpg"> </div>
+      
+    </div>
+    <a class="left carousel-control" href="http://carsmart.cn/main.html#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon pe-7s-angle-left ie8-left"></span> <span class="sr-only">上一页</span> </a> <a class="right carousel-control" href="http://carsmart.cn/main.html#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon pe-7s-angle-right ie8-right"></span> <span class="sr-only">下一页</span> </a> </div>
+  <!--广告结束--> 
+  <!--公司简介-->
+  <div class="container text-center t-7">
+    <h1>车网互联 </h1>
+    <h4 class="t-2">以移动互联网技术创造用户新体验</h4>
+    <h4>致力于成为车网产业先行者，打造智能交通新秩序，为推动移动信息产业与智能城市的发展而不懈努力！</h4>
+    <p class="t-2"><a href="http://carsmart.cn/about.html" class="btn btn-success btn-lg">CARSMART</a></p>
+    <div class="row t-4  col-md-10 col-md-offset-1">
+      <div class="col-lg-3 col-xs-6 wow fadeInUp"> <img src="./北京车网互联科技有限公司_files/icon01.png" alt="车辆软硬件">
+        <h4>车辆软硬件</h4>
+      </div>
+      <div class="col-lg-3 col-xs-6 wow fadeInUp01"> <img src="./北京车网互联科技有限公司_files/icon02.png" alt="移动终端软件">
+        <h4>移动终端软件</h4>
+      </div>
+      <div class="col-lg-3 col-xs-6 wow fadeInUp02"> <img src="./北京车网互联科技有限公司_files/icon03.png" alt="互联网应用">
+        <h4>互联网应用</h4>
+      </div>
+      <div class="col-lg-3 col-xs-6 wow fadeInUp03"> <img src="./北京车网互联科技有限公司_files/icon04.png" alt="行业应用平台">
+        <h4>行业应用平台</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid news-bg">
+    <div class="container text-center">
+      <h1>新闻中心</h1>
+      <h4 class="t-2">与您分享车网互联的最新动态</h4>
+      <div class="row text-left t-5">
+        <div class="col-lg-4 col-md-12">
+          <h3><a href="http://carsmart.cn/news.html" class="h3">公司动态</a></h3>
+          <ul class="li-line">
+          <li><a href="http://carsmart.cn/news20150619.html" target="_blank" title="2015车联网高峰论坛完美落幕：车网互联引导车联网行业革命">2015车联网高峰论坛完美落幕：车网互联引导……</a></li>
+          <li><a href="http://carsmart.cn/news20150616.html" target="_blank" title="【福利预报】车联网生态圈落地，车网互联领跑汽车后市场">【福利预报】车联网生态圈落地，车网互联领…… </a></li>
+            <li><a href="http://carsmart.cn/news20150122.html" target="_blank">车网互联携手中国人寿财险试水UBI保险模式</a></li>
+            <li><a href="http://carsmart.cn/news20141126.html" target="_blank" title="【专访】车网互联张春辉：乐乘盒子是实现智慧城市的重要一环">【专访】车网互联张春辉：乐乘盒子是实现智……</a></li>
+            <li><a href="http://carsmart.cn/news2014111804.html" title="程飞再创佳绩：荣获“国际汽联(FIA)2014世界耐力锦标赛WEC巴林站季军”！" target="_blank">程飞再创佳绩：荣获"国际汽联(FIA)2014世界……</a></li>
+            
+            
+          </ul>
+          <a href="http://carsmart.cn/news.html" class="btn btn-success news-dw">更多</a> </div>
+        <div class="col-lg-4 col-md-12">
+          <h3><a href="http://carsmart.cn/staff.html" class="h3">员工天地</a></h3>
+          <ul class="li-line">
+            <li><a href="http://carsmart.cn/staff20140930.html" target="_blank">车网好照片摄影大赛第二季•盛大启程</a></li>
+            <li><a href="http://carsmart.cn/staff2014080504.html" target="_blank">第一届•车网互联杯足球邀请赛第二场比赛</a></li>
+            <li><a href="http://carsmart.cn/staff2014080503.html" target="_blank">第一届•车网互联杯足球邀请赛大幕拉开</a></li>
+            <li><a href="http://carsmart.cn/staff2014080502.html" target="_blank">面向业务需求，开展大数据应用培训</a></li>
+            <li><a href="http://carsmart.cn/staff2014080500.html" target="_blank">“宣扬部门精神，凝聚企业文化”</a></li>
+          </ul>
+          <a href="http://carsmart.cn/staff.html" class="btn btn-success news-dw">更多</a> </div>
+        <div class="col-lg-4 col-md-12">
+          <h3><a href="http://carsmart.cn/topic.html" class="h3">专题报道</a></h3>
+          <ul class="li-line">
+            <li><a href="http://carsmart.cn/activity/activity-gz.html" target="_blank">车网互联创新科技 驾驭未来汽车生活</a></li>
+            <li><a href="http://carsmart.cn/topic2014110701.html" target="_blank" title="车网互联祝贺“乐乘盒子”代言人程飞先生亚洲勒芒上海站再夺冠军！">车网互联祝贺“乐乘盒子”代言人程飞先生……</a></li>
+            <li><a href="http://carsmart.cn/topic2014080501.html" target="_blank">车网互联圆满完成科博会的首次亮相</a></li>
+            <li><a href="http://www.che08.com/activity/activity-kbh.html" target="_blank">车网互联携手荣之联首次亮相北京科博会</a></li>
+            <li><a href="http://carsmart.cn/topic2014080500.html" target="_blank">可管、可控、可运营的电信级业务平台</a></li>
+          </ul>
+          <a href="http://carsmart.cn/topic.html" class="btn btn-success news-dw">更多</a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center t-7">
+    <h1>招投标公告</h1>
+    <h4 class="t-2">为了美好未来，我们一直在努力！</h4>
+    <div class="row  t-6">
+      <div class="col-lg-7 col-xs-12 text-left">
+        <h3 id="zbgg">公告通知</h3>
+        <ul class="list-unstyled li-zb">
+          <li><span>2014-07-11</span><s>公告通知</s> <a href="http://carsmart.cn/bidding07.html" target="_blank"><strong>车网互联“L”项目招标补贴公告</strong></a></li>
+          <li><span>2014-06-17</span><s>中标公告</s> <a href="http://carsmart.cn/bidding06.html" target="_blank">车网互联 L 项目公关公司技术标评标结果通知函</a></li>
+          <li><span>2014-05-15</span><u>公告通知</u> <a href="http://carsmart.cn/bidding05.html" target="_blank">北京车网互联科技有限公司公关公司招标书</a></li>
+          <li><span>2014-02-28</span><s>中标公告</s> <a href="http://carsmart.cn/bidding04.html" target="_blank">车网互联视频物料制作中标公告</a></li>
+          <li><span>2014-02-20</span><u>公告通知</u> <a href="http://carsmart.cn/bidding03.html" target="_blank">车网互联视频物料制作招标书</a></li>
+          <li><span>2013-10-30</span><s>中标公告</s> <a href="http://carsmart.cn/bidding02.html" target="_blank">车网互联VI物料制作中标公告</a></li>
+          <li><span>2013-10-23</span><u>公告通知</u> <a href="http://carsmart.cn/bidding01.html" target="_blank">车网互联VI物料制作招标书</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-5 col-xs-12"> <img src="./北京车网互联科技有限公司_files/zbimg.jpg" class=" img-responsive pull-right"> </div>
+    </div>
+  </div>
+</div>
+<footer class="footer t-4">
+  <div class="container text-center">
+    <div class="col-lg-4">上市公司成员企业<a href="http://carsmart.cn/" target="_blank">北京车网互联科技有限公司</a></div>
+    <div class="col-lg-4">车网互联 版权所有 <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10024066号</a></div>
+    <div class="col-lg-4"><a href="http://carsmart.cn/about.html">关于我们</a><a href="http://carsmart.cn/cont.html">联系我们</a><a href="http://carsmart.cn/cooperation.html">合作伙伴</a><a href="http://carsmart.cn/law.html">法律声明</a><a href="http://e.weibo.com/che08" target="_blank">官方微博</a></div>
+  </div>
+</footer>
+<footer class="footer-floor">
+  <div class="container text-center">
+    <p>Copyright © 2014 Beijing Carsmart Technology Co., Ltd. </p>
+  </div>
+</footer>
+<div id="weibo"></div>
+<div id="weibo_img"></div>
+<div id="weixin"></div>
+<div id="weixin_img"></div>
+<a id="gotop" href="javascript:void(0)" style="display: none;"></a> 
+<script src="./北京车网互联科技有限公司_files/jquery.min.js"></script> 
+<script src="./北京车网互联科技有限公司_files/bootstrap.min.js"></script> 
+<script src="./北京车网互联科技有限公司_files/ewm.js"></script> 
+<script src="./北京车网互联科技有限公司_files/Respond.js"></script> 
+<script src="./北京车网互联科技有限公司_files/modal.js"></script> 
+<script src="./北京车网互联科技有限公司_files/wow.js"></script> 
+<script src="./北京车网互联科技有限公司_files/nav-menu.js"></script> 
+<!--script type="text/javascript">
+setTimeout(function() {
+  if(document.all) {
+    document.getElementById("clickMe").click();
+  }
+  else {
+    var e = document.createEvent("MouseEvents");
+    e.initEvent("click", true, true);
+    document.getElementById("clickMe").dispatchEvent(e);
+  }
+}, 1000);
+</script-->
+
+</body></html>

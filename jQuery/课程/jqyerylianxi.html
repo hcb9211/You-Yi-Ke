@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery练习</title>
+</head>
+<script>
+	function $(selecter){
+		return new aa(selecter)
+	}
+	function aa(selecter){
+		if(typeof selecter=="string"){
+			var obj=document.getElementsByTagName(selecter);
+			for(var i=0;i<obj.length;i++){
+				this[i]=obj[i];
+			}
+			this.length=obj.length;
+		}else if(typeof selecter=="function"){
+			window.onload=function(){
+				selecter()
+			}
+		}
+		
+	}
+	aa.prototype={
+		each:function(callback){
+			for(var i=0;i<this.length;i++){
+				callback(i,this[i])
+			}
+		},
+		css:function(attrObj){
+			this.each(function(index,obj){
+				for(var i in attrObj){
+					obj.style[i]=attrObj[i]
+				}
+			})
+			return this;
+		},
+		html:function(val){
+			this.each(function(index,obj){
+				obj.innerHTML=val;
+			})
+			return this;
+		},
+		click:function(fn){
+			this.each(function(index,obj){
+				obj.onclick=function(){
+					fn();
+				}
+		})
+			return this;
+		}
+
+	}
+
+
+	$(function(){
+
+		$("div").css({width:200,height:200,color:"green"}).html("练习Jquery").click(function(){
+			alert(5211)
+		})
+
+	})
+</script>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

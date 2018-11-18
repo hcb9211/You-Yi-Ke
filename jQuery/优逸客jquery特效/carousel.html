@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>轮播图特效</title>
+<link rel="stylesheet" href="css/index.css" />
+<style>
+ /*轮播样式开始*/	  
+.uek_win{width:992px;height:420px;margin:0 auto;position:relative;overflow:hidden;}
+.uek_box{width:5760px;height:420px;position:absolute;}
+.uek_box .uek_list{width:992px;height:420px;float:left;}
+.uek_list a{width:100%;height:100%;display:block;}
+.uek_btns{position:absolute;width:200px;height:30px;left:40%;top:80%;}
+.uek_btns dd{width:20px;height:20px;border-radius:50%;float:left;margin-right:15px;background:#fff;text-align:center;line-height:20px;cursor:pointer;font-size:10px;}
+.uek_btns .uek_active{background:#3CC;}
+  /*轮播样式结束*/
+</style>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script>
+ $(function(){
+ 	$(".uek_win").carousel($(".uek_box"),$(".uek_list"),$(".uek_btns dd"),"one",3000,300);
+ }) 
+</script>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">轮播图特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+
+<!--轮播效果开始-->
+   <div class="uek_win">
+	   <ul class="uek_box">
+	     <li class="uek_list">
+			   <a href="#" class="uek_one">
+            <img src="images/1.jpg" />			
+			   </a>
+	     </li>
+	  <li class="uek_list">
+			<a href="#" class="uek_two">
+            <img src="images/2.jpg" />				
+			</a>
+	  </li>
+	  <li class="uek_list">
+			<a href="#" class="uek_three">	
+            <img src="images/3.jpg" />			
+			</a>
+	  </li>
+	  <li class="uek_list">
+			<a href="#" class="uek_four">
+            <img src="images/1.jpg" />			
+			</a>
+	  </li>
+	  <li class="uek_list">
+			<a href="#" class="uek_five">
+            <img src="images/2.jpg" />			
+			</a>
+	  </li>
+	  <li class="uek_list">
+			<a href="#" class="uek_one">
+            <img src="images/3.jpg" />		
+			</a>
+	  </li>
+	</ul>
+	<dl class="uek_btns">
+		<dd class="uek_active">1</dd>
+        <dd>2</dd>
+        <dd>3</dd>
+        <dd>4</dd>
+        <dd>5</dd>
+	</dl> 
+ </div>  
+<!--轮播效果结束-->
+
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>carousel.js</b>特效函数库。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>carousel.js</b>前在head标签对中引入。</dd>
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/carousel.js"&gt;&lt;/script&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	布局：需有一个父容器，父容器中分为2个部分，第一部分内容为轮播图片(注意：为达到无缝滚动，需把第一张图片复制插入在结束部分)，第二部分为按钮部分跟轮播图片数量对应。
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+        <!--轮播效果开始-->
+       &lt;div class="uek_win"&gt;
+        &lt;ul class="uek_box"&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_one"&gt;
+                &lt;img src="images/1.jpg" /&gt;			
+                &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_two"&gt;
+                &lt;img src="images/2.jpg" /&gt;				
+                &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_three"&gt;	
+                &lt;img src="images/3.jpg" /&gt;			
+                &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_four"&gt;
+                &lt;img src="images/1.jpg" /&gt;			
+                &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_five"&gt;
+                &lt;img src="images/2.jpg" /&gt;			
+                &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="uek_list"&gt;
+                &lt;a href="#" class="uek_one"&gt;
+                &lt;img src="images/3.jpg" /&gt;		
+                &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;dl class="uek_btns"&gt;
+            &lt;dd class="uek_active"&gt;1&lt;/dd&gt;
+            &lt;dd&gt;2&lt;/dd&gt;
+            &lt;dd&gt;3&lt;/dd&gt;
+            &lt;dd&gt;4&lt;/dd&gt;
+            &lt;dd&gt;5&lt;/dd&gt;
+        &lt;/dl&gt; 
+     &lt;/div&gt;  
+    <!--轮播效果结束-->
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：carousel</dd>
+	<dd>obj.carousel(box,lists,btns,type,breaktime,movetime);</dd>
+	<dd>obj：父容器 最外层的容器（设置相对定位和overflow：hidden的容器）</dd>
+	<dd>第一个参数box：所有轮播图片容器（设置绝对定位的长度特别长的）</dd>
+    <dd>第二个参数lists：每张轮播图片容器（多个）</dd>
+    <dd>第三个参数btns：按钮列表（多个）</dd>
+    <dd>第四个参数轮播类型type： one左右轮播   two透明度切换</dd>
+    <dd>第五个参数breaktime： 轮播间隔时间（单位：毫秒，1s=1000ms）</dd>
+	<dd>第六个参数movetime： 轮播动画时间（单位：毫秒，1s=1000ms）</dd>
+	<dd>示例：<br />
+	<pre>
+	&lt;script&gt;
+         $(function(){
+            $(".uek_win").carousel($(".uek_box"),$(".uek_list"),$(".uek_btns dd"),"two",3000,300);
+            //$(".uek_win") 父容器   $(".uek_box")所有轮播图片容器  $(".uek_list")轮播图片列表  $(".uek_btns dd") 按钮列表 
+            //"two" 轮播类型 透明度切换   3000 轮播间隔   3000 轮播动画时间 
+         }) 
+	&lt;/script&gt;
+	</pre>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>
+</body>
+</html>

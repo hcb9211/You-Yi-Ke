@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/one.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/backTop.js"></script>
+    <script src='js/index.js'></script>
+    <script src='js/select.js'></script>
+</head>
+<body>
+   <div class="kt">
+       <div class="kt1">
+           <div class="zuo">
+               <img src="image/1.png" alt=""/>
+           </div>
+           <div class="you">
+               <div class="smallmenu">
+                   <div class="anniu"></div>
+                   <div class='smallmenuxl'>
+                       <a href="index.html">首页</a>
+                       <a href="article01.html">公司简介</a>
+                       <a href="cotx.html">产品体系</a>
+                       <a href="article_channel.html">解决方案</a>
+                       <a href="exhibit_list.html">去渍实验室</a>
+                       <a href="article03.html">销售网络</a>
+                       <a href="article_list.html">新闻中心</a>
+                       <a href="article02.html">常见问题</a>
+                       <a href="artice_list1.html">创新与生活</a>
+                       <a href="ly.html">联系我们</a>
+                   </div>
+               </div>
+               <div class="qh">
+                   <img src="image/35.jpg" alt=""/>
+                   <span>Tel: 025-86268873</span>
+                   <img src="image/36.jpg" alt=""/>
+                   <a href="">@贝克曼博士</a>
+                   <img src="image/37.jpg" alt=""/>
+                   <a href="">网站地图</a>
+                   <img src="image/38.jpg" alt=""/>
+                   <a href="">English</a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="wb">
+       <div class="dh">
+           <div class="nav">
+               <a href="index.html">首页</a>
+               <a href="article01.html">公司简介</a>
+               <a href="cotx.html">产品体系</a>
+               <a href="article_channel.html">解决方案</a>
+               <a href="exhibit_list.html">去渍实验室</a>
+               <a href="article03.html">销售网络</a>
+               <a href="article_list.html">新闻中心</a>
+               <a href="article02.html">常见问题</a>
+               <a href="artice_list1.html">创新与生活</a>
+               <a href="ly.html">联系我们</a>
+           </div>
+       </div>
+       <div class='window'>
+           <a href=""><img src='image/banner1.jpg'/></a>
+           <a href=""><img src='image/banner2.jpg'/></a>
+           <a href=""><img src='image/banner3.jpg'/></a>
+           <a href=""><img src='image/banner4.jpg'/></a>
+           <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ul>
+           <img class='prve'src='image/3.png'/>
+           <img class='next'src='image/4.png'/>
+       </div>
+   </div>
+   <div class="bs">
+       <div class="bkm">贝克曼博士</div>
+       <div class="sp2"><img src="image/5.png" alt=""/></div>
+       <div class="yw">ABOUT  US</div>
+       <P class="nr">贝克曼博士品牌诞生于1972年的德国，几十年来专注去渍清洁</P>
+       <p class="nr2">迄今为止已拥有多项特殊污渍处理专利技术。以其卓越的品质、安全的产品、独特的针对性和出色的表现力</p>
+       <p class="nr3">现已成为德国乃至世界家喻户晓的一流织物及居家清洁品牌。在德国，人们提到Dr. Beckmann（贝克曼博士）</p>
+       <p class="nr4">就联想到高效能、专业级、高品质的衣物去渍产品及家用清洁剂。</p>
+       <div class="gd">
+           <a href="" >MORE >></a>
+       </div>
+   </div>
+   <div class="bn">
+       <p class="bkm">产品展示</p>
+       <p class="sp2"><img src="image/5.png" alt=""/></p>
+       <p class="yw">PEODUCT DISPLAY</p>
+       <div class="box">
+             <div class="cptp1">
+                 <div class="st">
+                     <a href="">
+                         <img src="image/2.png" alt=""/>
+                     </a>
+                 </div>
+                 <div class="xt">
+                     <a href="" class="xt1">
+                         第一页
+                     </a>
+                     <p class="xt2">
+                         ergaeer
+                     </p>
+                 </div>
+             </div>
+             <div class="cptp2">
+                 <div class="st">
+                     <a href="">
+                         <img src="image/2.png" alt=""/>
+                     </a>
+                 </div>
+                 <div class="xt">
+                     <a href="" class="xt1">
+                         第一页
+                     </a>
+                     <p class="xt2">
+                         容量：50ml
+                     </p>
+                 </div>
+             </div>
+             <div class="cptp3">
+                 <div class="st">
+                     <a href="">
+                         <img src="image/2.png" alt=""/>
+                     </a>
+                 </div>
+                 <div class="xt">
+                     <a href="" class="xt1">
+                         第一页
+                     </a>
+                     <p class="xt2">
+                         容量：50ml
+                     </p>
+                 </div>
+             </div>
+             <div class="cptp4">
+             <div class="st">
+                 <a href="">
+                     <img src="image/2.png" alt=""/>
+                 </a>
+             </div>
+             <div class="xt">
+                 <a href="" class="xt1">
+                     第一页
+                 </a>
+                 <p class="xt2">
+                     容量：50ml
+                 </p>
+             </div>
+         </div>
+     </div>
+       <div class="gd">
+           <a href="" >MORE >></a>
+       </div>
+   </div>
+   <div class="fa">
+       <p class="bkm">产品展示</p>
+       <p class="sp2"><img src="image/5.png" alt=""/></p>
+       <p class="yw">SOLUTION</p>
+       <div class="fa1">
+           <div class="yt">
+               <div class="yt1">
+                   <a href="" class="jjfa">
+                       <img src="image/6.jpg" alt="">
+                   </a>
+                   <p class="jwz">
+                       <a href="">圆珠笔与记号笔去渍</a>
+                   </p>
+               </div>
+               <div class="yt2">
+                   <a href="" class="jjfa">
+                       <img src="image/6.jpg" alt="">
+                   </a>
+                   <p class="jwz">
+                       <a href="">圆珠笔与记号笔去渍</a>
+                   </p>
+               </div>
+               <div class="yt3">
+                   <a href="" class="jjfa">
+                       <img src="image/6.jpg" alt="">
+                   </a>
+                   <p class="jwz">
+                       <a href="">圆珠笔与记号笔去渍</a>
+                   </p>
+               </div>
+               <div class="yt4">
+                   <a href="" class="jjfa">
+                       <img src="image/6.jpg" alt="">
+                   </a>
+                   <p class="jwz">
+                       <a href="">圆珠笔与记号笔去渍</a>
+                   </p>
+               </div>
+           </div>
+           <div class="gd">
+               <a href="" >MORE >></a>
+           </div>
+       </div>
+   </div>
+   <!-- 解决问题-->
+   <div class="wt">
+       <div class="wt1">
+           <div class="sp">
+               <p class="sp1">解决方案</p>
+               <p class="spn"><img src="image/5.png" alt=""/></p>
+               <p class="sp3">VISEO LAB</p>
+               <section>
+                   <video src="1.mp4" width="600" controls="controls">
+                       您的浏览器不支持。
+                   </video>
+               </section>
+               <p class="sm">
+                   <a href="">丝麻去渍容易？</a>
+               </p>
+               <p class="spjs">视频介绍：如果你去健身房的目的不是那么单纯...换句话说，你想邂逅男神或者发个朋友圈，
+                   画个伪素颜妆去健身才是正解！</p>
+           </div>
+           <div class="cen">
+               <p class="sp1">解决方案</p>
+               <p class="spn1"><img src="image/5.png" alt=""/></p>
+               <p class="sp3">COMMON PROBLEM</p>
+               <div class="cent">
+                   <div class="cent1">
+                       <div class="cent1-1">
+                           <img src="image/9.jpg" alt=""/>
+                       </div>
+                       <div class="cent1-2">
+                           <div class="bt1">
+                               <a href="">如何去除衣物上的机油污渍？</a>
+                           </div>
+                           <p>洗衣服的过程中所释放在水里的色子呈现负离子的特性，而超洁净护色魔布经由特殊处理过程而布满阳离子，因此可以吸附所有游离 色子而使衣服不会染到颜色，妈妈们以后洗衣服可以不用再分颜色洗了，为您省水省电又省时间!</p>
+                       </div>
+                   </div>
+                   <div class="cent1">
+                       <div class="cent1-1">
+                           <img src="image/9.jpg" alt=""/>
+                       </div>
+                       <div class="cent1-2">
+                           <div class="bt1">
+                               <a href="">如何去除衣物上的机油污渍？</a>
+                           </div>
+                           <p>洗衣服的过程中所释放在水里的色子呈现负离子的特性，而超洁净护色魔布经由特殊处理过程而布满阳离子，因此可以吸附所有游离 色子而使衣服不会染到颜色，妈妈们以后洗衣服可以不用再分颜色洗了，为您省水省电又省时间!</p>
+                       </div>
+                   </div>
+                   <div class="cent1">
+                       <div class="cent1-1">
+                           <img src="image/9.jpg" alt=""/>
+                       </div>
+                       <div class="cent1-2">
+                           <div class="bt1">
+                               <a href="">如何去除衣物上的机油污渍？</a>
+                           </div>
+                           <p>洗衣服的过程中所释放在水里的色子呈现负离子的特性，而超洁净护色魔布经由特殊处理过程而布满阳离子，因此可以吸附所有游离 色子而使衣服不会染到颜色，妈妈们以后洗衣服可以不用再分颜色洗了，为您省水省电又省时间!</p>
+                       </div>
+                   </div>
+                   <div class="more">
+                       <a href="#">MORE >></a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="xw">
+       <div class="xw1">
+           <p class="bkm1">新闻中心</p>
+           <p class="sp2"><img src="image/5.png" alt=""/></p>
+           <p class="yw">VISEO LAB</p>
+           <div class="xwnr">
+               <div class="xwnr1">
+                   <div class="nrbt">
+                       <p class="nrbt1">公司新闻</p>
+                       <p class="nrbt2">
+                           <a href="">更多>></a>
+                       </p>
+                   </div>
+                   <div class="nr-1">
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="xwnr1">
+                   <div class="nrbt">
+                       <p class="nrbt1">公司新闻</p>
+                       <p class="nrbt2">
+                           <a href="">更多>></a>
+                       </p>
+                   </div>
+                   <div class="nr-1">
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="xwnr1">
+                   <div class="nrbt">
+                       <p class="nrbt1">公司新闻</p>
+                       <p class="nrbt2">
+                           <a href="">更多>></a>
+                       </p>
+                   </div>
+                   <div class="nr-1">
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                       <div class="nr1-1">
+                           <img src="image/10.jpg" alt=""/>
+                           <a href="">贝克曼博士产品登陆华润OLE </a>
+                           <span>2016-07-18</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="yqlj">
+           <p class="bkm1">友情链接</p>
+           <p class="sp2"><img src="image/5.png" alt=""/></p>
+           <p class="yw">FRIENDLY  LINK</p>
+           <div class="bd">
+               <a href="" class="foota">百度</a>|
+               <a href="" class="foota">新浪</a>|
+               <a href="" class="foota">腾讯</a>|
+               <a href="" class="foota">搜狐</a>
+           </div>
+       </div>
+   </div>
+   <div class="gang">
+       <div class="gang-1">
+           <dl class="gang-2">
+               <div class="gang-11">常见问题</div>
+               <div class="gang-22">更多</div>
+               <div class="clearfix"></div>
+               <ul class="gang-3">
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+               </ul>
+           </dl>
+           <dl class="gang-2">
+               <div class="gang-11">公司新闻</div>
+               <div class="gang-22">更多</div>
+               <div class="clearfix"></div>
+               <ul class="gang-3">
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+               </ul>
+           </dl>
+           <dl class="gang-2">
+               <div class="gang-11">活动公告</div>
+               <div class="gang-22">更多</div>
+               <div class="clearfix"></div>
+               <ul class="gang-3">
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+               </ul>
+           </dl>
+           <dl class="gang-2">
+               <div class="gang-11">行业新闻</div>
+               <div class="gang-22">更多</div>
+               <div class="clearfix"></div>
+               <ul class="gang-3">
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+                   <a href="" class="tiao-4">贝克曼博士</a>
+               </ul>
+           </dl>
+       </div>
+   </div>
+
+   <div class="db">
+          <div class="g-p1">
+              <a href="" class="foot-a">首页</a>|
+              <a href="" class="foot-a">公司简介</a>|
+              <a href="" class="foot-a">产品系列</a>|
+              <a href="" class="foot-a">解决方案</a>|
+              <a href="" class="foot-a">去渍实验室</a>|
+              <a href="" class="foot-a">销售网络</a>|
+              <a href="" class="foot-a">新闻中心</a>|
+              <a href="" class="foot-a">常见问题</a>|
+              <a href="" class="foot-a">创新与生活</a>
+          </div>
+       <p class="yi">Copyright © Delta Pronatura 2011 Kurt-Schumacher-Ring 15-17, D-63329 Egelsbach, Germany </p>
+       <p class="yi1">苏ICP备09061814号</p>
+       <p class="yi2">中国（南京）代表处：中国江苏省南京市中山东路288号新世纪广场A座901室 </p>
+       <div class="db1">
+           <img src="image/11.jpg" alt=""/>
+           <span>Tel: 025-86268873</span>
+           <img src="image/12.jpg" alt=""/>
+           <a href="">@贝克曼博士</a>
+           <img src="image/13.jpg" alt=""/>
+           <a href="">网站地图</a>
+           <img src="image/14.jpg" alt=""/>
+           <a href="">English</a>
+       </div>
+   </div>
+
+<!--返回顶部-->
+   <div class="backtop">
+       <img src="image/db.jpg" alt=""/>
+   </div>
+   <script>
+       $(".gang-2").each(function(){
+           $(this).click(function(){
+               $(this).find(".gang-22").toggleClass("activec");
+               $(this).find(".gang-3").slideToggle()
+           })
+       })
+   </script>
+</body>
+</html>

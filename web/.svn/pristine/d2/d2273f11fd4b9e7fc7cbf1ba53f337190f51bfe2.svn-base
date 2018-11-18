@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=1 ">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/switcher.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/xxk.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/switcherJs/switcher.js"></script>
+</head>
+<body>
+<div class="wrapper">
+        <div id="custumize-style">
+            <h2>Style Selector
+                <a href="#" class="switcher open">
+                    <i class="fa fa-cogs icon-switcher"></i>
+                </a>
+            </h2>
+            <div>
+                <h3>Theme Color</h3>
+                <ul class="colors-style" id="color1">
+
+                    <li><a href="#" class="gray"></a></li>
+                    <li><a href="#" class="green"></a></li>
+                    <li><a href="#" class="blue"></a></li>
+                    <li><a href="#" class="red"></a></li>
+                    <li><a href="#" class="yellow"></a></li>
+
+                    <li><a href="#" class="DarkBlue"></a></li>
+                    <li><a href="#" class="orange"></a></li>
+                    <li><a href="#" class="rose"></a></li>
+                    <li><a href="#" class="lightseagreen"></a></li>
+                    <li><a href="#" class="darkolivegreen"></a></li>
+
+                </ul>
+            </div>
+            <div>
+
+                <h3 class="layouts">Page Builder</h3>
+                <div id="show">
+                    <div class="clean-check" style="padding-left: 30px;">
+
+                        <input type="radio" id="pb1" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard" checked="">
+                        <label for="pb1"><span></span>Style 1</label>
+
+                        <input type="radio" id="pb2" name="page_builder" value="page-builder-2.html">
+                        <label for="pb2"><span></span>Style 2</label>
+
+                        <input type="radio" id="pb3" name="page_builder" value="page-builder-3.html">
+                        <label for="pb3"><span></span>Style 3</label>
+
+                        <input type="radio" id="pb4" name="page_builder" value="page-builder-4.html">
+                        <label for="pb4"><span></span>Style 4</label>
+                    </div>
+                </div>
+
+                <h3 class="layouts">Page Animation</h3>
+                <div id="show">
+
+                    <select name="one" class="dropdown-select">
+                        <optgroup label="Bouncing Entrances">
+                            <option value="bounceIn" selected="">bounceIn</option>
+                            <option value="bounceInDown">bounceInDown</option>
+                            <option value="bounceInLeft">bounceInLeft</option>
+                            <option value="bounceInRight">bounceInRight</option>
+                            <option value="bounceInUp">bounceInUp</option>
+                        </optgroup>
+
+                        <optgroup label="Fading Entrances">
+                            <option value="fadeIn">fadeIn</option>
+                            <option value="fadeInDown">fadeInDown</option>
+                            <option value="fadeInLeft">fadeInLeft</option>
+                            <option value="fadeInRight">fadeInRight</option>
+                            <option value="fadeInUp">fadeInUp</option>
+                        </optgroup>
+                    </select>
+
+                </div>
+
+                <h3 class="layouts" style="padding-top:5px">Background Style</h3>
+                <div id="show">
+
+                    <div class="clean-check">
+
+                        <input type="radio" id="s1" name="layout" value="bg_color" checked="checked">
+                        <label for="s1"><span></span>Color</label>
+
+                        <input type="radio" id="s2" name="layout" value="bg_slider">
+                        <label for="s2"><span></span>Slider</label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <h3>Background Color</h3>
+                <ul class="colors-style bgsolid" id="bgsolid">
+                    <li><a href="#" class="gray-bg"></a></li>
+                    <li><a href="#" class="green-bg"></a></li>
+                    <li><a href="#" class="blue-bg"></a></li>
+                    <li><a href="#" class="red-bg"></a></li>
+                    <li><a href="#" class="yellow-bg"></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Background Image</h3>
+                <ul class="colors-style bg" id="bg">
+                    <li><a href="#" class="bg1"></a></li>
+                    <li><a href="#" class="bg2"></a></li>
+                    <li><a href="#" class="bg3"></a></li>
+                    <li><a href="#" class="bg4"></a></li>
+                    <li><a href="#" class="bg5"></a></li>
+                </ul>
+            </div>
+
+            <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
+        </div>
+    <section class="tab-content">
+        <div class="container">
+            <div class="row">
+                <div class="con-rightcopy">
+                    <div class="touX"></div>
+                    <h3>郝 晨 斌</h3>
+                    <ul class="filo">
+                        <li>现居地：中国-深圳-南山区</li>
+                        <li>生日：&nbsp;&nbsp;&nbsp;1992-06-29</li>
+                        <li>星座：&nbsp;&nbsp;&nbsp;狮子座</li>
+                        <li>血型：&nbsp;&nbsp;&nbsp;O型</li>
+                        <li>爱好：&nbsp;&nbsp;&nbsp;运动 冒险 旅游 写作</li>
+                        <li>格言：&nbsp;&nbsp;&nbsp;一个人 一辈子 专注一件事</li>
+                    </ul>
+                </div>
+
+  <div class="ponse">
+        <div class="con-left">
+            <div class="con-left-top">
+                <ul>
+                    <li id="about" class="left_btn">
+                        <span class="tile-1"></span>
+                    </li>
+                    <li id="resume" class="left_btn">
+                        <span class="tile-2"></span>
+                    </li>
+                    <li id="work" class="left_btn">
+                        <span class="tile-3"></span>
+                    </li>
+                    <li id="blog" class="left_btn">
+                        <span class="tile-4"></span>
+                    </li>
+                    <li id="contact" class="left_btn">
+                        <span class="tile-5"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="con-left-bom">
+                <ul>
+                    <li>
+                        <span class="tile-6"></span>
+                    </li>
+                    <li>
+                        <span class="tile-7"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                <!--中间部分大盒子开始-->
+     <div class="middlebox">
+         <div class="mask">
+         </div>
+    <!--     <div class="masks">
+             <img src="http://hcb211.duapp.com/img/ewm2.png" alt="">
+         </div>-->
+         <!--个人简介str-->
+        <div class="m_con" id="small-1">
+            <div class="mid-content">
+                    <div class="con-title">
+                        <span>+ Profile-About Me  --  关于我</span>
+                    </div>
+                    <div class="con-1">
+                        <div class="con-1-left">
+                            <div class="left-title">
+                                <span>郝 晨 斌</span>
+                            </div>
+                            <ul class="left-con-1">
+                                <li>
+                                    <b>姓名</b>
+                                <span id="name">
+                                   郝晨斌
+                                </span>
+                                </li>
+                                <li>
+                                    <b>破壳日</b>
+                                    <span style="margin-left:60px;" id="date">1992-06-29</span>
+                                </li>
+                                <li>
+                                    <b>地址</b>
+                                    <span style="margin-left:75px;">中国-山西-晋城</span>
+                                </li>
+                                <li>
+                                    <b>邮箱</b>
+                                    <span >hcb211@126.com</span>
+                                </li>
+                                <li>
+                                    <b>电话</b>
+                                    <span style="margin-left:73px;">152-3562-0304</span>
+                                </li>
+                                <li>
+                                    <b>个人网站</b>
+                                    <a href="http://hcb211.duapp.com">hcb211.duapp.com</a>
+                                </li>
+
+                            </ul>
+                            <div class="pingjia">
+                                <h3 class="pj-title">— 自我评价 —</h3>
+                                <div class="pj-con">
+                                    <pre>
+一个永远在路上的愤青.....
+一个永远不满足现状的志青.....
+一个怀揣梦想只为遇见今生伯乐的千里马.....
+一个懂得感恩懂得回报的好男人.....
+我是郝晨斌
+我在这里，等你.....
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!--小轮播str-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/img-profile/about_1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img-profile/about_2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img-profile/about_3.png" alt="">
+                </div>
+            </div>
+        </div>
+                        <!--小轮播end-->
+     </div>
+                    <div class="con-2 "></div>
+            </div>
+            <div class="mid-scroll">
+                <div class="scroll-y"></div>
+            </div>
+        </div>
+                    <!--技能展示str-->
+        <div class="m_con" id="small-2">
+           <div class=" mid-content">
+               <div class="con-title">
+                   <span>+ Resume Personal Info  --  技能展示</span>
+                   <span></span>
+               </div>
+               <div class="con-1">
+                   <div class="con-1-left">
+                       <div class="left-title" id="left-title">
+                           <span>-- 编程技巧 --</span>
+                       </div>
+                       <ul class="left-con-1-copy" id="left-content">
+                           <li>
+                               <span class="skiltile1">Html / Html 5</span>
+                               <span class="skilpers1">95%</span>
+                               <span class="rate1"></span>
+                           </li>
+                           <li>
+                               <span class="skiltile1 skiltile2">Css / Css 3</span>
+                               <span class="skilpers1 skilpers2">90%</span>
+                               <span class="rate1 rate2"></span>
+                           </li>
+                           <li>
+                               <span class="skiltile1 skiltile3">Js</span>
+                               <span class="skilpers1 skilpers3">85%</span>
+                               <span class="rate1 rate3"></span>
+                           </li>
+                           <li>
+                               <span class="skiltile1 skiltile4">jQuery</span>
+                               <span class="skilpers1 skilpers4">90%</span>
+                               <span class="rate1 rate4"></span>
+                           </li>
+                           <li>
+                               <span class="skiltile1 skiltile5">Response</span>
+                               <span class="skilpers1 skilpers5">95%</span>
+                               <span class="rate1 rate5"></span>
+                           </li>
+                           <li>
+                               <span class="skiltile1 skiltile6">Zepto</span>
+                               <span class="skilpers1 skilpers6">65%</span>
+                               <span class="rate1 rate6"></span>
+                           </li>
+                                       </ul>
+
+                   <div class="left-title">
+                       <span>-- 设计技巧 --</span>
+                   </div>
+                   <ul class="left-con-1-copy" id="design">
+                       <li>
+                           <span class="skiltile1">Photoshop</span>
+                           <span class="skilpers1">85%</span>
+                           <span class="rate1 rate7"></span>
+                       </li>
+                       <li>
+                           <span class="skiltile1 skiltile2">Illustrateur</span>
+                           <span class="skilpers1 skilpers2">60%</span>
+                           <span class="rate1 rate8"></span>
+                       </li>
+                       <li>
+                           <span class="skiltile1 skiltile3">Indesign</span>
+                           <span class="skilpers1 skilpers3">65%</span>
+                           <span class="rate1 rate9"></span>
+                       </li>
+                   </ul>
+
+               <div class="left-title">
+                   <span>-- 工作技能 --</span>
+               </div>
+               <ul class="left-con-1-copy" id="word">
+                   <li>
+                       <span class="skiltile1">Word</span>
+                       <span class="skilpers1">80%</span>
+                       <span class="rate1 rate10"></span>
+                   </li>
+                   <li>
+                       <span class="skiltile1 skiltile2">Excel</span>
+                       <span class="skilpers1 skilpers2">75%</span>
+                       <span class="rate1 rate11"></span>
+                   </li>
+               </ul>
+
+               <div class="left-title">
+                   <span>-- 兴趣爱好 --</span>
+               </div>
+               <ul class="left-con-1-copy" id="hobby">
+                   <li>
+                       <span class="skiltile1">Sport</span>
+                       <span class="skilpers1">95%</span>
+                       <span class="rate1 rate12"></span>
+                   </li>
+                   <li>
+                       <span class="skiltile1 skiltile2">Readding</span>
+                       <span class="skilpers1 skilpers2">90%</span>
+                       <span class="rate1 rate13"></span>
+                   </li>
+                   <li>
+                       <span class="skiltile1 skiltile3">Traveling</span>
+                       <span class="skilpers1 skilpers3">85%</span>
+                       <span class="rate1 rate14"></span>
+                   </li>
+                   <li>
+                       <span class="skiltile1 skiltile4">Writing</span>
+                       <span class="skilpers1 skilpers4">90%</span>
+                       <span class="rate1 rate15"></span>
+                   </li>
+               </ul>
+
+               <div class="left-title">
+                   <span>-- 我的简历 --</span>
+               </div>
+                <a href="img/resume.jpg" class="resume">
+                    下载我的简历
+                </a>
+           </div>
+                   <!--详细信息str-->
+                   <div id="detail">
+                       <div class="left-title"><span>工作经验</span></div>
+                       <div class="detail-1">
+                           <span>
+                         2013年--大学毕业，初入社会心迷茫前方的路飘忽不定，在外面打临工，酒保 服务员，只为生计。<br>
+                         2014年--兼职网店店主，开始接触电商，接触互联网，并自学前端知识。<br>
+                         2015年--为了提升自己专业技能，在山西太原优逸客进行为期4个月的培训，并就职太原米果科技公司，任职前端工程师。<br>
+                           </span>
+                       </div>
+
+                       <div class="left-title"><span>人生经历</span></div>
+                       <div class="detail-1 detail-2" >
+                           <span>
+                   1992年-- 善良可爱帅气的我降临人世...<br>
+                   --1997年 童年结束，曾经以为可以永远无忧无虑的生活还是停下脚步...<br>
+                    --2005年 小学时代结束，我将正式开始我的学习生涯...<br>
+                    --2013年 大学时代结束，曾经讨厌的学校生活一去不复回...<br>
+                    --2016年 在社会大家庭中摸爬滚跑学到很多技能，希望能做到更好...<br>
+                    --未来   继续从事与互联网有关的项目
+                           </span>
+                       </div>
+                   </div>
+                   <!--详细信息end-->
+           </div>
+               <div class="con-w"></div>
+           </div>
+            <div class="mid-scroll">
+                <div class="scroll-y"></div>
+            </div>
+        </div>
+                    <!--作品展示-->
+         <div class="m_con"  id="small-3">
+             <div class=" mid-content ">
+                 <div class="con-title">
+                     <span>+ Portfolio - My Works  --  我的作品</span>
+                     <span></span>
+                 </div>
+                 <div class="con-1">
+                     <div class="work_demo">
+                         <ul class="work_title">
+                             <li>All</li>
+                             <li>WebDesign</li>
+                             <li>WebPrograming</li>
+                             <li>Game</li>
+                             <li>Practise</li>
+                         </ul>
+            <ul class="work_con">
+                <li>
+                    <span>Apple</span>
+                    <a href="http://hcb211.duapp.com/apple">
+                        <span class="w-5"></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="workN">Wangyi163</span>
+                    <a href="http://hcb211.duapp.com/wangyi">
+                        <span class="w-4"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <span>Bootstrap</span>
+                    <a href="http://hcb211.duapp.com/bootstrap">
+                        <span class="w-10"></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="workN">Canvas</span>
+                    <a href="http://hcb211.duapp.com/canvas">
+                        <span class="w-1"></span>
+                    </a>
+                </li>
+            <li>
+                 <span class="workN">Shaolei</span>
+                 <a href="http://hcb211.duapp.com/sl">
+                     <span class="w-2"></span>
+                 </a>
+            </li>
+                <li>
+				   <span>Todolist</span>
+				   <a href="http://hcb211.duapp.com/todolist/mask.html">
+					   <span class="w-8"></span>
+				   </a>
+			   </li>
+
+
+
+               </ul>
+                     </div>
+                 </div>
+                 <div id="con-e"></div>
+             </div>
+             <div class="mid-scroll">
+                 <div class="scroll-y"></div>
+             </div>
+         </div>
+                    <!--博客str-->
+         <div class="m_con" id="small-4">
+             <div class=" mid-content ">
+                 <div class="con-title">
+                     <span>+ Blog - My Blog  --  我的博客</span>
+                     <span></span>
+                 </div>
+                 <div class="con-1">
+                     <div class="con-1-left">
+                         <div class="left-title" id="left-title">
+                             <span>-- 编程技巧 --</span>
+                         </div>
+                         <ul class="left-con-1-copy" id="left-content">
+                             <li>
+                                 <span class="skiltile1">Html / Html 5</span>
+                                 <span class="skilpers1">95%</span>
+                                 <span class="rate1"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile2">Css / Css 3</span>
+                                 <span class="skilpers1 skilpers2">90%</span>
+                                 <span class="rate1 rate2"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile3">Js</span>
+                                 <span class="skilpers1 skilpers3">85%</span>
+                                 <span class="rate1 rate3"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile4">jQuery</span>
+                                 <span class="skilpers1 skilpers4">90%</span>
+                                 <span class="rate1 rate4"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile5">Response</span>
+                                 <span class="skilpers1 skilpers5">95%</span>
+                                 <span class="rate1 rate5"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile6">Zepto</span>
+                                 <span class="skilpers1 skilpers6">65%</span>
+                                 <span class="rate1 rate6"></span>
+                             </li>
+                         </ul>
+
+                         <div class="left-title">
+                             <span>-- 设计技巧 --</span>
+                         </div>
+                         <ul class="left-con-1-copy" id="design">
+                             <li>
+                                 <span class="skiltile1">Photoshop</span>
+                                 <span class="skilpers1">85%</span>
+                                 <span class="rate1"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile2">Illustrateur</span>
+                                 <span class="skilpers1 skilpers2">60%</span>
+                                 <span class="rate1 rate2"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile3">Indesign</span>
+                                 <span class="skilpers1 skilpers3">65%</span>
+                                 <span class="rate1 rate3"></span>
+                             </li>
+                         </ul>
+
+                         <div class="left-title">
+                             <span>-- 工作技能 --</span>
+                         </div>
+                         <ul class="left-con-1-copy" id="word">
+                             <li>
+                                 <span class="skiltile1">Word</span>
+                                 <span class="skilpers1">80%</span>
+                                 <span class="rate1"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile2">Excel</span>
+                                 <span class="skilpers1 skilpers2">75%</span>
+                                 <span class="rate1 rate2"></span>
+                             </li>
+                         </ul>
+
+                         <div class="left-title">
+                             <span>-- 兴趣爱好 --</span>
+                         </div>
+                         <ul class="left-con-1-copy" id="hobby">
+                             <li>
+                                 <span class="skiltile1">Sport</span>
+                                 <span class="skilpers1">95%</span>
+                                 <span class="rate1"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile2">Readding</span>
+                                 <span class="skilpers1 skilpers2">90%</span>
+                                 <span class="rate1 rate2"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile3">Traveling</span>
+                                 <span class="skilpers1 skilpers3">85%</span>
+                                 <span class="rate1 rate3"></span>
+                             </li>
+                             <li>
+                                 <span class="skiltile1 skiltile4">Writing</span>
+                                 <span class="skilpers1 skilpers4">90%</span>
+                                 <span class="rate1 rate4"></span>
+                             </li>
+                         </ul>
+
+                         <div class="left-title">
+                             <span>-- 我的简历 -</span>
+                         </div>
+                         <a href="img/resume.jpg" class="resume">下载我的简历</a>
+
+                     </div>
+                     <!--详细信息str-->
+                     <div id="detail">
+                         <div class="left-title"><span>工作经验</span></div>
+                         <div class="detail-1">
+                       <span>
+                     2013年--大学毕业，初入社会心迷茫前方的路飘忽不定，在外面打临工，酒保 服务员，只为生计。<br>
+                     2014年--兼职网店店主，开始接触电商，接触互联网，并自学前端知识。<br>
+                     2015年--为了提升自己专业技能，在山西太原优逸客进行为期4个月的培训，并就职太原简一工作室，任职前端工程师。<br>
+                       </span>
+                         </div>
+
+                         <div class="left-title"><span>人生经历</span></div>
+                         <div class="detail-1 detail-2" >
+                       <span>
+               1992年-- 善良可爱帅气的我降临人世...<br>
+               --1997年 童年结束，曾经以为可以永远无忧无虑的生活还是来临...<br>
+                --2005年 小学时代结束，我将正式开始我的学习生涯...<br>
+                --2013年 大学时代结束，曾经讨厌的学校生活一去不复回...<br>
+                --2016年 在社会大家庭中摸爬滚跑学到很多技能，希望能做到更好...<br>
+                --未来   继续从事与互联网有关的项目
+                       </span>
+                         </div>
+                     </div>
+                     <!--详细信息end-->
+                 </div>
+                 <div id="con-2-copy"></div>
+             </div>
+             <div class="mid-scroll">
+                 <div class="scroll-y"></div>
+             </div>
+         </div>
+                    <!--留言板-->
+         <div class="m_con" id="small-5">
+             <div class=" mid-content ">
+                 <div class="con-title">
+                     <span>+ Contact - Contact Me  --  联系我</span>
+                 </div>
+                 <div id="map"></div>
+                 <div class="contact_title">LET'S KEEP IN TOUCH</div>
+                 <span class="yourName">Your Name</span>
+                 <input type="text" placeholder="Name..." class="name_con">
+                 <span class="yourName">Your Email</span>
+                 <input type="text" placeholder="Email..." class="name_con">
+                 <span class="yourName">Your Message</span>
+                 <textarea name="" id="msg" cols="90" rows="10" placeholder="Message..."></textarea>
+                 <div class="sendbox">
+                     <div class="delbox">CLEAR</div>
+                     <div class="send">SEND MESSAGE</div>
+                 </div>
+             </div>
+             <div class="mid-scroll">
+                 <div class="scroll-y"></div>
+             </div>
+         </div>
+
+
+     </div>
+                <!--中间部分大盒子结束-->
+</div>
+   <div class="con-right">
+        <div class="touX"> </div>
+       <h3>郝 晨 斌</h3>
+       <ul class="filo">
+           <li>现居地：中国-深圳-南山区</li>
+           <li>生日：&nbsp;&nbsp;&nbsp;1992-06-29</li>
+           <li>星座：&nbsp;&nbsp;&nbsp;狮子座</li>
+           <li>血型：&nbsp;&nbsp;&nbsp;O型</li>
+           <li>爱好：&nbsp;&nbsp;&nbsp;运动 冒险 旅游 写作</li>
+           <li>格言：&nbsp;&nbsp;&nbsp;一个人 一辈子 专注一件事</li>
+       </ul>
+       <div class="text"></div>
+   </div>
+
+    </div>
+  </div>
+</section>
+</div>
+<div class="wrapper-small">
+    <div class="mask">
+    </div>
+   <!-- <div class="masks">
+        <img src="http://hcb211.duapp.com/img/ewm2.png" alt="">
+    </div>-->
+    <div class="wrapper-top">
+        <div class="touX"></div>
+        <div class="touX1"></div>
+        <div class="touxRights">
+            <h3 style="color:#839CC4;margin-top:10px;font-family:'微软雅黑'">郝 晨 斌</h3>
+            <ul class="filo">
+                <li>现居地：中国-深圳-南山区</li>
+                <li>生日：&nbsp;&nbsp;&nbsp;1992-06-29</li>
+                <li>星座：&nbsp;&nbsp;&nbsp;狮子座</li>
+                <li>血型：&nbsp;&nbsp;&nbsp;O型</li>
+                <li>爱好：&nbsp;&nbsp;&nbsp;运动 冒险 旅游 写作</li>
+                <li>格言：&nbsp;&nbsp;&nbsp;一个人 一辈子 专注一件事</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper-bottom">
+        <div class="item1 aa">
+            <div class="bb">
+                <div class="item1-icon"></div>
+                <span class="item-text">个人简介</span>
+                <div class="item-drop"></div>
+                <div class="m_con sm_con1" id="small-1">
+                    <div class="mid-content">
+                        <div class="con-title">
+                            <span>+ Profile-About Me  --  关于我</span>
+                        </div>
+                        <div class="con-1">
+                            <div class="con-1-left">
+                                <div class="left-title">
+                                    <span>郝 晨 斌</span>
+                                </div>
+                                <ul class="left-con-1">
+                                    <li>
+                                        <b>姓名</b>
+										 <span id="name">
+											郝晨斌
+										 </span>
+                                    </li>
+                                    <li>
+                                        <b>破壳日</b>
+                                        <span style="margin-left:60px;" id="date">1992-06-29</span>
+                                    </li>
+                                    <li>
+                                        <b>地址</b>
+                                        <span style="margin-left:75px;">中国-山西-晋城</span>
+                                    </li>
+                                    <li>
+                                        <b>邮箱</b>
+                                        <span style="margin-left:75px;">hcb211@126.com</span>
+                                    </li>
+                                    <li>
+                                        <b>电话</b>
+                                        <span style="margin-left:73px;">152-3562-0304</span>
+                                    </li>
+                                    <li>
+                                        <i>个人网站</i>
+                                        <a href="http://hcb211.duapp.com">hcb211.duapp.com</a>
+                                    </li>
+
+                                </ul>
+                                <div class="pingjia">
+                                    <h3 class="pj-title">— 自我评价 —</h3>
+                                    <div class="pj-con">
+											 <pre>
+ 一个永远在路上的愤青.....
+ 一个永远不满足现状的志青.....
+ 一个怀揣梦想只为遇见今生伯乐的千里马.....
+ 一个懂得感恩懂得回报的好男人.....
+ 我是郝晨斌
+ 我在这里，等你.....
+											 </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con-2 "></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="item2 aa">
+            <div class="bb">
+                <div class="item2-icon"></div>
+                <span class="item-text">技能展示</span>
+                <div class="item-drop"></div>
+                <div class="m_con sm_con2" id="small-2">
+                    <div class=" mid-content">
+                        <div class="con-title">
+                            <span>+ Resume Personal Info  --  技能展示</span>
+                            <span></span>
+                        </div>
+                        <div class="con-1">
+                            <div class="con-1-left">
+                                <div class="left-title" id="left-title">
+                                    <span>-- 编程技巧 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="left-content">
+                                    <li>
+                                        <span class="skiltile1">Html / Html 5</span>
+                                        <!--<span class="skilpers1">95%</span>-->
+                                        <span class="rate1"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Css / Css 3</span>
+                                        <!--<span class="skilpers1 skilpers2">90%</span>-->
+                                        <span class="rate1 rate2"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Js</span>
+                                        <!--<span class="skilpers1 skilpers3">85%</span>-->
+                                        <span class="rate1 rate3"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile4">jQuery</span>
+                                        <!--<span class="skilpers1 skilpers4">90%</span>-->
+                                        <span class="rate1 rate4"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile5">Response</span>
+                                        <!--<span class="skilpers1 skilpers5">95%</span>-->
+                                        <span class="rate1 rate5"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile6">Zepto</span>
+                                        <!--<span class="skilpers1 skilpers6">65%</span>-->
+                                        <span class="rate1 rate6"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 设计技巧 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="design">
+                                    <li>
+                                        <span class="skiltile1">Photoshop</span>
+                                        <!--<span class="skilpers1">85%</span>-->
+                                        <span class="rate1 rate7"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Illustrateur</span>
+                                        <!--<span class="skilpers1 skilpers2">60%</span>-->
+                                        <span class="rate1 rate8"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Indesign</span>
+                                        <!--<span class="skilpers1 skilpers3">65%</span>-->
+                                        <span class="rate1 rate9"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 工作技能 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="word">
+                                    <li>
+                                        <span class="skiltile1">Word</span>
+                                        <!--<span class="skilpers1">80%</span>-->
+                                        <span class="rate1 rate10"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Excel</span>
+                                        <!--<span class="skilpers1 skilpers2">75%</span>-->
+                                        <span class="rate1 rate11"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 兴趣爱好 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="hobby">
+                                    <li>
+                                        <span class="skiltile1">Sport</span>
+                                        <!--<span class="skilpers1">95%</span>-->
+                                        <span class="rate1 rate12"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Readding</span>
+                                        <!--<span class="skilpers1 skilpers2">90%</span>-->
+                                        <span class="rate1 rate13"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Traveling</span>
+                                        <!--<span class="skilpers1 skilpers3">85%</span>-->
+                                        <span class="rate1 rate14"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile4">Writing</span>
+                                        <!--<span class="skilpers1 skilpers4">90%</span>-->
+                                        <span class="rate1 rate15"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 我的简历 --</span>
+                                </div>
+                                <a href="img/resume.jpg" class="resume">下载我的简历</a>
+                            </div>
+                            <!--详细信息str-->
+                            <div id="detail">
+                                <div class="left-title" id="jy"><span>工作经验</span></div>
+                                <div class="detail-1" id="jyCon">
+                           <span>
+                         2013年--大学毕业，初入社会心迷茫前方的路飘忽不定，在外面打临工，酒保 服务员，只为生计。<br>
+                         2014年--兼职网店店主，开始接触电商，接触互联网，并自学前端知识。<br>
+                         2015年--为了提升自己专业技能，在山西太原优逸客进行为期4个月的培训，并就职太原米果科技公司，任职前端工程师。<br>
+                           </span>
+                                </div>
+
+                                <div class="left-title"><span>人生经历</span></div>
+                                <div class="detail-1 detail-2" >
+                           <span>
+                   1992年-- 善良可爱帅气的我降临人世...<br>
+                   --1997年 童年结束，曾经以为可以永远无忧无虑的生活还是停下脚步...<br>
+                    --2005年 小学时代结束，我将正式开始我的学习生涯...<br>
+                    --2013年 大学时代结束，曾经讨厌的学校生活一去不复回...<br>
+                    --2016年 在社会大家庭中摸爬滚跑学到很多技能，希望能做到更好...<br>
+                    --未来   继续从事与互联网有关的项目
+                           </span>
+                                </div>
+                            </div>
+                            <!--详细信息end-->
+                        </div>
+                        <!--<div class="con-w"></div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item3 aa">
+            <div class="bb">
+                <div class="item3-icon"></div>
+                <span class="item-text">作品展示</span>
+                <div class="item-drop"></div>
+                <div class="m_con sm_con3"  id="small-3">
+                    <div class=" mid-content ">
+                        <div class="con-title">
+                            <span>+ Portfolio - My Works  --  我的作品</span>
+                            <span></span>
+                        </div>
+                        <div class="con-1">
+                            <div class="work_demo">
+                                <ul class="work_title">
+                                    <li>All</li>
+                                    <li>WebDesign</li>
+                                    <li>WebPrograming</li>
+                                    <li>Game</li>
+                                    <li>Practise</li>
+                                </ul>
+                                <ul class="work_con">
+                                   <!-- <li>
+                                        <span>Apple</span>
+                                        <a href="http://hcb211.duapp.com/apple">
+                                            <span class="w-5"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Tianmao</span>
+                                        <a href="http://hcb211.duapp.com/tianmao/tianmao.html">
+                                            <span class="w-8"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">Wangyi163</span>
+                                        <a href="http://hcb211.duapp.com/wangyi">
+                                            <span class="w-4"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Bootstrp</span>
+                                        <a href="http://hcb211.duapp.com/bootstrp">
+                                            <span class="w-10"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Mbaidu</span>
+                                        <a href="http://hcb211.duapp.com/mbaidu">
+                                            <span class="w-7"></span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span>Suning</span>
+                                        <a href="http://hcb211.duapp.com/suning">
+                                            <span class="w-12"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Yintai</span>
+                                        <a href="http://hcb211.duapp.com/yintai/idex.html">
+                                            <span class="w-6"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">Canvas</span>
+                                        <a href="http://hcb211.duapp.com/canvas">
+                                            <span class="w-1"></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <span class="workN">Angular</span>
+                                        <a href="http://hcb211.duapp.com/angular/angular">
+                                            <span class="w-3"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">RunningGame</span>
+                                        <a href="http://hcb211.duapp.com/runningGame">
+                                            <span class="w-2"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>todolist</span>
+                                        <a href="http://hcb211.duapp.com/todolist/mask.html">
+                                            <span class="w-9"></span>
+                                        </a>
+                                    </li>
+                                    <li id="ewm">
+                                        <span>app</span>
+                                        <a href="#">
+                                            <span class="w-11"></span>
+                                        </a>
+                                    </li>-->
+                                    <li>
+                                        <span>Apple</span>
+                                        <a href="http://hcb211.duapp.com/apple">
+                                            <span class="w-5"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">Wangyi163</span>
+                                        <a href="http://hcb211.duapp.com/wangyi">
+                                            <span class="w-4"></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <span>Bootstrap</span>
+                                        <a href="http://hcb211.duapp.com/bootstrap">
+                                            <span class="w-10"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">Canvas</span>
+                                        <a href="http://hcb211.duapp.com/canvas">
+                                            <span class="w-1"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="workN">Shaolei</span>
+                                        <a href="http://hcb211.duapp.com/sl">
+                                            <span class="w-2"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>Todolist</span>
+                                        <a href="http://hcb211.duapp.com/todolist/mask.html">
+                                            <span class="w-8"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div id="con-e"></div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item4 aa">
+            <div class="bb">
+                <div class="item4-icon"></div>
+                <span class="item-text">博客</span>
+                <div class="item-drop"></div>
+                <div class="m_con sm_con4" id="small-4">
+                    <div class=" mid-content ">
+                        <div class="con-title">
+                            <span>+ Blog - My Blog  --  我的博客</span>
+                            <span></span>
+                        </div>
+                        <div class="con-1">
+                            <div class="con-1-left">
+                                <div class="left-title" id="left-title">
+                                    <span>-- 编程技巧 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="left-content">
+                                    <li>
+                                        <span class="skiltile1">Html / Html 5</span>
+                                        <span class="skilpers1">95%</span>
+                                        <span class="rate1"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Css / Css 3</span>
+                                        <span class="skilpers1 skilpers2">90%</span>
+                                        <span class="rate1 rate2"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Js</span>
+                                        <span class="skilpers1 skilpers3">85%</span>
+                                        <span class="rate1 rate3"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile4">jQuery</span>
+                                        <span class="skilpers1 skilpers4">90%</span>
+                                        <span class="rate1 rate4"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile5">Response</span>
+                                        <span class="skilpers1 skilpers5">95%</span>
+                                        <span class="rate1 rate5"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile6">Zepto</span>
+                                        <span class="skilpers1 skilpers6">65%</span>
+                                        <span class="rate1 rate6"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 设计技巧 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="design">
+                                    <li>
+                                        <span class="skiltile1">Photoshop</span>
+                                        <span class="skilpers1">85%</span>
+                                        <span class="rate1"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Illustrateur</span>
+                                        <span class="skilpers1 skilpers2">60%</span>
+                                        <span class="rate1 rate2"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Indesign</span>
+                                        <span class="skilpers1 skilpers3">65%</span>
+                                        <span class="rate1 rate3"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 工作技能 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="word">
+                                    <li>
+                                        <span class="skiltile1">Word</span>
+                                        <span class="skilpers1">80%</span>
+                                        <span class="rate1"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Excel</span>
+                                        <span class="skilpers1 skilpers2">75%</span>
+                                        <span class="rate1 rate2"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 兴趣爱好 --</span>
+                                </div>
+                                <ul class="left-con-1-copy" id="hobby">
+                                    <li>
+                                        <span class="skiltile1">Sport</span>
+                                        <span class="skilpers1">95%</span>
+                                        <span class="rate1"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile2">Readding</span>
+                                        <span class="skilpers1 skilpers2">90%</span>
+                                        <span class="rate1 rate2"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile3">Traveling</span>
+                                        <span class="skilpers1 skilpers3">85%</span>
+                                        <span class="rate1 rate3"></span>
+                                    </li>
+                                    <li>
+                                        <span class="skiltile1 skiltile4">Writing</span>
+                                        <span class="skilpers1 skilpers4">90%</span>
+                                        <span class="rate1 rate4"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="left-title">
+                                    <span>-- 我的简历 --</span>
+                                </div>
+                                <a href="img/resume.jpg" class="resume">下载我的简历</a>
+
+                            </div>
+                            <!--详细信息str-->
+                            <div id="detail">
+                                <div class="left-title"><span>工作经验</span></div>
+                                <div class="detail-1">
+                       <span>
+                     2013年--大学毕业，初入社会心迷茫前方的路飘忽不定，在外面打临工，酒保 服务员，只为生计。<br>
+                     2014年--兼职网店店主，开始接触电商，接触互联网，并自学前端知识。<br>
+                     2015年--为了提升自己专业技能，在山西太原优逸客进行为期4个月的培训，并就职太原简一工作室，任职前端工程师。<br>
+                       </span>
+                                </div>
+
+                                <div class="left-title"><span>人生经历</span></div>
+                                <div class="detail-1 detail-2" >
+                       <span>
+               1992年-- 善良可爱帅气的我降临人世...<br>
+               --1997年 童年结束，曾经以为可以永远无忧无虑的生活还是来临...<br>
+                --2005年 小学时代结束，我将正式开始我的学习生涯...<br>
+                --2013年 大学时代结束，曾经讨厌的学校生活一去不复回...<br>
+                --2016年 在社会大家庭中摸爬滚跑学到很多技能，希望能做到更好...<br>
+                --未来   继续从事与互联网有关的项目
+                       </span>
+                                </div>
+                            </div>
+                            <!--详细信息end-->
+                        </div>
+                        <div id="con-2-copy"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item5 aa">
+            <div class="bb">
+                <div class="item5-icon"></div>
+                <span class="item-text">意见及建议</span>
+                <div class="item-drop"></div>
+                <div class="m_con sm_con5" id="small-5">
+                    <div class=" mid-content ">
+                        <div class="con-title">
+                            <span>+ Contact - Contact Me  --  联系我</span>
+                        </div>
+                        <div id="map"></div>
+                        <div class="contact_title">LET'S KEEP IN TOUCH</div>
+                        <span class="yourName">Your Name</span>
+                        <input type="text" placeholder="Name..." class="name_con">
+                        <span class="yourName">Your Email</span>
+                        <input type="text" placeholder="Email..." class="name_con">
+                        <span class="yourName">Your Message</span>
+                        <textarea name="" id="msg" cols="90" rows="10" placeholder="Message..."></textarea>
+                        <div class="sendbox">
+                            <div class="delbox">CLEAR</div>
+                            <div class="send">SEND MESSAGE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<audio src="1.mp3" autoplay loop="loop"></audio>
+<!--小轮播-->
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container',{
+        loop: true,
+        direction:"horizontal",
+        autoplay:2000,
+        speed:300,
+        autoplayDisableOnInteraction : false ,
+        effect:'fade'
+    });
+</script>
+<!--地图-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zokMstB1sSrGVQ9ulKoP5aDh4uOpjEFM"></script>
+<script type="text/javascript">
+    var map = new BMap.Map("map");          // 创建地图实例
+    var point = new BMap.Point(112.560496,37.813624);  // 创建点坐标
+    map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
+    map.addControl(new BMap.NavigationControl())
+    map.setCurrentCity("北京");
+//    map.addControl(new BMap.NavigationControl(opts));
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import url(index-3.css);
+#one{
+	width: 100px;
+	height: 200px;
+	border: 1px solid gray;
+	background: gray;
+}
+.one{
+	width: 50%;
+	height: 500px;
+	border:1px solid green;	
+	background: yellow;
+}

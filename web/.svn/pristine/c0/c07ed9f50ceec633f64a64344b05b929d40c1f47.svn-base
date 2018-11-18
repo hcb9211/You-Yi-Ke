@@ -1,0 +1,167 @@
+var getYzm = $("#getYzm");
+getYzm.click(function () {
+
+    var that = this;
+    var phone = $("#phone").val();
+    phone = phone.replace(/(^\s+)|(\s+$)/g,'');
+
+    if(!phone){
+        pop('请输入有效的手机号码！');
+        return false;
+    }
+    //判断手机号是否正确
+    var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    if(!myreg.test(phone)){
+        pop('请输入有效的手机号码');
+        return false;
+    }else{
+        var param = {
+            "id" : 54321,
+            "jsonrpc" : "2.0",
+            "method" : "User.CheckRegist",
+            "params" : {
+                "userid" : phone
+            }
+        };
+        ajax(param,function (res) {
+            var result = res.result;
+            var error = res.error;
+            if(error){
+                pop('该用户未注册')
+            }else if(result){
+                var param = { // 发送验证码
+                    "jsonrpc": "2.0",
+                    "method": "Other.SendVerificationCode",
+                    "id": 54321,
+                    "params" : {
+                        "phone": phone
+                    }
+                };
+                var disabled = $(that).attr('disabled');
+                if(!disabled){
+                    ajax(param,function (res) {
+                        var result = res.result;
+                        var error = res.error;
+                        if(result){
+                            var disabled = $(that).attr('disabled');
+                            var seconds = 60;
+                            $(that).addClass('disabled').attr('disabled','disabled').html(seconds + 's');
+                            var timer = setInterval(function () {
+                                seconds--;
+                                if(seconds > 0){
+                                    $(that).html(seconds + 's');
+                                }else{
+                                    $(that).removeClass('disabled').removeAttr('disabled').html('重新发送');
+                                    clearInterval(timer);
+                                    null;
+                                }
+                            },1000)
+                        }else if(error){
+                            pop(error.message);
+                        }
+                    })
+                }
+            }
+        })
+    }
+});
+
+var bind = $(".btn-red");
+bind.click(function () {
+    var phone = $("#phone").val();
+    var smscode = $('#smsCode').val();
+    var openid = getCookie('openid');
+    var unionid = getCookie('unionid');
+    var target = getCookie('entrance');
+    var wxapp = getCookie('WXAppBind');
+    var wxgzh = getCookie('WXGzhBind');
+    var url;
+    //  判断入口
+    switch (target){
+        case 'club':
+            url = 'http://wx.gupiaoxianji.com/auth/indexcallbackclub/';
+            break;
+        case 'fund':
+            url = 'http://wx.gupiaoxianji.com/auth/indexcallbackfund/';
+            break;
+        default:
+            break;
+    }
+
+    if (smscode) {
+        smscode = smscode.replace(/(^\s+)|(\s+$)/g, '');
+    }
+    // 检查验证码是否正确
+    var pattern = new RegExp("^\\d{4}$");
+    if (!smscode) {
+        pop('请输入正确短信验证码！');
+        return false;
+    }
+    if (!pattern.test(smscode)) {
+        pop('请输入正确短信验证码！');
+    }else{
+        var param = {
+            "id": 54321,
+            "jsonrpc": "2.0",
+            "method": "Other.VerifyVerificationCode",
+            "params": {
+                "phone": phone,
+                "code": smscode
+            }
+        };
+        ajax(param,function (res) {
+            var result = res.result;
+            if(result) {
+                if (result.status > 1) {
+                    pop(result.statusmsg);
+                    return false;
+                }
+            }else{
+                if(!wxapp){
+                    var param = {  //  绑定微信
+                        "jsonrpc": "2.0",
+                        "method": "User.BindWeixin",
+                        "id": 54321,
+                        "params" : {
+                            "unionid": unionid,
+                            "userid": phone
+                        }
+                    };
+                    ajax(param,function (res) {
+                        var result = res.result;
+                        if(result.status > 1){
+                            pop(result.statusmsg);
+                        }else{  //  绑定微信成功
+                            if(!wxgzh){
+                                var param = {
+                                    "id" : 54321,
+                                    "jsonrpc" : "2.0",
+                                    "method" : "User.BindGzhNxb",
+                                    "params" : {
+                                        "openid":openid,
+                                        "userid":phone
+                                    }
+                                };
+                                ajax(param,function (res) {
+                                    var result = res.result;
+                                    if(result.status > 1){
+                                        pop(result.statusmsg);
+                                    }else {
+                                        $("body").addClass('show-result');
+                                        if(url){
+                                            setTimeout(function () {
+                                                location.href = url;
+                                            },2000);
+                                        }
+                                    }
+                                });
+                            }else{
+                                pop('您已经绑定过了')
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+})

@@ -1,0 +1,132 @@
+/*
+=========================================
+	@name : 易博金网络-首页样式
+	@author : ebojin@163.com
+	@date : 14:20 2010-1-17 18:53:06
+	@update : 2010-1-17 18:53:10 by ebojin 
+==========================================
+*/
+/*==index==s*/
+
+.on,.question,.often,.question_q a{
+	background:url(img/index_bg.png) no-repeat;
+}
+.left{
+	float:left;
+	width:670px;
+}
+.right{
+	width:280px;
+	float:right;
+}
+.banner{
+	width:670px;
+	height:240px;
+	margin-top:5px;
+	position:relative;
+}
+
+.banner_tab  img{
+	border:1px solid #659ab6;
+}
+.hidecontent {display:none;}
+.on{
+	 background-position:0px -100px;
+}
+.on img{
+      border:1px solid #0099ff;
+}
+
+.content{
+	margin:0 auto;
+	background:url(../images/content_bg.png) repeat-x top;
+	border-left:1px solid #bad1de;
+	border-right:1px solid #bad1de;
+}
+
+
+.help{
+	margin-top:10px;
+	width:670px;
+}
+.help .div_p{
+	padding:10px 5px 15px;
+	>padding:13px 5px 15px;
+}
+.help .help_ul{
+	padding:10px 0px 30px 30px;
+	>padding-top:1px;
+}
+
+.help_ul li{
+	float:left;
+	width:310px;
+	height:28px;
+	line-height:28px;
+	position:relative;
+}
+.help_ul .img_hot{
+	top:8px;
+	position:absolute;
+}
+
+a.k:link, a.k:visited {
+	color:#228ada;
+	text-decoration:none;
+}
+a.k:active,a.k:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+
+.question{
+	background-position:-680px 0;
+	width:230px;
+	height:96px;
+}
+.question_q{
+	padding-top:15px;
+	padding-left:15px;
+}
+.question_q a{
+	width:204px;
+	height:48px;
+	display:block;
+	background-position:0 -42px;
+}
+.question_a{ 
+	padding:6px 0 0 87px; 
+	font-size:14px; 
+	font-weight:bold;
+}
+.often{
+	background-position:-680px -104px;
+	width:230px;
+	margin-top:5px;
+	height:180px;
+}
+.often dl{
+	padding-left:55px;
+}
+.often dt{
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	padding-top:13px;
+}
+.often dd{
+	color:#808080;
+	padding-bottom:8px;
+}
+.tool{
+	width:230px;
+	margin-top:10px;
+}
+.li_icon{
+	padding-left:12px;
+}
+.li_icon li{
+	padding-left:26px;
+	line-height:26px;
+}

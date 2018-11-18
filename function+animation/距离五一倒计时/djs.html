@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<script>
+	function djs(){
+		var arr=[];
+		var now=new Date();
+		var time=new Date();
+		time.setMonth(4);
+		time.setDate(1);
+		time.setHours(0);
+		time.setMinutes(0);
+		time.setSeconds(0);
+// 对象.getTime  是指1970年1月2日距对象时间的毫秒数
+		var cha=Math.floor((time.getTime()-now.getTime())/1000);
+		// 求天数
+		var day=Math.floor(cha/(60*60*24));
+			cha%=(60*60*24);
+			arr.push(day);
+		// 求小时
+		var hour=Math.floor(cha/(60*60));
+			cha%=(60*60);
+			arr.push(hour);
+		// 求分钟
+		var minute=Math.floor(cha/60);
+			arr.push(minute);
+		// 求秒
+		var second=cha%=60;
+			arr.push(second);
+
+			return arr;
+	}
+
+	window.onload=function(){
+		var span=document.getElementsByTagName('span');
+		var timeArr=djs();
+			for(var i=0;i<timeArr.length;i++){
+				span[i].innerHTML=timeArr[i];
+			}
+			setInterval(dao,1000);
+			function dao(){
+				var timeArr=djs();
+				for(var i=0;i<timeArr.length;i++){
+					span[i].innerHTML=timeArr[i];
+				}
+			}
+	}
+		
+
+	</script>
+</head>
+<style>
+	.box{
+		width:150px;
+		height: 100px;
+		margin:200px auto;
+		background:#f4f4f4;
+		padding-top:50px;
+	}
+	.title{
+		font-size:20px;
+	}
+
+
+
+
+</style>
+<body>
+	<div class="box">
+		<div class="title">距离五一还有</div>
+		<span></span>日
+		<span></span>时
+		<span></span>分
+		<span></span>秒
+	</div>
+</body>
+</html>

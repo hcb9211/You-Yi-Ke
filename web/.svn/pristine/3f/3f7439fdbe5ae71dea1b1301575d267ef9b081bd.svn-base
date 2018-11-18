@@ -1,0 +1,57 @@
+*{
+    margin:0;padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: #cc603e!important;
+}
+.form-control{
+    text-align:center;
+    font-family: '楷体';
+}
+#prices,#price{
+    width:50%;
+    height:50px;
+    float:left;
+    font-size:20px;
+    color:#cc603e;
+    margin-bottom:20px;
+}
+.colors,.color{
+    color:white;
+    text-align:center!important;
+    font-size:24px;
+    font-family:'楷体'
+}
+
+.box{
+    width:500px;height:auto;
+    border:1px solid #000;
+    margin:0 auto;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.box tr:nth-child(1){
+    width:100px;
+    height: 100px !important;
+    border-bottom:1px dashed #000;
+    text-align:center;
+    font-family: '楷体';
+    font-size:20px;
+}
+.box tr{
+    width:100px;
+    height: 50px !important;
+    border-bottom:1px dashed #000;
+    text-align:center;
+    font-family: '楷体';
+    font-size:20px;
+}
+
+.box tr td{
+    width:100px;
+    height: 50px !important;
+    border-right:1px dashed #000;
+}

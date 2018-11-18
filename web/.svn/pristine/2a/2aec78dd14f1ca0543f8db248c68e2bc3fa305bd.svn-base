@@ -1,0 +1,10 @@
+$.fn.extend({
+	select:function(btns,cons,className){
+		btns.click(function(){
+			var index=$(this).index();
+			btns.removeClass(className).eq(index).addClass(className);
+			$(".con").css("display","none");
+			cons.eq(index).css('display',"block");
+			})
+		}
+})

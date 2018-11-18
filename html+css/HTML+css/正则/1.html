@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正则</title>
+</head>
+<script>
+	/*var str="ab12 cd 34 ef 567 =55=567"
+	alert(str.match(/\b+/g))*/
+
+	// var reg=new RegExp("a");
+	/*var reg=/a/;
+	var str="abcd";
+	console.log(reg.exec(str))*/
+	// alert(reg.test(str))
+
+	// var str="ab12,cd34,ef56,567"
+	/*var reg=/[0-9]/;     var reg=/\d/;   var reg=/[0123456789]/*/
+	/*var reg=/[^0-9]/;      var reg=/\D/ *//*取反，数字以外的不要*/   
+	// var reg=/\d+/g;   var reg=/\d{2,3}/g
+	// alert(str.match(reg))
+	/*var reg=/[abc]pc/;      //apc  bpc  cpc 
+	var str="abcapc";*/
+	// alert(reg.exec(str))
+
+	/*var str="专注1极致2创新"
+	var reg=/\d/;
+	alert(str.split(reg))*/
+
+	/*邮箱正则  匹配字符串*/
+	/*var reg=/^[\w]+@[\w]+\.[a-zA-Z]+$/;
+	var str='==++742351862@qq.com';
+	alert(reg.test(str));*/
+
+	/*匹配单词*/
+	/*var reg=/\bjava\b/;
+	var str="javascript";
+	alert(reg.test(str))*/
+
+	/*不区分大小写*/
+	/*var reg=/hi/i;
+	var str="Hi";
+	alert(reg.test(str))*/
+
+	/*去除空格*/
+	/*var reg=/\S+/;
+	var str="   .class id";
+	alert(reg.exec(str));*/
+
+	function delKong(str,type){
+
+		type=type?type:"side";
+
+			if(type=='left'){
+				var reg=/^s*/;
+				return str.replace(reg,"");
+			}else if(type=='right'){
+				var reg=/\s*$/;
+				return str.replace(reg,"");
+			}else if(type=='side'){
+				var reg=/^\s|\s*$/g;
+				return str.replace(reg,"");
+			}else if(type=='all'){
+				var reg=/\s*/g;
+				return str.replace(reg,"");
+			}
+		}
+	
+	// var reg=/\S+/;
+	/*var str="     .class    id";
+	alert(delKong(str,"all"))*/
+
+	/*组号*/
+	/*var reg=/(go)(abd)ab\1/;
+	var str="goabdabgo";
+	alert(reg.test(str));*/
+
+	/*取消分组*/
+	/*var reg=/(?:go)(abd)ab\1/;
+	var str="goabdababd";
+	alert(reg.test(str));*/
+
+	window.onload=function(){
+		var reg=document.getElementsByName('reg')[0]
+		var btn=document.getElementsByName('btn')[0]
+		var str=document.getElementsByName('str')[0]
+		var div=document.getElementsByTagName('div')[0]
+
+		btn.onclick=function(){
+			var reg1=eval(reg.value);
+			var arr=reg1.exec(str.value);
+			var newStr="";
+			for(var i in arr){
+				if(i=="0"){
+					newStr+="正则表达式匹配的结果是"+arr[0]+";&nbsp;"
+				}else if(i=="index"){
+					newStr+="匹配的位置是"+arr["index"]+";&nbsp;"
+				}else if(i=="input"){
+					newStr+="匹配的input是"+arr['input']+";&nbsp;"
+				}else{
+					newStr+="第"+i+"的结果是"+arr[i]+";&nbsp;"
+				}
+			}
+			div.innerHTML=newStr;
+		}
+	}
+
+</script>
+<body>
+	<input type="text" name='reg'>
+	<input type="button" name="btn" value="按钮">
+	<input type="text" name='str'>
+	<div></div>
+</body>
+</html>

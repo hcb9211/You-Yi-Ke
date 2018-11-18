@@ -1,0 +1,18 @@
+/*页面样式 开始*/
+  body,ul,li,h2,h3,dl,dt,dd,p{margin:0;padding:0;list-style:none;}
+  img{border:0;}
+  a{ text-decoration: none;color:#333;}
+  body{font:16px "微软雅黑";line-height:24px;}
+  .logo{min-width:1170px;height:180px;background:#50A0DD url(../images/back.jpg) no-repeat center 0;margin-bottom:20px;}
+  h2{width:1170px;height:100%;margin:0 auto;background: url(../images/logo.jpg) no-repeat 0 0;font-size:32px;font-weight:normal;color:#fff;line-height:150px;}
+.uek_sm h3{font-size:24px;font-weight:normal;border-bottom:1px solid #ccc;padding:20px 0;color:#0780D1;}
+  .uek_copy{width:100%;background:#50A0DD;text-align:center;color:#888;font-size:14px;padding:20px 0;color:#fff;}
+.uek_sm b{color:#0780D1;}
+.uek_sm dl{padding:20px 0;}
+.uek_sm dl dt{font-size:18px;color:#0780D1;}
+.uek_sm dl dd{padding:2px 30px;}
+  .uek_sm{width:1170px;margin:0 auto;height:auto;margin-top:50px;margin-bottom:30px; overflow:hidden;}
+  .backindex{width:80px;height:80px; text-align:center;line-height:80px;font-size:16px;background:#0780D1;position:fixed;top:45%;right:5%;}
+  .backindex a{color:#fff;}
+  .backindex:hover{background:#00A317;}
+/*页面样式 结束*/

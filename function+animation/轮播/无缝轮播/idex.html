@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝轮播</title>
+</head>
+<script src='js/function.js'></script>
+<script src='js/idex.js'></script>
+<script src='js/animate.js'></script>
+
+<style>
+	ul,li{
+        padding: 0;
+        margin:0;
+        list-style: none;
+    }
+    .window{
+    	width: 1226px;
+    	height: 460px;
+    	border:2px solid red;
+    	margin:50px auto;
+        position: relative;
+        overflow: hidden;
+    }
+    a{  
+    	font-size: 0;
+        opacity: 1;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .window ul{ 
+    	width: 100px;
+    	height: 10px;
+    	position: absolute;
+    	left: 50%;
+    	bottom:50px;
+    	margin-left: -50px;
+
+    }
+    .window ul li{
+    	width: 10px;
+    	height: 10px;
+    	background:#ccc;
+    	border-radius: 50%;
+    	margin-right: 10px;
+    	float: left;
+    	cursor:pointer;
+    }
+    .window img{
+        width: 1226px;
+        height: 460px;
+    }
+        
+     .btn{
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        left: 0;
+        top:50%;
+        margin-top: -35px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    .btnL{
+        width: 40px;
+        height: 70px;
+        float: left;
+        background:rgba(0,0,0,0.5);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 70px;
+        cursor:pointer;
+    }
+    .btnR{
+        width: 40px;
+        height: 70px;
+        float: right;
+        background:rgba(0,0,0,0.5);
+        font-size: 20px;
+        text-align: center;
+        line-height: 70px;
+        font-weight: bold;
+        cursor:pointer;
+    }
+</style>
+<body>
+	<div class="window">
+		<a href=""><img src="img/banner1.jpg" alt=""></a>
+		<a href=""><img src="img/banner2.jpg" alt=""></a>
+		<a href=""><img src="img/banner3.jpg" alt=""></a>
+		<a href=""><img src="img/banner4.jpg" alt=""></a>
+		<a href=""><img src="img/banner5.jpg" alt=""></a>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+        <div class="btn">
+            <div class="btnL">&lt;</div>
+            <div class="btnR">&gt;</div>
+        </div>
+	</div>
+</body>
+</html>

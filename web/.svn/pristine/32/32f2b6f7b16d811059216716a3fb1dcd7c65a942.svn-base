@@ -1,0 +1,42 @@
+.para{
+    font-size:.2rem;
+    width:4rem;
+    height:auto;
+    border:1px solid #000;
+    margin:0 auto;
+}
+.tips{
+    font-size:.16rem;
+    border-bottom:1px solid #000;
+}
+.cparea{
+    text-align: center;
+    font-family: Microsoft Yahei;
+    margin: -2em 0 0;
+}
+.kwd{
+    display: inline-block;
+    color: #272727;
+    background-color: #fff;
+    font-size: 1.1875em;
+    font-size: 1.1875em;
+    padding: .75em 1em;
+    border: 1px dashed #e60012;
+    -webkit-user-select:element;
+    margin: 2em;
+}
+.kwd span{
+    display: block;
+    border: 1px solid #fff;
+}
+.kdes{
+    display: inline-block;
+    color: #212121;
+    font-size: .875em;
+    padding-top: 0;
+}
+.kdes b{
+    color: #ed5353;
+    font-size: 1.25em;
+    padding-right: .1em;
+}

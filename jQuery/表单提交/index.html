@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业1</title>
+	<script src='js/jquery.js'></script>
+	<script src='js/jquery.validate.js'></script>
+
+	<script>
+    $(function(){
+    	$('form[name=myform]').validate({
+             rules:{
+               num1:{required:'#iphone:checked',digits:'true',number:'true'},
+               num2:{required:'#radio:checked',digits:'true',number:'true'},
+               num3:{required:'#tv:checked',digits:'true',number:'true'}
+             },
+             messages:{
+               num1:{required:'请输入个数',digits:'请输入整数',number:'请输入合法数字'},
+               num2:{required:'请输入个数',digits:'请输入整数',number:'请输入合法数字'},
+               num3:{required:'请输入个数',digits:'请输入整数',number:'请输入合法数字'}
+             }
+    	})
+    	// 总价
+    	$('input[name=num1]').blur(function(){
+    		var a=$('input[name=price1]').val();
+    		var b=$('input[name=num1]').val();
+    		var c1=a*b;
+            $('input[name=total1]').val(c1);
+            // $('input:button').click(function(){
+               $('input[name=whole]').val(c1);
+            // })
+            $('input[name=num2]').blur(function(){
+    		var a=$('input[name=price2]').val();
+    		var b=$('input[name=num2]').val();
+    		var c2=a*b;
+            var t2=$('input[name=total2]').val(c2);
+            $('input[name=whole]').val(c1+c2);
+
+            $('input[name=num3]').blur(function(){
+    		var a=$('input[name=price3]').val();
+    		var b=$('input[name=num3]').val();
+    		var c3=a*b;
+            $('input[name=total3]').val(c3);
+            $('input[name=whole]').val(c1+c2+c3);
+
+                    // 提交按钮
+                    $('input:submit').click(function(){
+              
+                        $('input[name=whole]').val(c1+c2+c3);
+                    })
+    	   })
+    	  })
+    	})
+    	//开始输入
+        $('#iphone').click(function(){
+            $('input[name=num1]').attr('disabled',false)
+        })
+        $('#radio').click(function(){
+            $('input[name=num2]').attr('disabled',false)
+        })
+        $('#tv').click(function(){
+            $('input[name=num3]').attr('disabled',false)
+        })
+
+    	
+    })
+	</script>
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+    form{
+    	width: 1000px;
+    	height: auto;
+    	min-height: 1px;
+    	border:1px solid #ccc;
+    	font-size: 16px;
+    	color:#000;
+    	padding:10px;
+    	margin:50px auto;
+    }
+    ul{
+    	width:100%;
+    	height:auto; 
+    }
+    ul li{
+    	width: 100%;
+    	height: 50px;
+    	border-bottom: 1px dashed #ccc;
+    	list-style: none;
+    }
+    input{
+    	width:20%;
+    	height: 80%;
+    	margin-right: 10px;
+    }
+    .first{
+    	width: 15px;
+    	height: 15px;
+    	border-radius: 10px;
+    	background: blue;
+    }
+    label.error{
+    	width: 10%;
+    	float: right;
+    	height: 80%;
+    	font-size: 12px;
+        color:red;
+        text-align: center;
+        line-height: 50px;
+    }
+    input.error{
+    	background: #ccc;
+    	border: 1px solid red;
+    }
+    #sub{
+        width: 0;height: 0;
+    }
+    #btn{
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+    }
+	</style>
+</head>
+<body>
+	<form action="" name='myform'>
+		<ul>
+			<li>
+				手机<input type="checkbox" class='first'id='iphone' name='iphone'>
+				单价<input type="text" value='998' readOnly='true' name='price1'>
+				<label for="num1">个数</label><input type="text" name='num1' disabled='true' value='0'>
+				总价<input type="text" readOnly='true' name='total1'>
+			</li>
+			<li>
+				音箱<input type="checkbox" class='first' id='radio' name='radio'>
+				单价<input type="text" value='1998' readOnly='true' name='price2'>
+				<label for="num2">个数</label><input type="text" name='num2' disabled='true' value='0'>
+				总价<input type="text" readOnly='true' name='total2'>
+			</li>
+			<li>
+				电视<input type="checkbox" class='first' id='tv' name='tv'>
+				单价<input type="text" value='98' readOnly='true' name='price3'>
+				<label for="num3">个数</label><input type="text" name='num3' disabled='true' value='0'>
+				总价<input type="text" readOnly='true' name='total3'>
+			</li>
+			<li>
+				一共花费<input type="text" readOnly='true' name='whole'>
+			</li>
+			<li><input type="submit" id='sub'>
+                <input type="button" value='提交按钮' id='btn'>
+                <input type="reset" value='重置按钮' id='btn'>
+            </li>
+           
+	    </ul>
+		
+	</form>
+</body>
+</html>

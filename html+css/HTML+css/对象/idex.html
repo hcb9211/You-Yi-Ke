@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象</title>
+	<script>
+	// 声明一个对象：
+
+      // 1，用构造函数
+     /* function tv(){
+
+      }
+      var sony=new tv();
+      alert(typeof sony);*/
+
+      // 2，用json
+      /*var obj={};
+      alert(typeof obj);*/
+
+     // 3，Object方法
+      /*var obj=new Object();
+      alert(obj.constructor);*/
+  
+      /*function tv(){}
+      var sony=new tv();
+      sony.brand='sony';
+      sony.color='red';
+      sony.size='50inch';
+      sony.play=function(){
+      	alert('玩游戏')
+      }
+      sony.look=function(){
+      	alert("看电视")
+      }
+      sony.internet=function(){
+      	alert("上网")
+      }*/
+       // alert(sony.brand);
+       // alert(sony['brand']);
+      // sony.play();
+      // sony['play']()
+
+      
+
+      /*function tv(brand,color,size){
+      	this.brand=brand;
+      	this.color=color;
+      	this.size=size;
+      	this.play=function(){
+      		alert('玩游戏')
+      	}
+      	this.look=function(){
+      		alert('看电视')
+      	}
+      	this.internet=function(){
+      		alert('上网')
+      	}
+      }
+      var sony=new tv('sony','red','50inch');
+      var sumsan=new tv('sumsan','blue','55inch');
+      alert(sony.brand);
+      alert(sumsan.brand);*/
+      
+      // json 形式
+       /*var sony={
+      	'brand':'sony',
+      	'color':'red',
+      	'size':'50inch',
+      	'play':function(){alert('玩游戏')},   
+      	'look':function(){alert('看电视')},
+      	'internet':function(){alert('上网')}
+      }
+     alert(sony.brand);
+      sony.play();
+      sony.look();*/
+
+      // 数组遍历
+      /*for(var i in sony){
+      	document.write(sony[i]+'<br/>')
+      }*/
+      
+      // push 的函数
+     /*var arr=[1,2,3,4]; 
+   arr.push1=function(){  	
+      	  if(arr instanceof Array&&arguments.length>0){
+       	  	for(var i=0;i<arguments.length;i++){
+                   arr[arr.length]=arguments[i]
+      	  	}
+      	  }
+      	return arr.length; 
+      }
+      // arr.push1(5,6,7);
+      // document.write(arr);
+
+      var arr2=[12,23,34]
+      function arr2(){};
+        Array.prototype.push1=new arr2.push1();
+        var arr2=new Array();
+        arr2.push1(12,34);
+        document.write(arr2);*/
+      
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+       //工厂函数
+   /* function dianshi(){
+    	// 原料
+    	 var tv={};
+    	 // 加工
+    	tv.brand='sony';
+	    tv.color='red';
+	    tv.size='50inch';
+	    tv.play=function(){
+	    	alert('玩游戏')
+	    } 
+	    tv.look=function(){
+	    	alert('看电视')
+	    }
+	    tv.internet=function(){
+	    	alert('上网')
+	    } 
+	    return tv;   
+    }
+      var sony=new dianshi();
+      var sumsan=new dianshi();
+      sony.look();
+      sumsan.look();
+      alert(sony.look==sumsan.look);*/  /*两个look地址不同，所以并不相同。*/
+
+ </script>
+
+ <script>
+    // 构造函数
+    /*function tv(){
+    	this.brand='sony';
+	    this.color='red';
+	    this.size='50inch';
+	    this.look=function(){
+	    	alert('看电视')
+	    }
+	    this.internet=function(){
+	    	alert('上网')
+	    }   
+    }*/
+    /*var sony=new tv();
+    var sumsan=new tv();
+    alert(sony.look==sumsan.look);*/     /*两个look地址不同，所以仍并不相同。*/
+ // 原型
+   /*tv.prototype.play = function() {
+   	   alert('玩游戏')
+   }
+	    var sony=new tv();
+	    var sumsan=new tv();
+  		sony.look();
+      	sumsan.look();*/ 
+ </script>
+ <script>
+   // 继承
+  function person(){
+  	this.name='hcb';
+  	this.say=function(){
+  		alert('这是person构造函数的say');
+  	}
+  }
+
+  function student(){
+       this.say=function(){
+       	 alert('这是student构造函数的say')
+       }
+  }
+  
+  student.prototype=new person();
+  student.prototype.say=function(){
+  	alert('这是原型的say')
+  };
+  var h=new student();
+  h.say()
+ alert(h.name)
+
+
+
+ </script>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Tab选项卡</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script>
+	$(function(){
+		$(".uek_box").tab($(".uek_links a"),$(".uek_lists li"),"#000","#fff")
+
+	})
+</script>
+<style>
+	.uek_box{width:619px;height:340px;border:1px solid #ccc;margin:0 auto;overflow:hidden;}
+	.uek_links{width:100%;height:30px;border-bottom:1px solid #ccc;line-height:30px;}
+	.uek_links a{float:left;width:33.33%;height:100%; text-align: center;}
+
+</style>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">Tab选项卡特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+
+<div class="uek_box">
+	<div class="uek_links">
+		<a href="javascript:;" style="background:#ccc;color:#fff;">新品推荐</a>
+		<a href="javascript:;">热销产品</a>
+		<a href="javascript:;">销量榜单</a>
+	</div>
+	<ul class="uek_lists">
+		<li><img src="images/ls1.jpg" /></li>
+		<li><img src="images/ls2.jpg" /></li>
+		<li><img src="images/ls3.jpg" /></li>
+	</ul>
+</div>
+
+
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>tab.js</b>特效函数库。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>tab.js</b>前在head标签对中引入。</dd>
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/tab.js"&gt;&lt;/script&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	布局：需有一个父容器，父容器中分为两部分，第一部分为 链接列表，第二部分为 内容列表。
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+	&lt;div class="box"&gt;
+            &lt;div class="links"&gt;
+                &lt;a href="#"&gt;新品推荐&lt;/a&gt;
+                &lt;a href="#"&gt;热销产品&lt;/a&gt;
+                &lt;a href="#"&gt;销量榜单&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;ul class="lists"&gt;
+                &lt;li&gt;&lt;img src="images/ls1.jpg" /&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src="images/ls2.jpg" /&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src="images/ls3.jpg" /&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+	&lt;/div&gt;
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：tab</dd>
+	<dd>obj.tab(links,lists,[bgcolor],[ftcolor]);</dd>
+	<dd>参数obj：父容器</dd>
+	<dd>必选参数links：选择点击选项列表。</dd>
+    <dd>必选参数lists：选择内容列表。</dd>
+    <dd>可选参数bgcolor：改变链接背景颜色。</dd>
+    <dd>可选参数ftcolor：改变链接文字颜色。</dd>
+	<dd>示例：<br />
+	<pre>
+	&lt;script&gt;
+		$(function(){  
+            $(".box").tab($(".links a"),$(".lists li"))
+            //$('.box') 父容器     $(".links a") 链接列表   $(".lists li")内容列表
+		}) 
+	&lt;/script&gt;
+	</pre>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>	
+</body>
+</html>

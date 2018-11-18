@@ -1,0 +1,70 @@
+body{
+    background: #0b2752;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+@font-face {font-family: 'iconfont';
+    src: url('icon/iconfont.eot'); /* IE9*/
+    src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+section {
+  width: 600px;
+  height: 400px;
+  margin: 130px auto;
+  position:relative;
+  background:red;
+}
+.videoCj{
+  width:705px;height:40px;
+  position:absolute;
+  left:5px;bottom:0;
+    /*margin-left:-292px;*/
+  z-index:999;
+  background:rgba(0,0,0,0.5);
+  line-height:40px;
+  display:none;
+}
+video{
+  height:400px;
+  border:5px solid white;
+}
+section input{
+  cursor:pointer;
+}
+#play,#pause,#replay,#muted,#qp,#min{
+    width:15px;height:15px;
+    font-family:"iconfont";
+    font-style: normal;
+    display:inline-block;
+    margin-left:5px;
+    cursor:pointer;
+    color:#E0E0E0;
+}
+#play:after{
+    content:"\e60e";
+}
+#pause:after{
+    content:"\e600"
+}
+#replay:after{
+    content:"\e60c";
+}
+#muted:after{
+    content:"\e610";
+}
+#qp:after{
+    content:"\e609";
+}
+#min:after{
+    content:"\e60d";
+}
+.videoCj span{
+    color:#E0E0E0;
+}
+#now{
+    width:420px;height:15px;
+    border-radius:10px/15px;
+}

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>苏宁</title>
+	<script src="functionall.js"></script>
+	<script src="animate.js"></script>
+	<style>
+    body,ul,li{
+    	margin:0;padding:0;list-style: none;
+    }
+    #bannerbox{
+    	width: 1000px;
+    	height: 500px;
+    	margin: 0 auto;
+    	border:1px solid blue;
+    }
+    .leftbtn,.rightbtn{
+    	width: 100px;
+    	height: 500px;
+    	background: #ccc;
+    	font-size: 50px;
+    	text-align: center;
+    	line-height: 500px;
+    	float: left;
+    }
+    .banner{
+    	float: left;
+    	width: 800px;
+    	height: 500px;
+    	position: relative;
+
+    }
+    .conbox,.imgbox{
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	left: 0;
+    	top:0;
+    }
+    .imgs{
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	left: 0;
+    	top:0;
+    	opacity: 0;
+    	text-align: center;
+    	line-height: 500px;
+    	font-size: 80px;
+    	color:#fff;
+    }
+    .check.imgs{
+    	opacity: 1;
+    }
+    .one .imgs{
+     background: red;
+    }
+    .two .imgs{
+     background: yellow;
+    }
+    .three .imgs{
+     background: blue;
+    }
+    .four .imgs{
+     background: yellow;
+    }
+    .titlebox{
+    	width: 800px;
+    	height: 40px;
+    	position:absolute;
+    	left:0;
+    	bottom: 0;
+    }
+    .title{
+    	width: 80px;
+    	height: 40px;
+    	float: left;
+    	margin-left: 2px;
+    	position: relative;
+    	background: rgba(0,0,0,0.5)
+    }
+    .bgbox{
+    	width: 80px;
+    	height: 0px;
+    	position: absolute;left:0;bottom: 0;
+    	background: rgba(0,0,0,0.5);
+    }
+    .check .bgbox{
+      height:50px;
+    }
+    .xiao{
+    	width: 80px;
+    	height:10px;
+    	position: absolute;
+    	text-align: center;
+    	line-height:4px;
+    	left:0;
+    	bottom:40px;
+    	opacity: 0;
+        background: rgba(0,0,0,0.5)
+    }
+    .check .xiao{
+    	opacity: 1;
+    }
+    .xiaobtn{
+    	width: 5px;
+    	height: 3px;
+    	background: #fff;
+       display: inline-block;
+       margin-right: 5px;
+    }
+    .da{
+    	width: 80px;
+    	height: 200px;
+    	background: #ccc;
+    	position:absolute;
+    	left:0;
+    	bottom:40px;
+    	display:none;
+        background: rgba(0,0,0,0.5);
+    }
+    .dabtn{
+    	width: 10px;
+    	height: 4px;
+    	margin:5px;
+    }
+    .word{
+    	width: 100%;
+        height: 100%;
+        position: absolute;left:0;
+        top:0;
+        color:#fff;
+        text-align: center;
+        line-height:40px;
+    }
+	</style>
+</head>
+<body>
+	<div id="bannerbox">
+		<div class="leftbtn">&lt;</div>
+		<div class="banner">
+			<div class="conbox">
+				<div class="imgbox one">
+					<div class="imgs check">1-1</div>
+					<div class="imgs">1-2</div>
+					<div class="imgs">1-3</div>
+				</div>
+				<div class="imgbox two">
+					<div class="imgs">2-1</div>
+					<div class="imgs">2-2</div>
+					<div class="imgs">2-3</div>
+					<div class="imgs">2-4</div>
+                    <div class="imgs">2-5</div>
+				</div>
+				<div class="imgbox three">
+					<div class="imgs">3-1</div>
+					<div class="imgs">3-2</div>
+				</div>
+				<div class="imgbox four">
+					<div class="imgs">4-1</div>
+					<div class="imgs">4-2</div>
+					<div class="imgs">4-3</div>
+				</div>
+			</div>
+			<div class="titlebox">
+				<div class="title check">
+					<div class="bgbox"></div>
+					<ul class="xiao">
+						<li class="xiaobtn" style="background:red"></li>
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+					</ul>
+					<ul class="da">
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+					</ul>
+					<div class="word">第一组</div>
+				</div>
+				<div class="title">
+					<div class="bgbox"></div>
+					<ul class="xiao">
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+					</ul>
+					<ul class="da">
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+					</ul>
+					<div class="word">第二组</div>
+				</div>
+				<div class="title">
+					<div class="bgbox"></div>
+					<ul class="xiao">
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+					</ul>
+					<ul class="da">
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+					</ul>
+					<div class="word">第三组</div>
+				</div>
+				<div class="title">
+					<div class="bgbox"></div>
+					<ul class="xiao">
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+						<li class="xiaobtn"></li>
+					</ul>
+					<ul class="da">
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+						<li class="dabtn"></li>
+					</ul>
+					<div class="word">第四组</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightbtn">&gt;</div>
+	</div>
+</body>
+<script>
+$(function(){
+	var imgs=$(".imgs");//图片
+    for(var i=0;i<imgs.length;i++){
+     imgs[i].index=i;
+    }
+    var da=$(".da")
+    var dabtn=$(".dabtn")
+    var imgbox=$(".imgbox")
+    var xiaobtn=$(".xiaobtn");//
+    var title=$(".title");//盒子
+    var bgbox=$(".bgbox");//
+    var xiao=$(".xiao")//
+    var leftbtn=$(".leftbtn")[0]
+    var bannerbox=$("#bannerbox")
+    var rightbtn=$(".rightbtn")[0]
+    var num=0
+    //type   "r"向右走    "L"向左走
+    function move(type){
+    	if(type=="r"){
+    		 num++;
+        if(num>=imgs.length){
+        	num=0
+        }
+    }else if(type=="l"){
+    	num--;
+        if(num<=0){    //到第一张的时间
+        	num=imgs.length-1;
+        }
+    }
+       //让图片一张张显示
+    	for(var i=0;i<imgs.length;i++){
+         imgs[i].style.opacity=0;
+    	}
+    	animate(imgs[num],{opacity:1});
+        
+        for(var i=0;i<xiaobtn.length;i++){            //小格变颜色
+         xiaobtn[i].style.background="#fff";
+    	}
+    	xiaobtn[num].style.background="red"
+        for(var i=0;i<title.length;i++){   //到哪个，让哪个小格显示，其他透明
+         animate(xiao[i],{opacity:0})
+         animate(bgbox[i],{height:0})
+    	}
+    	var parent=xiaobtn[num].parentNode.parentNode
+    	animate(getFirst(parent),{height:50});
+    	animate(getNum(parent,1),{opacity:1});
+
+        for(var i=0;i<da.length;i++){
+            da[i].style.display="none"
+        }
+    }
+	var t=setInterval(function(){move("r")},2000);
+
+
+	leftbtn.onmouseover=rightbtn.onmouseover=function(){
+		clearInterval(t);
+	}
+    leftbtn.onmouseout=rightbtn.onmouseout=function(){
+		t=setInterval(function(){move("r")},2000);
+	}
+	rightbtn.onclick=function(){
+		move("r")
+	}
+	leftbtn.onclick=function(){
+		move("l")
+	}
+
+    bannerbox.onmouseover=function(){
+    clearInterval(t)
+    }
+    bannerbox.onmouseout=function(){
+        t=setInterval(function(){
+            move("r")
+        },2000)
+    }
+
+
+    for(var i=0;i<title.length;i++){
+        title[i].index=i;
+        title[i].onclick=function(){
+            for(var j=0;j<da.length;j++){
+                da[j].style.display="none"
+                animate(xiao[j],{opacity:0})
+                animate(bgbox[j],{height:0})
+            }
+            da[this.index].style.display="block";
+
+            for(var j=0;j<imgs.length;j++){
+                imgs[j].style.opacity=0;
+            }
+            var one=getFirst(imgbox[this.index]);
+            animate(one,{opacity:1});
+            num=one.index;
+
+            for(var i=0;i<dabtn.length;i++){            //小格变颜色
+             dabtn[i].style.background="#fff";
+                }
+            var first=getFirst(da[this.index])
+            first.style.background="red"
+        }
+    }
+
+    for(var i=0;i<dabtn.length;i++){
+        dabtn[i].index=i;
+        dabtn[i].onmouseover=function(){
+            
+            for(var j=1;j<imgs.length;j++){
+                imgs[j].style.opacity=0;
+                dabtn[j].style.background="#fff"
+            }
+                animate(imgs[this.index],{opacity:1})
+                dabtn[this.index].style.background="red";
+                num=this.index;
+        }
+    }
+})
+	
+</script>
+</html>

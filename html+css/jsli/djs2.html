@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>错误页</title>
+<style>
+	body{
+		margin:0;
+	}
+#box{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #ccc; 
+	position: relative;
+}
+#title{
+	width: 100%;
+    height: 50px;
+    background:pink;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+#con{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+}
+#time{
+	color:red;
+	font-weight:bold;
+}
+#anniu{
+	width: 100px;
+	height: 50px;
+	border:1px solid black;
+    text-align: center;
+	line-height: 50px;
+	position: absolute;
+	left: 150px;
+	bottom:40px;
+	box-shadow:0px 5px 10px rgba(0,0,0,0.5); 
+}
+</style>
+</head>
+<body>
+	<div id="box">
+		<div id="title">ERROR!</div>
+		<div id="con">
+		   <span id="time">5</span>
+		        秒后返回
+		   <div id="anniu"><a href="" style="text-decoration:none;color:black">马上返回</a></div>
+		</div>
+	</div>
+
+</body>
+<script>
+	var box=document.getElementById("box");
+    var cw=document.documentElement.clientWidth;
+         //浏览器的宽
+    var ch=document.documentElement.clientHeight;
+         //浏览器的高
+         var leftx=(cw-400)/2;
+         var topy=(ch-300)/2;
+         box.style.left=leftx+"px";
+         box.style.top=topy+"px";
+     //按钮
+     var anniu=document.getElementById("anniu");
+     anniu.onclick=function(){
+     	//单击按钮时，返回到djs页面
+     	//window.open("djs.html");
+     	location.href="djs.html";
+     }
+     var time=document.getElementById("time");
+     var num=5;
+     var t;
+     function move(){
+           num--;
+           if(num==0){
+           	clearInterval(t);
+           	location.href="djs.html";
+           }
+           time.innerHTML=num;
+     }
+     setInterval(move,1000);
+
+</script>
+</html>

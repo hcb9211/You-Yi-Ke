@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+<style>
+	*{
+		box-sizing:border-box;
+	}
+	.lyb{
+		width:500px;height:auto;border:1px solid #ccc;margin:0 auto;position: relative;
+	}
+	.top{
+		width:500px;height:auto;max-height:300px;overflow: hidden;background: #eee;min-height: 30px;
+	}
+	.top p{
+		marign:0;font-size: 16px;line-height: 30px;width:auto;padding-left: 30px;color:red;
+	}
+	liuyan{
+			marign:0;font-size: 16px;line-height: 30px;width:auto;padding-left: 30px;color:blue;
+	}
+	#text{
+		width:100%;height: 100%;padding:0;resize:none;font-size:20px;color:#ccc;
+	}
+	.bottom{
+		width:100%;height: 30px;background: orange;
+	}
+	#sub{
+		width:100px;height: 30px;padding:0;display: block;margin:0 auto;border:1px solid blue;background: #fff;cursor:pointer;  
+	}
+	.tishibox{
+		width:200px;height:50px;border-radius:10%;border:1px solid #ccc;font-size:12px;position: absolute;right:-200px;top:0px;display: none;
+	}
+	.tishibox #yishu{
+		color:red;
+	}
+	.tishibox #haishu{
+		color:red;
+	}
+</style>
+
+<script src="js/jquery.js"></script>
+<script>
+	$(function(){
+		var text=$("#text");
+		var ts=$(".tishibox");
+		var ys=$("#yishu");
+		var hs=$('#haishu');
+		$.ajax({
+			url:"php/select.php",
+			data:"",
+			dataTyoe:"json",
+			success:function(aa){
+				// console.log(aa)
+				$.each(aa,function(index,value){
+					$("<p>"+value.message+"</p>").addClass("liuyan").appendTo(".top")
+				})	
+			}
+		})
+
+		text.focus(function(){
+			if(text.val()=="请输入留言..."){
+			text.val("")
+		};
+			ts.show()
+			
+		}).blur(function(){
+			if(text.val()==""){
+				text.val("请输入留言...")
+			}
+				ts.hide();
+		})
+		text.keydown(function(){
+			var zishu=text.val().length;
+			if(zishu>40){
+				text.val(text.val().slice(0,40));
+			 }
+			$("#yishu").html(zishu);
+			$("#haishu").html(40-zishu)
+		})
+
+		function sub(){
+			var val=text.val();
+			if(val==''){
+				alert("请输入内容")
+				return
+			}else{	
+			$("<p>"+val+"</p>").addClass("liuyan").appendTo(".top")
+			text.val("请输入留言...");
+			text.blur();
+			$.ajax({
+				url:"php/insert.php",
+				data:"data="+val,
+				success:function(aa){
+					alert(aa)
+				}
+			})
+			}
+		}
+
+		$("#sub").click(sub)
+		
+
+
+	})
+</script>
+</head>
+<body>
+	<div class="lyb">
+
+		<div class="top">
+			<p>留言：</p>
+		</div>
+		<div class="middle">
+			<textarea name="" id="text" cols="30" rows="10" >请输入留言...</textarea>
+		</div>
+		<div class="bottom">
+			<input type="button" id="sub" value="提交">
+		</div>
+		<div class="tishibox">
+			一共可以输入40个字，已经输入了<span id="yishu">0</span>个，还可以输入<span id="haishu">40</span>个字。
+		</div>
+
+	</div>
+</body>
+</html>

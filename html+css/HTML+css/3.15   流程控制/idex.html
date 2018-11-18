@@ -1,0 +1,179 @@
+    <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运算符,流程控制</title>
+	<script>
+   //成绩表 
+
+
+     /* var num=prompt("请输入成绩","100");
+     if(num>=60&&num<70){
+     	alert("刚及格");
+     }else if(num>=70&&num<80){
+     	alert("良好");
+     }else if(num>=80&&num<90){
+     	alert("很好");
+     }else if(num>=90&&num<100){
+     	alert("优秀");
+     }else if(num==100){
+     	alert("完美");
+     }else{
+     	if(num<0||num>100){
+     		alert("输入有误");
+     	}else if(num>=0&&num<50){
+     		alert("回家吧");
+     	}else if(num>=50&&num<60){
+     		alert("加油吧");
+     	}
+     }*/
+
+  
+
+    // 三元运算符
+    /*var num=prompt('请输入数字',0);
+    num>=100?alert("大于等于100"):alert("小于100");*/
+    
+                      /*流程控制*/
+    // 顺序结构
+  /*  var str=prompt("请输入一个数字","1");
+   switch(str){
+   	case '1':
+   	alert("周一");
+   	break;
+   	case '2':
+   	alert("周二");
+   	break;
+   	case '3':
+   	alert("周三");
+   	break;
+   	case '4':
+   	alert("周四");
+   	break;
+   	case '5':
+   	alert("周五");
+   	break;
+   	case '6':
+   	alert("周六");
+   	break;
+   	case '7':
+   	alert("周日");
+   	break;
+   	default:
+   	alert("输入有误,请重新输入！");
+   } */
+      
+      /*计算器*/
+ /*window.onload=function(){
+  	var result=document.getElementById("result");
+  	var num1=document.getElementById("num1");
+  	var num2=document.getElementById("num2");
+  	var ysf=document.getElementById("ysf");
+  	result.onfocus=function(){
+  		var num1v=parseFloat(num1.value);
+  		var num2v=parseFloat(num2.value);
+  		var ysfv=ysf.value;
+  		switch(ysfv){
+  			case "+":
+  			     alert(num1v+num2v);
+  			     break;
+  			case "-":
+  			     alert(num1v-num2v);
+  			     break;
+
+            case "*":
+  			     alert(num1v*num2v);
+  			     break;
+
+            case "/":
+  			     alert(num1v/num2v);
+  			     break;
+  			default:
+  			     alert("有误");
+  		}
+  	}
+  }*/
+ 
+    // 循环结构
+
+   /*for(i=0;i<10;i+=2){
+   	 document.write(i+"<br>");
+   }*/
+
+  // 十成十表格
+  /*document.write("<table border='1' cellspacing='0'>");
+    for(var i=0;i<10;i++){
+    	document.write("<tr>")
+    	for(var j=0;j<10;j++){
+    		if(i%2==0&&j%2==0){
+    			document.write("<td bgcolor=red>")
+    		}else if(i%2==1&&j%2==1){
+    			document.write("<td bgcolor=green>")
+    		}else{
+    			document.write("<td bgcolor=#ccc>")
+    		}
+    		document.write("胖子")
+    		document.write("</td>")
+    	}
+    	 
+    	document.write("<tr>")
+    }
+  document.write("</table>")*/
+
+
+document.write("<table>")
+   for(var i=0;i<10;i++){
+    document.write("<tr>")
+      for(var j=0;j<10;j++){
+        if(j%2==0){
+           document.write("<td bgcolor='red'>")
+        }else{
+          document.write("<td bgcolor='green'>")
+        }
+        document.write("胖子")
+        document.write("</td>")
+      }
+
+    document.write("</tr>")
+   }
+document.write("</table>")
+
+
+  document.write("<table border='1' cellspacing='0'>")
+    var i=0;
+    while(i<10){
+      document.write("<tr>")
+         var j=0;
+         while(j<10){
+           if(i%2==0&&j%2==0){
+            document.write("<td bgcolor=red>")
+           }else if(i%2==1&&j%2==1){
+             document.write("<td bgcolor=green>")
+           }else{
+            document.write("<td bgcolor=#ccc>")
+           }
+           document.write("胖子")
+           document.write("</td>")
+          j++;
+         }
+      document.write("<tr>")
+       i++;
+    }
+  document.write("</table>")
+
+  
+	</script>
+	<style>
+     #ysf{
+     	width: 30px;text-align: center;
+     }
+	</style>
+</head>
+<body>
+	<!-- <input type="text" id="num1" value="0">
+  <input type="text" id="ysf" value="+">
+  <input type="text" id="num2" value="0">
+  <span>=</span>
+  <input type="text" id="result" value="0"> -->
+</body>
+</html>

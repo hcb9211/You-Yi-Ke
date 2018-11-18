@@ -1,0 +1,41 @@
+/**
+ * Created by Administrator on 2016/8/12.
+ */
+$(function(){
+    $('.btn:first').addClass('active');
+    $('.con:first').css({zIndex:1});
+    $('.box').select($('.btn'),$('.con'),'active');
+})
+
+//·µ»Ø¶¥²¿
+$(function(){
+    $(".backtop").backTop();
+    //$(".backtop") ·µ»Ø°´Å¥¸¸ÈÝÆ÷
+})
+$(function(){
+    $(".er").hover(function(){
+        $(".ewm").show();
+    },function(){
+        $(".ewm").hide();
+    })
+})
+
+
+//ÒÆ¶¯¶Ë
+$(function(){
+    $(".anniu").click(function(){
+        $($(".smallmenuxl")[0]).slideToggle();
+    })
+})
+
+
+$(function(){
+    $(".leaner-onename").click(function(){
+        $(this).next(".leaner-twoname").slideToggle()
+    });
+
+
+    $(window).load(function () {
+        $(this).scrollTop(600)
+    })
+})

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.12.1.js"></script>
+	
+	<script>
+		//生成扑克牌
+		//将扑克牌显示到桌面
+		//发牌
+		$(function(){
+			var poker=[];
+			function createPoker(){
+				var r=[];
+				var obj={};
+				var arr=["hongtao","heitao","fangkuai","meihua"];
+				var numarr=["A","1","2","3","4","5","6","7","8","9","10","J","Q","K"];
+				while(r.length!=52){
+					var huase=arr[Math.floor(Math.random()*4)];
+					var shuzi=numarr[Math.floor(Math.random()*13)];
+					   if(!obj[huase+shuzi]){
+					   		r.push({h:huase,s:shuzi});
+					   		obj[huase+shuzi]=true;
+					   }
+				}
+				return r;				
+			}
+			poker=createPoker();
+
+			function setPoker(){
+				$.each(poker,function(index,value){
+					$("<div></div>")
+					.addClass("poker "+value.h)
+					.text(value.s)
+					.appendTo(".container")
+					.delay(index*30)
+					.animate({opacity:1})
+					.queue(function(){
+						if(index==poker.length-1){
+							$(".start").click(fapai)
+						}
+						$(this).dequeue()
+					})
+				})
+				
+			}
+			setPoker();
+
+			function fapai(){
+				var poker=$(".container").children()
+				$(".container").children().each(function(index,ele){
+					var target,fn;
+					var startTop=-125;
+					var startLeft=-150;
+					if(index%3==0){
+						target=$(".left");
+						fn={left:-260,opacity:0,top:(startTop+=15*parseInt(index/3))};
+					}else if(index%3==1){
+						target=$(".right");
+						fn={left:260,opacity:0,top:(startTop+=15*index/3)};
+					}else if(index%3==2){
+						target=$(".bottom");
+						fn={top:285,opacity:0,left:(startLeft+=15*parseInt(index/3))}
+					}
+					$(this).delay(index*30)
+					.animate(fn,400)
+					.queue(function(){
+						if(index==poker.length-1){
+							$(".start,.container").fadeOut(300)
+						}
+						if(!target.is(".bottom")){
+							$(this).appendTo(target).css({
+								left:0,
+								top:"+=125",
+								opacity:1
+							}).dequeue()
+						}else{
+							$(this).appendTo(target).css({
+								left:"+=150",
+								top:0,
+								opacity:1
+							}).dequeue()
+						}
+					})
+				})
+			}
+		})
+	</script>
+</head>
+<style>
+	.scene{
+		width:400px;height:400px;
+		background: green;
+		margin:0 auto;
+		position: relative;
+	}
+	.left{
+		width:100px;height:400px;
+		background: #ccc;
+		position: absolute;
+		left:-110px;top:0;
+	}
+	.right{
+		width:100px;height:400px;
+		background: #ccc;
+		position: absolute;
+		right:-110px;top:0;
+	}
+	.bottom{
+		width:400px;height:150px;
+		background: #ccc;
+		position: absolute;
+		left:0;bottom:-160px;
+	}
+	.container{
+		width:100px;height:150px;
+		position: absolute;
+		top:0;bottom: 0;right:0;left:0;
+		margin:auto;
+		border:1px solid yellow;
+	}
+	.start{
+		width:100px;height:30px;
+		background:gold;
+		text-align: center;
+		line-height: 30px;
+		border-radius: 5px;
+		font-size: 16px;
+		color:black;
+		cursor: pointer;
+		position: absolute;
+		left:0;right:0;bottom:80px;
+		margin:auto;
+	}
+	.hongtao{
+		background: red;
+	}
+	.meihua{
+		background:blue;
+	}
+	.fangkuai{
+		background:#ff6700;
+	}
+	.heitao{
+		background:orange;
+	}
+	.poker{
+		width:100px;height:150px;
+		position: absolute;
+		left:0;top:0;
+		opacity: 0;
+		border:1px solid black;
+		box-sizing:border-box;
+		padding-left: 3px;
+	}
+</style>
+<body>
+	<div class="scene">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="bottom"></div>
+		<div class="start">发牌</div>
+		<div class="container"></div>
+	</div>
+	
+</body>
+</html>

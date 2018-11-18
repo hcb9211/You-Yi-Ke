@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>deepCopy</title>
+</head>
+<script>
+
+	function deepCopy(obj){
+		if(typeof obj=="object"){
+			if(obj.length!=undefined){
+				var newObj=[];
+			}else{
+				var newObj={};
+			}
+			for(var i in obj){
+				if(typeof obj[i]=="object"){
+					newObj[i]=deepCopy([obj][i])
+				}else{
+					newObj[i]=obj[i]
+				}
+				
+			}
+		}
+		return newObj;
+
+		person1=
+		{
+			name:"zhangsan",
+			age:18,
+			sex:"man",
+			friend:['f1','f2','f3'],
+			grade:{math:90,English:95,Chinese:100}
+		}
+		person2=person1;
+		person2.grade.math=100;
+		console.log(person1)
+
+
+	}
+</script>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象</title>
+  <script>
+
+//假设建立一个车的模型
+ /* function car(){//类：就是一个模型
+     this.lian;//变量----属性
+     this.fang;
+     this.luntai;
+     this.fadongji=function(){//函数---方法
+     	alert("发动机");
+     }
+  }
+  var aodi=new car();//new  就是做，生产，创造
+  aodi.fadongji();
+
+  var fengtian=new car();
+  fengtian.fadongji();*/
+
+//对象的创建
+
+//1,通过new关键词来创建
+/*  var obj=new Object;
+  alert(typeof obj);*/
+//2,通过构造函数来创建
+/*function aa(){}
+      var obj2=new aa();
+      alert(typeof obj2);*/
+//3,通过json来创建
+   /*var obj3={}
+   alert(typeof obj3);
+*/
+
+//构造函数（类型，模型）
+/*function person(){
+    this.name="name";
+    this.height="172cm";
+    this.weight="55kg";
+    this.like=function(){
+    	alert("会说话")
+    }
+}
+//构造函数end
+var yinting=new person();
+yinting.name="尹银婷";
+yinting.height="162cm";
+yinting.weight="50kg";
+yinting.like=function(){
+	alert("爱偷懒");
+}
+alert(yinting.weight)
+// alert(yinting.name)
+var lisi=new person();
+yinting.like();
+alert(lisi.height);
+var xiaofang=new person();
+xiaofang.like();
+ 
+
+function aa(){
+	alert(this);//this:  [object Window] 全局对象
+}
+aa();*/
+
+/*var TV1={};
+TV1.color="white"
+TV1.type="TCL"
+TV1.size="120英寸"
+TV1.look=function(){
+	alert("看电视剧");
+	return "看电视剧"
+}
+ for(var i in TV1){
+ 	if(typeof TV1[i]!="function"){
+ 		alert(TV1[i])
+ 	}
+ }
+*/
+/*var color="red"
+TV1.look()*/
+
+//声明的同时赋值
+//键值对
+/*var TV2={color:"black",type:"长虹",size:"55英寸",play:function(){
+    	alert("能玩游戏")
+    }}
+ for(var i in TV2){
+ 	alert(TV2[i])
+ }*/
+/*TV2.play();
+TV2["play"]();
+
+TV2.color=null;
+alert(TV2.color);
+alert(TV2["color"]);
+
+
+delete TV2.size;
+alert(TV2.size);*/
+
+
+//变量的引用
+/*var xiaoming={name:"张晓明",age:20}
+var xiaofang=xiaoming;
+xiaofang.name="李晓芳";
+//alert(xiaofang.name);
+//alert(xiaoming.name);
+
+function person(){
+	this.name="张晓明"
+}
+var xm=new person()
+var xf=new person()
+xf.name="李晓芳"
+alert(xf.name)
+alert(xm.name)*/
+
+//模拟数组的构造函数的实现
+/* 1，最大（小）值
+   2，排序（一种）
+   3，去空
+   4，去重复值  
+*/
+//var arr=new Array(23,45,67);
+/*function myArray(){
+	this.length=arguments.length;
+	this.xiabiao=
+}
+var arr=new myArray(23,45,67);
+alert(arr.length)*/
+
+
+function a(a){
+  alert(a)
+}
+a(45)
+  </script>
+</head>
+<body>
+	
+<script>
+   
+
+
+</script>
+
+</body>
+</html>

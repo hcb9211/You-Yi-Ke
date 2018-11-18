@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内置顶层函数</title>
+<script>
+/*document.write("<table border=1>")
+       for(var i=1;i<=10;i++){
+       	document.write("<tr>")
+       	for(var j=1;j<=10;j++){
+       		if(i%2==0&&j%2==0){
+       		document.write("<td bgcolor=yellow>")
+       	}else if(i%2==1&&j%2==1){
+       		document.write("<td bgcolor=red>")
+       	}else{
+       		document.write("<td>")
+       	}
+       		document.write("111")
+       		document.write("</td>")
+       	}
+       	 document.write("</tr>")
+     }  
+       document.write("</table>");*/
+//求平均数
+var arr=[2,3,5,7];
+//第一种（for）
+/*var sum=0;
+for(var i=0;i<arr.length;i++){
+	sum+=arr[i];
+}
+var pjs=sum/arr.length;
+document.write(pjs);*/
+
+//第二种（while）
+/*var sum=0;
+var i=0;
+while(i<arr.length){
+	sum+=arr[i];
+	i++;
+}
+var pjs=sum/arr.length;
+document.write(pjs);*/
+
+//第三种（for in）
+/*sum=0
+for(var i in arr){
+	sum+=arr[i]
+}
+var pjs=sum/arr.length;
+alert(pjs);*/
+
+
+//二维数组
+var arr1=[[1,2,4,3,5,8],[3,5,6,7]]
+//访问二维数组的每个值
+/*for(var i=0;i<arr1.length;i++){
+ 	for(var j=0;j<arr1[i].length;j++){
+ 			alert(arr1[i][j]);			
+ 	}	
+ }*/
+
+ var arr2=[34,23,[12,34,4],"abc",["a","b","123","456","c"]];
+//遍历混合类型的二维数组
+/* for(var i in arr2){
+ 	if(typeof arr2[i]=="object"){
+ 		for(var j in arr2[i]){
+ 		document.write(arr2[i][j]+"&nbsp;")
+ 		}
+ 	}else{
+ 		document.write(arr2[i]+"&nbsp;")
+ 	}
+ }*/
+
+
+//求一个数组中最长的一个
+/* var arr3=[[1,2,3],[34,23,45,24],[223,56],[2]]
+
+ var max=arr3[0].length;
+ for(var i in arr3){
+ 	if(max.length<arr3.length){
+ 		max=arr3[i]
+ 	}
+ }
+ document.write(max);*/
+
+
+//排列大小
+ var arr4=[1,2,4,6,24,15,67]
+
+/*for(var i=0;i<arr4.length;i++){
+	for(var j=i+1;j<arr4.length;j++){
+		if(arr4[i]<arr4[j]){
+			var temp;
+			temp=arr4[i];
+			arr4[i]=arr4[j];
+			arr4[j]=temp;
+		}
+	}
+}
+alert(arr4)*/
+/*for(var i=0;i<arr4.length;i++){
+  for(var j=i+1;j<arr4.length;j++){
+      if(arr4[i]<arr4[j]){
+            var temp;
+            temp=arr4[i];
+            arr4[i]=arr4[j];
+            arr4[j]=temp;
+      }
+  }     
+}
+alert(arr4)*/
+/*var arr0=[67,78,"34","356",[233,56,24]]
+
+for(var i in arr0){
+      if(typeof arr0[i]=="object"){
+            for(var j in arr0[i]){
+                 document.write(arr0[i][j]+"&nbsp;")
+            }
+      }else{
+            document.write(arr0[i]+"&nbsp;")    
+      }
+}
+*/
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>
+
+  
+                        

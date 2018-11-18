@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='../jquery-1.12.1.js'></script>
+	<script src='xxk.js'></script>
+	<script>
+      $(function(){
+      	$('.btn:first').addClass('active');
+      	$(".btn:last").css({border:0})
+      	$('.con:first').css({zIndex:1});
+      	$('.box').select($('.btn'),$('.con'),'active');
+      })
+	</script>
+</head>
+<style>
+	.box{
+		width:299px;
+		height:200px;
+		margin:0 auto;
+		border:1px solid #ccc;
+	}
+	.box .top{
+		width:300px;
+		height:30px;
+	}
+	.top .btn{
+		width:99px;
+		height:30px;
+        background:yellow;
+		border-right:1px solid red;
+		float:left;
+		text-align: center;
+		line-height:30px;
+	}
+	.box .bottom{
+		width:299px;
+		height:170px;
+		position:relative;
+	}
+	.bottom .con{
+		width:299px;
+		height:170px;
+		position:absolute;
+		top:0;
+		left:0;
+		text-align: center;
+		line-height:170px;
+		/*background:#fff;*/
+	}
+    .top .active{
+       background:blue;
+        color:white;
+    }
+</style>
+<body>
+	<div class="box">
+		<div class="top">
+			<div class="btn">1</div>
+			<div class="btn">2</div>
+			<div class="btn">3</div>
+		</div>
+		<div class="bottom">
+			<div class="con" style="background:pink">1</div>
+			<div class="con" style="background:blue">2</div>
+			<div class="con" style="background:green;">3</div>
+		</div>
+	</div>
+</body>
+</html>

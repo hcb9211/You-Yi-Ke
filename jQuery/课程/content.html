@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证作业</title>
+	<script src="../jquery-1.12.1.js"></script>
+	<script src="jquery.validate.js"></script>
+
+	<script>
+		$(function(){
+			$("#myform").validate({
+			rules:{
+				num1:{
+					required:"#phone1:checked",
+					digits:'true',
+					number:'true'
+				},
+				num2:{
+					required:"#phone2:checked",
+					number:'true',
+					digits:'true'
+				},
+				num3:{
+					required:"#phone3:checked",
+					number:'true',
+					digits:'true'
+				}
+			},
+			messages:{
+				num1:{
+					required:"请输入商品个数",
+					digits:"必须为整数",
+					number:"请输入合法数字"
+				},
+				num2:{
+					required:"请输入商品个数",
+					digits:"必须为整数",
+					number:"请输入合法数字"
+				},
+				num3:{
+					required:"请输入商品个数",
+					digits:"必须为整数",
+					number:"请输入合法数字"
+				}
+			},
+				errorPlacement:function(error,element){
+					error.appendTo(element[0].parentNode)
+				}
+		})
+
+	$('input[name^=num]').attr("disabled",true)
+
+	$("input[name^=phone]").click(function(){
+		
+	})
+
+
+
+
+})
+	</script>
+</head>
+<style>
+	ul,li{
+		margin:0;padding:0;
+		list-style: none;
+	}
+	form{
+		width:1000px;height:200px;
+		border:1px solid #ccc;
+		margin:20px auto;
+		padding:10px 0 0 20px;
+		/*background:#ff6700;*/
+	}
+	input{
+		outline: none;
+
+	}
+	label.error{
+		color:red;
+		background:pink;
+
+	}
+</style>
+<body>
+	<form action="" id="myform">
+		<ul>
+			<li>
+				手机: <input type="checkbox" id="phone1" name="phone1" > 
+
+				单价:<input type="text"  value="1999元" readOnly name='price1'>
+
+				数量: <input type="text"   name="num1" > 
+
+				总价: <input type="text"  name="total1" id="total1" readOnly>		
+			</li>
+			<li>
+
+				耳机: <input type="checkbox" id="phone2" name="phone2" > 
+
+				单价:<input type="text"  value='99元' readOnly name='price2'>
+
+				数量: <input type="text"  name="num2" > 
+
+				总价: <input type="text" id="total2"  name="total2" readOnly>	
+
+			</li>
+			<li>
+
+				手环: <input type="checkbox" id="phone3" name="phone3" > 
+
+				单价:<input type="text"  value='79元' readOnly name='price3'>
+
+				数量: <input type="text"   name="num3" > 
+
+				总价: <input type="text" id="total3"  name="total3" readOnly>
+
+			</li>      
+			<li>		
+				总共：<input type="text" name="totleAll" id="totleAll" readOnly>
+			</li>
+			<li>	
+				<input type="submit" value="提交" >
+				<input type="reset" value="重置" >
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

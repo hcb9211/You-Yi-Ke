@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>history</title>
+</head>
+<script>
+window.onload=function(){
+	// alert(history.length);
+	var forword=document.getElementById('forword');
+	var back=document.getElementById('back');
+	var go=document.getElementById('go');
+	forword.onclick=function(){
+		history.forword();
+	}
+	back.onclick=function(){
+		history.back();
+	}
+	go.onclick=function(){
+		history.go(0);
+	}
+}
+	// alert(history.length);
+</script>
+<body>
+	<a href="history1.html">调到history1页面</a>
+	<input type="button" value='前进' id="forword">
+	<input type="button" value='后退' id="back">
+	<input type="button" value='刷新' id="go">
+</body>
+</html>

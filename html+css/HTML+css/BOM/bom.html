@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BOM浏览器对象</title>
+</head>
+<script>
+	// alert(window.screenLeft);
+	// alert(window.screenX);
+	// document.write(window.screen.width+'&nbsp;');
+	// document.write(window.screen.height);
+	// window.moveBy(-100,100);
+   // window.moveTo(100,100);     /* 移动到某个位置*/
+   // window.resizeBy(100,100);
+   // window.resizeTo(100,100);
+   // scrollBy(0,100);
+   // scrollTo(0,100);
+   /*window.onload=function(){
+   	  document.body.onclick=function(){
+   	  	scrollTo(0,200)
+   	  }
+   }*/
+                /*时间函数*/
+   /*var num=0;
+   var t=setInterval(function(){
+      document.write(num+++'&nbsp;');
+   },110);
+   clearInterval(t);
+
+   var num=0;
+   var t=setTimeout(function(){
+      document.write(num+++'&nbsp;');
+   },1100);
+   clearTimeout(t);*/
+
+ 
+   	         /*浏览器滚动条*/
+   /*window.onload=function(){
+   	 var t;
+   	 var flag=true;
+   	 document.body.onclick=function(){
+   	 	if(flag){
+   	 		t=setInterval(function(){
+   	 			scrollBy(0,100);
+   	 			flag=false;
+   	 		},100)
+   	 	}
+   	 	else{
+   	 		clearInterval(t);
+   	 		flag=true;
+   	 	}
+   	 }
+   }*/
+/****************************************************/
+   /*var t=setTimeout(fn,50);
+   function fn(){
+      alert(1);
+      t=setTimeout(fn,50)
+   }*/
+/****************************************************/
+/*var aa=confirm("请输入文字","")
+console.log(aa)*/
+
+
+ window.onload=function(){
+   var btn=document.getElementById('btn');
+   btn.onclick=function(){
+      // open('open.html','新窗口','width500px,height=500px,menubar=no');
+      // close()
+      // prompt()
+      confirm('yes','no')
+   }
+ }
+</script>
+<style>
+	body{
+		width: 100%;
+		height: 2000px;
+	}
+</style>
+<body>
+	<input type="button" id="btn" value="按钮">
+</body>
+</html>

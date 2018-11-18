@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>下拉导航</title>
+<link rel="stylesheet" href="css/index.css" />
+<style>
+ .nav{width:1000px;height:50px; margin:0 auto;background:#ccc;position:relative;z-index:999;}
+ .nav li{width:200px;height:100%;float:left;line-height:50px; text-align:center;}
+ .nav li a{float:left;width:100%;height:100%;}
+ .nav li a:hover{background:#aaa;}
+ .nav li div{background:#eee;width:100%;height:auto;overflow:hidden;display:none;}
+.backtop{width:50px;height:50px;line-height:50px; text-align:center;font:40px "微软雅黑";font-weight:bold;color:#0780D1;position:fixed;right:50px;bottom:100px;}
+.backtop:hover{background:#0780D1;color:#fff;}
+</style>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/navDown.js"></script>
+<script type="text/javascript" src="js/backTop.js"></script>
+<script>
+ $(function(){
+ 	$('.uek_nav').navDown($(".uek_nav li"),$(".uek_nav li div"));
+	$(".backtop").backTop();
+ }) 
+</script>
+</head>
+<body>
+<div class="logo">
+<h2 align="center">下拉导航特效</h2>
+</div>
+<div class="uek_sm">
+	<h3>效果展示</h3>
+</div>
+<!--top 结束-->
+<!--下拉导航开始-->
+<ul class="uek_nav">
+	<li>
+		<a href="#">首页</a>
+	</li>
+	<li>
+		<a href="#">新品上市</a>
+		<div>
+			<a href="#">今日新品</a>
+			<a href="#">本月新品</a>
+			<a href="#">上月新品</a>
+		</div>
+	</li>
+	<li>
+		<a href="#">热销产品</a>
+		<div>
+			<a href="#">本日热销</a>
+			<a href="#">本月热销</a>
+		</div>
+	</li>
+	<li>
+		<a href="#">特惠产品</a>
+		<div>
+			<a href="#">今日特惠</a>
+			<a href="#">本月特惠</a>
+		</div>
+	</li>
+   
+</ul>
+<!--下拉导航结束-->
+<div class="backtop">∧</div>
+
+<div class="uek_sm" style="margin-top:100px;">
+	<h3>使用说明</h3>
+	<dl>
+	<dt>1.必须引入文件</dt>
+	<dd>页面中必须引入<b>jquery.js</b>，必须引入<b>navDown.js</b>特效函数库。</dd>
+	<dd>注意：<b>jquery.js</b>一定要在<b>navDown.js</b>前在head标签对中引入。</dd>
+	<dd>代码：<br />&lt;script src="js/jquery.js"&gt;&lt;/script&gt;<br />
+	&lt;script type="text/javascript" src="js/navDown.js"&gt;&lt;/script&gt;</dd>
+	<dt>2.页面布局</dt>
+	<dd>
+	布局：需有一个父容器，父容器中为内容列表，每个分类放入一个li中，每个li中包含下拉列表并且放入一个容器中。
+	</dd>
+	<dd>
+	布局示例：
+	<pre>
+	&lt;ul class="nav"&gt;
+		&lt;li&gt;
+			&lt;a href="#"&gt;首页&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#"&gt;新品上市&lt;/a&gt;
+			&lt;div&gt;
+				&lt;a href="#"&gt;今日新品&lt;/a&gt;
+				&lt;a href="#"&gt;本月新品&lt;/a&gt;
+				&lt;a href="#"&gt;上月新品&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#"&gt;热销产品&lt;/a&gt;
+			&lt;div&gt;
+				&lt;a href="#"&gt;本日热销&lt;/a&gt;
+				&lt;a href="#"&gt;本月热销&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#"&gt;特惠产品&lt;/a&gt;
+			&lt;div&gt;
+				&lt;a href="#"&gt;今日特惠&lt;/a&gt;
+				&lt;a href="#"&gt;本月特惠&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	</pre>
+	</dd>
+	
+	<dt>3.函数使用说明</dt>
+	<dd>函数名：navDown</dd>
+	<dd>obj.navDown(lists,dlists);</dd>
+	<dd>参数obj：父容器</dd>
+	<dd>参数lists：选择内容列表</dd>
+    <dd>参数dlists：选择下拉内容列表</dd>
+	<dd>示例：<br />
+	<pre>
+	&lt;script&gt;
+		$(function(){
+	 	$('.nav').navDown($(".nav li"),$(".nav li div"));
+	 	//$('.nav') 父容器     $(".nav li") 内容列表     $(".nav li div") 下拉列表   
+		}) 
+	&lt;/script&gt;
+	</pre>
+	</dd>
+	</dl>
+	
+</div>
+<!--footer-->
+<p class="uek_copy">Copyright：山西优逸客科技有限公司 项目开发组</p>
+<div class="backindex"><a href="index.html">返回首页</a></div>
+</body>
+</html>

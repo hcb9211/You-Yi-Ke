@@ -1,0 +1,296 @@
+body{
+    background:#EDF1F4;
+}
+.container{
+    /*height:100%;*/
+    padding:.5rem .1rem;
+    background:#EDF1F4;
+    box-sizing:border-box;
+}
+.logobox{
+    width:1.53rem;height:1.53rem;
+    margin:0 auto;
+    background:url("../img/logo.png") no-repeat 0 0;
+    background-size:contain;
+}
+.title{
+    font-size:.25rem;
+    margin-top:.2rem;
+    margin-bottom:.2rem;
+}
+.decr{
+    font-size:.18rem;
+    color:#999;
+    margin-bottom:.2rem;
+}
+.form{
+    margin:0;padding:0;
+}
+.phoneBox{
+    width:100%;height:.5rem;
+    padding:0 .2rem;
+    position:relative;
+    margin-bottom:.2rem;
+    box-sizing:border-box;
+    background:white;
+}
+.passwordBox{
+    width:100%;height:.5rem;
+    padding:0 .2rem;
+    position:relative;
+    margin-bottom:.2rem;
+    box-sizing:border-box;
+    background:white;
+}
+.passwordBox .passLogo{
+    width:.25rem;height:.3rem;
+    background:url("../img/login_icon_lock.png") no-repeat 0 0;
+    background-size:contain;
+    float:left;
+    position:absolute;
+    left:.2rem;
+    top:.1rem;
+    box-sizing:border-box;
+}
+.phoneBox .phoneLogo{
+    width:.25rem;height:.3rem;
+    background:url("../img/wx_icon_phone.png") no-repeat 0 0;
+    background-size:contain;
+    float:left;
+    position:absolute;
+    left:.2rem;
+    top:.1rem;
+    box-sizing:border-box;
+}
+#phone{
+    width:100%;
+    height:.5rem;
+    box-sizing:border-box;
+    font-size:.2rem;
+    float:left;
+    padding:.1rem .5rem;
+    border:0;
+    background:white;
+}
+#password{
+    width:100%;
+    height:.5rem;
+    box-sizing:border-box;
+    font-size:.2rem;
+    float:left;
+    padding:.1rem .5rem;
+    border:0;
+    background:white;
+}
+.smsCode{
+    width:100%;height:.5rem;
+    padding-left:.2rem;
+    /*padding-right:.3rem;*/
+    position:relative;
+    margin-bottom:.2rem;
+    box-sizing:border-box;
+    background:white;
+}
+.smsCode .smsLogo{
+    position:absolute;
+    left:.2rem;
+    top:.1rem;
+    width:.25rem;height:.3rem;
+    box-sizing:border-box;
+    background:url("../img/wx_icon_code.png") no-repeat 0 0;
+    background-size:contain;
+    float:left;
+}
+#smsCode{
+    width:70%;
+    float:left;
+    height:.5rem;
+    box-sizing:border-box;
+    padding:.1rem .5rem;
+    border:0;background:white;
+    font-size:.2rem;
+}
+#getYzm{
+    width:30%;
+    height:.5rem;
+    display:block;
+    font-size:.2rem;
+    float:right;
+    line-height:.5rem;
+    text-align:center;
+    background:#4C71FE;
+    color:white;
+    box-sizing:border-box;
+}
+.btn-line{
+    width:100%;
+    height:.5rem;
+    text-align:center;
+    line-height:.5rem;
+    box-sizing:border-box;
+    margin:0 auto;
+    background:#FE433E;
+}
+.btn-line .btn{
+    display:block;
+    color:white;
+    font-size:.18rem;
+    background:#FE433E;
+    margin:0 auto;
+}
+
+
+ .result{
+    display:none;
+    padding-top:.54rem
+}
+
+.show-result .container{
+    display:none
+}
+.show-result .result{
+    display:block
+}
+.show-result .ico-ok{
+    height:2.42rem;
+    background:url(../img/icon_ok.png) center no-repeat;background-size:2.43rem auto
+}
+.layer-btn{
+    font-size:.16rem;
+}
+.poplayer{
+    display: none;
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+.poplayer .popmain{
+    position:relative;
+    width: 21rem;
+    padding: 0 1.6rem;
+    background: #fff;
+    border-radius: 3px;
+}
+.poplayer .poplayer-close{
+    right: -16px;
+    top: -16px;
+}
+.poplayer .popdesc{
+    font-size: 1.1rem;
+    line-height: 2.8rem;
+}
+.poplayer.show{
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+
+
+.poplayer-bindaccount .popmain{
+    padding: 14rem 1.7rem 2.3rem;
+}
+.poplayer-bindaccount.show .popmain{
+    background: #fff url("../img/poplayer_bindaccount.png") no-repeat;
+    background-size: 100% auto;
+}
+.layer{
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+    z-index:99;
+}
+.layer-main{
+    position:absolute;
+    left:50%;top:50%;
+    width:2.7rem;
+    -webkit-transform:translate(-50%, -50%) translateZ(0);
+    transform:translate(-50%, -50%) translateZ(0);
+    background-color:#fff;
+    text-align:center;
+    border-radius:.04rem;
+    font-size:.16rem;
+}
+.layer-line{
+    line-height:.3rem;
+    padding:.2rem 0;
+}
+.layer-btn{
+    display:block;
+    height:.44rem;
+    line-height:.44rem;
+    border-top:1px solid #e1e1e1;
+    color:#54A3F5;
+}
+.poplayer-close{
+    position:absolute;
+    right:-6px;top:-6px;
+    width:32px;height:32px;
+    background:url(../img/ico_close.png) center no-repeat;
+    background-size:20px;
+}
+.layer.show{
+    display:block;
+}
+.login{
+    width:100%;height:.5rem;
+    padding-left:.2rem;
+    padding-right:.3rem;
+    box-sizing:border-box;
+    margin-top:.1rem;
+}
+
+.checkBox{
+    width:.2rem;height:.2rem;
+    /*border:1px solid #000;
+    background:white;*/
+    position:relative;
+    top:.1rem;
+    float: left;
+}
+.checkBox #getProm{
+    position:absolute;
+    left:0;top:0;
+    display: block;
+
+}
+.loginLeft{
+    font-size:.18rem;
+    color:#96989C;
+    line-height:.4rem;
+    display: block;
+    margin-left:.3rem;
+    float: left;
+}
+.loginHttp{
+    font-size:.18rem;
+    color:#5071FF;
+    line-height:.4rem;
+    float:left;
+}
+/* 声明文档 */
+.arg_title{
+    font-size:.2rem;
+    margin-top:.2rem;
+    margin-bottom:.2rem;
+}
+.arg_con{
+    width:100%;height:auto;
+    padding:0 .2rem 0 .2rem;
+    box-sizing:border-box;
+}
+.arg_con1{
+    font-size:.2rem;
+    text-indent: 2em;
+    margin-bottom:.2rem;
+}
+.arg_con2{
+    font-size:.2rem;
+    margin-bottom:.2rem;
+}

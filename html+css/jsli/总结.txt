@@ -1,0 +1,39 @@
+                              总  结
+一、javascript的语法部分
+
+  1.javascript如何放置?
+    什么是javascript
+
+  2.变量,变量的命名规范(5)
+
+  3.运算符(7)关系(转换规则)，逻辑(&&(并且),||,!)(0,null,undefined,false,"")，算术(+,%,++,--)
+
+  4.流程控制(循环(for,while,do while)，顺序，选择(if, else, else if,switch))
+
+  5.函数(函数的创建(3,区别),调用(3),参数,返回值,作用域,预解析顺序);
+
+  6.数组(创建(2),遍历(for,for in ,while),二维数组的遍历(循环的嵌套))
+
+  7.对象(创建(3),访问属性与方法(2),遍历(fon in),封装(4),继承(3),this,原型与构造函数与对象之间关系)
+
+  8.内置顶函数(Globle)
+     Number();
+     parseInt();
+     parseFloot();
+     String();
+     Boolean();
+
+  9.具体对象的方法
+    函数对象(Function) ----- call(),apply();
+
+    数学对象(Math)
+    数组对象()
+    字符串对象 
+
+    Number对象------mynum.toFixed();
+    String对象-----String.fromCharCode();
+
+    Object对象-----3个方法(eval(),instanceof,toString())
+
+
+

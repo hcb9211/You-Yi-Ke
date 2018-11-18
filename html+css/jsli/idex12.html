@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数学对象</title>
+	<script>
+     /*var obj=[{name:"zhangsan",age:18,height:"170cm"},{name:"lisi",age:38,height:"180cm"}]
+     for(i=0;i<obj.length;i++){
+          for(var j in obj[i]){
+          	if(typeof obj[i][j]!==function){
+          		console.log(obj[i][j]);
+          	}
+          	alert(obj[i][j]);
+          }  	
+     }*/
+
+     //π的值
+     //alert(Math.PI);
+
+     var num=-3.9;
+     var num2=8;
+     var num3=-1;
+     //alert(Math.abs(num));//绝对值
+     //alert(Math.round(num));//四舍五入
+     //alert(Math.ceil(num));//向上取整
+     //alert(Math.floor(num));//向下取整
+     //alert(Math.max(num,num2,num3))//最大值
+     //alert(Math.min(num,num2,num3))//最小值
+     //alert(Math.floor(Math.random()*10))//取随机数(0~10)
+     //alert(Math.floor(Math,random()*20-10))//取随机数(-10~10)
+   //20-10: 20代表这个区间的长度后面这个-10代表这个区间的起始值；
+     //alert(Math.pow(num2,2))//几次幂
+      var num4=23.3456;//number数值类型
+      //alert(num4.toFixed(2));//指定小数四舍五入后保留的位数
+     //alert(Math.sqrt(4))//平方根
+	</script>
+
+	<script>
+     //数组元素
+     var arr=[1,2,3,4,5,6]
+     //alert(arr.splice(2,2,122,144,155))//万能添加删除数组
+     //alert(arr.join("$"))//分隔符
+     //alert(arr)
+     //alert(arr.slice(2,5));//数组的分割
+     var arr2=["qddf","swr"]
+     var arr3=[34,23,"d"]
+     //alert(arr.concat(arr2,arr3))
+      var arr4=[1,3,5,77,56,3,6,23]
+      //alert(arr4.sort());//按ASCII码输出
+      /*alert(arr4.sort(function (a,b){
+             return a>b//从小到大排
+      }))
+      alert(arr4.sort(function (a,b){
+             return a<b//从大到小排
+      }))
+      alert(arr4.sort(function (a,b){
+             return a=b//倒序排
+      }))*/
+
+      var arr5=[23,45,45,6,12,12,12,89,0] 
+             //删除数组中的重复值
+          /*for(var i=0;i<arr5.length;i++){
+          	  for(var j=i+1;j<arr5.length;j++){
+          	  	if(arr5[i]==arr5[j]){
+          	  		arr5.splice(i,1);
+          	  		i=i-1;
+          	  		break;
+          	  	}
+          	  }
+          }
+         alert(arr5);*/
+//第二种方法
+         /*var newarr=[];
+         var num=0;
+         for(var i=0;i<arr5.length;i++){
+   	var flag=true;
+   	  for(var j=i+1;j<arr5.length;j++){
+   	  	if(arr5[i]==arr5[j]){
+   	  	  flag=false;
+   	  	   break;
+   	  	}
+   	  }
+   	  if(flag){
+   	  	//newarr[num]=arr5[i]
+   	  	newarr.push(arr5[i])
+   	  	//num++;
+   	  }
+   	}
+   	  alert(newarr);*/
+
+
+   	  //字符串对象
+   	//var str="Hello Word!";
+   	//alert(str.charAt(3));//
+   	//alert(str.charCodeAt(4));
+   	//alert(String.fromCharCode(97));
+   	//alert(str.length);
+   	//alert(str.constructor);
+   	//alert(str.indexOf("e"));
+   	//alert(str.lastIndexOf("d"));
+   	//alert(str.match("Hello"));
+
+  /*var str1="zhongguo是一个zhongguo美丽的国家";
+   	//alert(str1.replace("zhongguo","中国"));
+   	do{
+   		str1=str1.replace("zhongguo","中国");
+   	} while(str1.match("zhongguo"))
+    	alert(str1)*/
+
+/* var str0="迈出了第一步，你就会看到不一样的世界"
+    alert(str0.slice(12,-1));//不一样的世界
+    //alert(str0.substring(12,-1));//迈出了第一步，你就会看到  (不支持负数，这句代码是不正确的)
+    alert(str0.substr(12,6));*/
+
+var str="优逸客官网地址:http://www.sxuek.com,优逸客课程体系:http://www.sxuek.com/uisj/,优逸客学生作品:http://www.sxuek.com/sxzp/"
+   //alert(str00.length)
+/*do{
+  document.write(str.indexOf("sxuek")+"&nbsp;");//输出匹配到的字符出现的位置
+  str=str.replace("sxuek","shfff");//将匹配的字符替换掉
+}while(str.match("sxuek"));//先匹配字符串中是否有sxuek，如果有执行循环体，如果没有则不执行*/
+  
+
+//先匹配，再去掉
+var num=0;//初始数量为0
+while(str.match("sxuek")){
+    var start=str.indexOf("sxuek");//出现的位置
+    start=start+num;//位置的更新
+    num+=5;//没去掉一个字符，数量应加5，保持字符串的总长度不变；
+    document.write(start+"<br/>");//打印位置
+    str=str.slice(0,str.indexOf("sxuek"))+str.slice(str.indexOf("sxuek")+5);//将匹配到的字符从字符串中去掉
+}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

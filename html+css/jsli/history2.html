@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第二个页面</title>
+</head>
+<body>
+	<h1>这是第二个页面</h1>
+	<a href="history1.html">返回第一个页面</a>
+	<input type="button" value="后退" id="backs">
+</body>
+<script>
+	var backs=document.getElementById("backs");
+	backs.onclick=function(){
+             history.back();
+	}
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie</title>
+</head>
+<script>
+	/*document.cookie="user=hcb";
+	document.cookie="pass=w987354";*/
+
+	var time=new Date();
+		time.setDate(time.getDate()+10);
+		time.setDate()+10;
+		document.cookie="sex=man;expires="+time;
+
+		function setCookie(attr,val,time){
+			if(time){
+				var now=new Date();
+				now.setDate(now.getDate()+time);
+				document.cookie=attr+"="+val+";expires="+now.toGMTString();
+			}
+			else{
+				document.cookie=attr+"="+val;
+			}
+		}
+
+		setCookie("user","lisi");
+		setCookie('aa','bb',10);
+		
+// 获得cookie的函数
+
+	function getCookie(attr){
+
+		var cookie=document.cookie;
+
+		var arr1=cookie.aplice('; ');
+
+		for(var i=0;i<arr1.length;i++){
+
+			var arr2=arr1[i].splice('=');
+
+			if(arr2[0]==attr){
+				return arr2[1]
+			}
+		}
+
+	}
+
+	getCookie(user)
+
+// 删除cookie的函数
+
+	function delCookie(attr){
+
+		var now=new Date();
+
+		now.setDate(now.getDate()-10);
+
+		document.cookie=attr+"=aa;expires="+now.toGMTString();		
+
+	}
+
+</script>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To do list</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/todolist.css">
+	<script src="js/angular.js"></script>
+	<script src="js/todolist.js"></script>
+</head>
+<body ng-app="myapp">
+<div class="container-fluid" ng-controller="ctrl">
+	<div class="row">
+		<div class="left">
+			<!--搜索-->
+			<div class="search">
+				<div class="glyphicon glyphicon-search"></div>
+				<input type="text" placeholder="搜一下" class="form-control"  ng-model="search">
+			</div>
+			<!--搜索  end-->
+			<div class="dobox">
+				<!-- 已完成事项 -->
+				<div ng-click="show()">
+					<span class="glyphicon glyphicon-ok-circle" ></span>
+					<span ng-click="showdone()">已完成</span>
+					<span class="done">{{success.length}}</span>
+				</div>
+				<!-- 已完成事项 end-->
+
+				<!-- 代办事项 -->
+				<div>
+					<span class="glyphicon glyphicon-time"></span>
+					代办事项
+				</div>
+				<div ng-repeat="item in data |filter:{title:search} track by $index" class="hover">
+					<input class="newslist" ng-model="item.title" ng-focus="focusList(item.id)" ng-blur="blurList()">
+					<span class="glyphicon glyphicon-trash" id="del" ng-click="delList(item.id)"></span>
+				</div>
+				<!-- 代办事项 end-->
+			</div>
+			<div class="add" ng-click="addList()">
+				<div class="glyphicon glyphicon-plus-sign"></div>
+				<span>添加列表</span>
+			</div>
+		</div>
+
+
+		<!-- 右边 -->
+		<div class="right" ng-show="isshow">
+			<!--右边标题-->
+			<div class="title">
+				<div class="caption" ng-bind="currentArr.title"></div>
+				<div class="glyphicon glyphicon-plus-sign" id="addRight" ng-click="addCon()"></div>
+			</div>
+			<!--右边标题  end-->
+			<!--右边内容-->
+			<div class="con" ng-repeat="item in currentArr.son track by item.id">
+				<div class="sonCon">
+					<span class="glyphicon glyphicon-edit" class="Done" ng-click="done(item.id)"style="float:left;line-height:30px;" ></span>
+					<input type="text" class="newlist" ng-model="item.con" ng-blur="blurCon()" style="float:left;">
+					<span class="time">{{item.time | date:"yyyy - MM - dd - hh : mm : ss"}}</span>
+					<span class="glyphicon glyphicon-trash" id="dels" ng-click="delCon(item.id)"  style="float:right"></span>
+				</div>
+			</div>
+			<!--右边内容  end-->
+		</div>
+		<!-- 右边 end-->
+
+
+		<div class="right" ng-show="!isshow">
+			<!--右边标题-->
+			<div class="title" style="line-height:80px;font-size:20px;font-family:'楷体';">
+				已完成事项
+			</div>
+			<!--右边标题  end-->
+			<!--右边内容-->
+			<div class="con" ng-repeat="item in success track by $index">
+			<div class="sonCon">
+				<span class="glyphicon glyphicon-pushpin"  id="dones"></span>
+				<span id="doing">{{item.con}}</span>
+				<span class="time">{{item.time|date:"yyyy - MM - dd - hh:mm:ss"}}</span>
+				<span class="glyphicon glyphicon-trash" id="dels" ng-click="delDone(item.id)" style="float:right"></span>
+			</div>
+		</div>
+			<!--右边内容  end-->
+		</div>
+
+
+	</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全选全不选，反选</title>
+</head>
+<body>
+	
+</body>
+<script>
+	for(var i=0;i<20;i++)
+	{	
+		if(i<10){
+			document.write("0"+i+"<input type='checkbox' name='boxs'><br>");
+		}else{
+			document.write(i+"<input type='checkbox' name='boxs'><br>");
+		}
+		
+	}
+	document.write("全选:<input type='radio' name='btn'>&nbsp;");
+	document.write("全不选:<input type='radio' name='btn'>&nbsp;");
+	document.write("反选:<input type='radio' name='btn'>&nbsp;");
+
+
+	var btn=document.getElementsByName("btn");
+	var boxs=document.getElementsByName("boxs");
+	for(var i=0;i<btn.length;i++)
+	{
+		btn[i].index=i;
+		btn[i].onclick=function()
+		{
+			if(this.index==0)
+			{
+				for(var j=0;j<boxs.length;j++)
+				{
+					boxs[j].checked=true;
+				}
+			}
+			else if(this.index==1)
+			{
+
+				for(var j=0;j<boxs.length;j++)
+				{
+					boxs[j].checked=false;
+				}
+			}
+			else if(this.index==2)
+			{
+				for(var j=0;j<boxs.length;j++)
+				{
+					if(boxs[j].checked)
+					{
+						boxs[j].checked=false;
+					}
+					else{
+						boxs[j].checked=true;
+					}
+				}
+			}			
+		}
+	}
+	
+    
+
+
+</script>
+</html>

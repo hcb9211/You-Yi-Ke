@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件详解</title>
+</head>
+<script src='function.js'></script>
+<script>
+	$(function(){
+		document.onkeydown=function(e){
+			var ev=e||window.event;
+			// console.log(ev.altKey)
+			console.log(ev.keyCode)
+			// console.log(ev.type)   
+			// if(ev.keyCode==32){
+			// 	console.log(true) 
+			// }
+		}
+
+
+	})
+</script>
+<body>
+	
+</body>
+</html>

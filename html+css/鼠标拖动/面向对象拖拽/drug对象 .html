@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面向对象的拖拽</title>
+</head>
+	<script src=../function.js></script>
+	<script src=drug.js></script>
+	<script>
+		$(function(){
+			var one=$('.one')[0];
+			drag(one,{sideX:[0,1000],sideY:[0,1000],animate:true})
+		})
+	</script>
+
+<style>
+	.one{
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		cursor: pointer;
+		position: absolute;
+		left:0;top:0;
+	}
+</style>
+<body>
+	<div class="one"></div>
+</body>
+</html>

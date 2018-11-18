@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;padding:0;
+            box-sizing: border-box;
+        }
+       body{
+           font-family: "微软雅黑";
+           background:#fff;
+           overflow: hidden;
+       }
+       ul,li{
+           list-style: none;
+       }
+        .left{
+            width:300px;float:left;
+            height:670px;
+        }
+        .edit{
+            background: #ccc;
+            height:100%;
+            padding-top:30px;
+        }
+        #content{
+            padding:7px;display: block;width:90%;margin:0 auto;
+        }
+        #sub{
+            padding:8px;width:50%;display: block;margin:0 auto;
+            margin-top:20px;
+            background: blue;
+            border-radius: 5px/3px;
+            border:none;color:#fff;font-size: 16px;
+            letter-spacing: 5px;outline: none;cursor: pointer;
+        }
+        .right{
+            margin-left:300px;padding:20px 0 20px 20px;
+            background: #fff;
+        }
+
+        #clear{
+            padding:8px;width:200px;display: inline-block;
+            background:orange;
+            border-radius: 10px/6px;
+            border:none;color:#fff;font-size: 16px;
+            letter-spacing: 5px;outline: none;cursor: pointer;
+        }
+        hr{
+            margin-top: 20px;margin-bottom:20px;
+            height:0;
+            border-bottom: 2px solid blue;
+            margin-left: -20px;
+        }
+        .now,.before{
+            width:60%;
+        }
+        .now>div,.before>div{
+            padding:10px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+        .right .num{
+            width:30px;height:30px;background:blue;
+            border-radius: 50%;text-align: center;
+            line-height: 30px;color:#fff;position: absolute;right:5px;top:50%;
+            margin-top: -15px;
+        }
+        .now ul .con{
+            display: inline-block;
+            outline: none;
+            margin-left: 10px;
+        }
+
+        .right .date{
+            display: inline-block;
+            float:right; margin-right: 40px;
+        }
+
+        .right li{
+            text-indent: 1em;
+            padding:8px 0;
+            margin:10px 0;
+            border-left: 5px solid blue;
+            background:rgba(0,0,0,.2);
+        }
+        .before ul .con{
+            display: inline-block;
+            text-decoration: line-through;
+        }
+        .right ul li span{
+            float:right;
+            cursor:pointer;padding-right: 10px;
+        }
+
+        .right ul li i{
+            color:blue;display: inline-block;
+        }
+        ul:nth-of-type(1){
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="edit">
+                <input type="text" placeholder="请输入待办事项" id="content">
+                <input type="button" value="提交" id="sub">
+            </div>
+        </div>
+        <div class="right">
+            <input type="button" value="清除所有" id="clear">
+            <hr>
+            <div class="now">
+                <div>
+                    正在进行
+                    <div class="num">0</div>
+                </div>
+                <ul>
+
+                    <!--<li>-->
+                        <!--<input type="checkbox">-->
+                        <!--<div contenteditable="true" class="con"></div>-->
+                        <!--<div class="date"></div>-->
+                        <!--<span>删除</span>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="before">
+                <div>
+                    已经完成
+                    <div class="num">0</div>
+                </div>
+                <ul>
+                    <!--<li>-->
+                        <!--<input type="checkbox">-->
+                        <!--<div contenteditable="true"></div>-->
+                        <!--<span>删除</span>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
+<!--输入框   提交-->
+<!--当前的待办事项的容器-->
+<!--事项（可编辑的）  删除按钮   移动-->
+<!--已完成事项的容器   删除      移动-->
+<!--清空所有内容-->

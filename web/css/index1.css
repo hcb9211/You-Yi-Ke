@@ -1,0 +1,30 @@
+
+body,
+input,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg/bg1.png) no-repeat cover;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+ul,
+li {
+  list-style: none;
+}

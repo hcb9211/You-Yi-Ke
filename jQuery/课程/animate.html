@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../jquery .js"></script>
+	<script>
+		$(function(){
+			// $(".toTop").click(function(){
+			// 	$("body,html").animate({scrollTop:0},1000)
+			// })
+		$.fn.extend=function(){
+			toTop:function(){
+				this.click(function(){
+					$("body,html").animate({scrollTop:0},1000,"linear",function(){})
+				})
+			}
+		}
+		function toTop(selector){
+
+			var selector=selector||{};
+
+			var time=selector.time||1000;
+
+			var fn=selector.fn||"swing";
+
+			$(selector).click(function(){
+
+				that=this;
+
+				$(this).animate({scrollTop:0},time,"linear",function(){})
+						
+			})
+
+		}
+
+		})
+	</script>
+
+<style>
+	.toTop{
+		width:0;height:0;
+		border-bottom:30px solid red;
+		border-left:15px solid rgba(0,0,0,0);
+		border-right:15px solid rgba(0,0,0,0);
+		position:fixed;
+		bottom:100px;right:100px;
+		cursor:pointer;
+	}
+	
+</style>
+</head>
+<body style="height:3000px;">
+	<div style="height:200px;background:blue;"></div>
+	<div class="toTop"></div>
+</body>
+</html>

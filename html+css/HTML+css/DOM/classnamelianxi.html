@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script>
+	window.onload=function(){
+		/*var one=document.getElementsByClassName('one')[0];
+		var two=document.getElementsByClassName('two');
+		alert(two.length)*/
+
+		var one=getClass('one')[0];
+		var two=getClass('two',one);
+		alert(two.length)
+	}
+	
+</script>
+
+<script>
+	function getClass(className,range){
+ 			var range=range?range:document;
+ 			if(document.getElementsByClassName){
+ 				return range.getElementsByClassName(className)
+ 			}else{
+ 				var arr=[];
+ 				var all=range.getElementsByTagName('*');
+ 				for(var i=0;i<all.length;i++){
+ 					if(checkClass(all[i].className,className)){
+ 						arr.push(all[i]);
+ 					}
+ 				}
+ 			}
+ 			return arr;
+	}
+	function checkClass(obj,classname){
+		var arr=obj.split(" ");
+		for(var i=0;i<arr.length;i++){
+			if(arr[i]==classname){
+				return true;
+			}
+		}
+		return false;
+	}
+</script>
+<body>
+	<div class="one">
+		<div class="two"></div>
+	</div>
+	<div class="two"></div>
+</body>
+</html>

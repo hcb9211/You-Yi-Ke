@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+</head>
+<script>
+	window.onload=function(){
+		var user=document.getElementById('user');
+		var pass=document.getElementById('pass');
+		var btn=document.getElementById('btn');
+		btn.onclick=function(){
+			if(user.value=='hcb'&&pass.value=='qwer123'){
+				alert('登录成功');
+			}else{
+				open('error.html')
+			}
+		}
+	}
+</script>
+<body>
+	<input type="text" name='user' value='zhangsan' id='user'>
+	<input type="password" name='pass' value='123456' id='pass'>
+	<input type="button" name='btn' value='提交' id='btn'>
+</body>
+</html>

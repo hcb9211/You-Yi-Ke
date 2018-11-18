@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Classname</title>
+</head>
+<script>
+	function getClass(className,range){
+		var range=range?range:document;
+		if(document.getElementsByClassName){
+			return document.getElementsByClassName(className);
+		}
+		else{
+			var arr=[];
+			var all=range.getElementsByTagName('*');
+			for(var i=0;i<all.length;i++){
+				if(checkClass(all[i].className,className)){
+					arr.push(all[i]);
+				}
+			}
+		}
+		return arr;
+	}
+	function checkClass(obj,className){
+		var arr=obj.split('');
+		for(var i=0;i<arr.length;i++){
+			if(arr[i]==className){
+				return true;
+			}
+		}
+		return false;
+	}
+</script>
+
+
+<script>
+	window.onload=function(){
+		var item=document.getElementsByClassName('item');
+		var son=document.getElementsByClassName('son');
+		for(var i=0;i<son.length;i++){
+			item[i].index=i;
+			item[i].onmouseover=function(){
+				for(var j=0;j<son.length;j++){
+					son[j].style.display='none';
+				}
+				son[this.index].style.display='block'
+			}
+			item[i].onmouseout=function(){
+				for(var j=0;j<son.length;j++){
+					son[j].style.display='none';
+				}
+			}
+		}
+	}
+</script>
+
+<script>
+	
+</script>
+
+<style>
+	ul,li{
+	     padding:0;
+	     margin:0;
+	     list-style: none;
+	}
+	a{
+		text-decoration: none;
+		display: block;
+		color:#666;
+	}
+	.tab{
+		width: 1200px;
+		height: 40px;
+		background-color: #e4e4e4;
+		margin:100px auto;
+		position: relative;
+	}
+	.tab li{
+		width: 159px;
+		height: 48px;
+		border-right: 1px solid #fff;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+		border-top: 2px solid #0085d0;
+	}
+	.tab .item{
+		width: 259px;
+		height: 40px;
+		border-top: none;
+	}
+    .son{
+    	width: 1200px;
+    	height: 40px;
+    	background:#fff;
+    	position: absolute;
+    	left: 0;top:40px;
+        display: none;
+    }
+ 	.tab a:hover{
+ 		background:#f3f3f3;
+ 		color:#0085d0;
+ 	}
+
+</style>
+<body>
+	<ul class="tab">
+		<li><a href="">首页</a></li>
+		<li class="item">
+			<a href="">
+				移动商城
+			</a>
+			<div class="son">1111</div>
+		</li>
+		<li class="item">
+			<a href="">
+				我的移动
+			</a>
+			<div class="son">2222</div>
+		</li>
+		<li class="item">
+			<a href="">
+				网上营业厅
+			</a>
+			<div class="son">3333</div>
+		</li>
+		<li class="item">
+			<a href="">
+				服务与支持
+			</a>
+			<div class="son">4444</div>
+		</li>
+	</ul>
+</body>
+</html>

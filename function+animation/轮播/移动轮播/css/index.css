@@ -1,0 +1,211 @@
+ul,li{
+        padding: 0;
+        margin:0;
+        list-style: none;
+    }
+ a{
+ 	text-decoration: none;
+ }
+
+.contentbox{
+	width: 100%;
+	height: 350px;
+	margin-top: 8px;
+}
+.content{
+	width: 1200px;
+	height: 350px;
+	margin: 0 auto;
+}
+.window a{
+	font-size: 0;
+    opacity: 1;
+	 position: absolute;
+	    top:0;
+	    left:0; 
+}
+.banner{
+	width: 160px;
+	height: 350px;
+	border:1px solid #B8D9E9;
+	float: left;
+}
+.banner ul{
+	width: 115px;
+	height: 350px;
+	margin-left: 25px;
+}
+.banner ul li{
+	width: 106px;
+	height: 64px;
+	border-bottom: 1px solid #e9e9e9;
+	text-align: center;
+	line-height: 64px;
+	float: left;
+}
+.banner ul .gren{
+	border-bottom:0;
+}
+
+.banner ul li a{
+	color: #000;
+}
+.banner ul li a:hover{
+    color: #25B2FE;
+}
+.window{
+	width: 740px;
+	height: 350px;
+	position: relative;
+	float: left;
+	border:1px solid green;
+	margin-left: 10px;
+}
+
+.window ul{
+	width: 160px;
+	height: 15px;
+	position: absolute;
+	left: 40%;
+	bottom: 10px;
+}
+.window ul li{
+	width: 15px;
+	height: 15px;
+	background: #ccc;
+	border-radius: 50%;
+	margin-right: 5px;
+	float: left;
+	cursor: pointer;
+}
+.btn{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	top:50%;
+	margin-top: -35px;				
+	cursor: pointer;
+}
+.btnL{
+	width: 30px;
+	height: 70px;
+	float: left;
+	background:rgba(0,0,0,0.5);
+	cursor: pointer;
+	text-align: center;
+	line-height: 70px;
+	color: #ccc;
+	font-size: 18px;
+	margin-left: 1px;
+}
+.btnR{
+	width: 30px;
+	height: 70px;
+	float: right;
+	background:rgba(0,0,0,0.5);
+	cursor: pointer;
+	text-align: center;
+	line-height: 70px;
+	color: #ccc;
+	font-size: 18px;
+	margin-right: 1px;
+}
+.jiaofei{
+	width: 254px;
+	height: 329px;
+	float: right;
+	padding-left: 18px;
+	padding-top: 18px;
+	border:1px solid #DFDFDF;
+}
+.fei-1{
+	width: 236px;
+	height: 133px;
+}
+.fei-2{
+	width: 236px;
+	height: 70px;
+}
+
+.fei-1-top{
+	width: 236px;
+	height: 67px;
+}
+
+.fei-1-top ul li{
+    width:78px;
+    height: 62px; 
+    float: left;
+    text-align: center;
+    line-height: 20px;
+     padding-top:5px; 
+}
+.fei-1-top ul li a{
+	position: relative;
+	bottom: 2px;
+}
+.fei-1-bottom{
+	width: 236px;
+	height: 67px;
+}	
+.fei-1-bottom ul li{
+    width:78px;
+    height: 67px; 
+    float: left;
+    text-align: center;
+    line-height:20px;
+    margin-top: 15px;
+}
+.fei-3{
+	width:236px;
+	height: 37px;
+}
+.fei-3 ul{
+     margin-left: 14px;
+}
+.fei-3 ul li{
+	width: 38px;
+	height: 35px;
+	border:1px solid #E4E4E4;
+	float: left;
+	margin-right: 3px;
+	margin-top: 10px;
+}
+.fei-3 ul li a{
+	font-size: 10px;
+	color: #676767;
+	text-align: center;
+	line-height: 37px;
+	margin-left: 5px;
+	font-weight: bold;
+	display: block;
+}
+.fei-3 ul li a:hover{
+	background: #DE0474;
+	color: #fff;
+}
+.fei-4{
+	width: 162px;
+	height: 37px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.fei-4 a{
+	width:90px;
+	height:35px;
+	background:#34ABFD;
+	color:#fff;
+	font-size:14px;
+	display: block;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 10px;
+	float: left;
+}
+.fei-4 p{
+	color: #E40175;
+	float: right;
+	margin-top: 8px;
+	font-weight: bold;
+}

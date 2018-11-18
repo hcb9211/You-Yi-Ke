@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数</title>
+
+	<script>
+	/*函数的定义*/
+      /*function table( row,col){
+      	 document.write("<table>")
+           for(var i=row;i>0;i--){
+           	document.write("<tr>")
+                for(var j=0;j<col;j++){
+                	document.write("<td>"+j+"</td>")
+                }
+           	document.write("</tr>")
+           }
+      	 document.write("</table>")
+      }
+      table(3,5);*/
+ 
+
+   /* function aa(num){
+         if(typeof parseInt(num)!=="number"){      	
+         	return; 
+         }
+         console.log(num);
+         return num;  
+    }
+    aa();
+    var num=aa(prompt());
+    document.write("<table>")
+           for(var i=num;i>0;i--){
+           	document.write("<tr>")
+                for(var j=0;j<num;j++){
+                	document.write("<td>"+j+"</td>")
+                }
+           	document.write("</tr>")
+           }
+      	 document.write("</table>")*/
+     
+    
+  /*function aa(num){
+  	  if(typeof parseInt(num)!="number"){
+  	  	return;
+  	  }
+  	  console.log(num)
+  	  return num;
+  }
+  aa();
+  var str='';
+  var num=aa(prompt());
+  str+=("<table>");
+    for(var i=0;i<num;i++){
+    	str+=("<tr>")
+           for(var j=0;j<num;j++){
+           	str+=("<td>"+j+"</td>")
+           }
+    	str+=("</tr>")
+    }
+  str+=("</table>")
+document.write(str)*/
+
+
+
+/*杨辉三角*/
+    /*for(i=0;i<6;i++){
+    	for(j=0;j<6-i;j++){
+    		document.write("&nbsp;")
+    	}
+            for(c=0;c<i;c++){
+            	document.write("*"+"&nbsp; ")
+            }
+            document.write("<br>")
+	     } 
+*/
+  /*for(i=0;i<6;i++){
+  	for(j=0;j<i;j++){
+  		document.write("*")
+  		document.write("&nbsp;")
+  	}
+  	document.write("<br>")
+  }*/
+
+	/*function aa(num){
+		for(i=0;i<=num;i++){
+			for(j=0;j<=num-i;j++){
+				document.write("&nbsp;")
+			}
+			for(k=0;k<i;k++){
+				document.write(" &nbsp;"+"*")
+			}
+		   	   document.write("<br>")
+		}
+	}
+    aa(5)*/
+/************************************************/
+    /*var aa=10;
+    function bb(){
+    	var aa=5;
+    	var aa=20;
+    	alert(aa++)
+    }
+    bb()
+    alert(aa)*/
+/*************************************************/
+// 全局变量与局部变量的最好例子：
+  /*  var num=10;
+    function aa(){
+    	// var num=20;
+    	function bb(){
+    		// var num=30;
+    		function cc(){
+    			// var num=40;
+    			alert(num);
+    		}
+    		cc()
+    	}
+    	bb()
+    }
+    aa()
+*/
+/****************************************************/
+
+// 回调函数
+/*function aa(b){
+	b();
+}
+aa(function (){alert("回调函数")})*/
+
+/*function aa(a,b,callback){
+    return callback(a,b)
+}
+console.log(aa(150,25,function(a,b){
+	return a*b;
+}))*/
+
+/*function aa(a,b,callback){
+     return callback(a,b)
+}
+alert(aa(15,24,function(a,b){
+	return a*b;
+}));*/
+
+/*function aa(a,b,callback){
+      return callback(a,b);
+}
+  alert(aa(12,23,function(a,b){
+  	return a*b;
+  }))*/
+
+// ****************调用函数*************
+   /*function each(num,callback){
+   	  for(var i=0;i<num;i++){
+   	  	callback(i);
+   	  }
+   }
+   document.write("<table>")
+   each(4,functi on(i){
+       document.write("<tr>")
+         each(5,function(j){
+         	document.write("<td>"+j+"</td>")
+         })
+       document.write("</tr>")
+   })
+   document.write("</table>")*/
+
+/* function arr(a,callback){
+ 	for(var i=0;i<a;i++){
+ 		callback(i);
+ 	}
+ }
+
+
+ 
+  document.write("<table border='1' cellspacing='0'>")
+    arr(10,function(i){
+    	document.write("<tr border='1'>")
+          arr(10,function(j){
+          	document.write("<td border='1'>")
+            document.write("胖子")
+          	document.write("</td>")
+          })
+    	document.write("</tr>")
+    })
+  document.write("</table>")*/
+
+
+ /* !function arr(){
+    	  document.write("<table border='1' cellspacing='0'>")
+      var i=0;
+      while(i<10){
+        document.write("<tr>")
+           var j=0;
+           while(j<10){
+             if(i%2==0&&j%2==0){
+              document.write("<td bgcolor=red>")
+             }else if(i%2==1&&j%2==1){
+               document.write("<td bgcolor=green>")
+             }else{
+              document.write("<td bgcolor=#ccc>")
+             }
+             document.write("胖子")
+             document.write("</td>")
+            j++;
+           }
+        document.write("</tr>")
+         i++;
+      }
+    document.write("</table>")
+    }()*/
+  // arr();
+
+  // 递归函数
+  /*function aa(num){
+  	if(num>0){
+  		aa(--num);
+  		document.write(num);
+  	}
+  }
+  aa(3);
+*/
+
+
+function jc(num){
+	/*if(num>1){
+		return num*jc(--num)
+	}else{
+		return num;
+	}*/
+	return num>1?num*jc(--num):num;
+}
+
+alert(jc(7))
+
+
+  
+
+  
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

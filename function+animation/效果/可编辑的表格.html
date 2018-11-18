@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<style>
+	/*.t{
+		width: 100%;
+		height: 30px;
+		text-align: center;	}
+    .box{
+     width: 500px;
+     height: 120px;
+     margin-left:38%;
+    }
+    .biaoti{
+    	width: 100px;
+    	height: 40px;
+    	float: left;
+    }
+    .neirong{
+    	width: 100%;
+    	height: 36px;
+    	border: 1px solid black;
+    	text-align: center;
+    	line-height: 36px;
+    }*/
+	</style>
+</head>
+<body>
+
+	<table width="500px" height="60px" border="1px" align="center" cellspacing="0" id="tab">
+		<caption>学生成绩表</caption>
+		<tr>
+			<th>姓名</th>
+			<th>学号</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>成绩</th>
+		</tr>
+
+		<tr>
+			<td width="50px">流年</td>
+			<td width="50px">2012333</td>
+			<td>男</td>
+			<td>22</td>
+			<td>44</td>
+		</tr>
+
+		<tr>
+			<td>如夏</td>
+			<td>201333</td>
+			<td>女</td>
+			<td>21</td>
+			<td>53</td>
+		</tr>
+	</table>
+<!-- <div class="t">学生成绩单</div>
+<div class="box">
+	<div class="biaoti">
+		<div class="neirong">姓名</div>
+		<div class="neirong">流淑华</div>
+		<div class="neirong">缺无涯</div>
+	</div>
+	<div class="biaoti">
+		<div class="neirong">性别</div>
+		<div class="neirong">女</div>
+		<div class="neirong">男</div>
+	</div>
+	<div class="biaoti">
+		<div class="neirong">成绩</div>
+		<div class="neirong">98</div>
+		<div class="neirong">67</div>
+	</div>
+</div> -->
+</body>
+<script>
+	$(function(){
+        var biaoti=$("#tab");
+        biaoti.ondblclick=function(e){
+        	var ev=e||window.event;
+        	var obj=ev.target||ev.srcElement;
+        	if(obj.nodeName=="TH"){
+        		return;
+        	}
+        	var val=obj.innerHTML;
+        	obj.innerHTML=""
+        	var ip=document.createElement("input");
+            ip.type="text";
+            ip.style.borderWidth=0;
+            ip.style.width=obj.offsetWidth-20+"px";
+            ip.style.height=obj.offsetHeight-10+"px";
+            ip.style.fontSize="16px";
+        	obj.appendChild(ip);
+        	ip.focus();//直接获得焦点
+        	ip.value=val;
+
+
+        	ip.onblur=function(){
+        		obj.innerHTML=ip.value
+        	}
+        }
+	})
+</script>
+</html>

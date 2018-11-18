@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script src="../兼容函数总结/functionall.js"></script>
+    <script src="../兼容函数总结/animate.js"></script>
+	<style>
+	body,p,ul,ol,dl,dd,dt,li,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;<去掉小圆点>                    
+  }
+a{
+    text-decoration:none;
+    color:#333;
+  }
+img{
+    border:none;
+  }
+
+    .caidan{
+    	width: 1000px;
+    	height: 50px;
+    	background: pink;
+    	margin: 0 auto;
+    }
+    .yiji{
+    	width: 199px;
+    	height: 50px;
+    	float: left;
+    	border-right:1px solid black;
+        position:relative;
+    }
+    .yiji:hover{
+        background: green;
+    }
+    .yiji>a{
+    	display: block;
+    	width: 100%;
+    	height: 50px;
+    	line-height: 50px;
+    	text-align: center;
+    	font-size: 20px;
+    	color:#000;
+    }
+    .erji{
+    	width: 199px;
+    	height: 0px;
+        position: absolute;
+        left:0;
+        top:50px;
+        overflow: hidden;/* 给二级设置overflow，使得高度为0时，全部隐藏 */
+
+    }
+    .erji>li{     /*只选儿子，不选孙子，空格全选*/
+    	width: 100%;
+    	height: 50px;
+        background: green;
+        border-bottom: 1px solid black;
+       
+    }
+    .erji>li:hover{
+        background: #fff;
+    }
+    .erji>li>a{
+    	display: block;
+    	width: 100%;
+    	height: 50px;
+    	line-height: 50px;
+    	text-align: center;
+    	font-size: 20px;
+    	color:#ccc;
+    }
+	</style>
+</head>
+<body>
+	<div class="caidan">
+		<div class="yiji"><a href="#">首页</a>
+            <ul class="erji"></ul>
+        </div>
+	<div class="yiji">
+		<a href="#">新闻</a>
+		<ul class="erji">
+			<li><a href="#">今日热点</a></li>
+			<li><a href="#">国内新闻</a></li>
+			<li><a href="#">国外新闻</a></li>
+		</ul>
+	</div>
+	<div class="yiji">
+		<a href="#">商品</a>
+		<ul class="erji">
+			<li><a href="#">女装</a></li>
+			<li><a href="#">男装</a></li>
+			<li><a href="#">箱包</a></li>
+			<li><a href="#">鞋子</a></li>
+			<li><a href="#">家具</a></li>
+		</ul>
+	</div>
+	<div class="yiji">
+		<a href="#">会员</a>
+		<ul class="erji">
+			<li><a href="#">个人中心</a></li>
+			<li><a href="#">账单管理</a></li>
+			<li><a href="#">收藏</a></li>
+		</ul>
+	</div>
+	<div class="yiji">
+		<a href="#">联系我们</a>
+		<ul class="erji">
+			<li><a href="#">收藏</a></li>
+			<li><a href="#">账单管理</a></li>
+		</ul>
+	</div>
+	</div>
+	
+</body>
+
+<script>
+    
+    $(function(){
+        var yiji=$(".yiji");
+        var erji=$(".erji");
+
+        for(var i=0;i<yiji.length;i++){
+            yiji[i].index=i;
+            hover(yiji[i],function(){
+                var lis=$("li",erji[this.index]);
+                //找当前二级菜单下的li
+                //alert(lis.length)
+                var h=lis[0].offsetHeight;
+                //erji[this.index].style.height=lis.length*h+"px";
+                animate(erji[this.index],{height:lis.length*h},200,Tween.Linear);
+            },function(){
+                animate(erji[this.index],{height:0},100,Tween.Linear);
+          })
+        }
+    })
+</script>
+</html>

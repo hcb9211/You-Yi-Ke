@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery</title>
+</head>
+	<script src='jquery-1.12.1.js'></script>
+	<script>
+	$(function(){   //$里传函数(页面加载),   原生对象(将它转为jQuery对象),  css选择器,   创建一个对象,  空对象
+			// var div=$('div');    
+			// $("div").css({width:200,height:200,background:"red"});    
+
+			/*var div=document.getElementsByTagName('div');
+			$(div).css({width:200,height:200,backgroundColor:"#ff6700"});*/
+
+			/*var div=$("<div>");
+			div[0].innerHTML="我是创建的div";
+			$(div).appendTo("body");*/
+
+			// $("div,span,p.myClass").css("color","green")   //群组选择器
+
+			//
+
+			// $("form > input").css("border","1px solid red")
+
+			// $("label+input").css("border","1px solid red")
+
+			// $("form~input").css("border","1px solid red")
+
+			// $("li:first").css("color","green")
+
+			// $("input").css("border","1px solid green")
+
+			// $(":input:not(:checked)").css("border","1px solid green")
+
+			// $("li:even").css("border","1px solid green")   //偶数
+			// $("li:odd").css("border","1px solid green")   //奇数
+
+			// $("li:eq(1)").css("color","green")
+
+			// $(":header").css("color","green")
+
+			/*$( "#content" ).delegate( "*", "focus blur", function( event ) {
+			    var elem = $( this );
+			    setTimeout(function() {
+			       elem.toggleClass( "focused", elem.is( ":focus" ) );
+			    }, 0);
+			});*/
+
+			// $(":image").css("backgroundColor","green")
+
+			// $(":foot").css("background","pink")
+
+			// $("div:contains('John')").css("color","pink")
+
+			// $("ul:first-child").css("color","red")
+
+			// $("div:nth-last-of-type(4)").css("color","red")
+
+			// alert($("input").length);
+			// alert($(":input").length);
+
+			// $("form~input").css("border","1px solid red")
+			// $('div').css({width:200,height:200,background:"red"})
+
+			// console.log($($("div")[0]).text())
+
+			// $(":root").css("background","pink")
+			
+			// $($("input")[0]).click(function(){
+			// 	// $($("div")[0]).toggleClass("one");
+			// 	$($(".one")[0]).animate({"width"<="num"},500)
+			// })
+			$("li:first-of-type").css("color","red")
+
+
+		$(".one").mousewheel(function(){
+			$(this).css({width:"+=10",height:"+=10"});
+		},function(){
+			$(this).css({width:'-=10',height:'-=10'});
+		})
+
+
+		})
+	</script>
+
+	<script>
+		jQuery.fn.extend({
+
+			mousewheel:function(downFn,upFn){
+				this.each(function(i,obj){
+					if(obj.attachEvent){
+				    obj.attachEvent("onmousewheel",scrollFn); //IE、 opera
+				    }else if(obj.addEventListener){
+				    obj.addEventListener("mousewheel",scrollFn,false);
+				    //chrome,safari -webkit-
+				    obj.addEventListener("DOMMouseScroll",scrollFn,false);
+				    //firefox -moz-
+				}
+				  function scrollFn(e){
+				    var ev=e||window.event;
+				    
+				    if (ev.preventDefault ){
+				        ev.preventDefault(); //阻止默认浏览器动作(W3C)
+				    }else{
+				        ev.returnValue = false;//IE中阻止浏览器默认动作的方式
+				    }
+
+				    var direct=ev.detail||ev.wheelDelta;
+				    if(direct==-120||direct==3){
+				      downFn.call(obj)
+				    }
+				    if(direct==120||direct==-3){
+				      upFn.call(obj)
+				    }
+				  }
+				})
+
+			}
+		})
+	</script>
+	<style>
+		.one{
+			width:200px;height:200px;
+			background: green;
+			position: relative;
+			left: 0;top:0;
+		}
+		ul li{
+			margin:0;padding:0;
+			list-style: none;
+		}
+
+		.one{
+			width:200px;height:200px;
+			background: red;
+			margin-bottom: 10px;
+		}
+		ul li{
+			margin:0;padding:0;
+			list-style: none;
+		}
+		ul{
+			width:120px;
+			height:20px;
+		}
+		li{
+			width:20px;height:20px;
+			border-radius:50%;
+			margin-right:10px !important;
+		}
+	</style>
+<body>
+	<!-- <div></div>
+	<div></div>
+	<div></div>
+	<div></div> -->
+
+	<!-- <div>div</div>
+	<p class="myClass">p class="myClass"</p>
+	<span>span</span>
+	<p class="notMyClass">p class="notMyClass"</p> -->
+
+
+	<!-- <form>
+	
+	  <label>Name:</label>
+	  <input name="name" />
+	  <fieldset>
+	      <label>Newsletter:</label>
+	      <input name="newsletter" />
+	 </fieldset>
+	
+	</form>
+	<input name="none" /> -->
+
+
+	<!-- <ul>
+	    <li>list item 1</li>
+	    <li>list item 2</li>
+	    <li>list item 3</li>
+	    <li>list item 4</li>
+	    <li>list item 5</li>
+	</ul> -->
+
+	<!-- <input name="apple" />
+	<input name="flower" checked="checked" /> -->
+
+
+	<!-- <h1>Header 1</h1>
+	<p>Contents 1</p>
+	<h2>Header 2</h2>
+	<p>Contents 2</p> -->
+
+	<!-- <div id="content">    
+	
+		<input tabIndex="1">   
+		<input tabIndex="2">   
+		<select tabIndex="3">        
+		  	<option>select menu</option>   
+		 </select>    
+		 <div tabIndex="4">    
+		      a div   
+		  </div>
+	</div> -->
+
+	<!-- $("p, button, h1, h2").click(function(event){  $("div").html("Triggered by a " + event.target.nodeName + " element.");}); -->
+
+<!-- <form>
+    <input type="button" value="Input Button"/>
+    <input type="checkbox" />
+
+    <input type="file" />
+    <input type="hidden" />
+    <input type="image" />
+
+    <input type="password" />
+    <input type="radio" />
+    <input type="reset" />
+
+    <input type="submit" />
+    <input type="text" />
+    <select><option>Option</option></select>
+
+    <textarea></textarea>
+    <button>Button</button>
+
+</form> -->
+
+<!-- <div>John Resig</div>
+<div>George Martin</div>
+<div>Malcom John Sinclair</div>
+<div>J. Ohn</div> -->
+
+<!-- <ul>
+  <li>John</li>
+  <li>Karl</li>
+  <li>Brandon</li>s
+</ul>
+<ul>
+  <li>Glen</li>
+  <li>Tane</li>
+  <li>Ralph</li>
+</ul> -->
+
+<!-- <div>
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+</div>
+
+<div>
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+</div>
+
+<div>
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+</div>
+
+<div>
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+</div> -->
+
+<!-- <input type="button" value="按钮">
+<div class='one'></div> -->
+
+<!-- <ul>
+
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul>
+	
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>	
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul> -->
+
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+<!-- <div class="one">1</div>
+<div class="one">2</div>
+<div class="one">3</div>
+<div class="one">4</div> -->
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <script src="../兼容函数总结/function.js"></script>
+  <script src="../兼容函数总结/function1.js"></script>
+  <script src="../兼容函数总结/function2.js"></script>
+  <script src="../兼容函数总结/function3.js"></script>
+  <script src="../兼容函数总结/animate.js"></script>
+	<style>
+	body,ul,li{
+    	margin:0;padding:0;list-style:none;
+    }
+    .box{
+    	width:800px;
+    	height:400px;
+    	margin:0 auto;
+    	position: relative;
+ /*     overflow: hidden; */
+    }
+    .image{
+    	width:4000px;
+    	height:400px;
+      position: absolute;
+      left:0;
+      top:0;
+    }
+    .imgs{
+    	width:800px; 
+    	height: 400px;
+    	float: left;
+    }
+	.btnbox{
+   	width: 200px;
+   	height: 20px;
+   	position: absolute;
+   	left:300px;
+   	bottom:50px;
+    z-index: 4;
+   }
+     .btn{
+   	width: 20px;
+   	height: 20px;
+   	background: #333;
+   	float: left;
+   	margin-left: 15px;
+   	margin-right: 15px;
+   	border-radius: 10px;
+    text-align: center;
+    color:white;
+   }
+   .btn:hover{
+    color:black;
+   }
+	</style>
+</head>
+<body>
+	<div class="box">
+      <div class="image">
+			<div class="imgs" style="background:red">1</div>
+			<div class="imgs" style="background:blue">2</div>
+			<div class="imgs" style="background:green">3</div>
+			<div class="imgs" style="background:yellow">4</div>
+      <div class="imgs" style="background:red">1</div>
+		</div>
+		<ul class="btnbox">
+			<li class="btn" style="baclground:white">1</li>
+			<li class="btn">2</li>
+			<li class="btn">3</li>
+			<li class="btn">4</li>
+		</ul>
+</body>
+<script>
+	var imgs=$(".image")[0]
+	var btn=$(".btn")
+    var num=1;
+    function move(){
+      if(num==4){
+           animate(imgs,{left:-800*num},1000,Tween.Linear,function(){
+           imgs.style.left=0;
+           });
+           num=0
+         } else{ 
+          animate(imgs,{left:-800*num},1000,Tween.Linear);
+          btn[num].style.background="#ff6700"
+         }
+        for(var i=0;i<btn.length;i++){
+          btn[i].style.background="white"
+        } 
+        btn[num].style.background="#ff6700"
+        num++   
+ }
+
+var t=setInterval(move,2000)
+
+
+   for(var i=0;i<btn.length;i++){
+          btn[i].index=i;
+          btn[i].onmouseover=function(){
+            clearInterval(t)
+            animate(imgs,{left:-800*this.index},500,Tween.Linear)
+            for(var j=0;j<btn.length;j++){
+              btn[j].style.background="white"
+            }
+             btn[this.index].style.background="#ff6700"
+          }
+          btn[i].onmouseout=function(){
+            num=this.index+1
+            t=setInterval(move,2000)
+          }
+}
+  
+</script>
+</html>

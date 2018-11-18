@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+<section>
+    <video src="yi.mp4" id="video"></video>
+    <div class="videoCj">
+        <div id="play"></div>
+       <div id="replay"></div>
+        <progress id="now" value=3 min=0 max=10></progress>
+        <span id="all">0:00</span>
+        <input type="button" value="音量+" id="volumup">
+        <input type="button" value="音量-" id="volumn">
+        <div id="muted"></div>
+        <div id="qp"></div>
+    </div>
+</section>
+<script src="jquery.js"></script>
+<script>
+    // ontimeupdate
+        var video=document.querySelector("video");
+        var play=document.querySelector("#play");
+        var replay=document.querySelector("#replay");
+        var now=document.querySelector("#now");
+        var all=document.querySelector("#all");
+        var volumup=document.querySelector("#volumup");
+        var volumn=document.querySelector("#volumn");
+        var fullscreen=document.querySelector("#qp");
+        var muted=document.querySelector("#muted")
+        play.onclick=function () {
+            if(video.paused){
+                video.play();
+                $("#play").addClass("play");
+            }else{
+                video.pause();
+                $("#play").addClass("pause")
+            }
+        }
+        replay.onclick=function () {
+            video.load();
+            video.play();
+        }
+        muted.onclick=function () {
+            video.muted=!video.muted;
+        }
+        video.oncanplay=function () {
+            all.innerHTML=setTime(video.duration);
+        }
+        function setTime(time){
+            var m=Math.floor(time/60);
+            var s=Math.floor(time%60);
+            var M=m<10?0+""+m:m;
+            var S=s<10?0+""+s:s;
+            return M+":"+S;
+        }
+        video.ontimeupdate=function () {
+            now.innerHTML=setTime(video.currentTime);
+        }
+    volumup.onclick=function () {
+        video.volume+=0.1;
+        }
+    volumn.onclick=function () {
+        video.volume-=0.1;
+        }
+        fullscreen.onclick=function(){
+            video.mozRequestFullScreen?video.mozRequestFullScreen():video.webkitRequestFullScreen();
+        }
+        $("#video").hover(function(){
+            $(".videoCj").stop(true,true).slideDown();
+        },function(){
+            $(".videoCj").stop(true,true).slideUp();
+        })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+    margin:0;padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: #cc603e!important;
+}
+.form-control{
+    text-align:center;
+    font-family: '楷体';
+}
+.left{float:left!important;}
+.right{float:right!important;}
+#prices,#price{
+    width:45%;
+    height:.5rem;
+    float:left;
+    font-size:.2rem!important;
+    color:#cc603e;
+    margin-bottom:.2rem;
+}
+.colors,.color{
+    color:white;
+    text-align:center!important;
+    font-size: .24rem !important;
+    font-family:'楷体'
+}
+
+.box{
+    width:5rem;height:auto;
+    border:1px solid #000;
+    margin:0 auto;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.box tr:nth-child(1){
+    width:1rem;
+    height: .5rem !important;
+    border-bottom:1px dashed #000;
+    text-align:center;
+    font-family: '楷体';
+    font-size: .2rem !important;
+}
+.box tr{
+    width:1rem;
+    height: .25rem !important;
+    border-bottom:1px dashed #000;
+    text-align:center;
+    font-family: '楷体';
+    font-size: .2rem !important;
+}
+
+.box tr td{
+    width:1rem;
+    height: .25rem !important;
+    border-right:1px dashed #000;
+}

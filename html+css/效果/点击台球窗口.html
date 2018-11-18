@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+    .box{
+    	width: 200px;
+    	height: 200px;
+    	background:blue;
+    	position: absolute;
+    }
+	</style>
+	<script>
+//     window.onload=function(){
+//     var box=document.querySelector(".box")
+//     var cw=document.documentElement.clientWidth;
+//     var ch=document.documentElement.clientHeight;
+    
+//     box.style.left=(cw-ow)/2+"px"
+//     box.style.top=(ch-oh)/2+"px"
+
+    
+//     var numx=5
+//     var numy=5
+//     var t
+// window.onresize=function(){
+
+//   cw=document.documentElement.clientWidth;
+//   ch=document.documentElement.clientHeight;
+// }
+
+//     var ow=box.offsetWidth;
+//     var oh=box.offsetHeight;
+// 	 var t=setInterval(function(){
+//     	var x=box.offsetLeft+numx
+//     	var y=box.offsetTop+numy
+
+//        if(x>=(cw-ow)){
+//        	x=cw-ow
+//           numx*=-1
+//     	}
+//     	if(x<=0){
+//     		x=0
+//           numx*=-1
+//     	}
+
+//     	if(y>=(ch-oh)){
+//     	y=ch-oh
+//           numy*=-1
+//     	}
+
+//     	if(y<=0){
+//     		y=0
+//           numy*=-1
+//     	}
+    	
+        
+//         box.style.left=x+"px"
+//         box.style.top=y+"px"
+      
+//     },50)
+//  }
+
+window.onload=function(){
+	var box=document.querySelector(".box")
+	var ow=box.offsetWidth
+	var oh=box.offsetHeight
+    var numx=1
+    var numy=1
+	var cw;
+	var ch;
+
+	var resize=function(){
+    cw=document.documentElement.clientWidth
+    ch=document.documentElement.clientHeight
+    box.style.left=(cw-box.offsetWidth)/2+"px"
+    box.style.top=(ch-box.offsetHeight)/2+"px"
+	}
+    resize()
+	var t=setInterval(function(){
+    
+    var x=box.offsetLeft+5*numx
+    var y=box.offsetTop+5*numy
+    console.log(x)
+    if(x>=(cw-ow)){numx*=-1}
+
+    if(x<=0){numx*=-1}
+
+    if(y>=(ch-oh)){numy*=-1}
+
+    if(y<=0){numy*=-1}
+
+    
+
+    box.style.left=x+'px'
+    box.style.top=y+'px'
+	},20)
+}
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

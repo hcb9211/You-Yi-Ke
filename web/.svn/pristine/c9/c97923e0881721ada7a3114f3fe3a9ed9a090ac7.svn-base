@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>内容</title>
+    <link rel="stylesheet" href="css/one.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/show1.css"/>
+    <link rel="stylesheet" href="css/imgshare.css"/>
+    <link rel="stylesheet" href="css/select_share.css"/>
+    <link rel="stylesheet" href="css/share_popup.css"/>
+    <link rel="stylesheet" href="css/share_style0_16.css"/>
+    <link rel="stylesheet" href="css/share_style0_24.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/backTop.js"></script>
+    <script src='js/index.js'></script>
+    <script src='js/select.js'></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.btn:first').addClass('active');
+            $('.con:first').css({'display':'block'});
+            $('.box').select($('.btn'),$('.con'),'active');
+        })
+    </script>
+</head>
+<body>
+<div class="kt">
+    <div class="kt1">
+        <div class="zuo">
+            <img src="image/1.png" alt=""/>
+        </div>
+        <div class="you">
+            <div class="smallmenu">
+                <div class="anniu"></div>
+                <div class='smallmenuxl'>
+                    <ul class="leaner clearfix">
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="index.html">首页</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="article01.html">公司简介</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="cotx.html">产品体系</a>
+                                <div class="add">+</div>
+                            </ul>
+                            <ul class="leaner-twoname">
+                                <li><a href="">衣服护色系列</a></li>
+                                <li><a href="">衣物去渍系列</a></li>
+                                <li><a href="">家具清洁系列</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="article_channel.html">解决方案</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="exhibit_list.html">去渍实验室</a>
+                                <div class="add">+</div>
+                            </ul>
+                            <ul class="leaner-twoname">
+                                <li><a href="">衣服护色系列</a></li>
+                                <li><a href="">衣物去渍系列</a></li>
+                                <li><a href="">家具清洁系列</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="article03.html">销售网络</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="article_list.html">新闻中心</a>
+                                <div class="add">+</div>
+                            </ul>
+                            <ul class="leaner-twoname">
+                                <li><a href="">公司新闻</a></li>
+                                <li><a href="">行业新闻</a></li>
+                                <li><a href="">贝克曼博士</a></li>
+                                <li><a href="">店铺信息</a></li>
+                                <li><a href="">活动公告</a></li>
+                                <li><a href="">媒体报道</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="article02.html">常见问题</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="artice_list1.html">创新与生活</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="leaner-onename">
+                                <a href="ly.html">联系我们</a>
+                                <div class="add">+</div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qh">
+                <img src="image/35.jpg" alt=""/>
+                <span>Tel: 025-86268873</span>
+                <img src="image/36.jpg" alt=""/>
+                <a href="">@贝克曼博士</a>
+                <img src="image/37.jpg" alt=""/>
+                <a href="">网站地图</a>
+                <img src="image/38.jpg" alt=""/>
+                <a href="">English</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wb">
+    <div class="dh">
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="article01.html">公司简介</a>
+            <a href="cotx.html">产品体系</a>
+            <a href="article_channel.html">解决方案</a>
+            <a href="exhibit_list.html">去渍实验室</a>
+            <a href="article03.html">销售网络</a>
+            <a href="article_list.html">新闻中心</a>
+            <a href="article02.html">常见问题</a>
+            <a href="artice_list1.html">创新与生活</a>
+            <a href="ly.html">联系我们</a>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/banner1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/banner2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/banner3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/banner4.jpg" alt=""></div>
+        </div>
+        <!--如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!--如果需要滚动条 -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+</div>
+<div class="cent">
+    <div class="box cf">
+        <div class="cptx1">
+            <img src="image/6.png" alt=""/>
+            产品系列
+        </div>
+        <div class="top">
+            <div class="btn">衣服护色系列</div>
+            <div class="btn">衣物去渍系列</div>
+            <div class="btn">家具清洁系列</div>
+        </div>
+        <div class="bottom">
+            <div class="con">
+                <div class="yindao">
+                    <p>当前位置:<a href="index.html">首页></a>产品体系>衣服护色系列</p>
+                </div>
+                <div class="show-con">
+                    <div class="show-con-1">
+                        <img src="image/show/1.jpg" alt=""/>
+                    </div>
+                    <div class="show-con-2">
+                        <span>贝克曼博士圆珠笔与记号笔</span>
+                        <p>性剂等容量：50ml</p>
+                        <p>保质期：5年</p>
+                        <p>产地：德国</p>
+                    </div>
+                </div>
+                <div class="show">
+                    <span class="btl">产品介绍</span>
+                    <div class="show-nr">
+                        <span class="btl1">产品特性：</span>
+                        <p>1.针对不同类型污渍所研发的完全有效的去渍产品，6款产品可以攻克逾90种顽固污渍，可供按需选择，有效去污。</p>
+                        <p>2.对陈旧、干涸污渍也有显著效果。</p>
+                        <p>3.温和呵护衣服，长期使用不损害织物面料。</p>
+                        <span class="btl1">产品特性：</span>
+                        <p>1.针对不同类型污渍所研发的完全有效的去渍产品，6款产品可以攻克逾90种顽固污渍，可供按需选择，有效去污。</p>
+                        <p>2.对陈旧、干涸污渍也有显著效果。</p>
+                        <p>3.温和呵护衣服，长期使用不损害织物面料。</p>
+                    </div>
+                    <div class="show-qz">
+                        <span class="btl1">去渍范围：</span>
+                        <p>1.各式圆珠笔迹、签字笔、荧光笔、水彩铅笔、白板笔、墨水（非黑色）、蜡笔、水彩笔、油画棒、记号笔、铅笔、墨轮、印台墨水……。</p>
+                    </div>
+                    <div class="show-fa">
+                        <span class="btl1">使用方法：</span>
+                        <p>1.将干净的白布或厚纸巾垫在衣物污渍下方，再用溶液彻底弄湿污渍处。</p>
+                        <p>2.让溶液作用3分钟(如有大面积污渍或顽强的污渍，适当延长作用时间。</p>
+                        <p>3持续用干净的湿布轻轻的擦拭污渍部位，直到去除所有的污渍与溶液痕迹后，再用温水冲洗即可。</p>
+                    </div>
+                    <div class="show-sx">
+                        <span class="btl1">注意事项：</span>
+                        <p>1.请置于阴凉处及儿童不易触及之处。</p>
+                        <p>2.若不慎触及眼睛，应立即用大量清水冲洗，并携带本产品就医。</p>
+                        <p>3.若不慎误食，请立即携带本产品就医。</p>
+                        <span class="btl1">注意事项：</span>
+                        <p>1.请置于阴凉处及儿童不易触及之处。</p>
+                        <p>2.若不慎触及眼睛，应立即用大量清水冲洗，并携带本产品就医。</p>
+                        <p>3.若不慎误食，请立即携带本产品就医。</p>
+
+                    </div>
+                    <div class="show-tx">
+                        <span class="btl1">贝克曼博士提醒：</span>
+                        <p>1.测试方式：用少量的溶液弄湿衣物的不明显处，放置一旁让其风干待风干后如果没有任何变化即可依照使用方法操作</p>
+                        <p>2.本产品不适用于皮革、麂皮、醋酸纤维或人造丝、地毯或布套垫物。</p>
+                        <p>3.建议使用温水冲洗测试部位并遵守衣物的洗涤标签内容。</p>
+                    </div>
+                    <div class="cp2">
+                        <div class="cp2-1">
+                            <div class="cp-2-1"></div>
+                            <div class="cp-2-2"><img src="image/40.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="pl">
+                        <p>发表评论</p>
+                        <div class="pl1"></div>
+                    </div>
+                    <form action="" id="form">
+                        <textarea class="form-control" placeholder="说点什么吧"></textarea>
+                        <input type="button" value="发表" id="fb">
+                    </form>
+                    <div class="plhy">
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！
+                                    如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！
+                                    如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="plhy1">
+                            <div class="plhy1-1">
+                                <img src="image/28.jpg" alt=""/>
+                            </div>
+                            <div class="plhy1-2">
+                                <div class="plhy1-2-top">ゞゃ尛嘢緢 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    2016年07月27日</div>
+                                <div class="plhy1-2-bottom">如果白色运动裤不小心过上红色了怎么办？请告诉我一下！谢谢！！！</div>
+                            </div>
+                            <div class="plhy1-right">
+                                <a href="#"><img src="image/29.jpg" alt=""/></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="show2">
+                    <div class="show-tj">
+                        <span>相关推荐</span>
+                    </div>
+                    <div class="demo">
+                        <div class="link">
+                            <div class="st">
+                                <a href="">
+                                    <img src="image/2.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="xt">
+                                <a href="" class="xt1">
+                                    第一页
+                                </a>
+                                <p class="xt2">
+                                    容量：50ml
+                                </p>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <div class="st">
+                                <a href="">
+                                    <img src="image/2.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="xt">
+                                <a href="" class="xt1">
+                                    第一页
+                                </a>
+                                <p class="xt2">
+                                    容量:50ml
+                                </p>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <div class="st">
+                                <a href="">
+                                    <img src="image/2.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="xt">
+                                <a href="" class="xt1">
+                                    第一页
+                                </a>
+                                <p class="xt2">
+                                    容量:50ml
+                                </p>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <div class="st">
+                                <a href="">
+                                    <img src="image/2.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="xt">
+                                <a href="" class="xt1">
+                                    第一页
+                                </a>
+                                <p class="xt2">
+                                    容量:50ml
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show3">
+                    <div class="show-tj">
+                        <span>推荐文章</span>
+                    </div>
+                    <div class="show-wz">
+                        <div class="show-wz-1">
+                            <p><a href="">贝克曼博士产品登陆华润OLE</a></p>
+                            <p><a href="">贝克曼博士产品现于南京金鹰超市...</a></p>
+                            <p><a href="">贝克曼博士产品于成都伊藤洋华在...</a></p>
+                            <p><a href="">贝克曼博士产品登陆大连麦凯乐在...</a></p>
+                            <p><a href="">贝克曼博士产品登陆大连麦凯乐是...</a></p>
+                        </div>
+                        <div class="show-wz-2">
+                            <p><a href="">贝克曼博士产品登陆华润OLE</a></p>
+                            <p><a href="">贝克曼博士产品现于南京金鹰超市...</a></p>
+                            <p><a href="">贝克曼博士产品于成都伊藤洋华在...</a></p>
+                            <p><a href="">贝克曼博士产品登陆大连麦凯乐在...</a></p>
+                            <p><a href="">贝克曼博士产品登陆大连麦凯乐是...</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lx">
+            <div class="cptx">
+                <img src="image/7.png" alt=""/>
+                联系我们
+            </div>
+            <div class="lx1">
+                <p>中国（南京）代表处：</p>
+                <p>中国江苏省南京市中山东路288号</p>
+                <p>新世纪广场A座901室 </p>
+                <p>Tel: 025-86268873</p>
+                <p>Fax: 025-86268872</p>
+                <p>新浪微博：weibo.com/2915256211</p>
+            </div>
+        </div>
+        <div class="gg">
+            <div class="cptx">
+                <img src="image/10.png" alt=""/>
+                活动公告
+            </div>
+            <div class="lx2">
+                <p><a href="">贝克曼博士产品登陆华润OLE</a></p>
+                <p><a href="">贝克曼博士产品现于南京金鹰超市...</a></p>
+                <p><a href="">贝克曼博士产品于成都伊藤洋华在...</a></p>
+                <p><a href="">贝克曼博士产品登陆大连麦凯乐在...</a></p>
+                <p><a href="">贝克曼博士产品登陆大连麦凯乐是...</a></p>
+                <p><a href="">贝克曼博士产品现登陆广州广百超...</a></p>
+                <p><a href="">贝克曼博士官网全新改版！</a></p>
+                <p><a href="">贝克曼博士产品系列正式登录中国...</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="db">
+    <div class="g-p1">
+        <a href="" class="foot-a">首页</a>|
+        <a href="" class="foot-a">公司简介</a>|
+        <a href="" class="foot-a">产品系列</a>|
+        <a href="" class="foot-a">解决方案</a>|
+        <a href="" class="foot-a">去渍实验室</a>|
+        <a href="" class="foot-a">销售网络</a>|
+        <a href="" class="foot-a">新闻中心</a>|
+        <a href="" class="foot-a">常见问题</a>|
+        <a href="" class="foot-a">创新与生活</a>
+    </div>
+    <p class="yi">Copyright © Delta Pronatura 2011 Kurt-Schumacher-Ring 15-17, D-63329 Egelsbach, Germany </p>
+    <p class="yi1">苏ICP备09061814号</p>
+    <p class="yi2">中国（南京）代表处：中国江苏省南京市中山东路288号新世纪广场A座901室 </p>
+    <div class="db1">
+        <img src="image/11.jpg" alt=""/>
+        <span>Tel: 025-86268873</span>
+        <img src="image/12.jpg" alt=""/>
+        <a href="">@贝克曼博士</a>
+        <img src="image/13.jpg" alt=""/>
+        <a href="ditu.html">网站地图</a>
+        <img src="image/14.jpg" alt=""/>
+        <a href="">English</a>
+    </div>
+</div>
+
+<!--返回顶部-->
+<div class="evm">
+    <div class="backtop">
+        <img src="image/db.jpg" alt=""/>
+    </div>
+    <div class="er"></div>
+    <div class="ewm">
+        <img src="image/40.jpg" alt="">
+    </div>
+</div>
+</body>
+<script src="js/swiper.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        //        direction: 'vertical',
+        autoplay:2500,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+        // 如果需要前进后退按钮
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+
+        // 如果需要滚动条
+        //        scrollbar: '.swiper-scrollbar'
+    })
+</script>
+</html>

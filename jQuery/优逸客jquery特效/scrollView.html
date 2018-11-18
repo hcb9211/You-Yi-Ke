@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/scrollView.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/scrollView.js"></script>
+	<script>
+	  $(function  () {
+	   //放大旋转
+	   zoomRotate($(".zoom-rotate"));
+
+	   //飞入  支持旋转
+	   fly($(".fly"));
+	   fly($(".fly1"),"r",false);
+      
+	    //固定
+
+		fixed($(".fixed"),200);
+
+       //原点放大旋转
+	   origin($(".origin"));
+
+	  //跟随
+	   follow($(".follow"));
+
+	  })
+	
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div class="zoom-rotate">
+		   山西优逸客科技有限公司
+		</div>
+		
+		<div class="fly">
+		   天外来客-飞入
+		</div>
+
+		<div class="fly1">
+		   天外来客-飞入
+		</div>
+
+		<div class="fixed">
+		  岿然不动
+		</div>
+        
+		<div class="origin">
+		   原点放大旋转
+		</div>
+
+		<div class="follow">
+		  如影随形
+		</div>
+	</div>
+</body>
+</html>

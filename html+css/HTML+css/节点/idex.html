@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节点</title>
+	<script>
+       window.onload=function(){
+       	
+       	// var out=one.parentNode;
+       	// alert(out.id);
+       	// var child=out.childNodes;
+       	// console.log(child)
+       	// var first=out.firstChild;
+       	// var last=out.lastChild; 
+       	
+       	// for(var i=0;i<child.length;i++){
+       	// 	console.log(child[i])
+       	// }
+
+       	// var next=one.nextSibling
+       	// console.log(next);
+
+       	// var next=one.previousSibling
+       	// console.log(next);
+
+       	/*for(var i=0;i<child.length;i++){
+       		console.log(child[i].nodeType+";"+child[i].nodeName+";"+child[i].nodeValue)
+       	}*/
+        /***********************************************************************/
+       	/*function getChilds(obj,type){
+       		var child=obj.childNodes;
+                     var newarr=[];
+                     var type=type?type:false;
+       		if(type==true){
+                            for(var i=0;i<child.length;i++){
+                                   if(child[i].nodeType==1||(child[i].nodeType==3&&!(/^\s+$/.test(child[i].nodeValue)))){
+                                          newarr.push(child[i]);
+                                   }
+                            }
+                     }else if(type==false){
+                            for(var i=0;i<child.length;i++){                 
+                                   if(child[i].nodeType==1){
+                                          newarr.push(child[i]);
+                                   }
+                     }
+              }
+       		
+       		return newarr;
+       	}
+       	console.log(getChilds(out,true).length)
+
+
+              function firstChild(obj){
+                     return getChilds(obj)[0];
+              }
+
+              function lastChild(obj){
+                     var len=getChilds(obj).length;
+                     return getChilds(obj)[len-1];
+              }
+
+              function */
+       /***********************************************************************/
+
+       var out=document.getElementById('out');
+       var one=document.getElementsByClassName('one')[0];
+       // var div=document.createElement("div");
+       // div.style.cssText="width:100px;height:100px;background:red;"
+       // out.appendChild(div)
+
+      /* console.log(one);
+       out.removeChild(one);
+       one=null;
+       console.log(one);*/
+
+       }
+	</script>
+</head>
+<style>
+	#out{
+		width: 300px;
+		height: 300px;
+		border:3px solid #ff6700;
+	}
+	.one{
+		width: 100px;
+		height:100px;
+		margin-bottom: 20px;
+		background: green;
+	}
+       #two{
+              width: 100px;
+              height: 100px;
+              background: red;
+       }
+</style>
+<body>
+	<!-- <div id="out">
+              这是out
+              <div class="one" id="one">
+                     <span>
+                            这是out里面的one
+                     </span>
+              </div>
+              这是一行注释
+              <p class="one">
+                     这是p
+              </p>
+       </div> -->
+	<div id="out">
+              <div class="one">
+                     <div id="two"></div>
+              </div>
+              <!--  -->
+              <!--  -->
+
+              fhtjgyk
+              <div></div>
+       </div>
+
+</body>
+<script>
+       window.onload=function(){
+
+              function getNext1(obj){
+                     var next=obj.nextSibling;
+                     if(next==null){
+                            return false;
+                     }
+                     while(next.nodeType==3||next.nodeType==8){
+                                   next=next.nextSibling;
+                            if(next==null){
+                            return false;
+                            }
+                     }
+                            return next;
+                     }
+
+              function getNext2(obj){
+                     var next=obj.nextSibling;
+                     if(next==null){
+                            return false;
+                     }
+                     while((next.nodeType==3&&/^\s+$/.test(next.nodeValue))||next.nodeType==8){
+                            next=next.nextSibling;
+                            if(next==null){
+                            return false;
+                            }
+                     }
+                            return next;
+                     }
+
+              function getNext(obj,type){
+                     var type=type?type:false;
+                     if(type==true){
+                            getNext1(obj);
+                     }else{
+                            getNext2(obj);
+                     }
+              }
+
+              function insertAfter(newobj,obj,type){
+                     var parent=obj.parentNode;
+                     var type=type?type:false;
+                     var pos=getNext(obj,type);
+                     if(!pos){
+                            parent.appendChild(obj)    
+                     }else{
+                            parent.insertBefore(newobj,obj)
+                     }
+              }
+              var out=document.getElementById('out');
+              var one=document.getElementsByClassName('one')[0];
+              console.log(insertAfter(two,one));  
+}
+
+
+
+
+</script>
+</html>

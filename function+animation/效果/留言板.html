@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<style>
+body,p,ul,ol,dl,dd,dt,li,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;<去掉小圆点>                    
+  }
+a{
+    text-decoration:none;
+    color:#333;
+  }
+img{
+    border:none;
+  }
+
+
+     .box{
+     	width: 300px;
+     	height: auto;
+        margin: 0 auto;
+        text-align: center;
+     }
+     #title{
+     	width: 300px;
+     	height:auto;	
+     	background: #ccc;
+     }
+     #title>p{
+     	width: 300px;
+     	height: 40px;
+     	border-top: 1px solid red;
+     	line-height: 40px;
+     }
+     #text{
+     	width: 294px;
+     	height: 250px;
+     	resize:none;
+       font-size: 30px;
+     }
+     #tishi{
+     	width: 300px;
+     	height: 50px;
+     	color:red;
+     	border:1px solid #ccc;
+     	text-align: left;
+     }
+	</style>
+
+	<script>
+    $(function(){
+    	var btn=$("#btn");
+    	var text=$("#text");
+        var title=$("#title");
+    	btn.onclick=text.onkeydown=function(e){
+    		var ev=e||window.event;
+
+
+    		if(ev.type=="click"){
+
+              var val=text.value;
+	    		val=val.replace(/^\s*|\s*$/g,"");
+	    		text.value="";
+
+    		if(val==""){
+    			alert("请您输入内容")
+    		}else{
+    			var p=document.createElement("p")
+    			p.innerHTML=val;
+    			title.appendChild(p);
+    		}
+
+    	  }
+    	  
+
+    	  else if(ev.type=="keydown"){
+
+    	  	if(ev.ctrlKey){//如果是ctrl建
+
+    	  		if(ev.keyCode==13){//如果是回车键
+	    	  	var val=text.value;
+	    	  	val=val.replace(/^\s*|\s*$/g,"")
+	    	  	text.value="";
+
+	    	  	if(val==""){
+	    	  		alert("请您输入内容")
+	    	  	}else{
+	    	  		var p=document.createElement("p")
+	    			p.innerHTML=val;
+	    			title.appendChild(p);
+	    	  	    }
+    	  	   }
+    	  	 }
+    	  }
+    	}
+
+    	var tishi=$("#tishi");
+    	text.onkeyup=onkeypress=function(){
+    		var val=text.value
+    		var num=val.length
+    		if(num>40){//停止输入
+                text.value=val.substr(0,40);
+    			tishi.innerHTML="您可以输入40个字符，已经输入40个，还可以输入0个字符"
+    		}else{
+                tishi.innerHTML="您可以输入40个字符，已经输入"+num+"个，还可以输入"+(40-num)+"个字符"
+            }
+    	}
+
+    title.onmouseover=function(e){
+   var ev=e||window.event;
+   var obj=ev.srcElement||ev.target;
+   obj.style.background="red";
+}
+title.onmouseout=function(e){
+   var ev=e||window.event;
+   var obj=ev.srcElement||ev.target;
+   obj.style.background="#ccc";
+}
+    })
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div id="title">
+			<p style="border-top:0">留言板:</p>
+		</div>
+		<textarea name="text" id="text" cols="30" rows="10"></textarea>
+		<div id="tishi">您可以输入40个字符，已经输入0个，还可以输入40个字符</div>
+		<input type="button" value="提交" name="" id="btn">
+	</div>
+</body>
+</html>

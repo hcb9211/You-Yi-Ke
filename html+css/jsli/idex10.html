@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象的特性</title>
+	<script>
+   /*//工厂函数(一般不用)
+   function tv(color,size){
+   	  var tv=new Object();
+   	  tv.color=color;
+   	  tv.size=size;
+   	  tv.look=function(){
+   	  	  alert("可以看电视");
+   	  }
+   	  return tv;
+   }
+   var tv1=new tv("red","55英寸");
+   alert(tv1.color);
+   //构造函数(constructr)
+    function tv(color,size){//color与size也表示对象的接口
+    	  this.color=color;
+    	  this.size=size;
+    	  /*this.look=function(){
+    	  	alert("可以看电视");
+    	  }*/
+    /*}
+    tv.prototype.look=function(){
+    	  alert("可以看电视");
+    }
+    var tv2=new tv("blue","120英寸");
+    alert(tv2.color)
+    var tv3=new tv("yellow","120英寸");
+    tv2.look();
+    tv3.look();*/
+
+//继承
+    /*function person(){
+    	this.name="zhangsan";
+    	this.age=18;
+    }
+    function student(){
+
+    }
+    student.prototype=new person();
+    var lisi=new student();
+    alert(lisi.name);*/
+
+//对象.call()
+/*function person(){
+    	this.name="zhangsan";
+    	this.age=18;
+    	this.say=function(){
+    		alert("会说话")
+    	}
+    }
+function student(){
+         this.name="students"
+    }
+    var ren=new person();
+    var wangwu=new student();
+    ren.say();
+    ren.say.call(wangwu);*/
+
+ //this指向谁
+    //1,在一个普通函数中
+    /*function aa() {
+       alert(this);
+    }
+   aa();//[object Window]
+   //2,在一个方法中，this指当前对象
+     var ren={};
+     function bb(){
+        alert(this);
+     }
+   ren.fun=bb;
+   ren.fun();*/  //[object Object][类型 对象]
+
+    //3，在构造函数里，this指被创建的对象
+     //例子：
+    /* function person(){
+        this.name="";  //this 指向yaoming
+     }
+     var yaoming=new person();
+     alert(yaoming.name);
+     //4，在call方法里，this指括号里的对象
+   
+    var ren={};
+    function bb (){
+       alert(this);
+   }
+   ren.fun=bb;//对象的方法
+   ren.fun();
+   var aa={};
+   ren.fun.call(aa);*/  //this指向aa
+
+
+   /*function person(name,age){
+   	   this.name=name;
+   	   this.age=age;
+   	   this.say=function(aa,bb){
+           /*alert(name);
+           alert(age);
+           alert("会说话");
+           alert(this);
+   	   }
+   }
+   function student(){
+   	   this.name="students";
+   }
+   var ren=new person();
+   var wangwu=new student();
+   //ren.say.call(wangwu,"王五",18);
+   //ren.say.apply(wangwu,["王五",18]);
+   ren.say.apply();*/
+
+
+	</script>
+</head>
+<body>
+<input type="text" id="myText" value="文本框">
+	<script>
+
+	function Obj(){
+	 this.value="对象"//Obj的一个属性(value)
+	};
+
+	 var value="全局变量";
+
+	 function Fun1(){
+	 	alert(this.value)
+	 }
+	
+	window.Fun1();//"全局变量"
+	Fun1.call(window);//"全局变量"
+	Fun1.call(document.getElementById('myText'))//"文本框"
+	Fun1.call(new Obj());//"对象"
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+box-sizing:border-box
+
+盒子的高度/内容的高度=滚动按钮的高度/滚动条的高度
+
+内容的高度/滚动条的高度=内容移动的距离/滚动按钮移动的距离
+
+mousedown mousemove mouseup

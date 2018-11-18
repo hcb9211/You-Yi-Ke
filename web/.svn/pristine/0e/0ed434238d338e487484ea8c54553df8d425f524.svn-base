@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雨天</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(function(){
+           for(var i=0;i<300;i++){
+               $("<div>").css({
+                   width:10,
+                   height:10,
+                   backgroundImage:"url(yu.jpg)",
+                   backgroundRepeat:"no-repeat",
+                   backgroundSize:"cover",
+                   position:"absolute",
+                   left:$(window).width()*Math.random(),
+                   top:-Math.random()*310-10,
+                   transition:"all 3s ease-out "+3*Math.random()+"s"
+               }).appendTo('body');
+           }
+          $('div').each(function(){
+               $(this).css({
+                   transform:"translateY("+($(window).height()+210)+"px)" });
+
+             $(this).on("transitionend",function(){
+                    $(this).css({
+                        transition:"",
+                        transform:"translateY(0)"
+                    });
+                   $(this).css({
+                       transition:"all 3s ease-out "+3*Math.random()+"s",
+                       transform:"translateY("+($(window).height()+300)+"px)"})
+               })
+           })
+       })
+    </script>
+    <style>
+        body,html{
+            width:100%;height:100%;
+            background-image:url(rains.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

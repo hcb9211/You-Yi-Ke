@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+     window.onload=function(){
+     	document.onmousedown=function(e){
+     		var ev=e||window.event;
+     		var ox=ev.offsetX
+     		var oy=ev.offsetY
+     		document.onmousemove=function(e){
+            
+              var ev=e||window.event;
+			 document.onmouseup=function(){
+             var ev=e||window.event;
+             var cx=ev.clientX;
+			 var cy=ev.clientY;
+             var newx=cx-ox;
+			 var newy=cy-oy;
+                     if(newx>100){
+		             	alert("1")
+		             }
+		             if(newx<0){
+		             	alert("2");
+		             }
+		             if(newy<0){
+		             	alert("3")
+		             }
+		             if(newy>100){
+		             	alert("4")
+                 }
+     	     }
+			
+		             
+     		}
+     		
+     	}
+     	
+     }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

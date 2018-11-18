@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<script src="../兼容函数总结/animate.js"></script>
+	<style>
+    .bigbox{
+    	width: 400px;
+    	height: 400px;
+    	margin:0 auto;
+    	border:1px solid black;
+    	overflow: hidden;
+    }
+    .box{
+    	width: 400px;
+    	height: 200px;
+    	text-align: center;
+    	line-height: 200px;
+    	color:white;
+    	font-size: 30px;
+    		overflow: hidden;
+    }
+	</style>
+</head>
+<body>
+	 <script>
+      $(function(){
+      	var bigbox=$(".bigbox")[0];
+      	setInterval(function(){
+      		var last=getLast(bigbox);
+      		last.style.height=0;
+      		var first=getFirst(bigbox);
+      		bigbox.insertBefore(last,first);
+      		animate(first,{height:200},600,Tween.Linear)
+      	},2000)
+      })
+	 </script>
+
+	 <div class="bigbox">
+	 	<div class="box" style="background:red">1</div>
+	 	<div class="box" style="background:green">2</div>
+	 	<div class="box" style="background:yellow">3</div>
+	 	<div class="box" style="background:pink">4</div>
+	 	<div class="box" style="background:black">5</div>
+	 </div>
+</body>
+</html>

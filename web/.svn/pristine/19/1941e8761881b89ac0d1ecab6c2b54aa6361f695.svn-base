@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>apple中国官方网站</title>
+    <link rel="stylesheet" href="css/apple.css">
+</head>
+<body>
+<!--导航开始-->
+<div class="wrapper">
+    <div class="container">
+        <div class="small-menu">
+            <div></div>
+            <div></div>
+        </div>
+        <!--字体图标的在线引用-->
+        <a href="javascript:;" class="icon logo"></a>
+        <a href="javascript:;" class="item">Mac</a>
+        <a href="javascript:;" class="item">iPad</a>
+        <a href="javascript:;" class="item">iPhone</a>
+        <a href="javascript:;" class="item">Watch</a>
+        <a href="javascript:;" class="item">Music</a>
+        <a href="javascript:;" class="item">技术支持</a>
+        <a href="javascript:;" class="icon search"></a>
+        <div class="searchbox">
+            <input type="text" class="middlesearch"  placeholder='搜索apple.com' >
+        </div>
+        <a href="javascript:;" class="bag">
+            <!--将input的事件作用到label-->
+            <label class="icon bag-icon" for="bag-input"></label>
+            <input type="radio" class="bag-input" id="bag-input">
+            <div class="bag-list">
+
+            </div>
+        </a>
+    </div>
+</div>
+<div class="s-s">
+    <div class="s-s1">
+        <div class="s-s2">快速链接</div>
+        <a href="" class="s-s3"><div>查找零售店</div></a>
+        <a href="" class="s-s3"><div>配件</div></a>
+        <a href="" class="s-s3"><div>iPod</div></a>
+        <a href="" class="s-s3"><div>iOS</div></a>
+    </div>
+</div>
+<div class="mask"></div>
+<div class="menu-page"></div>
+<!--导航结束-->
+<!--banner-->
+<div class="banner">
+    <div class="watch"></div>
+    <div class="thisyou">一目了然，就是你。</div>
+</div>
+<div class="banner1">
+    <div class="watch1"></div>
+    <div class="thisyou1">一目了然，就是你。</div>
+</div>
+<div class="box2 clearfix">
+    <a href="" class="box2-1"><div></div></a>
+    <a href="" class="box2-1"><div></div></a>
+    <a href="" class="box2-1"><div></div></a>
+    <a href="" class="box2-1"><div></div></a>
+</div>
+<div class="box clearfix">
+    <a href="" class="box-1"><div></div></a>
+    <a href="" class="box-1"><div></div></a>
+    <a href="" class="box-1"><div></div></a>
+    <a href="" class="box-1"><div></div></a>
+</div>
+<div class="box1 clearfix">
+    <a href="" class="box1-1"><div></div></a>
+    <a href="" class="box1-1"><div></div></a>
+    <a href="" class="box1-1"><div></div></a>
+    <a href="" class="box1-1"><div></div></a>
+</div>
+
+<div class="Tiao">
+<div class="tiao">
+    <ul class="tiao-1">
+        <li class="tiao-2">选购及了解</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>Mac</li></a>
+            <a href="" class="tiao-4"><li>iPad</li></a>
+            <a href="" class="tiao-4"><li>iPhone</li></a>
+            <a href="" class="tiao-4"><li>Watch</li></a>
+            <a href="" class="tiao-4"><li>Music</li></a>
+            <a href="" class="tiao-4"><li>iTunes</li></a>
+            <a href="" class="tiao-4"><li>iPod</li></a>
+            <a href="" class="tiao-4"><li>配件</li></a>
+        </ul>
+    </ul>
+    <ul class="tiao-1">
+        <li class="tiao-2">Apple Store 商店</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>查找零售店</li></a>
+            <a href="" class="tiao-4"><li>Genius Bar 天才吧</li></a>
+            <a href="" class="tiao-4"><li>讲座和学习</li></a>
+            <a href="" class="tiao-4"><li>青少年活动</li></a>
+            <a href="" class="tiao-4"><li>Apple Store App</li></a>
+            <a href="" class="tiao-4"><li>翻新产品</li></a>
+            <a href="" class="tiao-4"><li>分期付款</li></a>
+            <a href="" class="tiao-4"><li>重复使用和循环利用</li></a>
+            <a href="" class="tiao-4"><li>订单状态</li></a>
+            <a href="" class="tiao-4"><li>选购帮助</li></a>
+        </ul>
+    </ul>
+    <ul class="tiao-1">
+        <li class="tiao-2">教育应用</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>Apple 与教育</li></a>
+            <a href="" class="tiao-4"><li>高校师生选购</li></a>
+        </ul>
+        <li class="tiao-2">商务应用</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>Apple 与商务</li></a>
+            <a href="" class="tiao-4"><li>商务选购</li></a>
+        </ul>
+    </ul>
+    <ul class="tiao-1">
+        <li class="tiao-2">帐户</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>管理你的 Apple ID</li></a>
+            <a href="" class="tiao-4"><li>Apple Store 帐户</li></a>
+            <a href="" class="tiao-4"><li>iCloud.com</li></a>
+        </ul>
+        <li class="tiao-2">Apple 价值观</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>环境责任</li></a>
+            <a href="" class="tiao-4"><li>供应商责任</li></a>
+            <a href="" class="tiao-4"><li>辅助功能</li></a>
+            <a href="" class="tiao-4"><li>隐私</li></a>
+        </ul>
+    </ul>
+    <ul class="tiao-1">
+        <li class="tiao-2">关于 Apple</li>
+        <ul class="tiao-3">
+            <a href="" class="tiao-4"><li>Apple 资讯</li></a>
+            <a href="" class="tiao-4"><li>工作机会</li></a>
+            <a href="" class="tiao-4"><li>媒体资讯</li></a>
+            <a href="" class="tiao-4"><li>活动</li></a>
+            <a href="" class="tiao-4"><li>热点新闻</li></a>
+            <a href="" class="tiao-4"><li>联系 Apple</li></a>
+        </ul>
+    </ul>
+    <div class="foot">
+        <div class="foot-1">
+            <p>更多选购方式：前往</p>
+            <a href="">Apple Store 零售店</a>
+            <p>，致电 400-666-8800 或查找在你附近的</p>
+            <a href="">授权经销商</a>
+            <p>。</p>
+        </div>
+        <div class="foot-2">
+            <p>Copyright © 2016 Apple Inc. 保留所有权利。</p>
+            <a href="">隐私政策</a>
+            <span>|</span>
+            <a href="">使用条款</a>
+            <span>|</span>
+            <a href="">销售政策</a>
+            <span>|</span>
+            <a href="">法律信息</a>
+            <span>|</span>
+            <a href="">网站地图</a>
+        </div>
+        <div class="foot-3">
+            <p>京公安网安备 11010500896</p>
+            <a href="">京ICP备10214630</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="gang">
+    <div class="gang-1">
+        <dl class="gang-2">
+            <div class="gang-11">选购及了解</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>Mac</li></a>
+                <a href="" class="tiao-4"><li>iPad</li></a>
+                <a href="" class="tiao-4"><li>iPhone</li></a>
+                <a href="" class="tiao-4"><li>Watch</li></a>
+                <a href="" class="tiao-4"><li>Music</li></a>
+                <a href="" class="tiao-4"><li>iTunes</li></a>
+                <a href="" class="tiao-4"><li>iPod</li></a>
+                <a href="" class="tiao-4"><li>配件</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">Apple Store 商店</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>查找零售店</li></a>
+                <a href="" class="tiao-4"><li>Genius Bar 天才吧</li></a>
+                <a href="" class="tiao-4"><li>讲座和学习</li></a>
+                <a href="" class="tiao-4"><li>青少年活动</li></a>
+                <a href="" class="tiao-4"><li>Apple Store App</li></a>
+                <a href="" class="tiao-4"><li>翻新产品</li></a>
+                <a href="" class="tiao-4"><li>分期付款</li></a>
+                <a href="" class="tiao-4"><li>重复使用和循环利用</li></a>
+                <a href="" class="tiao-4"><li>订单状态</li></a>
+                <a href="" class="tiao-4"><li>选购帮助</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">教育应用</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>Apple 与教育</li></a>
+                <a href="" class="tiao-4"><li>高校师生选购</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">商务应用</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>Apple 与商务</li></a>
+                <a href="" class="tiao-4"><li>商务选购</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">帐户</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>管理你的 Apple ID</li></a>
+                <a href="" class="tiao-4"><li>Apple Store 帐户</li></a>
+                <a href="" class="tiao-4"><li>iCloud.com</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">Apple 价值观</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>环境责任</li></a>
+                <a href="" class="tiao-4"><li>供应商责任</li></a>
+                <a href="" class="tiao-4"><li>辅助功能</li></a>
+                <a href="" class="tiao-4"><li>隐私</li></a>
+            </ul>
+        </dl>
+        <dl class="gang-2">
+            <div class="gang-11">关于 Apple</div>
+            <div class="gang-22">+</div>
+            <div class="clearfix"></div>
+            <ul class="gang-3">
+                <a href="" class="tiao-4"><li>Apple 资讯</li></a>
+                <a href="" class="tiao-4"><li>工作机会</li></a>
+                <a href="" class="tiao-4"><li>媒体资讯</li></a>
+                <a href="" class="tiao-4"><li>活动</li></a>
+                <a href="" class="tiao-4"><li>热点新闻</li></a>
+                <a href="" class="tiao-4"><li>联系 Apple</li></a>
+            </ul>
+        </dl>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="js/apple.js"></script>
+</html>

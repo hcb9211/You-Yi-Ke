@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tianmao楼层跳转的实现</title>
+	<script src="function.js"></script>
+	<script src="animate.js"></script>
+	<style>
+	body,ul,li{
+		margin:0;
+		height:3000px;
+		list-style: none;
+		padding:0;
+	}
+    .search{
+    	width: 100%;
+    	height: 50px;
+    	background: blue;
+    	position: fixed;
+    	top:-50px;
+    	left:0;
+    }
+    .banner,.aa{
+    	width: 1000px;
+    	height: 400px;
+    	margin:0 auto;
+    	margin-bottom: 30px;
+    	border:1px solid black;
+    	font-size: 50px;
+    	text-align: center;
+    	line-height: 400px;
+    }
+    .banner{
+    	background: red;
+    }
+    .jump{
+    	width: 42px;
+    	height: 242px;
+    	position: fixed;
+    	left: 40px;
+    	top:30%;
+    	display: none;
+    }
+    .jump li{
+    	width: 40px;
+    	height: 40px;
+    	border:1px solid black;
+    	font-size: 20px;
+    	text-align: center;
+    	line-height: 40px;
+    	margin-top: -1px;
+    }
+	</style>
+	<script>
+     $(function(){
+
+     	var search=$(".search")[0];
+     	var flag=true;
+     	var flag1=true;//0--440  440-3000
+        var floors=$(".aa");
+
+	    var jump=$(".jump")[0];
+        var btn=$("li",jump);
+        //alert(floors[1].offsetTop)
+
+//按钮控制滚动条
+        for(var i=0;i<btn.length;i++){
+        	btn[i].index=i;
+        	btn[i].onclick=function(){
+                //alert(floors[this.index].t)
+                var obj=document.documentElement.scrollTop?document.documentElement:document.body;//获取滚动条的对象
+                //var scrollT=getScrollT();
+                //obj.scrollTop=floors[this.index].t;
+                animate(obj,{scrollTop:floors[this.index].t})//当前按钮的对应楼层的top赋值给滚动条
+        	}
+        }
+
+     	window.onscroll=function(){
+     		//搜索框的显示与隐藏
+     		var scrollT=getScrollT();
+     		if(scrollT>=440){
+     			if(flag){//为了保证页面往下拉时只有一个animate函数执行
+     				animate(search,{top:0},500);
+     				flag=false;
+     				flag1=true;
+     			}     			
+     		}else{
+                if(flag1){
+                	animate(search,{top:-50});
+                	flag1=false;
+                	flag=true;
+                }	   			
+     		}
+
+
+     		//楼层跳转
+	        if(scrollT>=280){
+	        	jump.style.display="block";
+	        }else{
+	        	jump.style.display="none";
+	        }
+//滚动条控制按钮
+            for(var i=0;i<floors.length;i++){
+            	floors[i].t=floors[i].offsetTop;//
+            	if(floors[i].t<scrollT){//如果scrollTop大于当前楼层的top
+            		//alert(11111)
+            		for(var j=0;j<btn.length;j++){
+            			btn[j].style.color="black";
+            		}
+            		btn[i].style.color="red";
+            	}
+            	//floors[i].index=i;
+            }
+
+
+     	}
+
+
+
+
+     })
+	</script>
+</head>
+<body>
+	<div class="search"></div>
+	<div class="banner"></div>
+	<div class="aa">1</div>
+	<div class="aa">2</div>
+	<div class="aa">3</div>
+	<div class="aa">4</div>
+	<div class="aa">5</div>
+	<div class="aa">6</div>
+	<ul class="jump">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li class="last">6</li>
+	</ul>
+</body>
+</html>
+

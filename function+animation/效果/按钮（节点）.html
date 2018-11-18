@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<style>
+    .box{
+    	width: 100px;
+    	height: 100px;
+    	background:#ff6700;
+    	border:1px solid red;
+    	margin-top:20px;
+    }
+    .box1{
+    	width: 100px;
+    	height: 100px;
+    	background:#ff6700;
+    	border:1px solid red;
+    }
+
+	</style>
+</head>
+<body>
+	
+	<input type="button" value="创建" class="chuang">
+	<input type="button" value="插入" class="cha" style="position:relative">
+	<input type="button" value="删除" class="shan">
+	<input type="button" value="复制" class="fu">
+	<input type="button" value="替换" class="ti">
+	<input type="button" value="刷新" class="shua">
+
+<div class="box"></div>
+<div class="box1"></div>
+
+</body>
+    <script>
+     var chuang=$(".chuang")[0]
+     chuang.onclick=function(){
+        var div=document.createElement("div");
+        document.body.appendChild(div);
+      
+     var styles=document.createAttribute("style");
+     styles.nodeValue="width:100px;height:100px;border:1px solid red;background:red;display:inline-block";
+     div.setAttributeNode(styles);
+
+     }
+
+     var shua=$(".shua")[0]
+      shua.onclick=function(){
+      location.reload();
+      history.go(0)
+     }  
+
+     var box1=$(".box1")[0]
+     var cha=$(".cha")[0]
+     cha.onclick=function(){
+        var div=document.createElement("div");
+        document.body.appendChild(div);
+      
+         var styles=document.createAttribute("style");
+         styles.nodeValue="width:100px;height:100px;border:1px solid red;background:green;display:inline-block";
+         div.setAttributeNode(styles);
+         document.body.insertBefore(div,box1);
+     }
+
+     var shan=$(".shan")[0]
+     shan.onclick=function(){
+        var div=document.createElement("div");
+        document.body.appendChild(div);
+      
+     var styles=document.createAttribute("style");
+     styles.nodeValue="width:100px;height:100px;border:1px solid red;background:red;display:inline-block";
+     div.setAttributeNode(styles);
+     document.body.removeChild(div);
+     div=null;
+     }
+
+     var fu=$(".fu")[0]
+     fu.onclick=function(){
+        var div=document.createElement("div");
+        document.body.appendChild(div);
+      
+     var styles=document.createAttribute("style");
+     styles.nodeValue="width:100px;height:100px;border:1px solid red;background:black;display:inline-block";
+     div.setAttributeNode(styles);
+     var newdiv=div.cloneNode(true);
+     document.body.appendChild(newdiv);
+     }
+
+     var ti=$(".ti")[0]
+     ti.onclick=function(){
+        var div=document.createElement("div");
+        document.body.appendChild(div);
+      
+     var styles=document.createAttribute("style");
+     styles.nodeValue="width:100px;height:100px;border:1px solid red;background:pink;display:inline-block";
+     div.setAttributeNode(styles);
+    document.body.replaceChild(box1,div);
+     } 
+  
+
+</script>
+</html>

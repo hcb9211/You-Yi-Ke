@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>错误页</title>
+<style>
+	#box{
+        width: 300px;
+        height: 300px;
+        margin:0 auto;
+        margin-top: 200px;
+    }
+    .djs-top{
+        height:100px;
+        background:#ff6700;
+        font:50px/1em "微软雅黑";
+        color:#fff;
+        text-align: center;
+        line-height: 100px;
+    }
+    .djs-bottom{
+        height: 180px;
+        background-color: #ebde38;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .djs-an{
+        width: 100px;
+        height: 50px;
+        background-color: #ff6700;
+        margin:0 auto;
+        font:30px/1em "微软雅黑";
+        line-height: 50px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+    }
+</style>
+<script>
+	window.onload=function(){
+        var shua=document.getElementById('shua');
+        var nexts=document.getElementById("nexts");
+        var djsan00=document.getElementById('djsan00')
+            shua.onclick=function(){
+                 history.go(0);
+            }
+        var i=5;
+        var t;
+        nexts.onclick=function(){
+            
+            t=setInterval(function(){
+                if(i>0){
+                    djsan00.innerHTML=i;      
+                    i--;
+                }else{
+                    clearInterval(t);
+                   location.href="igon.html"; 
+                }
+        },800);
+       }
+        
+    }
+</script>
+</head>
+<body>
+	<input type="button" name='btn' value='前进' id='nexts'>;
+	<input type="button" name='shua' value='刷新' id='shua'>;
+	<div id="box">
+		<div class="djs-top">
+			<b style="">倒计时</b>
+		</div>
+		<div class="djs-bottom">
+			<div>
+				<b id="djsan00" style='font-size:80px;color:white'>5</b>
+			</div>
+			<div class="djs-an">
+				<b>
+				   <a href="igon.html" style="text-decoration:none;color:white">
+				   	跳转
+				   </a>
+			    </b>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

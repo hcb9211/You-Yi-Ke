@@ -1,0 +1,245 @@
+
+/*?????????????????????????????????????????*/
+.lianxi{
+    width: 100%;
+    height: auto;
+    background:url("../image/bjt.jpg");
+    cursor:pointer
+}
+.lx{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.left{
+    width: 300px;
+    height: 700px;
+    float: left;
+}
+.cf:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.cptx{
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    line-height:90px;
+    background: #00a885;
+    color: #f7f3f3;
+    position: relative;
+    top:30px;
+    font-size: 20px;
+}
+.cptx img{
+    position: absolute;
+    top:25px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+}
+.lx1{
+    width: 300px;
+    height: 220px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx1 p{
+    width: 300px;height: 30px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+.lx2{
+    width: 300px;
+    height: 290px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx2 p{
+    width: 300px;height: 30px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a{
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a:hover{
+    color: #00a885;
+}
+.right{
+    width: 880px;
+    height: auto;
+    float: right;
+}
+.yindao{
+    width: 860px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    margin: 30px auto 0;
+}
+.yindao p{
+    color: #4c4c4c;
+    margin-left: 20px;
+}
+.yindao p a{
+    color: #4c4c4c;
+}
+.con{
+    width: 860px;
+    height:auto;
+    margin:0 auto 0;
+    background: #ffffff;
+}
+.con1{
+    width: 860px;
+    height:270px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.cptp{
+    width: 220px;
+    height:160px;
+    margin-left: 50px;
+    float: left;
+}
+.st{
+    width: 220px;
+    height: 160px;
+    border: 3px solid #cccccc;
+}
+.st:hover{
+    border: 3px solid #00a885;
+}
+.st a img{
+    width: 200px;
+    height: 140px;margin-left: 10px;
+    margin-top: 10px;
+}
+.xt{
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.xt1{
+    color: #3d3d3d;
+}
+.xt1:hover{
+    color: #00a885;
+}
+/*---------------------------------------*/
+/*--------------------------------------*/
+@media screen and (max-width:750px){
+    .lianxi{
+        width: 100%;
+        height: auto;
+        background:url("../image/bjt.jpg");
+        cursor:pointer
+    }
+    .lx{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .left{
+       display: none;
+    }
+    .cptx{
+       display: none;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .yindao{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: #ffffff;
+        margin: 30px auto 0;
+    }
+    .yindao p{
+        color: #4c4c4c;
+        margin-left: 20px;
+    }
+    .yindao p a{
+        color: #4c4c4c;
+    }
+    .con{
+        width: 100%;
+        height:auto;
+        margin:0 auto 0;
+        background: #ffffff;
+    }
+    .con1{
+        width: 100%;
+        height:250px;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    .cptp{
+        width: 90%;
+        height:240px;
+        margin-left:5%;
+    }
+    .st{
+        width: 100%;
+        height: 160px;
+        border: 3px solid #cccccc;
+    }
+    .st:hover{
+        border: 3px solid #00a885;
+    }
+    .st a img{
+        width: 90%;
+        height: 140px;margin-left: 10px;
+        margin-top: 10px;
+    }
+    .xt{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .xt1{
+        color: #3d3d3d;
+    }
+    .xt1:hover{
+        color: #00a885;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

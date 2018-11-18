@@ -1,0 +1,986 @@
+@import url(public.css);
+.head{width:100%;height:40px;background: #333 none repeat scroll 0% 0%;;}
+.head-box{width:1240px;height:40px;margin:0 auto;font-size: 12px;color: #B0B0B0;position:relative;}
+.head-box-left{float: left;height: 40px;line-height: 40px;overflow: hidden;}
+.head-box-left a{color: #B0B0B0;}
+.head-box-left span{margin: 0 5px;color: #424242;font-family: sans-serif;}
+.head-box-left a:hover{color:#fff;}
+.goin-box{float: right;height: 40px;line-height: 40px;position:relative;}
+.goin-box a{padding: 0px 5px;text-align: center;color: #B0B0B0;}
+.goin-box a:hover{color:#fff;}
+.car-box{width: 120px;margin-left: 15px;float:right;height: 40px;position:relative;}
+.car-box a{position: relative;z-index: 32;display: block;height: 40px;line-height: 40px;text-align: center;
+      color: #B0B0B0;background: #424242 none repeat scroll 0% 0%;}
+.car-box a:hover{background:#fff;color:red;}
+.car-gu{z-index:3;width:200px;height:90px;position:absolute;right:0;top:40px;background:#fff;
+    text-align:center;line-height:90px;display:none;}
+.car-gu a{color:#333;}
+/*logo-nav*/
+.logo-nav{margin-left: auto;width: 1240px;margin-right: auto;height:100px;/*background:#dedede;*/}
+
+.logo{float: left;width: 62px;margin-top: 22px;}
+.logo img{width:55px;}
+.nav{float: left;width: 850px;}
+.nav ul{font-size: 16px;float: left;width: 820px;height: 88px;margin: 0px;padding: 12px 0px 0px 30px;
+    list-style-type: none;font-size: 16px;/*background:green;*/}
+#kong{width:138px;height:88px;float:left;}
+.nav-con{float:left;text-align:center;line-height:88px;/*background:red;*/}
+.nav-con a{color:#333;margin:0 19px;}
+.nav-con a:hover{color:#FF6700;}
+.search{float: right;width: 296px;margin-top: 25px;}
+.search form{width: 296px;height: 50px;position:relative;}
+.search-text{position: absolute;top: 0px;right: 51px;z-index: 1;width: 223px;height: 48px; padding: 0px 10px;
+        border: 1px solid #999;font-size: 14px;line-height: 48px;outline: 0px none;
+        transition: all 0.2s ease 0s;}
+.search-words{position: absolute;top: 14px;right: 62px;z-index: 2;text-align: right;}
+.search-words a{display: inline-block;margin-left: 5px;padding: 0px 5px;font-size: 12px;
+        background: #EEE none repeat scroll 0% 0%;color: #757575;transition: all 0.2s ease 0s;}
+.search-btn{position: absolute;right: 0px;top: 0px;z-index: 2;width: 52px;height: 50px;border: 1px solid #999;
+      font-size: 24px;line-height: 24px;color: #616161;outline: 0px none;
+      transition: all 0.2s ease 0s;}
+.search-btn{background:#fff url(../images/search.jpg) no-repeat center center;}
+.search-btn:hover{background:#FF4B01 url(../images/sousuo2.jpg) no-repeat center center;}
+/*banner-box*/
+@media screen and (max-width: 1240px) {
+ .banner-right{width:984px;}
+  .banner-right img {
+    width: 984px;
+  }
+  .banner {
+    height: 369px;
+  }
+  .banner-left {
+    height: 347px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .banner-right img{
+    width: 492px;
+  }
+  .banner {
+    height: 185px;
+  }
+  .banner-left {
+    height: 163px;
+  }
+}
+
+
+.banner-box{width:1240px;height:460px;;margin:0 auto;position:relative;z-index:10;}
+.banner-right{width:1240px;height:460px;float:left;overflow:hidden;position:relative;}
+.banner-right img{float:left;width:1240px;}
+.banner-xuan{position:absolute;right:20px;bottom:10px;}
+#banner-yuan{width:90px;height:12px;}
+#banner-yuan li{width:12px;height:12px;border-radius:50%;background:#dedede;float:left;margin:0 3px;}
+.left-right{width:992px;height:40px;position:absolute;top:50%;right:0;margin-top:-10px;z-index:30;
+      padding:0 0px 0 0px;float:right;}
+.two{display:none;}     
+.left-xuan{width:40px;height:60px;float:left;cursor:pointer;/*background:#dedede;*/text-align:center;
+      line-height:60px;}
+.left-xuan span{font-size:60px;font-family:"Song typeface";}
+.right-xuan{width:40px;height:60px;float:right;cursor:pointer;/*background:#dedede;*/text-align:center;
+      line-height:60px;}
+.right-xuan span{font-size:60px;font-family:"Song typeface";}
+.banner-left{width:234px;height:460px;/*background:red;*/float:left;z-index:20;position:absolute;
+      left:0;top:0;}
+.xuanone{display:none;}
+.banner-left ul{height: 460px;color: #FFF;border:0px none;/*background:blue;*/}
+.banner-left ul li .outleft{position: relative;display: block;padding-left: 30px;height: 42px;line-height: 42px;
+          color: #FFF;font-size: 14px;float:left;width:204px;}
+.banner-left ul li .outleft:hover{background:#FF6700;}
+.banner-left ul li .outleft span{position:absolute;top: 14px;right:20px;font-size: 16px;line-height: 16px;
+            font-family:"Song typeface";font-style:bold;}
+/*bannerleft-xuan-box*/
+.left-xuan-box{width:auto;height:460px;/*background:green;*/position:absolute;left:234px;top:0;z-index:50;overflow:hidden;}
+.left-xuan-box1{width:735px;height:460px;}
+.left-xuan-box1 .left{width:50%;height:460px;background:#fff;float:left;}
+.left-xuan-box1 .left .left1{width:100%;height:16.66666%;/*background:red;*/}
+.left-xuan-box1 .left .left1 img{float:left;margin-top:20px;margin-left:20px;}
+.left-xuan-box1 .left .left1 .buy{float:right;width:60px;height:30px;border:1px solid #FF6700;margin-top:20px;
+                text-align:center;line-height:30px;margin-right:10px;}
+.left-xuan-box1 .left .left1 .buy a{color:#FF6700;}
+.left-xuan-box1 .left .left1 .buy:hover{background:#FF6700;}
+.left-xuan-box1 .left .left1 .buy:hover a{color:#fff;}
+.left-xuan-box1 .left .left1 .medium{float:left;margin-top:30px;margin-left:20px;color:#333;}
+.left-xuan-box1 .left .left1 .medium:hover{color:#FF6700;}
+
+.left-xuan-box2{width:418px;height:460px;}
+.left-xuan-box2 .left{width:50%;height:460px;background:#fff;float:left;}
+.left-xuan-box2 .left .left1{width:100%;height:16.66666%;/*background:red;*/}
+.left-xuan-box2 .left .left1 img{float:left;margin-top:20px;margin-left:20px;}
+.left-xuan-box2 .left .left1 .buy{float:right;width:60px;height:30px;border:1px solid #FF6700;margin-top:20px;
+                text-align:center;line-height:30px;margin-right:10px;}
+.left-xuan-box2 .left .left1 .buy a{color:#FF6700;}
+.left-xuan-box2 .left .left1 .buy:hover{background:#FF6700;}
+.left-xuan-box2 .left .left1 .buy:hover a{color:#fff;}
+.left-xuan-box2 .left .left1 .medium{float:left;margin-top:30px;margin-left:20px;color:#333;}
+.left-xuan-box2 .left .left1 .medium:hover{color:#FF6700;}
+
+.left-xuan-box3{width:735px;height:460px;}
+.left-xuan-box3 .left{width:30%;height:460px;background:#fff;float:left;}
+.left-xuan-box3 .left .left1{width:100%;height:16.66666%;/*background:red;*/}
+.left-xuan-box3 .left .left1 img{float:left;margin-top:20px;margin-left:20px;}
+.left-xuan-box3 .left .left1 .buy{float:right;width:60px;height:30px;border:1px solid #FF6700;margin-top:20px;
+                text-align:center;line-height:30px;margin-right:10px;}
+.left-xuan-box3 .left .left1 .buy a{color:#FF6700;}
+.left-xuan-box3 .left .left1 .buy:hover{background:#FF6700;}
+.left-xuan-box3 .left .left1 .buy:hover a{color:#fff;}
+.left-xuan-box3 .left .left1 .medium{float:left;margin-top:30px;margin-left:20px;color:#333;}
+.left-xuan-box3 .left .left1 .medium:hover{color:#FF6700;}
+
+
+/*comtain-box*/
+.comtain-box{width:1240px;height:170px;margin:0 auto;margin-top:10px;}
+.comtain-box-left{width:234px;height:170px;background:#5F5750;float:left;margin-right:20px;}
+.comtain-box-left ul{margin: 0px;/*padding: 3px;*/list-style-type: none;font-size: 12px;text-align: center;background: #5F5750 none repeat scroll 0% 0%;}
+.comtain-box-left ul li{position: relative;float: left;width: 70px;height: 82px;padding: 0px 3px;}
+.comtain-box-left ul li a{display: block;padding-top: 18px;overflow: hidden;color: rgba(255, 255, 255, 0.7);
+              transition: color 0.2s ease 0s;}
+.comtain-box-left ul li a span{display: block;height: 24px;margin-bottom: 4px;line-height: 24px;}
+.comtain-box-left ul li a span:hover{color:#fff;}
+.comtain-box-right{width:986px;height:170px;float:right;}
+.comtain-box-right .first{float: left;width: 316px;height:170px;margin-left:19px;}
+.comtain-box-right .first img{float: left;}
+.comtain-box-right li{width: 316px;height: 170px;float: left;}
+
+
+.container {
+  width: 496px;
+  height: auto;
+  margin: 0 auto;
+}
+.container > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fulid {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.container-fulid > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*С��*/
+.container > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container-fulid > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container-fulid > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container-fulid > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container-fulid > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container-fulid > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container-fulid > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container-fulid > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container-fulid > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container-fulid > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container-fulid > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container-fulid > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container-fulid > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container-fulid > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container-fulid > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container-fulid > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container-fulid > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container-fulid > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container-fulid > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container-fulid > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.container-fulid > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+/*����*/
+@media screen and (min-width: 992px) {
+  .container > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 992px;
+  }
+}
+/*����*/
+@media screen and (min-width: 1240px) {
+  .container > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 1240px;
+  }
+}
+ 
+/* logo end */
+/*banner start*/
+ 
+@media screen and (max-width: 1240px) {
+  .bannerright img {
+    width: 984px;
+  }
+  .banner {
+    height: 369px;
+  }
+  .banner-left {
+    height: 347px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .bannerright img {
+    width: 492px;
+  }
+  .banner {
+    height: 185px;
+  }
+  .banner-left {
+    height: 163px;
+  }
+}
+.kf {
+  width: 1240px;
+  height: 171px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.kf-a {
+  width: 240px;
+  height: 100%;
+  float: left;
+}
+.kf-a img {
+  width: 100%;
+  height: 100%;
+}
+.kf-b {
+  width: 1000px;
+  height: 171px;
+  float: right;
+}
+.kf-b img {
+  width: 317px;
+  height: 171px;
+  float: right;
+  margin: 0 0 0 12px;
+}
+@media screen and (max-width: 1240px) {
+  .kf {
+    width: 992px;
+  }
+  .kf-b {
+    width: 752px;
+  }
+  .kf-b img {
+    margin: 0 0 0 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .kf {
+    width: 500px;
+  }
+  .kf-b {
+    width: 260px;
+  }
+  .kf-b img {
+    width: 260px;
+    margin: 0;
+  }
+}
+/*banner end*/
+/*xiaomi mingxing start*/
+.xm {
+  margin: 20px auto 0 auto;
+  width: 1240px;
+  height: 50px;
+  line-height: 50px;
+}
+@media screen and (max-width: 1240px) {
+  .xm {
+    width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .xm {
+    width: 500px;
+  }
+}
+.xm p {
+  float: left;
+  line-height: 50px;
+  color: #000;
+  font-size: 18px;
+}
+.xm-1 p {
+  line-height: 50px;
+}
+.xm-1 {
+  float: right;
+  box-sizing: border-box;
+  width: 72px;
+  height: 30px;
+}
+.xm-1 span {
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-family: '����';
+  border: 1px solid #dfdfdf ;
+}
+.box-bd {
+  height: 340px;
+}
+.box-bd > .row > .dan1 {
+  text-align: center;
+}
+.dan {
+  text-align: right;
+}
+/*xiaomi mingxing end*/
+/*xiaomi yingjian start*/
+.box {
+  width: 100%;
+  height: 2200px;
+  background: #F5F5F5;
+  overflow: hidden;
+  margin-top: 40px;
+}
+#li-qa,
+#li-qa1 {
+  height: 614px;
+  margin-top: 5px;
+}
+.xm-1 p {
+  font-size: 16px;
+  color: #424242;
+  cursor: pointer;
+}
+.nr {
+  margin-top: 36px;
+}
+.li-w1 {
+  height: 100%!important;
+}
+.li-q2 .li-zn {
+  width: 97%;
+  height: 302px;
+  background: #fff;
+  overflow: hidden;
+  border: none!important;
+}
+.li-q2 .li-zn img,
+.li-q2 .li-zn1 img {
+  width: 220px;
+  height: 220px;
+  margin: 0 5px;
+  display: block;
+}
+.li-q2 .li-zn1 {
+  width: 97%;
+  height: 304px;
+  background: #fff;
+  border: none!important;
+  margin-top: 8px;
+}
+.li-zna {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+.li-zna a:hover {
+  color: #424242;
+}
+.li-zn:hover,
+.li-zn1:hover {
+  position: relative;
+  top: -1px;
+  box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.li-znb {
+  color: #FF6700;
+}
+/*xiaomi yingjian end*/
+
+
+
+
+
+
+
+
+

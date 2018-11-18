@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件详解</title>
+</head>
+<script src='function.js'></script>
+<script>
+	$(function(){
+		var btn=$('#btn');
+			addEvent(btn,"click",function(){
+			alert(1);
+		});
+	})
+
+/*事件对象*/
+	$(function(){
+		
+		var one=$('.one')[0];
+		one.onmousemove=function(e){
+			//alert(e)            /*w3c*/
+			//alert(window.event)    /*IE*/
+			var ev=e||window.event;   /*解决兼容*/
+
+			var cx=ev.clientX;
+			var cy=ev.clientY;
+			var sx=ev.screenX;
+			var sy=ev.screenY;
+			var ox=ev.offsetX;
+			var oy=ev.offsetY;
+
+			one.innerHTML="cx="+cx+"<br/> cy="+cy+"<br> sx="+sx+"<br> sy="+sy+"<br> ox="+ox+"<br> oy="+oy
+		}
+		one.onmousedown=function(e){
+			var ev=e||window.event;
+			var cx=ev.clientX;
+			var cy=ev.clientY;
+			
+		}
+
+	})
+
+
+
+			
+	
+</script>
+<style>
+	.one{
+		width: 300px;
+		height: 300px;
+		border:10px solid green;
+		margin:100px auto;
+	}
+</style>
+<body>
+	<!-- <input type="button" value="按钮" id='btn'> -->
+	<div class="one"></div>
+
+
+</body>
+</html>

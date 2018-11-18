@@ -1,0 +1,133 @@
+body,p,ul,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,input{
+	margin:0;padding:0;
+	list-style:none;
+    font-family: Arial,"微软雅黑"
+}
+a{
+	text-decoration : none;
+	
+}
+img{
+	border: none;
+}
+
+div{
+	/*width: 100px;
+	height: 100px;
+	border: 10px solid green;
+	background: gray;*/
+}
+.one{
+	/*width: 70px;*/
+	/*margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;*/
+  /*  margin:20px;*/  /*一个值时*/
+  /*margin:20px 30px; */ /*二个值时(上下  左右)*/
+  /*margin:20px 30px 40px;*/  /*三个值时(上  左右  下)*/
+  /*margin:20px 30px 40px 50px; */ /*四个值时(上 右 下 左)*/
+  /*padding-left: 30px;*/
+    /*border-top: 10px solid green;
+    border-left: 10px solid blue;
+    border-bottom: 10px solid red;
+    border-right: 10px solid yellow;*/
+    /*color: red;
+    padding-left: 20px;
+    padding-top: 30px;
+    border: 20px solid blue;*/
+
+}
+.two{
+	/*border-top: 10px solid blue;
+    border-left: 10px solid green;
+    border-bottom: 10px solid yellow;
+    border-right: 10px solid red;*/
+}
+.test{
+	/*width: 200px;
+	height: 200px;*/
+}
+.out{
+	/*width: 100px;
+	height: 80px;
+	background: gold;
+	margin: 0 auto;
+	padding-top: 20px;
+	border: 5px solid green;
+	border-left:10px solid blue;
+	border-style: double; 
+	border-left:2px dashed blue;*/
+}
+.inner{
+	/*width: 50px;
+	height: 50px;
+	background: brown;*/
+	/*margin-top: 20px;*/
+}
+/*a:hover{
+     color:green;
+}*/
+.one{
+	/*width: 100px;
+	height: 100px;
+	background: green;
+	border: 3px solid red;
+	float: right;*/
+}
+.par{
+	/*overflow: hidden;  */
+}
+.clear{
+	clear: both;
+}
+.gg{
+	border: 1px solid green;
+	height: 50px;
+
+}
+.top{	
+	height: 49px;
+	line-height: 49px;
+	padding:0 25px;
+	border-bottom: 1px solid green;
+}
+.top-l{
+	float: left;
+}
+.top-r{
+	float: right;
+}
+.leftm a{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

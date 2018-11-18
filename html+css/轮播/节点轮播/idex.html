@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节点轮播</title>
+	<script src='js/function.js'></script>
+	<script src='js/animate.js'></script>
+	<script src='js/idex.js'></script>
+</head>
+<style>
+	.window{
+		width: 740px;
+		height: 350px;
+		border:2px solid #ff6700;
+		position: relative;
+		margin:100px auto;
+		overflow: hidden;
+	}
+	.box{
+		width: 5920px;
+		height: 350px;
+		position: absolute;
+		left:0;top:0;
+	}
+	.box a{
+		display: block;
+		font-size: 0;
+		width: 740px;
+		height: 350px;
+		float: left;
+	}
+	.btn{
+	width: 740px;
+	height: 60px;
+	position: absolute;
+	left: 0px;top:150px;
+	cursor: pointer;
+}
+.btnL{
+	width: 30px;
+	height: 60px;
+	float: left;
+	background: url(img/btn.png) no-repeat 0px 0px;
+	opacity: 0.7;
+}
+.btnL:hover{
+	background: url(img/btn.png) no-repeat 0px -60px;
+	opacity: 0.7;
+}
+.btnR{
+	width: 30px;
+	height: 60px;
+	float: right;
+	background: url(img/btn.png) no-repeat -30px 0px;
+	opacity: 0.7;
+}
+.btnR:hover{
+	background: url(img/btn.png) no-repeat -30px -60px;
+	opacity: 0.7;
+}
+</style>
+<body>
+	<div class="window">
+		<div class="box">
+			<a href=""><img src="img/b1.jpg" alt=""></a>
+			<a href=""><img src="img/b2.jpg" alt=""></a>
+			<a href=""><img src="img/b3.jpg" alt=""></a>
+			<a href=""><img src="img/b4.jpg" alt=""></a>
+			<a href=""><img src="img/b5.jpg" alt=""></a>
+			<a href=""><img src="img/b6.jpg" alt=""></a>
+			<a href=""><img src="img/b7.jpg" alt=""></a>
+			<a href=""><img src="img/b8.jpg" alt=""></a>
+		</div>
+		<div class="btn">     
+              <div class="btnL"></div>
+              <div class="btnR"></div>
+            </div>
+	</div>
+</body>
+</html>

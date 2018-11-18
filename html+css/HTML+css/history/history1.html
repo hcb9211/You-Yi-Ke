@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script>
+	var back=document.getElementById('back');
+	var forword=document.getElementById('forword')
+	back.onclick=function(){
+		history.back();
+	}
+	forword.onclick=function(){
+		history.forword();
+	}
+</script>
+<body>
+	<a href="history.html">返回history页面</a>
+	<input type="button" value='后退' id='back'>
+	<input type="button" value='前进' id='forword'>
+</body>
+</html>

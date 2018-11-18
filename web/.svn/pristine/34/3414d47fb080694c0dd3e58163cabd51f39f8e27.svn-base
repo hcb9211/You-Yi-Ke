@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>注册</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="bindphone" >
+<div class="container">
+    <div class="logobox"></div>
+    <h2  class="title center">股票先机</h2>
+    <h2 class="decr center">大数据助你洞悉庄家先机</h2>
+    <form action="" class="form">
+
+        <div class="phoneBox">
+            <div class="phoneLogo"></div>
+            <input type="text" id="phone" maxlength="11" pattern="[0-9]*" placeholder="手机号">
+        </div>
+
+        <div class="smsCode ">
+           <div class=" smsLogo"></div>
+            <input id="smsCode" maxlength="4" pattern="[0-9]*" class="form-text flex-1" placeholder="验证码" type="text"/>
+            <a href="javascript:;" class="btn-sms js-tap" data-handler="getSmsCode" id="getYzm">获取验证码</a>
+        </div>
+          <div class="passwordBox">
+              <div class="passLogo"></div>
+              <input id="password" maxlength="11" placeholder="密码" type="password"/>
+          </div>
+        <div class="login">
+            <div class="checkBox">
+                <input type="checkbox" id="getProm" value="同意" name="checked" checked>
+                <label for="getProm"></label>
+            </div>
+            <span class="loginLeft">同意</span>
+            <a href="agreement.html" class="loginHttp">《账户服务协议》</a>
+        </div>
+        <div class="btn-line">
+            <a href="javascript:;" class="btn btn-red js-tap" data-handler="submit">注册</a>
+        </div>
+    </form>
+
+</div>
+
+<div class="result">
+    <div class="ico-ok"></div>
+    <h1 class="title center">您已成功注册</h1>
+</div>
+
+<div class="layer" id="layer">
+    <div class="layer-main">
+        <div class="layer-line" id="line"></div>
+        <a class="layer-btn js-tap" data-handler="closeLayer" href="javascript:;">
+            知道了
+        </a>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/sea.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/global.js"></script>
+<script src="js/bindphone.js"></script>

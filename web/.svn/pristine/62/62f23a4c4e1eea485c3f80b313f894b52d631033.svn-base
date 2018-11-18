@@ -1,0 +1,391 @@
+
+/*?????*/
+.bn{
+    width: 100%;
+    height: 260px;
+    background:#f2ecec;
+    cursor:pointer
+}
+.box{
+    width: 1200px;
+    height: 180px;
+    margin:0 auto;
+}
+.box .top{
+    width:300px;
+    height:210px;
+    margin-top: 30px;
+}
+.cptx{
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    line-height:90px;
+    background: #00a885;
+    color: #f7f3f3;
+    position: relative;
+    top:30px;
+    font-size: 20px;
+}
+.cptx img{
+    position: absolute;
+    top:25px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+}
+.top .btn{
+    width:300px;
+    height:70px;
+    background: #fcfeff;
+    text-align: center;
+    line-height:70px;
+}
+.btn a{
+    width:300px;
+    height:70px;
+    background: #fcfeff;
+    text-align: center;
+    line-height:70px;
+    display: block;
+}
+.box .right{
+    position: relative;
+}
+.right .con{
+    width:860px;
+    height:700px;
+    position:absolute;
+    top:-300px;
+    left:330px;
+}
+.top .active{
+    border-left: 5px solid #00a885;
+    background: #d5d5d5;
+    width: 295px;
+    color:#00a885 ;
+}
+.yindao{
+    width: 860px;
+    height: 80px;
+    line-height: 80px;
+    background:#FFFFFF;
+}
+.yindao p{
+    margin-left: 20px;
+    color: #828282;
+}
+.yindao p a{
+    color: #828282;
+}
+.content{
+width:860px;
+height:800px;
+background: #ffffff;
+}
+.ditu{
+    width: 850px;
+    height: 450px;
+    border:1px solid #ccc;
+    margin:0 auto;
+}
+#map{
+    width:100%;
+    height: 100%;
+    overflow: hidden;margin:0;
+}
+
+.dizhi{
+    width: 820px;
+    height:200px ;
+    margin: 20px auto;
+}
+.dizhi p{
+    width: 820px;
+    height: 50px;
+    line-height: 40px;
+    color: #828282;
+}
+.content .form-group{
+    margin-bottom:10px;
+    width: 860px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.content .form-group label{
+    display: inline-block;
+    text-align: right;
+    /*padding-right:10px;*/
+    font-size:16px;
+    color: #666;
+    position: relative;
+}
+.content .form-group label img{
+    position: relative;
+    left: -10px;
+    top:5px;
+}
+.content .form-group label i {
+    display: inline-block;
+    padding-right: 5px;
+    font-style: normal;
+    color: #ff3734;
+    vertical-align: middle;
+}
+.content .form-group input{
+    width: 400px;
+    height: 40px;
+}
+.content .form-group textarea{
+    width: 400px;
+    height: 80px;
+    margin-top: 40px;
+    vertical-align: top;
+    max-height:100px;
+}
+.content .form-group select{
+    width: 400px;
+    height: 40px;
+}
+.content .form-group #wt{
+   text-align: center;
+    color: #666;
+}
+/*.content .form-group input, .content .form-group textarea{*/
+    /*display: inline-block;*/
+    /*width:50%;*/
+    /*width: calc( 100% - 200px );*/
+/*}*/
+
+/*.content .form-group textarea{*/
+    /*vertical-align: top;*/
+    /*max-height:100px;*//*}*/
+
+.form-group button{
+    width:100px;
+    height: 40px;
+    color: #999999;
+    background: #f7f7f7;
+    border:1px solid #aaaaaa;
+    margin-left: -150px;
+}
+/*????*/
+.lianxi{
+    width: 100%;
+    height: 330px;
+    background:#f2ecec;
+    cursor:pointer
+}
+.lx{
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+}
+.lx1{
+    width: 300px;
+    height: 220px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx1 p{
+    width: 300px;height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+
+/*活动*/
+.huod{
+    width: 100%;
+    height: 440px;
+    background:#f2ecec;
+    cursor:pointer
+}
+.lx2{
+    width: 300px;
+    height: 290px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx0{
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+}
+.lx2{
+    width: 300px;
+    height: 290px;
+    margin-top: 30px;
+    background: #fff;
+}
+.lx2 p{
+    width: 300px;height: 30px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a{
+    color:#666666;
+    font-size: 15px;
+}
+.lx2 p a:hover{
+    color: #00a885;
+}
+/*---------------------------------*/
+/*---------------------------------*/
+@media screen and (max-width:750px){
+    .bn{
+        width: 100%;
+        height: 750px;
+        background:#f2ecec;
+        cursor:pointer
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        margin:0 auto;
+    }
+    .box .top{
+       display: none;
+    }
+    .cptx{
+        display: none;
+    }
+    .box .right{
+        position: relative;
+    }
+    .right .con{
+        width:100%;
+        height:700px;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .top .active{
+        border-left: 5px solid #00a885;
+        background: #d5d5d5;
+        width: 295px;
+        color:#00a885 ;
+    }
+    .yindao{
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        background:#FFFFFF;
+    }
+    .yindao p{
+        margin-left: 20px;
+        color: #828282;
+    }
+    .yindao p a{
+        color: #828282;
+    }
+    .content{
+        width:100%;
+        height:670px;
+        background: #ffffff;
+    }
+    .ditu{
+       display: none;
+    }
+    .dizhi{
+       display: none;
+    }
+    .content form{
+        width: 100%;
+        height:650px;
+    }
+    .content .form-group{
+        width: 95%;
+        margin: 0 auto;
+        line-height: 80px;
+        text-align: center;
+        display: block;
+    }
+
+    .content .form-group label{
+        font-size:16px;
+        height: 30px;
+        color: #666;
+        position: relative;
+    }
+    .content .form-group label img{
+        position: relative;
+        left: -10px;
+        top:3px;
+        width: 18px;
+        height: 15px;
+    }
+    .content .form-group label i {
+        display: inline-block;
+        padding-right: 5px;
+        font-style: normal;
+        color: #ff3734;
+        vertical-align: middle;
+    }
+    .content .form-group input{
+        width: 170px;
+        height: 30px;
+    }
+    .content .form-group textarea{
+        width: 170px;
+        height: 60px;
+        margin-top: 40px;
+        vertical-align: top;
+    }
+    .content .form-group select{
+        width: 170px;
+        height: 40px;
+    }
+    .content .form-group #wt{
+        text-align: center;
+        color: #666;
+    }
+
+    .form-group button{
+        width:100px;
+        height: 40px;
+        color: #999999;
+        background: #f7f7f7;
+        border:1px solid #aaaaaa;
+        margin-left: 20px;
+    }
+    /*????*/
+    .lianxi{
+     display: none;
+    }
+
+
+    /*活动*/
+    .huod{
+      display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

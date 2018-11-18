@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第一个页面</title>
+	<link rel="stylesheet" style="text/css" href="history.css">
+</head>
+<body>
+	<h1>这是第一个页面</h1>
+	<!-- <a href="history2.html">转到第二个页面</a> -->
+	<input type="button" value="前进" id="nexts">
+	<input type="button" value="刷新" id="shua">
+	<div id="djs" style="display:none">
+		<div class="djs-top">
+			<b style="margin-left:80px">倒计时</b>
+		</div>
+        <div class="djs-bottom">
+        	<div id="djs-an0">
+        		<b id="djs-an00" style="font-size:80px;color:#fff">5</b>
+        	</div>
+        	<div class="djs-an">
+        		<b style="margin-left:20;"><a href="history2.html"style="color:#fff;text-decoration:none;margin-left:20px">跳转</a></b>
+        	</div>
+        </div>
+	</div>
+</body>
+<script>	
+	var shua=document.getElementById("shua");
+	shua.onclick=function(){
+		history.go(0);
+	}
+	var i=4;
+	var t;
+	var nexts=document.getElementById("nexts");
+	nexts.onclick=function(){
+             //history.forward();
+             document.getElementById("djs").style.display='block';
+             t=setInterval('a()',1000);
+	}
+	  function a(){
+	  	 if(i>0){
+	  	 	document.getElementById("djs-an00").innerHTML=i;
+	  	 	    i--;
+	  	 }else{
+	  	 	clearInterval(t);
+	  	 	location.href="history2.html";
+	  	 }
+	  }
+
+</script>
+</html>

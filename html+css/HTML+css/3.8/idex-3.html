@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	 /*群组选择器*/
+      div,p{
+         width: 100px;
+         height: 50px;
+         border: 1px solid green;
+         background: gray;
+      }
+      .one{
+      	background: green;
+      }
+      #two{
+      	background: #000;
+      }
+    /*交叉选择器*/
+    
+    
+    #qqq{
+    	background: #000;
+    }
+    p#qqq{
+    	background: #FDF2C5;
+    }	
+    p.one{
+    	background:#ff00ff; 
+    }
+    /*后代选择器*/
+    div p{
+    	background: pink;	
+    }
+    /*通用选择器*/
+   /* {
+    	background: red;
+    }*/
+	</style>
+</head>
+
+<body>
+	<div class='one' id='two'></div>
+
+	<div class='one'>
+		<p></p>
+	</div>
+
+	<div></div>
+
+	<p class='one' id='qqq'></p>
+</body>
+</html>

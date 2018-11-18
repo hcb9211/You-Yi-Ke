@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script>
+	window.onload=function(){
+		var one=document.getElementById('one');
+		var ow=one.offsetWidth;
+		var oh=one.offsetHeight;
+		var cw=document.documentElement.clientWidth
+	    var ch=document.documentElement.clientHeight
+		var speedx=1;
+		var speedy=1;	
+		var btn=document.getElementById('btn');
+		
+		// var move=function(){
+	 //    one.style.left=(cw-one.offsetWidth)/2+"px"
+	 //    one.style.top=(ch-one.offsetHeight)/2+"px"
+		// }
+		var t=setInterval(function(){
+			var x=one.offsetLeft+5*speedx;
+		    var y=one.offsetTop+5*speedy;  
+		    if(x>=(cw-ow)){
+		    	speedx*=-1;
+		    }else if(x<=0){
+		    	speedx*=-1
+		    }
+		    
+		    if(y>=(ch-oh)){
+		    	speedy*=-1
+		    }else if(y<=0){
+		    	speedy*=-1
+		    }    
+	    one.style.left=x+'px'
+	    one.style.top=y+'px'
+		},20);
+		
+	}
+</script>
+<style>
+	#one{
+		width: 310px;
+		height: 310px;
+		border-radius: 50%;
+		background:black;
+		position:absolute;
+		background: url(1.png) no-repeat -3px -20px;
+	}
+	#one span{
+		font-size: 90px;
+		margin-left: 25px;
+		color: white;
+	}
+</style>
+<body>
+	<div id="one"></div>
+	<input type="button" value="按钮" id="btn">
+</body>
+</html>

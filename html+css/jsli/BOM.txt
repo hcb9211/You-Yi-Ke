@@ -1,0 +1,124 @@
+一、BOM对象(Browser  Object Model)
+    浏览器对象模型
+
+二、window对象是BOM的核心
+    window的子对象
+    history(历史记录),location(地址栏),document(文档对象),navigator(记录浏览器的信息)......
+
+
+三、window对象的属性
+   1.获得浏览器的位置
+     IE8,谷歌:(火狐不支持)
+        window.screenLeft:
+         屏幕到浏览器左边的距离
+        window.screenTop:
+         屏幕到浏览器上边的距离
+     火狐(w3c)
+         window.screenX:屏幕到浏览器左边的距离
+         window.screenY:屏幕到浏览器上边的距离
+   2.获得浏览器的尺寸
+     W3C:
+         window.innerWidth:浏览器的宽度
+         window.innerHeight:浏览器的高度
+     无兼容问题(经常用)  
+        document.documentElement.clientWidth
+        浏览器的宽度
+        document.documentElement.clientHeight
+        浏览器的高度
+
+   3.获得屏幕的分辨率(没有兼容问题)
+       window.screen.height  屏幕的分辨率高
+       window.screen.width   屏幕的分辨率宽
+
+   4.window.status(状态栏)
+      设置浏览器状态栏的显示信息
+
+   5.关系类型(布局后台界面)(了解)
+      window.top  //指window
+      self===window   //true
+
+四、window对象的方法
+    1.改变窗体的位置
+     IE8支持:
+        window.moveBy(x,y);每次移动都是在上次移动后的基础上移动
+        x:表示水平方向移动多少像素
+        y:表示垂直方向移动多少像素
+
+        window.moveTo(x,y);只移动一次
+
+    2.改变窗体的尺寸(IE8支持)
+        window.resizeBy(x,y);在上次设置的基础设置
+        x:窗体的宽度
+        y:窗体的高度
+        window.resizeTo(x,y);只能设置一次
+   3.改变窗体的滚动条(无兼容问题)
+      window.scrollBy(x,y);上一次的基础进行移动
+        x:横向
+        y:纵向
+
+      window.scrollTo(x,y);只设置一次
+
+   4.时间间隔函数(每一条时间函数代表一个时间轴)
+   进程
+      a.setInterval(fun,时间)不断执行
+        fun:回调函数，时间一到执行的代码
+        时间: 毫秒  1000=1s
+      功能：类似一个循环，时间一到执行一次回调函数里的代码,页面开启时，这个函数就会自动执行
+      b.clearInterval(参数);
+        参数：清除哪个时间函数就写谁
+        功能：让时间函数停止运行
+
+      c.setTimeout(fun,时间);只执行一次
+      b.clearTimeout(参数);清除时间函数，释放内存
+
+
+   5.confirm("","")
+   6.opean(url,newname,新窗口的设置);
+      url:新窗口的地址
+      newname:新窗口的名称，可不填
+      第三个参数:
+        width:新窗口的宽度
+        height:新窗口的高度
+        left:新窗口离屏幕左边的距离
+        top:新窗口离屏幕上边的距离
+        toolbar=no 是否显示工具栏,yes为显示;  
+        menubar,scrollbars 表示菜单栏和滚动栏。  
+        resizable=no 是否允许改变窗口大小,yes为允许;  
+        location=no 是否显示地址栏,yes为允许;  
+        status=no 是否显示状态栏内的信息(通常是文件已经打开),yes为允许.
+    7.window.close();对火狐来说，只能关闭通过打开的窗口;对于IE,谷歌来说，可以关闭当前窗口
+
+
+    作业1：按钮，点击这个按钮时打开一个新网页
+
+
+五、history历史对象
+  1.属性
+    history.length: 存在历史记录里的个数
+
+  2.方法
+    back();回退，上一个历史记录
+    forward();前进,下一个历史记录
+    go();
+       1  : 下一个(前进)
+       -1 : 上一个(回退)
+       0  : 刷新
+
+六、location地址栏对象
+   1.属性
+    （附图）
+   2.方法
+      assign(url);  加载一个新文档(会留下历史记录)
+      reload();  重新加载当前文档(刷新)
+      replace(url); (不会留下历史记录)用一个新文档替换当前文档
+
+   <span id="time">5</span>
+   var time=document.
+   //time.innerHTML=3
+
+   
+
+
+
+
+

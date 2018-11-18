@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<style>
+    .small,.da{
+    	width:430px; 
+    	height:390px;
+    	border:1px solid black;
+    	float:left;
+    }
+    .da{
+    	overflow: hidden;
+    	display: none;
+    	position: relative;
+    }
+    .da img{
+    	position: absolute;
+
+    }
+	</style>
+</head>
+<body>
+	<div class="small">
+		<img src="con-2.png">
+	</div>
+		<div class="da">
+		<img src="con-2.png" style="height:1700px">
+	</div>
+</body>
+<script>
+	$(function(){
+		var small=$(".small")[0];
+		var big=$(".da")[0];
+		var bigimg=$("img",big)[0]
+     hover(small,function(){
+        big.style.display="block";
+     },function(){
+        big.style.display="none";
+     })
+
+
+		small.onmousemove=function(e){
+        var ev=e||window.event;
+        //鼠标的位置
+        var ox=ev.offsetX;
+        var oy=ev.offsetY;
+       //比例
+        var imgx=ox/small.offsetWidth
+        var imgy=oy/small.offsetHeight
+
+        bigimg.style.left=-imgx*(bigimg.offsetWidth-big.offsetWidth)+"px"
+        bigimg.style.top=-imgx*(bigimg.offsetHeight-big.offsetHeight)+"px"
+		}
+	
+})
+</script>
+
+</html>

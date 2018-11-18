@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src="jquery-1.12.1.js"></script>
+<script src='function.js'></script>
+<script>
+	// $(function(){
+
+// 		$(".item").hover(function(){
+// 			$(this).find(".list").stop(true,true);
+// 			$(this).find(".list").slideDown();
+// 		},function(){
+// 			$(this).find(".list").stop(true,true);
+// 			$(this).find(".list").slideUp();
+// 		})
+	
+
+
+// 	// 返回顶部
+// 	$($(".back")[0]).click(function()
+// 	{
+// 		$({aa:$(window).scrollTop()}).animate({aa:0},
+// 			{duration:2000,step:function(){
+// 			$(window).scrollTop(this.aa);
+// 		}
+// 	})
+
+// })
+
+
+
+// 	})
+</script>
+<script>
+	window.onload=function(){
+		function setFixed(obj,lefts,tops){
+		  if(window.XMLHttpRequest){
+		    
+		    obj.style.position="fixed";
+		    obj.style.left=lefts+"px";
+		    obj.style.top=tops+"px";
+
+		   }else{
+		    window.t=setInterval(function(){
+		    obj.style.position='absolute';
+
+		      var scrollTop=document.body.scrollTop;
+		      var scrollLeft=document.body.scrollLeft;
+		      obj.style.left=scrollLeft+lefts+"px";
+		      obj.style.top=scrollTop+tops+"px";
+		    },50)
+		  }
+		}
+			var fixed=$(".fixed")[0]
+			setFixed(fixed,230,250)
+	}
+</script>
+
+<style>
+	ul,li {
+		margin:0;padding:0;
+		list-style: none;
+	}
+	.nav{
+		width:200px;height:40px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+	}
+	.nav .item{
+		width:100px;height:40px;
+		background:red;
+		float: left;
+		text-align: center;
+		line-height:40px;
+		font-size:20px;
+	}
+	.list{
+		width:100px;height:auto;
+		background:#f4f4f4;
+		display: none;
+	}
+	.list li{
+		width:100px;height:40px;
+		border-bottom: 1px solid #fff;
+		margin-right:1px;
+	}
+
+
+
+	body{
+		height:2000px;
+	}
+	/*.back{
+		width:40px;
+		height:40px;
+		background:gray;
+		position: fixed;
+		right:30px;bottom:40px;
+	}*/
+	.fixed{
+		width:50px;
+		height:50px;
+		background:red;
+	}
+</style>
+
+
+<body>
+	<ul class="nav">
+		<li class='item'>公司简介
+			<ul class="list">
+				<li>创始</li>
+				<li>简介</li>
+			</ul>
+		</li>
+		<li class='item'>关于我们
+			<ul class="list">
+				<li>联系方式</li>
+				<li>地址</li>
+			</ul>
+		</li>
+	</ul>
+
+
+<!-- <div class="back">back</div> -->
+<div class="fixed"></div>
+</body>
+</html>

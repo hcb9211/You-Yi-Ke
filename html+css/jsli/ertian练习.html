@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>流程控制练习</title>
+	<script>
+ // 登录密码
+/* var a=prompt("输入密码");
+     if(a=="123456"){
+     	alert("登录成功");
+     }else{
+     	alert("密码错误");
+     }*/
+
+//登录密码输入3次重新输入
+/*for(i=1;i<=3;i++){
+	var a=Number(prompt("请输入密码"));
+	var b=123456;
+	if(i<=3&&a==b){
+		alert("登录成功");
+		break;}
+	else{
+		alert("输入有误");
+	}
+}*/
+
+//四则运算
+/*var num1=Number(prompt("第一个数"));
+var num2=Number(prompt("第二个数"));
+var ysf=prompt("运算符");
+switch(ysf){
+	case"+":alert(num1+num2);
+	break;
+	case"-":alert(num1-num2);
+	break;
+	case"*":alert(num1*num2);
+	break;
+	case"/":alert(num1/num2);
+	break;
+	default:alert("输入有误");
+}*/
+//二，操场上有一百多人，三排余一人，四排余两人，五排余三人，问：操场上有多少人？
+/*for(var a=100;a<200;a++){
+	if(a%3==1&&a%4==2&&a%5==3){
+		document.write("操场上有"+a+"人;");
+	}
+}*/
+//三，买书：教材书10元/本，参考书5元/本，练习本0.5元/本。100元买了100本书，问：各种书各有几本？
+/*for(var a=0;a<10;a++){
+	for(var b=0;b<20;b++){
+		for(var c=0;c<200;c++){
+			if(a*10+b*5+c*0.5==100&&a+b+c==100){
+				document.write("买了教科书"+a+"本；买了参考书"+b+"本；买了练习本"+c+"本；")
+			}
+		}
+	}
+}*/
+//四，鸡兔同笼，头有34，脚有96，有多少只鸡与兔？
+/*for(var ji=0;ji<34;ji++){
+	for(var tu=0;tu<34;tu++){
+		if(ji*2+tu*4==96&&ji+tu==34){
+			document.write("鸡有"+ji+"只;")
+			document.write("兔有"+tu+"只;")
+			
+		}
+	}
+}*/
+//作业：
+for(var a=1;a<=6;a++)//行数
+{
+	for(var b=6-a;b>=1;b--)
+		{//空格出现的个数
+
+		document.write("&nbsp;")
+	}
+	for(c=1;c<a;c++){
+		document.write("*"+"&nbsp;")
+	}
+	    document.write("<br>")
+}
+//10*10交叉换色
+
+document.write("<table border='1'cellspacing='0'align='center'>");
+for(var i=1;i<=10;i++){
+	document.write("<tr>");
+	for(var j=1;j<=10;j++){
+		if(i%2==0&&j%2==0){
+			document.write("<td bgcolor=green>")  
+		}else if(i%2==1&&j%2==1){
+			document.write("<td bgcolor=red>")
+		}else{
+			document.write("<td>")
+		}
+		    document.write("再见了")
+            document.write("</td>")
+	}     
+    document.write("<tr>");
+}
+document.write("<table>");
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

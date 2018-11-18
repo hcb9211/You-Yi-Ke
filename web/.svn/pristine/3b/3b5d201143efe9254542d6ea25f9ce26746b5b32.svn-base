@@ -1,0 +1,139 @@
+$(function() {
+	// 选项卡函数
+	function xxk(obj, xobj) {
+		obj.hover(function() {
+			$(obj).find(xobj).stop(true, true).slideDown()
+		}, function() {
+			$(obj).find(xobj).stop(true, true).slideUp()
+		})
+	}
+	xxk($(".mytb"), $(".mytb_xxk"));
+	xxk($(".nav_text3"), $(".mytb_xxk2"));
+	xxk($("#ewm"), $(".ewm"));
+	xxk($("#por"), $(".porsert"));
+	xxk($("#web"), $(".web"));
+
+
+	$("#menu_text:last").css({
+		margin: 0
+	})
+// 热门品牌
+	$("#copy").click(function(e){
+		e.preventDeault()
+		$(".hotMiddle1").show();
+	})
+	$(".copy1").click(function(e){
+		e.preventDeault()
+		$(".hotMiddle2").show();
+	})
+	$(".copy2").click(function(e){
+		e.preventDeault()
+		$(".hotMiddle").show();
+	})
+
+	// 轮播图
+	var arrBackground = ["#E9C0C8", "#89B1D4", "#FFAECF", "#CCEEF2", "#E8E8E8", "#E8E8E8"];
+	var win = $($(".window")[0]);
+	var as = $("a", win);
+	var lis = $("li", win);
+	var len = as.length;
+	var num = 0;
+	var flag=true;
+	//让图片轮播起来
+	as.hide().eq(0).show();
+	lis.css('background', 'rgba(0,0,0,0.7)').eq(0).css('background', 'rgba(255,255,255)')
+	var t = setInterval(moveR, 1000);
+	as.hover(function() {
+		clearInterval(t);
+	}, function() {
+		t = setInterval(moveR, 1000);
+	})
+	// lis.mouseover(function(){
+	// 	clearInterval(t);
+	// 	var index=$(this).index();
+	// 	lis.eq(index).
+	// })
+
+	function moveR() {
+		num++;
+		if (num == len) num = 0;
+		as.fadeOut().eq(num).fadeIn();
+		$(".bannerbox").css("background", arrBackground[num])
+	}
+//亲子时光
+	var now=0;
+	var next=0;
+	var slide=$(".slide");
+	slide.css("top",30).eq(0).css("top",0);
+	var t1=setInterval(moves,1000);
+	function moves(){
+		next++;
+	if(next==slide.length) next=0;
+	slide.eq(next).css("top",30);
+	slide.eq(now).animate({top:-30});
+	slide.eq(next).animate({top:0});
+	now=next;
+	}	
+//下拉弹出
+	var flag11=true;
+	var flag22=true;
+	$(window).scroll(function(){
+		var top11=$(this).scrollTop();
+		if(top11>=800){
+			if(flag11){
+					flag11=false;
+					$(".xialasearch").animate({top:0},function () {
+						flag22=true;
+					})
+                $(".daohangbox").animate({left:10},500,"linear")
+				}
+			}else{
+			if(flag22){
+				flag22=false;
+				$(".xialasearch").animate({top:-50},function(){
+					flag11=true;
+				})
+                $(".daohangbox").animate({left:-36},1000,"linear")
+			}
+		}
+	})
+//左侧选项卡
+	var banLeft=$(".banLeft");
+    var ban_text=$(".ban_text");
+    banLeft.hover(function(){
+        ban_text.css("display","block")
+    },function(){
+        ban_text.css("display","none")
+    })
+//    左边侧导航
+ /*var obj=document.body.scrollTop?document.body:document.documentElement.scrollTop;
+    var scrollTop=obj.scrollTop;
+    // 获取浏览器可视高度
+    var ch=document.documentElement.clientHeight;
+    var floor=$(".kidsbox");
+    var floorArr=[];
+    // 各个楼层距离页面顶端的距离
+    for(var i=0;i<floor.length;i++){
+        floor[i].offset(top).appendTo(floorArr);
+    }
+    // 楼层跳转
+    // 滚动当前楼层对应的obj.onscrollTop
+    var flga=true;
+    var flga1=true;
+    var dao=$(".dao_1");
+    for(var i=0;i<dao.length;i++){
+        dao[i].click(function () {
+            flga=false;
+            for(var j=0;j<dao.length;j++){
+                dao[j].css("background","#626262")
+            }
+            dao.eq(index).css("background","#F7A945");
+            $(document.body).animate({scrollTop:floorArr[index]},function () {
+        flga=true;
+            })
+        })
+    }*/
+    
+    
+
+})

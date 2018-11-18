@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont">&#xe617;</i>
+                    <div class="name">家居-01</div>
+                    <div class="code">&amp;#xe617;</div>
+                    <div class="fontclass">.jiaju01</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe600;</i>
+                    <div class="name">箭头</div>
+                    <div class="code">&amp;#xe600;</div>
+                    <div class="fontclass">.iconfonti2-copy-copy-copy</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe600;</i>
+                    <div class="name">箭头</div>
+                    <div class="code">&amp;#xe600;</div>
+                    <div class="fontclass">.iconfonti2-copy-copy</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe603;</i>
+                    <div class="name">微信</div>
+                    <div class="code">&amp;#xe603;</div>
+                    <div class="fontclass">.weixin</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe679;</i>
+                    <div class="name">手机</div>
+                    <div class="code">&amp;#xe679;</div>
+                    <div class="fontclass">.shouji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe670;</i>
+                    <div class="name">房子</div>
+                    <div class="code">&amp;#xe670;</div>
+                    <div class="fontclass">.fangzi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe697;</i>
+                    <div class="name">钻石</div>
+                    <div class="code">&amp;#xe697;</div>
+                    <div class="fontclass">.zuanshi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf009b;</i>
+                    <div class="name">吊带</div>
+                    <div class="code">&amp;#xf009b;</div>
+                    <div class="fontclass">.diaodai</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf00a9;</i>
+                    <div class="name">西装</div>
+                    <div class="code">&amp;#xf00a9;</div>
+                    <div class="fontclass">.xizhuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf009a;</i>
+                    <div class="name">高跟鞋</div>
+                    <div class="code">&amp;#xf009a;</div>
+                    <div class="fontclass">.gaogenxie</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe647;</i>
+                    <div class="name">香水</div>
+                    <div class="code">&amp;#xe647;</div>
+                    <div class="fontclass">.xiangshui</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe610;</i>
+                    <div class="name">包包</div>
+                    <div class="code">&amp;#xe610;</div>
+                    <div class="fontclass">.baobao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe608;</i>
+                    <div class="name">足球</div>
+                    <div class="code">&amp;#xe608;</div>
+                    <div class="fontclass">.zuqiu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe64c;</i>
+                    <div class="name">戒指-线</div>
+                    <div class="code">&amp;#xe64c;</div>
+                    <div class="fontclass">.jiezhixian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe628;</i>
+                    <div class="name">婴儿车</div>
+                    <div class="code">&amp;#xe628;</div>
+                    <div class="fontclass">.yingerche</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe638;</i>
+                    <div class="name">家居</div>
+                    <div class="code">&amp;#xe638;</div>
+                    <div class="fontclass">.jiajuicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe641;</i>
+                    <div class="name">家居</div>
+                    <div class="code">&amp;#xe641;</div>
+                    <div class="fontclass">.jiaju</div>
+                </li>
+            
+        </ul>
+
+
+        <div class="helps">
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用iconfont的样式
+            <pre>
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>

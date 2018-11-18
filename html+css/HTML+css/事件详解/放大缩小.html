@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大缩小</title>
+</head>
+<script src='function.js'></script>
+<script>
+	$(function(){
+		var imgs=$('img')[0];
+
+		var width=parseInt(getStyle(img,"width"));
+		var height=parseInt(getStyle(img,"height")); 
+		var bili=width/height;
+		var speedx=10;
+		var speedy=10/bili;
+
+		mouseWheel(imgs,function(){
+
+			width+=speedx;
+			height+=speedy;
+			if(width>=90){
+				width=90;
+			}if(){
+
+			}
+			imgs.style.width=width+'px';
+			imgs.style.height=height+'px';
+		},function(){
+
+		})
+	})
+</script>
+<body>
+
+	<img src="1.jpg" alt="">
+</body>
+</html>

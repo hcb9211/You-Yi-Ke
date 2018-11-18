@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src="index.js"></script>
+<script src="animate.js"></script>
+<script src='function.js'></script>
+<script>
+	// xian(one);
+</script>
+<style>
+	.one{
+		width: 220px;
+		height: 260px;
+		border:1px solid green;
+		margin:20px auto;
+		/*position: relative;*/
+	}
+	.one li{
+		width:20px;
+		height: 20px;
+		border:1px solid blue;
+		margin:20px auto;
+		position: relative;
+	}
+	.top{
+		width: 0px;
+		height: 1px;
+		background:red;
+		position: absolute;
+		top:-1px;
+		left:-1px;
+		overflow: hidden;
+	} 
+	.bottom{
+		width:0px;
+		height: 1px;
+		background:red;
+		position: absolute;
+		right:-1px;
+		/*top:100%;*/  bottom:-1px;
+		overflow: hidden;
+	}
+	.left{
+		width:1px;
+		height:0px;
+		background:red;
+		position: absolute;
+		left:-1px;
+		top:-1px;
+		overflow: hidden;
+	}
+	.right{
+		width:1px;
+		height:0px;
+		background:red;
+		position: absolute;
+		right:-1px;
+		bottom:-1px;
+		overflow: hidden;
+	}
+
+</style>
+
+
+<body>
+	<div class="one">
+		<ul>
+			<li>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+
+			<li>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+
+			<li>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+
+			<li>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+		</ul>
+		
+	</div>
+	
+</body>
+</html>

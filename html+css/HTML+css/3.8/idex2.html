@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单标签</title>
+</head>
+<body>
+	<fieldset>
+		<legend align='center'>表单课程</legend>
+	<form action="1.html"method='post'>
+		<!-- post  get    
+	post传输的数据量较大，响应时间相对慢些，安全性高 -->
+	账户：   <input type="text" name='user' value='默认值' readonly size            ='10' maxlength='5'><hr>	<!-- 文本域 -->
+	密码：  <input type="password" name='pass'><br><hr><!-- 密码 -->
+	性别：
+           <label>
+	  男    <input type="radio" checked name='sex' value='man'><!-- 单选 -->
+	       </label>
+
+	    <label for="nv">女</label>
+	    <input type="radio" id="nv" name='sex' value='woman'><br><hr>
+
+	    爱好：
+	      吃饭<input type="checkbox" checked name='hobby[]' value='eat'><hr><!-- 复选 -->
+	      睡觉<input type="checkbox" checked='checked' name='hobby[]'value='sleep'><hr>
+	    打豆豆<input type="checkbox"name='hobby[]'value='figth'><br><hr>
+	   城市<select name="city" size='5'>
+	   	  <option selected>上海</option><hr>
+	   	  <option value	>广东</option><hr>
+	   	  <option >江苏</option><hr>
+	   </select><br><!-- 下拉框 -->
+	   <textarea name="第一章" cols="30" rows="10" style='resize:none'><!-- 文本区域 -->
+	   	
+	   </textarea><br><hr>
+      <input type="reset"><!-- 重置 -->
+      <input type="button" value="点击有惊喜" onclick=alert(1)><!-- 按钮 -->
+	  <input type="submit" disabled value='登录'><!-- 提交 -->
+	  
+	</form>
+	</fieldset>
+    
+
+    <!-- 滚动 -->
+    <marquee behavior="slide" direction="">
+    	欢迎来到优逸客
+    </marquee>
+    <marquee behavior="scroll" direction="">
+    	欢迎来到优逸客
+    </marquee>
+    <marquee behavior="alternate" direction="">
+    	欢迎来到优逸客
+    </marquee>
+    <marquee  direction="top" width='300'height='300'bgcolor='#ff6700'scrollamount='30'scrolldelay='100' onmouseover='this.stop()' onmouseout='this.start()'>
+    	
+    	欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客	欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客	欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客	欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;欢迎来到优逸客<br>&nbsp;	欢迎来到优逸客	欢迎来到优逸客
+    </marquee>
+   
+</body>
+</html>

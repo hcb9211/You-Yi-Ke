@@ -1,0 +1,56 @@
+function pop(title) {
+    if(title){
+        $("#line").html(title);
+        $("#layer").addClass('show');
+        $(".body,html").css({overflow:'hidden'})
+    }
+};
+
+$(".js-tap").tap(function () {
+    $(".layer").removeClass('show');
+    $(".body,html").css({overflow:'auto'})
+})
+
+/* ajax函数 */
+function ajax(param,fn) {
+    var url="http://app.api.gupiaoxianji.com/v3.6";
+    $.ajax({
+        url:url,
+        type:"POST",
+        contentType:"application/json",
+        dataType:"json",
+        data:JSON.stringify(param),
+        success: function (res) {
+            $.isFunction(fn) && fn(res);
+        },
+        error:function (res) {
+            console.log(res);
+        }
+    })
+}
+
+//  设置,读取,删除cookie
+function setCookie(name,value) {
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";path=/;expires=" + exp.toGMTString();
+};
+function getCookie(name) {
+    var arr, reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr = document.cookie.match(reg)){
+        return unescape(arr[2]);
+    }
+    else{
+        return null;
+    }
+};
+function delCookie(name) {
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval !== null){
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+    }
+};
+

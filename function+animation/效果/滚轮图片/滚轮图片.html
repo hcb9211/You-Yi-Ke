@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+      <script src="functionall.js"></script>
+     <script src="animate.js"></script>
+	<style>
+     body,ul,li{
+     	margin: 0;
+     	padding: 0;
+     	list-style: none;
+     }
+     .btnbox{
+     	width: 20px;
+     	height: 300px;
+     	position: fixed;
+     	right:10%;
+          top:30%;
+     }
+     .btnbox>li{
+           width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          background: #333;
+     }
+     .btnbox>li:hover{
+         
+     }
+	</style>
+	<script>
+     $(function(){ 
+          var btnbox=$(".btnbox")[0]
+          var btn=$("li")
+     	var imgs=$("img");
+     	var cw=document.documentElement.clientWidth;
+     	var ch=document.documentElement.clientHeight;
+
+     	for(var i=0;i<imgs.length;i++){
+               imgs[i].t=imgs[i].offsetTop;
+     		       imgs[i].style.width=cw+"px";
+               imgs[i].style.height=ch+"px";
+     	} 
+          btnbox.style.top=(ch-btnbox.offsetHeight)/2+"px";
+          var num=1
+          var flag=true;
+          var flag1=true;
+          // window.onscroll=function(){
+          document.documentElement.scrollTop=1;
+          var obj=document.documentElement.scrollTop==1?document.documentElement:document.body;
+         
+          mouseWheel(document,function(){
+             
+            
+               if(obj.scrollTop==imgs[num].t){
+                    num--;
+                    if(num==-1){
+                         num=0;
+                    }
+                    flag=true
+                 }
+                 else{
+                    flag=false;
+                 }
+
+                   if(flag){
+                      animate(obj,{scrollTop:imgs[num].t},1000)  
+               }
+
+                 for(var i=0;i<btn.length;i++){
+                    btn[i].style.background="#333"
+               }
+                 btn[num].style.background="#fff"
+          },function(){
+               if(flag1){
+                   animate(obj,{scrollTop:imgs[num].t},1000)  
+               }
+               
+               if(obj.scrollTop==imgs[num].t){
+                    num++;
+                     if(num==5){
+                         num=4;
+                     }
+                     flag1=true;      
+                 }else{
+                    flag1=false;
+                 }
+                 for(var i=0;i<btn.length;i++){
+                    btn[i].style.background="#333"
+               }
+                 btn[num].style.background="#fff"
+          })
+      // }  
+
+  for(var i=0;i<btn.length;i++){
+  btn[i].index=i;
+  btn[i].onclick=function(){
+    animate(obj,{scrollTop:[this.index].t},1000)
+      for(var j=0;j<btn.length;j++){
+        btn[j].style.background="#333"
+   }
+     btn[this.index].style.background="#fff"
+    num=this.index;
+  }
+}       
+})
+
+
+	</script>
+</head>
+<body>
+	<img src="1.jpg" alt="" style="display:block">
+     <img src="2.jpg" alt="" style="display:block">
+     <img src="3.jpg" alt="" style="display:block">
+     <img src="4.jpg" alt="" style="display:block">
+     <img src="5.jpg" alt="" style="display:block">
+     <ul class="btnbox">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+     </ul>
+</body>
+
+</html>

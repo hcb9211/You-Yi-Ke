@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标拖动</title>
+</head>
+<script src='../function.js'></script>
+<script>
+	$(function(){
+		var one=$('.one')[0];
+		var ow=one.offsetWidth;
+		var oh=one.offsetHeight;
+		var cw=document.documentElement.clientWidth;
+		var ch=document.documentElement.clientHeight;
+		var ol=one.offsetLeft;
+		var ot=one.offsetTop;
+		var lol=offset(one).left;
+		var lot=offset(one).top;
+		one.onmousedown=function(e){
+				// 获取鼠标点击时的位置到事件源的距离
+				var ev=e||window.event;
+				var ox=ev.offsetX;
+				var oy=ev.offsetY;
+				
+			document.onmousemove=function(e){
+				var ev=e||window.event;
+				var cx=ev.clientX;
+				var cy=ev.clientY;
+				var lefts=cx-(lol-ol)-ox;  
+				var tops=cy-(lot-ot)-oy;   
+					if(lefts>=cw-ow-lol){
+						lefts=cw-ow-lol;
+					}else if(lefts<=-lol){
+						lefts=-lol;
+					}
+					if(tops>=ch-oh-lot){
+						tops=ch-oh;
+					}else if(tops<=0){
+						tops=0;
+					}
+				one.style.left=lefts+'px';
+				one.style.top=tops+'px';
+			}
+			one.onmouseup=function(){
+				document.onmousemove=null;
+				one.onmouseup=null;	
+			}
+		}
+	})
+
+	/*$(function(){
+		var one=$('.one')[0];
+		var ow=one.offsetWidth;
+		var oh=one.offsetHeight;
+		var cw=document.documentElement.clientWidth;
+		var ch=document.documentElement.clientHeight;
+
+		addEvent(one,mousedown,function(e){
+				var ev=e||window.event;
+				var ox=ev.offsetX;
+				var oy=ev.offsetY;
+
+				addEvent(document,mousemove,function(e){
+					var ev=e||window.event;
+					var cx=ev.clientX;
+					var cy=ev.clientY;
+					var lefts=cx-ox;
+					var tops=cy-oy;
+					if(lefts>=cw-ow){
+						lefts=cw-ow;
+					}else if(lefts<=0){
+						lefts=0;
+					}
+					if(tops>=ch-oh){
+						tops=ch-oh;
+					}else if(tops<=0){
+						tops=0;
+					}
+				one.style.left=lefts+'px';
+				one.style.top=tops+'px';
+				})
+
+				remove(one,mouseup,function(){
+					document.onmousemove=null;
+					one.onmouseup=null;	
+				})
+		})
+	})*/
+</script>
+
+<style>
+		.one{
+			width: 200px;
+			height: 200px;
+			border:1px solid green;
+			position: absolute;
+			left:0;top:0;
+		}
+		.out{
+			width: 500px;
+			height: 500px;
+			border:1px solid blue;
+			position:relative;
+			left: 10px;
+
+		}
+</style>
+<body>
+	<div class="out">
+		<div class="one"></div>
+	</div>
+	
+</body>
+</html>

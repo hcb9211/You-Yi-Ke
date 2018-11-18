@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js事件,内容</title>
+</head>
+<script src='../function.js'></script>
+<script>
+	/*
+       getContent(obj,[val])   获取或者设置对象的文本
+       obj  指定的对象
+       val  要设置的内容
+	*/
+	/*window.onload=function(){
+			var one=document.getElementById('one');
+			getContent(one,"undefined")
+		
+	function getContent(obj,val){
+			if(obj.innerText){
+				if(val==undefined){
+					return obj.innerText;
+				}else{
+					obj.innerText=val;
+				}
+			}else{
+				if(val==undefined){
+					return obj.textContent;
+				}else{
+					obj.textContent=val;
+				}
+			}
+		}
+	}*/
+</script>
+
+
+
+
+<script>
+	window.onload=function(){
+		
+		// one.innerHTML="<h3>我是on</h3>"
+		// console.log(one.textContent)
+		// one.textContent="我是one"
+		/*var one=document.getElementById('one');
+		var two=document.getElementById('two');
+		var input=document.getElementsByTagName('input')[0];
+		one.innerHTML="我是one";
+		input.onclick=function(){
+			two.innerHTML=one.innerHTML;
+		}*/
+		/*var a=document.getElementsByTagName("a")[0];
+		a.href="http://www.xiaomi.com";
+		a.title="这是一个连接";*/
+	    // var div=document.getElementsByTagName("div")[0];
+	    /*
+	    div.style["background-color"]="red";*/
+	    // console.log(div.style.width)
+	    /*console.log(getComputedStyle(div,null).width)
+	    console.log(div.currentStyle.width)*/
+
+
+	/*
+	getStyle(obj,attr);
+	获取指定元素指定的样式
+	obj   指定的元素
+	attr  指定的样式
+	*/
+  /*function getStyle(obj,attr){
+	    	if(obj.currentStyle){
+	    		return obj.currentStyle[attr];
+	    	}else{
+	    		return getComputedStyle(obj,null)[attr];
+	    	}
+	    }*/
+	  /*  alert(getStyle(div,"width"))*/
+
+	var one=getClass('one')[0];
+	var widths=parseInt(getStyle(one,"width"));
+	var heights=parseInt(getStyle(one,"height"));
+	var speed=10;
+
+	var t;
+	t=setInterval(function(){
+		widths+=speed;
+		heights+=speed;
+
+		if(widths>=400){
+				widths=400;
+				speed=-speed;			
+		}
+		if(widths<=200){
+				heights=200;
+				speed=-speed;
+		}
+		one.style.width=widths+'px';
+		one.style.height=heights+'px';
+	},200)
+
+	}
+
+</script>
+
+<script>
+	window.onload=function(){
+		// console.log($(".two","div").length)
+	// 	var one=getClass("one");
+	// 	console.log(getContent(one,'fadf'))
+   // console.log(getStyle('one','width'))
+   }
+</script>
+
+
+<style>
+	.one{
+		width: 200px;
+		height: 200px;
+		border:1px solid red;
+		background:green;
+	}
+	#two{
+		width: 200px;
+		height: 200px;
+		border:1px solid red;
+	}
+</style>
+<body>
+	<!-- <div id="one">efsdrg</div>
+	<input type="button" value="↓↓">
+	<div id="two"></div> -->
+	<!-- <a href="" id='' class='' target='' title=''>百度</a> -->
+	<!-- <div class="one"style="width:300px;"></div> -->
+	
+	<div class='one' style='width:300px;'></div><br>
+	 <!-- <div class="one"></div><br>
+	<div class="one">
+		<div class="two"></div>
+	</div><br>
+	<div class="one"></div><br>
+	<div id="one"></div>  -->
+</body>
+</html>

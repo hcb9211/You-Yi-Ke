@@ -1,0 +1,317 @@
+var MncHotelData={
+	"regions":[
+		{
+		"name":"东南亚", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+		"cities":[
+			{
+			"name":"新加坡", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[
+				{"id":"13554","name":"新加坡国敦河畔大酒店",
+					"url":"http://www.millenniumhotels.com.sg/zh-cn/grandcopthornewaterfront/"},
+				{"id":"13535","name":"新加坡乌节大酒店",
+					"url":"http://www.millenniumhotels.com.sg/zh-cn/orchardhotelsingapore/"},
+				{"id":"13534","name":"新加坡M酒店",
+					"url":"http://www.millenniumhotels.com.sg/zh-cn/mhotelsingapore/"},
+				{"id":"14258","name":"M Social Singapore",
+					"url":"http://www.millenniumhotels.com.sg/msocialsingapore/"},
+				{"id":"13506","name":"新加坡国敦统一酒店",
+					"url":"http://www.millenniumhotels.com.sg/zh-cn/copthornekingssingapore/"},
+				{"id":"13509","name":"新加坡Studio M酒店",
+					"url":"http://www.millenniumhotels.com.sg/zh-cn/studiomhotelsingapore/"}]
+			},
+			{
+			"name":"印尼", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[{"id":"13508","name":"雅加达千禧大酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumjakarta/"}]
+			},
+			{
+			"name":"日本", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[{"id":"14012","name":"东京三井花园千禧酒店",
+					"url":"http://www.millenniumhotels.com/millenniumgardentokyo/"}]
+			},
+			{
+			"name":"马来西亚", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[
+				{"id":"13531","name":"槟城国敦胡姬酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/copthornepenang/"},
+				{"id":"13605","name":"吉隆坡千禧大酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/grandmillenniumkualalumpur/"},
+				{"id":"13497","name":"金马仑国敦酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/copthornecameron/"}]
+			},
+			{
+			"name":"菲律宾", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[{"id":"13607","name":"马尼拉喜来得大酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/heritagemanila/"}]
+			},
+			{
+			"name":"泰国", "url":"http://www.millenniumhotels.com.sg/zh-cn/",
+			"hotels":[{"id":"13609","name":"普吉岛千禧芭东度假酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumpatongphuket/"}]
+			}
+		]
+		},
+		{
+		"name":"中国大陆及台湾", "url":"http://www.millenniumhotels.com.cn/",
+		"cities":[
+			{
+			"name":"中国大陆", "url":"http://www.millenniumhotels.com.cn/",
+			"hotels":[
+				{"id":"13591","name":"北京千禧大酒店",
+					"url":"http://www.millenniumhotels.com.cn/grandmillenniumbeijing/"},
+				{"id":"13596","name":"成都新东方千禧大酒店",
+					"url":"http://www.millenniumhotels.com.cn/millenniumchengdu/"},
+				{"id":"13482","name":"杭州千禧度假酒店",
+					"url":"http://www.millenniumhotels.com.cn/millenniumhangzhou/"},
+				{"id":"13616","name":"厦门海景千禧大酒店",
+					"url":"http://www.millenniumhotels.com.cn/millenniumxiamen/"},
+				{"id":"13612","name":"上海千禧海鸥大酒店",
+					"url":"http://www.millenniumhotels.com.cn/grandmillenniumshanghaihongqiao/"},
+				{"id":"13615","name":"无锡千禧大酒店",
+					"url":"http://www.millenniumhotels.com.cn/millenniumwuxi/"},
+				{"id":"13604","name":"福清创元千禧大酒店",
+					"url":"http://www.millenniumhotels.com.cn/millenniumfuqing/"},
+				{"id":"13611","name":"青岛国敦大酒店",
+					"url":"http://www.millenniumhotels.com.cn/copthorneqingdao/"},
+				{"id":"13147","name":"成都M酒店",
+					"url":"http://www.millenniumhotels.com.cn/mhotelchengdu/"}]
+			},
+			{
+			"name":"台湾", "url":"http://www.millenniumhotels.com.cn/",
+			"hotels":[{"id":"13614","name":"台中日月千禧酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumveehoteltaichung/"}]
+			}
+		]
+		},
+		{
+		"name":"欧洲", "url":"http://www.millenniumhotels.co.uk/zh-cn/",
+		"cities":[
+			{
+			"name":"英国伦敦", "url":"http://www.millenniumhotels.co.uk/zh-cn/",
+			"hotels":[
+				{"id":"13469","name":"切尔西足球俱乐部千禧国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumcopthornechelseafc/"},
+				{"id":"13659","name":"切尔西港全套房酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/thechelseaharbourhotel/"},
+				{"id":"13468","name":"伦敦肯辛顿千禧贝利酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumbaileys/"},
+				{"id":"13471","name":"伦敦格洛斯特千禧酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumgloucester/"},
+				{"id":"13472","name":"伦敦骑士桥千禧酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumknightsbridge/"},
+				{"id":"13476","name":"伦敦梅菲尔千禧酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniummayfair/"},
+				{"id":"13467","name":"伦敦肯辛顿国敦塔拉酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornetarakensington/"}]
+			},
+			{
+			"name":"英国其他地区", "url":"http://www.millenniumhotels.co.uk/zh-cn/",
+			"hotels":[
+				{"id":"14253","name":"利物浦披头士主题酒店",
+					"url":"http://www.millenniumhotels.com/harddaysnight/"},
+				{"id":"13470","name":"格拉斯哥千禧酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumglasgow/"},
+				{"id":"13475","name":"雷丁马德杰斯基千禧酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/millenniumreading/"},
+				{"id":"13455","name":"阿伯丁国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthorneaberdeen/"},
+				{"id":"13456","name":"伯明翰国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornebirmingham/"},
+				{"id":"13457","name":"加的夫国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornecardiff/"},
+				{"id":"13458","name":"盖特威克埃芬汉国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthorneeffinghamgatwick/"},
+				{"id":"13459","name":"盖特威克国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornegatwick/"},
+				{"id":"13461","name":"曼彻斯特国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornemanchester/"},
+				{"id":"13462","name":"达德利梅里山国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornedudley/"},
+				{"id":"13463","name":"纽卡斯尔国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornenewcastle/"},
+				{"id":"13464","name":"普利茅斯国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthorneplymouth/"},
+				{"id":"13465","name":"谢菲尔德国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornesheffield/"},
+				{"id":"13466","name":"斯劳温莎国敦酒店",
+					"url":"http://www.millenniumhotels.co.uk/zh-cn/copthornesloughwindsor/"}]
+			},
+			{
+			"name":"法国", "url":"http://www.millenniumhotels.co.uk/zh-cn/",
+			"hotels":[
+				{"id":"13474","name":"巴黎歌剧院千禧酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumparis/"},
+				{"id":"13473","name":"巴黎戴高乐千禧酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumcharlesdegaulle/"}]
+			},
+			{
+			"name":"意大利", "url":"http://www.millenniumhotels.co.uk/zh-cn/",
+			"hotels":[{"id":"13695","name":"罗马宫廷大酒店",
+					"url":"http://www.millenniumhotels.com/grandhotelpalacerome/"}]
+			}
+		]
+		},
+		{
+		"name":"中东", "url":"http://www.millenniumhotels.ae/zh-cn/",
+		"cities":[
+			{
+			"name":"阿联酋", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"13585","name":"艾尔桦达千禧大酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/grandmillenniumalwahda/"},
+				{"id":"13600","name":"迪拜千禧大酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/grandmillenniumdubai/"},
+				{"id":"13587","name":"阿布达比千禧酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/millenniumabudhabi/"},
+				{"id":"13602","name":"迪拜千禧机场酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/millenniumdubai/"},
+				{"id":"13603","name":"迪拜千禧广场酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/millenniumplazadubai/"},
+				{"id":"14039","name":"富查伊拉千禧酒店",
+					"url":"http://www.millenniumhotels.com/millenniumfujairah/"},
+				{"id":"13601","name":"迪拜国敦酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/copthornehoteldubai/"},
+				{"id":"13586","name":"阿布达比君门酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/kingsgateabudhabi/"},
+				{"id":"13613","name":"沙迦国敦酒店",
+					"url":"http://www.millenniumhotels.ae/zh-cn/copthornehotelsharjah/"}]
+			},
+			{
+			"name":"沙特阿拉伯王国", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"14038","name":"麦地那千禧酒店",
+					"url":"http://www.millenniumhotels.com/millenniumtaibamadinah/"},
+				{"id":"14152","name":"阿尔阿奇千禧酒店",
+					"url":"http://www.millenniumhotels.com/millenniumalaqeeq/"}]
+			},
+			{
+			"name":"科威特", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"14056","name":"科威特千禧酒店和会议中心",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumhotelandconvention/"},
+				{"id":"13589","name":"杰赫拉国敦度假酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/aljahrahcopthornekuwait/"}]
+			},
+			{
+			"name":"阿曼", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"13608","name":"姆珊娜千禧度假酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumresortmussanah/"},
+				{"id":"14047","name":"马斯喀特千禧酒店公寓",
+					"url":"http://www.millenniumhotels.com/millenniumexecutiveapartmentmuscat/"}]
+			},
+			{
+			"name":"卡塔尔", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"13598","name":"多哈千禧酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumdoha/"},
+				{"id":"13597","name":"多哈国敦酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/copthornedoha/"},
+				{"id":"13599","name":"多哈君门酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/kingsgatedoha/"}]
+			},
+			{
+			"name":"约旦", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[{"id":"13590","name":"安曼千禧大酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/grandmillenniumamman/"}]
+			},
+			{
+			"name":"伊拉克", "url":"http://www.millenniumhotels.ae/zh-cn/",
+			"hotels":[
+				{"id":"13686","name":"苏莱曼尼亚千禧大酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/grandmillenniumsulaimani/"},
+				{"id":"13593","name":"巴让南国敦酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/copthornebaranan/"},
+				{"id":"13542","name":"库尔德斯坦千禧水疗酒店",
+					"url":"http://www.millenniumhotels.com/zh-cn/millenniumkurdistanhotelandspa/"}]
+			}
+		]
+		},
+		{
+		"name":"新西兰", "url":"http://www.millenniumhotels.co.nz/zh-cn/",
+		"cities":[
+			{
+			"name":"新西兰", "url":"http://www.millenniumhotels.co.nz/zh-cn/",
+			"hotels":[
+				{"id":"13551","name":"皇后镇千禧酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/millenniumqueenstown/"},
+				{"id":"13528","name":"罗托鲁瓦千禧酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/millenniumrotorua/"},
+				{"id":"13633","name":"曼努尔陶波千禧度假酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/millenniumtaupo/"},
+				{"id":"13550","name":"皇后镇湖景国敦酒店公寓",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornequeenstownlakeview/"},
+				{"id":"13510","name":"奥克兰国敦大酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthorneaucklandcity/"},
+				{"id":"13631","name":"新普利茅斯国敦酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornenewplymouth/"},
+				{"id":"13532","name":"北帕默斯顿君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornepalmerstonnorth/"},
+				{"id":"13533","name":"罗托鲁瓦国敦酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornerotorua/"},
+				{"id":"13529","name":"惠灵顿东方港国敦酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthorneorientalbay/"},
+				{"id":"13522","name":"岛屿湾国敦度假酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornebayofislands/"},
+				{"id":"13629","name":"赫基昂阿国敦度假酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornehokianga/"},
+				{"id":"13549","name":"皇后镇湖滨国敦度假酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornequeenstownlakefront/"},
+				{"id":"13634","name":"怀拉拉帕索尔维公园国敦度假酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/copthornewairarapa/"},
+				{"id":"13632","name":"派西亚君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgatepaihia/"},
+				{"id":"13547","name":"但尼丁君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgatedunedin/"},
+				{"id":"13526","name":"格雷茅斯君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgategreymouth/"},
+				{"id":"13628","name":"汉密尔顿君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgatehamilton/"},
+				{"id":"13555","name":"蒂阿瑙君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgateteanau/"},
+				{"id":"13637","name":"旺加努伊君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgatewanganui/"},
+				{"id":"13635","name":"旺格雷君门酒店",
+					"url":"http://www.millenniumhotels.co.nz/zh-cn/kingsgatewhangarei/"}]
+			}
+		]
+		},
+		{
+		"name":"北美", "url":"http://www.millenniumhotels.com/usa/zh-cn/",
+		"cities":[
+			{
+			"name":"美国", "url":"http://www.millenniumhotels.com/usa/zh-cn/",
+			"hotels":[
+				{"id":"13543","name":"安克拉治阿拉斯加千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumanchorage/"},
+				{"id":"13606","name":"洛杉矶巴尔地摩千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumbiltmorelosangeles/"},
+				{"id":"13523","name":"波士顿千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumboston/"},
+				{"id":"13507","name":"纽约百老汇千禧大酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumbroadwaynewyork/"},
+				{"id":"13524","name":"巨石城丰收千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumboulder/"},
+				{"id":"13545","name":"水牛城千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumbuffalo/"},
+				{"id":"13546","name":"辛辛那提千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumcincinnati/"},
+				{"id":"13548","name":"达勒姆千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumdurham/"},
+				{"id":"13527","name":"明尼阿波利斯千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumhotelminneapolis/"},
+				{"id":"13525","name":"芝加哥尼克布克千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumchicago/"},
+				{"id":"13552","name":"纳什维尔千禧酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumnashville/"},
+				{"id":"13553","name":"斯科茨代尔千禧度假酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/millenniumscottsdale/"},
+				{"id":"13530","name":"纽约联合一号",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/oneunnewyork/"},
+				{"id":"13610","name":"纽约总理酒店",
+					"url":"http://www.millenniumhotels.com/usa/zh-cn/premierhotelnewyork/"}]
+			}
+		]
+		}
+	]
+}

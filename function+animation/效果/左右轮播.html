@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../兼容函数总结/functionall.js"></script>
+	<script src="../兼容函数总结/animate.js"></script>
+	<style>
+    .bigbox{
+    	width: 400px;
+        height:400px;
+        border:1px solid #000;
+        margin:0 auto;
+        position: relative;
+    }
+    .zuo{
+    	width:50px;
+    	height: 400px;
+    	float: left;
+    	background:#ff6700;
+    	text-align: center;
+    	line-height: 400px;
+    	color:white;
+    	font-size: 30px;
+    	font-weight: bold;
+    	cursor: pointer;
+    }
+    .zuo:hover{
+    	background: #fff;
+    	color:#ff6700;
+    }
+    .you{
+    	width: 50px;
+    	height: 400px;
+    	float:right;
+    	background: #ff6700;
+    	text-align: center;
+    	line-height: 400px;
+    	color:white;
+    	font-size: 30px;
+    	font-weight: bold;
+    	position: absolute;
+    	top:0;
+    	right:0;
+    	cursor: pointer;
+    }
+    .you:hover{
+    	background: #fff;
+    	color:#ff6700;
+    }
+    .box{
+    	width: 300px;
+    	height: 400px;
+    	position: relative;
+    	float: left;
+    	overflow: hidden;
+    }
+    .box1{
+    width:1200px;
+    height: 400px;
+    position: absolute;
+    left:0;
+    top:0;
+    }
+    .img{
+    	width: 300px;
+    	height: 400px;
+    	float: left;
+    }
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="zuo">&lt;</div>
+		<div class="box">
+			<div class="box1">
+				<div class="img" style="background:red"></div>
+				<div class="img" style="background:blue"></div>
+				<div class="img" style="background:yellow"></div>
+				<div class="img" style="background:green"></div>
+			</div>
+			
+		</div>
+		<div class="you">&gt;</div>
+	</div>
+</body>
+
+<script>
+	var zuo=$(".zuo")[0];
+	var you=$(".you")[0];
+	var img=$(".img");
+	var box1=$(".box1")[0]
+	
+	function moveleft(){
+	var first=getFirst(box1);
+    var last=getLast(box1);
+    animate(box1,{left:-300},600,Tween.Linear,function(){
+    	box1.insertAfter(first,last);
+        box1.style.left=0;
+    });
+} 
+var t=setInterval(moveleft,2000)
+    function moveright(){
+    	var last=getLast(box1);
+    	box1.insertBefore(last,getFirst(box1))
+    	box1.style.left=-300+"px";
+    	animate(box1,{left:0},600,Tween.Linear)
+    }
+	
+   
+    zuo.onmouseover=function(){
+    	clearInterval(t);
+    }
+    zuo.onmouseout=function(){
+    	t=setInterval(moveleft,2000)
+    }
+    zuo.onclick=function(){
+        moveleft();
+    }
+    
+    you.onmouseover=function(){
+    	clearInterval(t);
+    }
+    you.onmouseout=function(){
+    	t=setInterval(moveleft,2000)
+    }
+    you.onclick=function(){
+    	moveright();
+    }
+</script>
+</html>

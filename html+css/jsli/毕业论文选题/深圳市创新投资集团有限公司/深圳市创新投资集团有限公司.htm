@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://www.szvc.com.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>深圳市创新投资集团有限公司</title>
+<meta name="keywords" content="深圳市创新投资集团有限公司">
+<meta name="description" content="深圳市创新投资集团有限公司">
+<meta name="copyright" content="深圳市创新投资集团有限公司">
+<link href="./深圳市创新投资集团有限公司_files/public.css" rel="stylesheet" type="text/css">
+<link href="./深圳市创新投资集团有限公司_files/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./深圳市创新投资集团有限公司_files/jquery-1.3.2.min.js"></script><style type="text/css" adt="123"></style>
+<script type="text/javascript" src="./深圳市创新投资集团有限公司_files/jcarousellite_1.0.1.pack.js"></script>
+<script type="text/javascript" src="./深圳市创新投资集团有限公司_files/common.js"></script>
+<script src="./深圳市创新投资集团有限公司_files/swfobject_modified.js" type="text/javascript"></script>
+<script src="./深圳市创新投资集团有限公司_files/menu.js" type="text/javascript"></script>
+
+<style type="text/css" media="screen">#FlashID {visibility:hidden}</style><script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            /*'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+
+<!-- 右侧浮动代码-->
+<!--<div id="right_layer" style="position:fixed; top:310px; right:20px;"> <A href="http://www.htcxfund.com" target=_blank> <img src="images/001753.jpg"></a><br>  <a href="javascript:;" onclick="javascript:document.getElementById('right_layer').style.display='none';">关闭</a></div>-->
+<!-- 右侧浮动代码-->
+
+<!-- 右侧浮动代码-->
+<!-- <div id="right_layer" style="position:fixed; top:210px; right:20px;"> <A href="images/j100.jpg" target=_blank> <img src="images/100j.jpg"></a><br>  <a href="javascript:;" onclick="javascript:document.getElementById('right_layer').style.display='none';">关闭</a></div>-->
+<!-- 右侧浮动代码-->
+
+<!-- 头部开始 -->
+  <div class="header">
+        <h1 class="logo">
+            <a title="深圳市创新投资集团有限公司" href="./深圳市创新投资集团有限公司_files/深圳市创新投资集团有限公司.htm">
+            <img src="./深圳市创新投资集团有限公司_files/logo.png" width="262" height="41"></a></h1>
+        <div class="sidelink">
+            <a href="./深圳市创新投资集团有限公司_files/深圳市创新投资集团有限公司.htm">中文</a> | <a href="http://www.szvc.com.cn/Default.aspx">English</a>
+        </div>
+	<div id="menu_b">
+	<div class="a">
+	  <div class="bhoverbg"><a href="./深圳市创新投资集团有限公司_files/深圳市创新投资集团有限公司.htm" class="bhoverbg">首页</a></div></div>
+                        <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=1" onmouseover="mopen(&#39;m2&#39;)" onmouseout="mclosetime()">关于我们</a></div>
+    
+         <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=2">公司介绍</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=507">公司视频</a>
+				   		    				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=7">总裁致辞</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=8">公司大事记</a>
+				   		    				   		    				   		    				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=3" onmouseover="mopen(&#39;m3&#39;)" onmouseout="mclosetime()">团队</a></div>
+    
+         <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=4">管理团队</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=5">顾问团队</a>
+				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=9" onmouseover="mopen(&#39;m4&#39;)" onmouseout="mclosetime()">投资理念</a></div>
+    
+         <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=10">投资策略</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=11">退出策略</a>
+				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=12" onmouseover="mopen(&#39;m5&#39;)" onmouseout="mclosetime()">投资案例</a></div>
+    
+         <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=13">投资概况</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=14">已投企业</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=15">经典案例</a>
+				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=17" onmouseover="mopen(&#39;m6&#39;)" onmouseout="mclosetime()">基金管理</a></div>
+    
+         <div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=17">政府引导基金</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=18">中外合作基金</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=19">受托管理基金</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=20">战略合作基金</a>
+				   		    				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=22" onmouseover="mopen(&#39;m7&#39;)" onmouseout="mclosetime()">创投研究</a></div>
+    
+         <div id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=23">博士后工作站</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/Mag.aspx">《创新杂志》</a>
+				   		            </div>
+        </div>
+        
+                            <div class="a">
+        <div class="bhoverbg"><a href="http://www.szvc.com.cn/category.aspx?NodeID=25" onmouseover="mopen(&#39;m8&#39;)" onmouseout="mclosetime()">联系我们</a></div>
+    
+         <div id="m8" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=26">投资申请</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=27">工作机会</a>
+				   		    				   				   <a href="http://www.szvc.com.cn/category.aspx?NodeID=28">联系方式</a>
+				   		            </div>
+        </div>
+        
+                                                                                    </div>
+    </div>
+<!-- 头部结束 -->
+<!-- banner开始 -->
+  <div class="ind_banner">
+        <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="301" style="visibility: visible;">
+            <param name="movie" value="/cx/images/szvc-htcx.swf">
+            <param name="quality" value="high">
+            <param name="wmode" value="opaque">
+            <param name="swfversion" value="8.0.35.0">
+            <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+            <param name="expressinstall" value="Scripts/expressInstall.swf">
+            <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="http://www.szvc.com.cn/cx/images/szvc-htcx.swf" width="960" height="301">
+                <!--<![endif]-->
+                <param name="quality" value="high">
+                <param name="wmode" value="opaque">
+                <param name="swfversion" value="8.0.35.0">
+                <param name="expressinstall" value="/cx/Scripts/expressInstall.swf">
+                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                <div>
+                    <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="./深圳市创新投资集团有限公司_files/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33"></a></p>
+                </div>
+                <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
+    </div>
+<!-- banner结束 -->
+<!-- main开始 -->
+    <div class="main">
+    <!-- frlink开始 -->
+      <div class="frlink">
+        <div class="box">
+            <div id="go_l" class="go_l"><img src="./深圳市创新投资集团有限公司_files/frlink_btn_l.png"></div>
+            <div id="pic_show" class="pic_show" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 900px;">
+                <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 12600px; left: -4950px;"><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.szclou.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/clip_image029.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.sinomatech.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sin.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.coship.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/tzdz.gif" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.arasor.net.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/arasor.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.actions.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/zhjl.gif" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.techfaithwireless.com/" target="_blank"><img src="http://www.techfaithwireless.com/images/logo.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.gltech.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/glkj.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.china-wanlin.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/wlgf.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.cesgroup.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/xxfz.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.idr.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/idr.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.king1.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/oneg.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.baiyang.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/baiyang.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.taikong.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/taikong.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.delian.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dl.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hakim.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hakim.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.kingsun-china.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/kingsun.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hngymt.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hnmtly.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.unilumin.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/uni.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.trs.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/trs.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.haoxiangni.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hxn.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.tdchina.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/jstd.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hybio.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hybio.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.sztechand.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/technd.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.glory-medical.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sryl.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.cococ.cc/Cococ/cc/index.jsp" target="_blank"><img src="./深圳市创新投资集团有限公司_files/cococ.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.skyray-instrument.com/cn/index.aspx" target="_blank"><img src="./深圳市创新投资集团有限公司_files/skyray.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://qifeng.cn/index.html" target="_blank"><img src="./深圳市创新投资集团有限公司_files/qfzy.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hong-lin.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hltech.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.cn-cg.com/index.asp" target="_blank"><img src="./深圳市创新投资集团有限公司_files/cncg.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.sz-sunway.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sunway.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.xinguodu.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/xgd.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.mywind.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/mingyang.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.risen-lighting.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dfrs.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.letv.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/letv.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.zzmj.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/zmmj.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.o-film.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/ofilm.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.tianmachem.com/cn/index.htm" target="_blank"><img src="./深圳市创新投资集团有限公司_files/tm.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.szmtc.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/mtc.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.csdas.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sd.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.nvc-lighting.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/lszm.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.chinacryolite.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dfd.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.jinkosolar.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/jinko.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.kingtone.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/lhxx.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.easpring.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dskj.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.jinkosolar.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/szzt.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.sz-dsbj.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dsjm.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.canny-elevator.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/canny.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.savings.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/savings.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.dinglongchem.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/dlhx.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.zqgame.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/zqbw.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hclyng.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/zkdq.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.keenhi.com/cn/Default.asp" target="_blank"><img src="./深圳市创新投资集团有限公司_files/keenhi.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.chinanetcenter.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/chinanetcenter.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.comix.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/qxwj.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.vtion.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/vtion.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.chinapeak.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/pk.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.ah-xinlong.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/xin.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.worldunion.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sldc.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.cnpv-power.com/cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/cnpv.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.hailu-boiler.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/hl.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.a8.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/A8.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.castech.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/fjkj.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.terca.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/tej.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.eascs.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/yyt.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.nd.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/nd.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.invengo.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/ywg.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.3nod.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/3nod.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.c-wmm.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/xbjs.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.ehousechina.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/yj.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.weichai.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/clip_image027.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.fengquan.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/fqjt.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.chinadrtv.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/chinadrtv.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.szclou.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/clip_image029.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.sinomatech.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sin.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.coship.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/tzdz.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.arasor.net.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/arasor.jpg" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.actions.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/zhjl.gif" width="85" height="43"></a></li>
+                                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.techfaithwireless.com/" target="_blank"><img src="http://www.techfaithwireless.com/images/logo.jpg" width="85" height="43"></a></li>
+                                   
+                <li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.gltech.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/glkj.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.china-wanlin.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/wlgf.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.cesgroup.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/xxfz.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.idr.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/idr.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.king1.com.cn/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/oneg.jpg" width="85" height="43"></a></li><li style="overflow: hidden; float: left; width: 130px; height: 51px;"><a href="http://www.baiyang.com/" target="_blank"><img src="./深圳市创新投资集团有限公司_files/baiyang.jpg" width="85" height="43"></a></li></ul>
+            </div>
+            <div id="go_r" class="go_r"><img src="./深圳市创新投资集团有限公司_files/frlink_btn_r.png"></div>
+        </div>
+      </div> 
+    <!-- frlink结束 -->
+       
+      <div class="content">
+        <div class="side_left">
+        
+        <div class="about">
+                    <h2><strong>超群实力</strong></h2>
+            <div class="nr_box">
+            <p>&nbsp; 强大的股东背景汇聚超群的资本实力——42亿元人民币注册资本、高达100亿元人民币的可投资能力、管理着外部100亿元人民币的资本，造就中国资本规模最大、投资能力最强的本土创业投资机构。</p>
+<p>&nbsp; 主要股东包括深圳市人民政府国有资产监督管理委员会、深圳市星河房地产开发有限公司、上海大众公用事业集团股份有限公司、福建七匹狼集团有限公司、深圳市立业集团有限公司、广东电力发展股份有限公司、深圳市亿鑫投资有限公司、深圳市福田投资发展公司等。</p>
+<p>&nbsp; 国内创业投资行业唯一一家博士后工作站，为公司投资决策提供研究支持与人才补充。</p>
+</div>
+          </div>
+          
+          
+          <div class="news">
+                      <h2><strong> 卓越业绩</strong></h2>
+           <div class="nr_box1"><!--<p>十二年间接洽项目逾万个，已投资项目327个，领域涉及IT、通讯、新材料、生物医药、能源环保、化工、消费品、连锁、高端服务等，累计投资金额逾七十五亿元人民币。</p>
+            <p>丰富的创业投资经验成就众多经典案例，境内外资本市场成功上市的企业包括潍柴动力、明阳风电、东方日升、乐视网、郑煤机、欧菲光、兆驰股份、达实智能、雷士照明、多氟多化工、当升科技、世联地产、中科电气、鑫龙电器、齐心文具、海陆重工、福晶科技、特尔佳、同洲电子、中材科技、科陆电子、西部材料、远望谷、怡亚通、A8音乐集团、丰泉环保、易居中国、橡果国际、三诺电子、网龙网络、慧视国际、珠海炬力、九城数码和中芯国际等，近80家企业。与人才补充。</p>-->
+             <p>&nbsp; 十六年间接洽项目数万个，已投资项目591个，领域涉及IT、通讯、新材料、生物医药、能源环保、化工、消费品、连锁、高端服务等，累计投资金额近178亿元人民币。</p>
+<p>&nbsp; 丰富的创业投资经验成就众多经典案例，境内外资本市场成功上市的企业包括潍柴动力、光力科技、中飞股份、万林股份、信息发展、爱迪尔、金一文化、合力泰、智美控股、百洋股份、太空板业、勤上光电、明泰铝业、拓尔思、好想你、明阳风电、洲明科技、东方日升、乐视网、郑煤机、欧菲光、兆驰股份、达实智能、多氟多化工、当升科技、世联地产、中科电气、鑫龙电器、齐心文具、海陆重工、福晶科技、特尔佳、同洲电子、中材科技、科陆电子、远望谷、怡亚通、A8音乐、丰泉环保、易居中国、三诺电子、网龙网络等，102家企业。</p>
+</div>         
+          </div>
+          
+          
+          <div class="news" id="newslist">
+                     
+            <h2><strong> 全国网络 </strong></h2>
+                        	<div class="nr_box2"><!--<p> 在经济、科技和教育最发达的北京、上海、香港、广州、深圳、重庆、苏州、西安、郑州、成都、武汉、包头、哈尔滨、南京、杭州、合肥、长春、洛阳、大连、威海、青岛、无锡、厦门、中山、湘潭、南通、萍乡、淄博、常州、武进、湖州长兴、襄樊、潍坊、泉州等地设有40个分支机构或区域性引导基金，项目资源丰富，合作伙伴遍及全国。</p>  -->
+             <p>&nbsp; 在经济、科技和教育最发达的北京、上海、香港、广州、深圳、重庆、苏州、西安、郑州、成都、武汉、包头、哈尔滨、南京、杭州、合肥、长春、洛阳、大连、威海、青岛、无锡、厦门、昆明、中山、湘潭、南通、萍乡、淄博、常州、武进、湖州长兴、襄樊、潍坊、泉州等地设有50个分支机构或区域性引导基金，项目资源丰富，合作伙伴遍及全国。</p>
+            
+</div>
+          </div>
+          
+        
+         
+      
+      
+      
+ <!--    </div>
+     </div>-->
+      
+      <!--<div class="content">
+        <div class="side_left">-->
+        
+          <div class="news" id="gsdtlist">
+                     
+            <h2><strong>创投动态</strong><a href="http://www.szvc.com.cn/category.aspx?NodeID=31"><span class="red">+</span>MORE</a></h2>
+            <ul>
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7409" target="_blank">2015年9月创投行业简报</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7401" target="_blank">2015年8月创投行业简报</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7383" target="_blank">2015年7月创投行业简报</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7376" target="_blank">2015年6月创投行业简报</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7370" target="_blank">2015年5月创投行业简报</a></li>
+            
+                           
+            </ul>
+          </div>
+          
+          <div class="news" id="gxdtlist">
+                     
+            <h2><strong>公司动态</strong><a href="http://www.szvc.com.cn/category.aspx?NodeID=30"><span class="red">+</span>MORE</a></h2>
+            <ul>
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7412" target="_blank">我集团2015年10月份新增4个投资项目</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7411" target="_blank">倪泽望董事长一行深入角溪坂村调研扶贫开发“双到”...</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7410" target="_blank">深创投投资企业梦网科技成功实现并购上市</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7408" target="_blank">电信科学技术研究院党组书记、院长真才基一行莅临深...</a></li>
+            
+                         
+            
+             <li><a href="http://www.szvc.com.cn/detail.aspx?cid=7407" target="_blank">我集团2015年9月份新增4个投资项目</a></li>
+            
+                           
+            </ul>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      
+
+      
+        <div class="b_s_box">
+      <!-- box_1 -->
+        <div class="box_1">
+          <ul class="flink">
+            <li><a href="http://www.szvc.com.cn/#">相关链接</a>
+                <ul>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=1" target="_blank">湖北红土创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=2" target="_blank">内蒙古红土高新创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=28" target="_blank">安徽红土创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=3" target="_blank">陕西航天红土创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=4" target="_blank">苏州国发创新资本管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=29" target="_blank">山西红土创新创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=5" target="_blank">郑州百瑞创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=6" target="_blank">天津海泰创新投资管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=7" target="_blank">重庆深渝创新投资管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=8" target="_blank">大连红土创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=9" target="_blank">西安西旅创新投资管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=10" target="_blank">杭州红土创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=11" target="_blank">成都工投红土创新投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=12" target="_blank">南昌红土创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=13" target="_blank">洛阳红土创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=14" target="_blank">青岛红土资本管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=15" target="_blank">淄博创新资本管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=16" target="_blank">潍坊红土资本管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=17" target="_blank">南通创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=18" target="_blank">常州红土创新创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=19" target="_blank">上海创新投资管理有限公司 </a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=20" target="_blank">西安创新投资管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=21" target="_blank">威海创新投资管理有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=22" target="_blank">湘潭创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=23" target="_blank">萍乡创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=24" target="_blank">襄樊创新资本创业投资有限公司</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=25" target="_blank">中以基金</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=26" target="_blank">红土永佳投资集团</a></li>
+                	                	<li><a href="http://www.szvc.com.cn/special/index.aspx?sid=27" target="_blank">成都红土银科创新投资有限公司</a></li>
+                	                    
+            
+                </ul>
+            </li>
+          </ul>
+        </div>
+      <!-- /box_1 -->
+      <!-- box_2 -->
+      <div class="box_2">
+          <ul class="flink">
+            <li><a href="http://www.szvc.com.cn/#">相关链接</a>
+                <ul>
+                     		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=33" target="_blank">IT 技术/芯片</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=34" target="_blank">光机电/制造</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=505" target="_blank">互联网/新媒体</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=35" target="_blank">能源/环保</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=36" target="_blank">生物医药</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=37" target="_blank">消费/物流/连锁</a></li>
+                                        		                                <li><a href="http://www.szvc.com.cn/category.aspx?NodeID=38" target="_blank">新材料/化工</a></li>
+                                                           
+                </ul>
+            </li>
+          </ul>
+        </div>
+      <!-- /box_2 -->
+      <!-- box_3 -->
+      <div class="box_3">
+          <ul class="flink">
+            <li><a href="http://www.szvc.com.cn/#">相关链接</a>
+                <ul>
+                                         <li><a href="http://www.cyzone.cn/">创业邦</a></li>
+                                        <li><a href="http://www.chuangyejia.com/">创业家</a></li>
+                                        <li><a href="http://www.szvca.com/">市创业投资同业公会</a></li>
+                                        <li><a href="http://www.chtpe.com/">高新技术产权交易网</a></li>
+                                        <li><a href="http://www.redherring.com/">Red Herring</a></li>
+                                        <li><a href="http://www.ventureone.com/">venture one</a></li>
+                                        <li><a href="http://www.zero2ipo.com.cn/">清科信息咨询 </a></li>
+                                        <li><a href="http://www.cvcri.com/">中国风险投资研究院</a></li>
+                                        <li><a href="http://www.sbcvc.com/">软银创业投资</a></li>
+                                        <li><a href="http://www.honycapital.com/">弘毅投资</a></li>
+                                        <li><a href="http://www.ier.org.cn/">深港产学研基地</a></li>
+                                        <li><a href="http://www.sequoiacap.com/">Sequoia Capital</a></li>
+                                        <li><a href="http://www.pitango.com/">Pitango Venture Capital</a></li>
+                                       
+                </ul>
+            </li>
+          </ul>
+        </div>
+      <!-- /box_3 -->
+      </div>
+      
+    
+    </div>
+<!-- main结束 -->
+<!-- footer开始 -->
+<div class="footer">
+    <div class="Atext">
+            <a href="http://www.szvc.com.cn/category.aspx?NodeID=58">版权声明</a> | <a href="http://www.szvc.com.cn/category.aspx?NodeID=27">工作机会</a> | <a href="http://www.szvc.com.cn/Mag.aspx">创新杂志</a> | <a href="http://www.szvc.com.cn/category.aspx?NodeID=28">联系我们</a> | <a href="http://www.htcxfund.com/" target="_blank">红土创新基金</a>
+    <br>版权所有@2011  <a href="./深圳市创新投资集团有限公司_files/深圳市创新投资集团有限公司.htm">深圳市创新投资集团有限公司</a> <a href="http://www.chinasky.net/" target="_blank">网站建设－天络科技</a><br><a target="_blank" href="http://www.miibeian.gov.cn/">粤ICP备08114920号</a>
+      </div>
+    <div class="copyright">
+<a href="https://cert.ebs.gov.cn/7935d103-aa5e-41a4-8764-2aed61581aa9" target="_blank">
+    <img src="https://cert.ebs.gov.cn/images/govIcon.gif" width="36" height="50"></a>&nbsp;<a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403103900525" target="_blank"><img src="./深圳市创新投资集团有限公司_files/sznet110wangan.gif" width="36" height="42"></a>
+<a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank">
+<img border="0" src="./深圳市创新投资集团有限公司_files/sznet110.gif" width="43" height="54"></a>
+				</div>
+</div>
+
+
+
+<!--<div class="footer">
+    <div class="Atext">
+    <a href="#">版权声明</a> | <a href="#">诚聘英才</a> | <a href="#">创新杂志</a> | <a href="#">联系我们</a>
+    <br>版权所有@2010 深圳市创新投资集团有限公司 网站建设－天络科技<br><a target="_blank" href="http://www.miibeian.gov.cn">粤ICP备08114920号</a>
+    </div>
+    <div class="copyright">
+<script id="ebsgovicon" src="https://cert.ebs.gov.cn/govicon.js?id=7935d103-aa5e-41a4-8764-2aed61581aa9&width=36&height=50" type="text/javascript" ></script>
+
+    <a href="https://cert.ebs.gov.cn/7935d103-aa5e-41a4-8764-2aed61581aa9" target="_blank">
+    <img src="https://cert.ebs.gov.cn/images/govIcon.gif" width="36" height="50" /></a>
+
+    <a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403103900525" target="_blank">
+    <img src="style/img/sznet110wangan.gif" width="36" height="42" /></a>　
+    <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank">
+	<img border="0" src="style/img/sznet110.gif" width="43" height="54"></a>
+
+    </div>
+</div>--><!-- footer结束 -->
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
+
+
+</body></html>

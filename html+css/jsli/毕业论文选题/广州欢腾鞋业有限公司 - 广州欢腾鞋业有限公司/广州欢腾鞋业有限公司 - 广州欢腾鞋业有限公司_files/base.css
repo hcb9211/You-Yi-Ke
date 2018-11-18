@@ -1,0 +1,142 @@
+@charset "gb2312";
+/* CSS Document */
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea {margin:0; padding:0; font-weight: normal;font-style: normal;font-size: 100%; font-family:"ËÎÌå",Arial, Helvetica, sans-serif;}
+ol, ul ,li{list-style: none;}
+img {border: 0; margin:0; padding:0;}
+body {text-align:left; font-size:12px; background:#1a1a1a; color:#706f6f;}
+a,em{ text-decoration:none; font-style:normal;}
+.clear{ clear:both;}
+
+/*********Í¨ÓÃ´úÂë*********/
+.box{ width:1015px; margin:0 auto;}
+.title{ height:39px; line-height:39px; background:url(../image/title.png) no-repeat; margin-top:12px;}
+.title span{ float:left; padding-left:19px; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; color:#f1f1f1;}
+.title span em{ font-size:10px; color:#7d7d7d; padding-left:5px; float:none;}
+.title em{ float:right; padding-right:22px; color:#dadada;}
+.title em a{ color:#dadada;}
+
+
+/*¿ÕÏ¶*/
+.kx_1{ height:12px; clear:both;}
+
+/*×ÖÌå*/
+.h1{ text-align:center; padding-bottom:10px;}
+.h2{ text-align:center; border-bottom:1px solid #b8b8b8;}
+.h3{ padding:10px;}
+.h4{ border-top:1px solid #b7b7b7; padding:10px;}
+.h4 a{ color:#797979;}
+.h5{ text-align:center; border-bottom:1px solid #d0d0d0; margin-bottom:13px;}
+.h6{ text-align:center; padding-bottom:20px;}
+.h6 img{ width:411px; border:2px solid #ffffff;}
+.h7{ height:20px; position:relative;}
+.h8{ position:absolute; left:-28px; top:0;}
+
+
+
+/*header*/
+#header_w{ width:100%; height:36px; overflow:hidden; background:#0d0d0d;}
+#header{ height:36px; line-height:36px; color:#6b6b6b;}
+#header a{ color:#6b6b6b;}
+#header span{ float:left;}
+#header ul{ float:right; width:300px; background:url(../image/head.png) no-repeat left center; height:36px;}
+#header ul li{ float:left; padding-left:23px; width:71px;}
+#header span em{ color:#ff6e27;}
+.logo{ position:absolute; left:13px; top:26px;}
+
+/*Nav*/
+#Nav_w{ width:100%; height:103px; overflow:hidden; background:url(../image/nav.png) repeat-x;} 
+#Nav{ height:103px; position:relative;}
+#Nav ul{ position:absolute; top:0; right:0;}
+#Nav li{ width:87px; height:100px; float:left;}
+#Nav li a{ width:87px; height:100px; display:block;}
+.nav1{background:url(../image/11.png) no-repeat;}
+.nav1 a:hover{ background:url(../image/2.jpg) no-repeat bottom;}
+.nav2{ background:url(../image/22.png) no-repeat;}
+.nav2 a:hover{ background:url(../image/1.jpg) no-repeat bottom;}
+.nav3{ background:url(../image/33.png) no-repeat;}
+.nav3 a:hover{ background:url(../image/3.jpg) no-repeat bottom;}
+.nav4{ background:url(../image/44.png) no-repeat;}
+.nav4 a:hover{ background:url(../image/4.jpg) no-repeat bottom;}
+.nav5{ background:url(../image/55.png) no-repeat;}
+.nav5 a:hover{ background:url(../image/5.jpg) no-repeat bottom;}
+.nav6{ background:url(../image/66.png) no-repeat;}
+.nav6 a:hover{ background:url(../image/6.jpg) no-repeat bottom;}
+.nav7{ background:url(../image/77.png) no-repeat;}
+.nav7 a:hover{ background:url(../image/7.jpg) no-repeat bottom;}
+
+
+
+/*Banner*/
+#Banner_w{ height:354px; width:100%; background:url(../image/banner.png) no-repeat center;}
+#Banner{ height:354px;}
+#Ban_top{ height:323px; overflow:hidden;}
+#Ban_top li{ width:1015px; height:323px; float:left;}
+#Ban_li{ height:29px; background:#f3640e;}
+#Ban_li ul{ padding:11px 0 0 509px;}
+#Ban_li li{ width:8px; height:8px; background:url(../image/li.png) no-repeat center center; cursor:pointer; margin-right:15px; float:left;}
+.Ban_li{ background:url(../image/li_hover.png) no-repeat !important;}
+
+
+.zy_banner_w{ height:304px; width:100%; background:url(../image/zy_ban.png) no-repeat center;}
+.zy_banner{ height:304px;background:url(../image/zy_banner.png) no-repeat center;}
+
+/**********Ê×Ò³*********/
+.body{ background:url(../image/body.png) no-repeat; height:254px;}
+.body ul{ padding-top:54px;}
+.body ul li{ width:312px; height:170px; float:left; padding-left:20px;}
+.body ul li a{ width:312px; height:170px; display:block;}
+.by1 a{ background:url(../image/in4.jpg) no-repeat;}
+.by1 a:hover{ background:url(../image/in1.png) no-repeat;}
+.by2 a{ background:url(../image/04.jpg) no-repeat;}
+.by2 a:hover{ background:url(../image/03.jpg) no-repeat;}
+.by3 a{ background:url(../image/in3.png) no-repeat;}
+.by3 a:hover{ background:url(../image/in6.png) no-repeat;}
+
+
+/******×ÓÒ³¼°ÆäËû******/
+
+
+
+/*body*/
+#body_left{ width:232px; float:left; background:url(../image/sub.png) no-repeat left top; height:527px;}
+#body_left ul{ padding-top:85px; padding-bottom:30px;}
+#body_left ul li{ width:232px; height:43px; text-align:center; line-height:34px; font-family:"Î¢ÈíÑÅºÚ"; background:url(../image/ub.png) no-repeat 0 34px;}
+#body_left ul li a{ width:232px; height:43px; display:block; color:#8e8b8a;}
+#body_left ul li a:hover{ background:url(../image/sub_hover.png) no-repeat; color:#491304; font-size:16px;}
+#body_right{ width:765px; float:right; background:url(../image/right_bg.png);}
+
+/*copyright*/
+#copyright_w{ background:#0a0a0a; border-top:1px solid #262626; padding:10px 0; clear:both;}
+#copyright{ text-align:center; color:#5f5e5e; line-height:24px;}
+
+/*µ×²¿Ò³Âë*/
+.page{ margin-top:30px; padding-top:11px; padding-bottom:20px; text-align:center; border-top:1px solid #b7b7b7;}
+.page a{ margin:0 5px; color:#6d6d6d;}
+
+/*News*/
+.News_list{ padding:25px;}
+.News_list li{ line-height:28px;}
+.News_list li span{ float:left; background:url(../image/news_l.png) no-repeat left center; padding-left:15px; clear:both;}
+.News_list li span a{ color:#787777;}
+.News_list li em{ float:right; color:#787777;}
+
+/*Products*/
+.Products_list{ padding:24px;}
+.Products_list li{ width:207px; float:left; padding-left:23px;}
+.Products_list li img{ width:205px; height:145px; border:1px solid #d8d8d8;}
+.Products_list li p{ text-align:center; padding:11px 0 27px 0;}
+.Products_list li p a{ color:#838383;}
+
+/*danye_show*/
+.danye_show{ padding:28px; line-height:24px;}
+
+/*gbook*/
+.gbook{ padding:30px 0 70px 178px;}
+.gbook td{ padding-left:14px; padding-bottom:20px;}
+.gbook input{ width:321px; height:24px; line-height:24px; background:none; border-bottom:1px solid #b6b6b6; border-left:none; border-top:none;}
+.gbook textarea{ width:301px; padding:10px; border:1px solid #b6b6b6; height:80px; background:none; }
+.gb{ width:134px !important; height:28px !important; background:url(../image/gbook.png) no-repeat !important; border:0 !important;}
+
+
+
+

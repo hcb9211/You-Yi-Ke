@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的基本</title>
+<script>
+
+/*function tables(hang,lie,color1,color2){
+   document.write("<table border='1'cellspacing='0'align='center'>");
+  for(var i=1;i<=hang;i++){
+	document.write("<tr>");
+	for(var j=1;j<=lie;j++){
+		if(i%2==0&&j%2==0){
+			document.write("<td bgcolor="+color1+">")  
+		}else if(i%2==1&&j%2==1){
+			document.write("<td bgcolor="+color2+">")
+		}else{
+			document.write("<td>")
+		}
+		    document.write("再见了")
+            document.write("<td>")
+	}     
+    document.write("<tr>");
+}
+document.write("<table>");
+}
+tables(10,5,"blue","black");*/
+
+//基本函数
+/*function sum(){
+	a=20;
+	b=30;
+	alert(a+b);
+}
+sum();*/
+//字面量函数（直接函数，匿名函数）
+/*var sum=function(){
+	a=20;
+	b=30;
+	alert(a+b);
+}
+sum();*/
+//对象声明
+/*var sum=new Function("a","b","c","alert(a+b+c)")
+a=20;
+b=30;
+c=33;
+sum(a,b,c);
+*/
+//自调用
+/*(function (num){
+	alert(num)
+})(22);*/
+//第二种方式
+/*(function (num){
+	alert(num)
+}(22));*/
+//通过事件声明
+/*function aa(){
+	alert(12)
+}
+aa();*/
+
+/*var checkType=function(a){
+	if (typeof a=="number"){
+             alert("number")
+	}
+		if (typeof a=="string"){
+             alert("string")
+	}
+		if (typeof a=="underfined"){
+             alert("underfined")
+	}
+		if (typeof a=="object"){
+             alert("null")
+	}
+		if (typeof a=="boolean"){
+             alert("boolean")
+	}
+}
+checkType(null);*/
+
+/*var checkType=function(a){
+	switch(typeof a){
+		case"number":alert("number");
+		break;
+		case"string":alert("string");
+		break;
+		case"boolean":alert("boolean");
+		break;
+		case"object":alert("null");
+		break;
+		case"underfined":alert("underfined");
+		break;
+	}
+}
+checkType("a");*/
+//参数的作用
+/*var bb=function(a,b,c){
+	return b,c,a;
+}
+alert(bb(12,45,67));*/
+//return的用法
+/*function aa(a,b){
+	return a,b;
+	alert(a);
+	alert(b);
+}
+alert(aa(22,21));*/
+
+/*function sum(a){
+	alert(132);
+	a+=1;
+	return a;
+}
+alert(sum(1))*/
+
+//作用域(有嵌套关系时)
+/*alert(a);
+var a;*///预解析，这个变量用var声明，
+
+//经典str
+/*var a=100;
+function demo(){
+	var a=200;
+	function demo2(){
+		alert(a); //underfined;
+		var a=300;
+	}
+	demo2();
+	function demo3(){
+		alert(a);//200
+	}
+	demo3();
+}
+demo();*/
+//经典end
+/*var a=100;
+function demo(){
+	//	var a=200;
+	function demo2(){
+		//var a=300;
+		alert(a);
+	}
+	demo2();
+}
+demo();*/
+
+//函数能实现参数个数的判断
+ /* function aa(){
+   	p=arguments.length ;
+   alert("有"+p+"个函数");
+   }
+aa(1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10);*/
+
+/*   function bb(){
+   	if(arguments.length==0){
+   		return "0"
+   	}
+   	if(arguments.length==1){
+   		return "1"
+   	}
+   	 	if(arguments.length==2){
+   		return "2"
+   	}
+   	 	if(arguments.length>=3){
+   		return "太多"
+   	}
+   }
+   alert(bb(20,5))*/
+
+   //回调函数
+   
+   /*function jia(a,b){
+   	   return a+b;
+   }
+     function jian(a,b){
+   	   return a-b;
+   }
+     function cheng(a,b){
+   	   return a*b;
+   }
+     function chu(a,b){
+   	   return a/b;
+   }
+   function demo(a,b,c){
+        return c(a,b)
+   }
+   alert(demo(12,40,chu)); 
+    //将函数名作为参数
+   alert(demo(12,40,  function chu(a,b){
+   	   return a/b;
+   }))  //讲整个函数作为参数*/
+
+//递归函数
+//!5=5*4*3*2*1  //阶乘
+/*function jieC(num){//num*(num-1)
+  if(num==1){
+  	document.write(num);
+  	return;
+  }else{
+  	  document.write(num);
+  	return num*jieC(num-1)
+  }
+ 
+}
+alert(jieC(3));*/
+//闭包
+function aa(){
+           var i=10;//局部变量；
+           function bb(){
+              return ++i;
+        }
+        return  bb;
+        }
+        alert(aa());//把bb函数拿出来
+        var c=aa();//所以给bb声明了c,这y一步少不了，属于闭包的一部分
+        alert(c());//输出bb 11
+        alert(c());//12        
+        alert(aa()());//11
+        alert(aa()());//11
+//第二种形式
+/*window.onload=function(){
+	//等文档加载完成后执行
+	var a=document.getElementsByClassName(
+		"boxs");//[box,box,box,box]
+	for(var i=0;i<4;i++){//0,1,2,3
+        (function(i){
+        	a[i].onmouseover=function(){
+        		//给每个盒子添加事件//alert(i);
+        		a[i].style.background="yellow";}
+            a[i].onmouseout=function(){
+        		//给每个盒子添加事件//alert(i);
+        		a[i].style.background="";
+        	}
+        }
+        )(i);
+	}
+}*/
+</script>
+<style>
+/* 	.box{
+	width: 200px;
+	height: 200px;
+	background: green;
+} */
+/* .boxs{
+	width:200px;
+	height:200px;
+	border:1px solid green;
+	text-align: center;
+	line-height: 200px;
+	font-size:50px;
+} */
+</style>
+</head>
+<body>
+<!-- <div class="box" onclick="aa()"></div> -->
+<!-- <div class="boxs">1</div>
+<div class="boxs">2</div>
+<div class="boxs">3</div>
+<div class="boxs">4</div> -->
+</body>
+</html>
+<script>
+	
+</script>
